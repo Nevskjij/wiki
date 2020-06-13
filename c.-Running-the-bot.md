@@ -6,7 +6,7 @@ Once you have downloaded the bot, installed the dependencies, and created the co
 
 ## Missing dependencies
 
-You are missing the dependencies, see the [installation guide](https://github.com/idinium96/tf2autobot/wiki/Installation#installing-modules).
+You are missing the dependencies, see the [installation guide](https://github.com/idinium96/tf2autobot/wiki/a.-Installation#installing-modules).
 
 ## Missing required environment variable
 
@@ -24,4 +24,4 @@ Check the [GitHub issues](https://github.com/idinium96/tf2autobot/issues) to see
 ***
 
 
-Click [here](https://github.com/idinium96/tf2autobot/wiki/Setup-on-VPS) to see how to set up the bot on a VPS to run it 24/7.
+Click [here](https://github.com/idinium96/tf2autobot/wiki/d.-Setup-on-VPS) to see how to set up the bot on a VPS to run it 24/7.
