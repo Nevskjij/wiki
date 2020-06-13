@@ -5,7 +5,7 @@ This page will go through how to set up the bot on a Linux server so that it wil
 You can get a VPS from many different providers, but I recommend getting one from DigitalOcean. If you haven't made an account already, then you can use [this link](https://m.do.co/c/25781921f304) and get $100 that expires after 2 months.
 
 Once you have created an account or signed in using an existing one, go to https://cloud.digitalocean.com/droplets/new and create a droplet.
-* Choose the highest Ubuntu LTS version (19.04 as of writing this)
+* Choose the highest Ubuntu LTS version (20.04 as of writing this)
 * Select the standard $5 plan - This will be enough to run the bot with, you can even run multiple on the same server.
 * Choose a region in which the VPS will be located.
 * Choose authentication method, a one-time password is easy but vulnerable (you can always set up an SSH key later)
@@ -53,7 +53,7 @@ npm -v
 
 # Downloading the bot
 
-The same process as on your desktop, see [installation guide](https://github.com/idinium96/tf2autobot/wiki/Installation#downloading-the-bot)
+The same process as on your desktop, see [installation guide](https://github.com/idinium96/tf2autobot/wiki/a.-Installation#downloading-the-bot)
 
 ```
 git clone https://github.com/Nicklason/tf2-automatic.git
@@ -75,4 +75,4 @@ npm install
 
 To run the bot 24/7, you need to run the process in the background. If you run the bot with `node app.js` or `npm start`, the bot will stop when you close the terminal.
 
-Use PM2 to run the bot in the background, see the [guide](https://github.com/idinium96/tf2autobot/wiki/PM2).
+Use PM2 to run the bot in the background, see the [guide](https://github.com/idinium96/tf2autobot/wiki/e.-Running-with-PM2).
