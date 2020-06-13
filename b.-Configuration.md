@@ -1,4 +1,4 @@
-If you have not yet installed the bot, please go to the [installation guide](https://github.com/idinium96/tf2autobot/wiki/Installation).
+If you have not yet installed the bot, please go to the [installation guide](https://github.com/idinium96/tf2autobot/wiki/a.-Installation).
 
 # Environment variables
 
@@ -20,4 +20,4 @@ The bot is made in a way so that you only need to give it an account and it will
 ***
 
 
-Click [here](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot) to see how to run the bot.
+Click [here](https://github.com/idinium96/tf2autobot/wiki/c.-Running-the-bot) to see how to run the bot.
