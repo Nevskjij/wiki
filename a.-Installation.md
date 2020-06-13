@@ -60,4 +60,4 @@ This is most likely because you are missing the permissions to install typescrip
 
 ***
 
-Click [here](https://github.com/idinium96/tf2autobot/wiki/Configuration) to see how to configure the bot.
+Click [here](https://github.com/idinium96/tf2autobot/wiki/b.-Configuration) to see how to configure the bot.
