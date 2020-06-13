@@ -30,9 +30,9 @@ Open a command prompt or terminal and navigate to where you want the bot to be l
 
 `cd Desktop` to navigate to the Desktop.
 
-Use `git clone https://github.com/Nicklason/tf2-automatic.git --branch master` to clone the repository and choose the master branch. The master branch contains released code and is considered to be stable.
+Use `git clone https://github.com/idinium96/tf2autobot.git --branch master` to clone the repository and choose the master branch. The master branch contains released code and is considered to be stable.
 
-Once it has been cloned a new folder will be made called `tf2-automatic`.
+Once it has been cloned a new folder will be made called `tf2autobot`.
 
 # Installing TypeScript
 
@@ -60,4 +60,4 @@ This is most likely because you are missing the permissions to install typescrip
 
 ***
 
-Click [here](https://github.com/Nicklason/tf2-automatic/wiki/Configuration) to see how to configure the bot.
+Click [here](https://github.com/idinium96/tf2autobot/wiki/Configuration) to see how to configure the bot.
