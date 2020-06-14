@@ -1,6 +1,6 @@
 # Run through command prompt/terminal
 
-Once you have downloaded the bot, installed the dependencies, and created the config, you can then run the bot. You do this by navigating to the tf2-automatic folder using the command prompt or terminal and type `node dist/app.js` into it.
+Once you have downloaded the bot, installed the dependencies, and created the config, you can then run the bot. You do this by navigating to the tf2autobot folder using the command prompt or terminal and type `node dist/app.js` into it.
 
 # Errors on startup
 
@@ -18,7 +18,9 @@ This is a temporary error, it depends on the error code what you should do, but 
 
 ## Other errors
 
-Check the [GitHub issues](https://github.com/idinium96/tf2autobot/issues) to see if someone has gotten the error before, if not, then please create an issue with the error.
+Please visit: https://github.com/idinium96/tf2autobot/wiki/Errors
+
+Or check the [GitHub issues](https://github.com/idinium96/tf2autobot/issues) to see if someone has gotten the error before, if not, then please create an issue with the error.
 
 
 ***
