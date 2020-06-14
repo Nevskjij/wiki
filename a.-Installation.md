@@ -46,7 +46,7 @@ When the bot has been downloaded you need to install the modules. Do this by nav
 
 # Compiling source
 
-If you already have installed TypeScript, then `npm build` will compile the code. If you haven't then see [Installing TypeScript](https://github.com/Nicklason/tf2-automatic/wiki/Installation#installing-typescript).
+If you already have installed TypeScript, then `npm build` will compile the code. If you haven't then see [Installing TypeScript](https://github.com/idinium96/tf2autobot/wiki/a.-Installation#installing-typescript).
 
 Compile the source using `npm run build`
 
