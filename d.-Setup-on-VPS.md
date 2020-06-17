@@ -33,11 +33,11 @@ Connect to the VPS and sign in.
 Paste in the following commands:
 
 ```
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-This will install NodeJS v13.x together with NPM.
+This will install NodeJS v12.x together with NPM.
 
 Once done, you can check if NodeJS and NPM are installed by checking their versions.
 
