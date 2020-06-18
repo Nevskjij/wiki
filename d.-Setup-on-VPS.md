@@ -4,7 +4,7 @@ This page will go through how to set up the bot on a Linux server so that it wil
 
 You can get a VPS from many different providers, but I recommend getting one from Hetzner OR DigitalOcean. If you want to use DigitalOcean, you can register from [this link](https://m.do.co/c/6be9c5acd3ca) and get $100 that expires after 2 months.
 
-If you don't have any Credit/Debit Card, Paypal account or you don't have an access to get one, I can help you to get one for your Team Fortress 2 pure. [Click here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Service/) to see the available services.
+If you don't have any Credit/Debit Card, Paypal account or you don't have an access to get one, I can help you to get one for your Team Fortress 2 pure. [Click here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services) to see the available services.
 
 * Choose the highest Ubuntu LTS version (20.04 as of writing this)
 * Select the standard $5 plan (DigitalOcean) or €2.49 plan (Hetzner) - This will be enough to run the bot with, you can even run multiple on the same server.
