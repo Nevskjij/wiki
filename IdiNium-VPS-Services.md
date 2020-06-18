@@ -1,4 +1,4 @@
-Please contact me through [![Discord](https://img.shields.io/discord/664971400678998016.svg)](https://discord.gg/ZrVT7mc)
+Please contact me through Discord Server: [![Discord](https://img.shields.io/discord/664971400678998016.svg)](https://discord.gg/ZrVT7mc)
 
 # Shared VPS Service
 ## FAQ about IdiNium's VPS Service
