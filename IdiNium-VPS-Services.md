@@ -62,7 +62,7 @@ A: No, because I will only add your SSH Public Key, which means I can't connect 
 ### Q: Is there any other services available?
 A: Yes:
 - Backup: automatic copies of your server disks (7 slots for backups) - adds 20%/month
-- Snapshots: instant copies of your disks - adds 0.5 ref/GB/month
+- Snapshots: instant copies of your disks - add 1 ref/GB/month
 - Floating IPs - adds 40 ref/month
 - Add more Volumes (up to 10 TB) - adds 1.5 ref/GB/month
 - Rescale (change your current service) - add to the respective amount of keys/refs.
