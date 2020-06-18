@@ -1,7 +1,8 @@
+# IdiNium's VPS Services
 Please contact me through Discord Server: [![Discord](https://img.shields.io/discord/664971400678998016.svg)](https://discord.gg/ZrVT7mc)
 
 # Shared VPS Service
-## FAQ about IdiNium's VPS Service
+## FAQ
 
 ### Q: How does it work?
 A: It's like, you own your own VPS, but it is limited only to run your bot and you'll have an access to manage your bot all by yourself (which means I will not bother your ecosystem.json file that contains your bot credentials and etc). You'll only need to provide me the SSH Public Key that you generated using PuTTYgen and I'll provide you the IP address of my VPS.
@@ -20,7 +21,7 @@ A: Yes you can, read this: https://github.com/ZeusJunior/tf2-automatic-gui/wiki/
 
 # Standalone VPS Service
 
-Want a non-shared VPS? Your VAT is too high? You don't have Credit/Debit Card or Paypal to pay for a VPS service? You don't have access to a VPS service because it's restricted by your government?
+Want a non-shared VPS? Your VAT is too high? You don't have a Credit/Debit Card or Paypal to pay for a VPS service? You don't have access to a VPS service because it's restricted by your government?
 
 **I am here to help you to get one for your TF2 pure!**
 
@@ -47,15 +48,15 @@ Want a non-shared VPS? Your VAT is too high? You don't have Credit/Debit Card or
 `[16 vCPU¹, 32 GB RAM, 360 GB NVMe SSD, 20 TB Traffic]` — 31 keys + 10 ref/month
 
 Note:
-**CX** — Balanced amount of CPU and RAM based on Intel:registered: Gold processors (`vCPU⁰`).
+**CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
 **CPX** — Optimized for CPU performance based on AMD EPYC 2nd Gen processors (`vCPU¹`).
 
 ## FAQ
 ### Q: How this works?
 A: I will create a new VPS from Hetzner, you'll only need to provide me your SSH Public Key so it will be added to your VPS and you can connect to it after you've sent the correct amount of pure and I've successfully accepted it. You will have FULL CONTROL over your own VPS.
 
-### Q: Will you (IdiNium) have an access to my VPS?
-A: No, because I will only add your SSH Public Key, which mean I can't connect to your VPS because I don't have a Private Key that associated with your Public Key, so it's 100% your responsibility.
+### Q: Will you (IdiNium) have access to my VPS?
+A: No, because I will only add your SSH Public Key, which means I can't connect to your VPS because I don't have a Private Key that associated with your Public Key, so it's 100% your responsibility.
 
 ### Q: Is there any other services available?
 A: Yes:
