@@ -47,7 +47,9 @@ Want a non-shared VPS? Your VAT is too high? You don't have a Credit/Debit Card 
 `[16 vCPU¹, 32 GB RAM, 360 GB NVMe SSD, 20 TB Traffic]` — 31 keys + 10 ref/month
 
 Note:
+
 **CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
+
 **CPX** — Optimized for CPU performance based on AMD EPYC 2nd Gen processors (`vCPU¹`).
 
 ## FAQ
