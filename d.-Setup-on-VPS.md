@@ -2,15 +2,16 @@ This page will go through how to set up the bot on a Linux server so that it wil
 
 # Getting a VPS
 
-You can get a VPS from many different providers, but I recommend getting one from DigitalOcean. If you haven't made an account already, then you can use [this link](https://m.do.co/c/6be9c5acd3ca) and get $100 that expires after 2 months.
+You can get a VPS from many different providers, but I recommend getting one from Hetzner OR DigitalOcean. If you want to use DigitalOcean, you can register from [this link](https://m.do.co/c/6be9c5acd3ca) and get $100 that expires after 2 months.
 
-Once you have created an account or signed in using an existing one, go to https://cloud.digitalocean.com/droplets/new and create a droplet.
+If you don't have any Credit/Debit Card, Paypal account or you don't have an access to get one, I can help you to get one for your Team Fortress 2 pure. [Click here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Service/) to see the available services.
+
 * Choose the highest Ubuntu LTS version (20.04 as of writing this)
-* Select the standard $5 plan - This will be enough to run the bot with, you can even run multiple on the same server.
+* Select the standard $5 plan (DigitalOcean) or €2.49 plan (Hetzner) - This will be enough to run the bot with, you can even run multiple on the same server.
 * Choose a region in which the VPS will be located.
-* Choose authentication method, a one-time password is easy but vulnerable (you can always set up an SSH key later)
-* No volume or backups is needed
-* Click on "Create" to create the VPS
+* Choose the authentication method, a one-time password is easy but vulnerable (so it's recommended to use SSH key).
+* No volume or backups is needed.
+* Click on "Create" to create the VPS.
 
 If you chose the one-time password authentication, you will then receive an email with the IP, username, and password.
 
@@ -54,6 +55,9 @@ npm -v
 # Downloading the bot
 
 The same process as on your desktop, see [installation guide](https://github.com/idinium96/tf2autobot/wiki/a.-Installation#downloading-the-bot)
+
+If you're using Hetzner, git is not installed by default. You'll need to install it first:
+`sudo apt-get install git`
 
 ```
 git clone https://github.com/idinium96/tf2autobot.git
