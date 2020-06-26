@@ -4,19 +4,19 @@ Please contact me through Discord Server: [![Discord](https://img.shields.io/dis
 ## FAQ
 
 ### Q: How does it work?
-A: It's like, you own your own VPS, but it is limited only to run your bot and you'll have an access to manage your bot all by yourself (which means I will not bother your ecosystem.json file that contains your bot credentials and etc). You'll only need to provide me the SSH Public Key that you generated using PuTTYgen and I'll provide you the IP address of my VPS.
+> A: It's like, you own your own VPS, but it is limited only to run your bot and you'll have an access to manage your bot all by yourself (which means I will not bother your ecosystem.json file that contains your bot credentials and etc). You'll only need to provide me the SSH Public Key that you generated using PuTTYgen and I'll provide you the IP address of my VPS.
 
 ### Q: How many I need to pay per month?
-A: You'll only need to pay **1 key/month** and it's limited to only run **1 bot**. If you want to run more bot, you'll need to add more keys.
+> A: You'll only need to pay **1 key/month** and it's limited to only run **1 bot**. If you want to run more bot, you'll need to add more keys.
 
 ### Q: Do you (IdiNium) has access to my files and etc?
-A: Yes, but I want to emphasize that I will not bother to get your bot info/items/etc illegally. I will only do monitor how many bots you're running on your account, the RAM usage (if it's too big, then I will notify you to do maintenance on your bot polldata.json), update the VPS system if there is any and make sure it stays alive.
+> A: Yes, but I want to emphasize that I will not bother to get your bot info/items/etc illegally. I will only do monitor how many bots you're running on your account, the RAM usage (if it's too big, then I will notify you to do maintenance on your bot polldata.json), update the VPS system if there is any and make sure it stays alive.
 
 ### Q: Is it safe?
-A: Yes, for sure I will make sure it's safe to use. It's also **your responsibility** to keep your SSH Private Key and the IP address of my VPS safe to does not fall into the hands of irresponsible people (which means you need to prevent phishing websites/downloading malware, viruses and etc).
+> A: Yes, for sure I will make sure it's safe to use. It's also **your responsibility** to keep your SSH Private Key and the IP address of my VPS safe to does not fall into the hands of irresponsible people (which means you need to prevent phishing websites/downloading malware, viruses and etc).
 
 ### Q: Can I use `tf2-automatic-gui` on my VPS?
-A: Yes you can, read this: https://github.com/ZeusJunior/tf2-automatic-gui/wiki/Installation-on-VPS, but since you're on a shared VPS, I will assign you to a different port (you'll not using the port 3000 as mentioned on the wiki) and you'll need to edit something to make it work - this is also will add more security since you're not using the common port 3000 as in the wiki. **Please let me know if you want to use it so I can assign you to a port that only you know what port you're using.**
+> A: Yes you can, read this: https://github.com/ZeusJunior/tf2-automatic-gui/wiki/Installation-on-VPS, but since you're on a shared VPS, I will assign you to a different port (you'll not using the port 3000 as mentioned on the wiki) and you'll need to edit something to make it work - this is also will add more security since you're not using the common port 3000 as in the wiki. **Please let me know if you want to use it so I can assign you to a port that only you know what port you're using.**
 
 # Standalone VPS Service
 
@@ -54,13 +54,13 @@ Note:
 
 ## FAQ
 ### Q: How this works?
-A: I will create a new VPS from Hetzner, you'll only need to provide me your SSH Public Key so it will be added to your VPS and you can connect to it after you've sent the correct amount of pure and I've successfully accepted it. You will have FULL CONTROL over your own VPS.
+> A: I will create a new VPS from Hetzner, you'll only need to provide me your SSH Public Key so it will be added to your VPS and you can connect to it after you've sent the correct amount of pure and I've successfully accepted it. You will have FULL CONTROL over your own VPS.
 
 ### Q: Will you (IdiNium) have access to my VPS?
-A: No, because I will only add your SSH Public Key, which means I can't connect to your VPS because I don't have a Private Key that associated with your Public Key, so it's 100% your responsibility.
+> A: No, because I will only add your SSH Public Key, which means I can't connect to your VPS because I don't have a Private Key that associated with your Public Key, so it's 100% your responsibility.
 
 ### Q: Is there any other services available?
-A: Yes:
+> A: Yes:
 - Backup: automatic copies of your server disks (7 slots for backups) - adds 20%/month
 - Snapshots: instant copies of your disks - add 1 ref/GB/month
 - Floating IPs - adds 40 ref/month
@@ -68,4 +68,4 @@ A: Yes:
 - Rescale (change your current service) - add to the respective amount of keys/refs.
 
 ### Q: Any other services other than cloud VPS?
-A: Yes, visit https://www.hetzner.de/?country=ot and I'll decide the price in pure.
+> A: Yes, visit https://www.hetzner.de/?country=ot and I'll decide the price in pure.
