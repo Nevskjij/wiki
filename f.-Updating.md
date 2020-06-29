@@ -1,4 +1,4 @@
-This page will go through how to update the bot. If you have not downloaded the bot, then go to https://github.com/idinium96/tf2autobot/wiki/Installation.
+This page will go through how to update the bot. If you have not downloaded the bot, then go to https://github.com/idinium96/tf2autobot/wiki/a.-Installation.
 
 # Updating the bot
 
