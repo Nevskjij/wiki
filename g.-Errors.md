@@ -31,7 +31,7 @@ Now re-open your maFile. You should be able to get your secrets now.
 
 # Startup errors
 ### Missing required enviroment variable
-When updating your enviromental variables, almost make sure you restart the bot with the `--update-env` option if you are using PM2. As explained [here](https://github.com/Nicklason/tf2-automatic/wiki/PM2#updating-environment-variables) 
+When updating your enviromental variables, almost make sure you restart the bot with the `--update-env` option if you are using PM2. As explained [here](https://github.com/Nicklason/tf2autobot/wiki/PM2#updating-environment-variables) 
 ##### ecosystem.json
 You need to make sure your file is **NOT** called `ecosystem.template.json`. It needs to be `ecosystem.json`.  
 
@@ -55,7 +55,7 @@ As it says in the console with the message about the error, set `SKIP_ACCOUNT_LI
 
 ### Unexpected token in JSON
 There are multiple cases where this may happen. If your error looks somewhat like this: ![https://i.imgur.com/mKMp3i5.png](https://i.imgur.com/mKMp3i5.png "error")  
-Then something went wrong with your `polldata.json` file. This is located in the `tf2-automatic/files/{your steamid}/` folder. Simply deleting it will fix the issue.
+Then something went wrong with your `polldata.json` file. This is located in the `tf2autobot/files/{your steamid}/` folder. Simply deleting it will fix the issue.
 
 If this issue is not solved by deleting your `polldata.json` file, check your `pricelist.json` file for corruption. Making a regular backup of your `pricelist.json` file is always recommended.
 
