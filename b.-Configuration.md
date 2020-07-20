@@ -6,7 +6,7 @@ The bot is configured through environment variables. These variables can be set 
 
 Create a new file inside the tf2autobot folder and call it `.env` and add the variables like in the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file.
 
-An alternative to environment files is the [PM2 ecosystem file](https://github.com/idinium96/tf2autobot/wiki/PM2).
+An alternative to environment files is the [PM2 ecosystem file](https://github.com/idinium96/tf2autobot/wiki/e.-Running-with-PM2).
 
 ## Required
 
