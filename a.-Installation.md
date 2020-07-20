@@ -42,7 +42,7 @@ The bot is made with TypeScript. This means that you need to compile the source 
 
 # Installing modules
 
-When the bot has been downloaded you need to install the modules. Do this by navigating to the tf2-automatic folder with the command prompt or a terminal and using the command `npm install`.
+When the bot has been downloaded you need to install the modules. Do this by navigating to the tf2autobot folder with the command prompt or a terminal and using the command `npm install`.
 
 # Compiling source
 
