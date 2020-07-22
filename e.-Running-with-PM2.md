@@ -22,7 +22,7 @@ pm2 startup
 
 # Ecosystem file
 
-PM2 has a way to start a script from a file, there is a [template](https://github.com/idinium96/tf2autobot/blob/master/ecosystem.template.json) that shows what this file should look like. The file contains settings for how PM2 should run the process and the environment files that the script will run with.
+PM2 has a way to start a script from a file, there is a [template](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) that shows what this file should look like. The file contains settings for how PM2 should run the process and the environment files that the script will run with.
 
 Create a new file and call it `ecosystem.json` and paste in the template. If you are running the bot on a Linux VPS, then you can set `shutdown_with_message` to `false`.
 
