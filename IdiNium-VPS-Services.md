@@ -4,7 +4,7 @@ Please contact me through Discord Server: [![Discord](https://img.shields.io/dis
 ## FAQ
 
 ### Q: How does it work?
-> A: It's like, you own your own VPS, but it is limited only to run your bot and you'll have an access to manage your bot all by yourself (which means I will not bother your ecosystem.json file that contains your bot credentials and etc). You'll only need to provide me the SSH Public Key that you generated using PuTTYgen and I'll provide you the IP address of my VPS.
+> A: It's like, you own your own Virtual Private Server (VPS), but it is limited only to run your bot and you'll have an access to manage your bot all by yourself (which means I will not bother your ecosystem.json file that contains your bot credentials and etc). You'll only need to provide me the SSH Public Key that you generated using PuTTYgen and I'll provide you the IP address of my VPS.
 
 ### Q: How many I need to pay per month?
 > A: You'll only need to pay **1 key/month** and it's limited to only run **1 bot**. If you want to run more bot, you'll need to add more keys.
