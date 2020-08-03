@@ -1,6 +1,6 @@
 Please contact me through Discord Server: [![Discord](https://img.shields.io/discord/664971400678998016.svg)](https://discord.gg/ZrVT7mc)
 
-# Shared VPS Service [DISCONTINUED - Please skip this and go to [here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services#standalone-vps-service)]
+# Shared VPS Service [DISCONTINUED - Only [this](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services#standalone-vps-service)]
 ## FAQ
 
 ### Q: How does it work?
