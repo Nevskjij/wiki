@@ -29,10 +29,9 @@ Want a VPS to run your bot? Your VAT is too high? You don't have a Credit/Debit 
 `[16 vCPU¹, 32 GB RAM, 360 GB NVMe SSD, 20 TB Traffic]` — 37 keys + 45 ref/month
 
 Note:
-
 **CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
-
 **CPX** — Optimized for CPU performance based on AMD EPYC 2nd Gen processors (`vCPU¹`).
+_**Price will change based on the current ref/USD, key rate (1 key = x ref), and EUR/USD rate**_
 
 ## FAQ
 ### Q: How this works?
