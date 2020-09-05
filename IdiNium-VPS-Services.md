@@ -33,7 +33,7 @@ Note:
 
 **CPX** — Optimized for CPU performance based on AMD EPYC 2nd Gen processors (`vCPU¹`).
 
-_**Price will change based on the current ref/USD, key rate (1 key = x ref), and EUR/USD rate**_
+_**Price will change based on the current USD/ref, key rate (1 key = x ref), and EUR/USD rate**_
 
 ## FAQ
 ### Q: How this works?
