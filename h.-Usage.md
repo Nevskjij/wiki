@@ -1,4 +1,7 @@
-# I. Add item to pricelist with !add command
+Used to update Wiki page: https://github.com/idinium96/tf2autobot/wiki/h.-Usage
+Contributors are welcome.
+
+# I. Add item to pricelist with `!add` command
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add**.
@@ -142,13 +145,14 @@ Example on what you want to have:
 
 # II. Update items listing settings with `!update` command
 
-Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent` and maybe manually price items that your bot bought. In order to do that, you will need to use `!update` command.
+Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent` and maybe manually price items that your bot bought. In order to do that, you will need to use **!update** command.
 
-An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items has been added to the pricelist, now you can use new identifying parameter instead of `name`, `defindex` and `sku`: `item` parameter.
+An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items has been added to the pricelist, now you can use new identifying parameter instead of `name`, `defindex` and `sku`: the **`item`** identifying parameter.
 
 To use `item` parameter, simply put the full item name. When you're using the `!add` command with `name` or `defindex` identifying parameter, you need to use sub-parameters to specifically add your targeted item, but not with `item` parameter.
 
 -   Example 1: Let say you want to update the `max` to 3.
+
     -   Non-Craftable Tour of Duty Ticket:
         -   When adding item using `!add` command (3 options):
             -   `!add name=Tour of Duty Ticket&craftable=false` OR
@@ -171,3 +175,32 @@ To use `item` parameter, simply put the full item name. When you're using the `!
             -   `!update defindex=31089&quality=Unusual&effect=Pyroland Daydream&intent=sell&sell.keys=300&buy.keys=100`
             -   `!update sku=31089;5;u145&intent=sell&sell.keys=300&buy.keys=100`
             -   `!update item=Pyroland Daydream Smissmas Saxton&intent=sell&sell.keys=300&buy.keys=100`
+
+\*Note:
+
+-   There is also an option for you to update the listing settings parameter on every items at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
+    -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
+
+# III. Remove items from pricelist with `!remove` command.
+
+If you want to remove an item from the pricelist, simply use any identifying parameters (`name`, `defindex`, `sku` or `item`).
+
+-   Example: You want to remove Non-Craftable Tour of Duty Ticket (4 options)
+    -   `!remove name=Tour of Duty Ticket&craftable=false`
+    -   `!remove defindex=725&craftable=false`
+    -   `!remove sku=725;6;uncraftable`
+    -   `!remove item=Non-Craftable Tour of Duty Ticket`
+
+\*Note:
+
+You can also remove the entire pricelist with `!remove all=true`. Once you've sent this to your bot, it will reply with:
+
+"`⚠️ Are you sure that you want to remove x items? Try again with i_am_sure=yes_i_am`"
+
+Confirm to remove all items from the pricelist with `!remove all=true&i_am_sure=yes_i_am`.
+
+# IV. Other commands
+
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/92597293-c7ac3c00-f2d9-11ea-8089-89f9973b4ab4.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+If you need any help, please contact us at our [Discord server](https://discord.gg/ZrVT7mc).
