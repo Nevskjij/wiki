@@ -1,4 +1,7 @@
-# I. Add item to pricelist
+Used to update Wiki page: https://github.com/idinium96/tf2autobot/wiki/h.-Usage
+Contributors are welcome.
+
+# I. Add item to pricelist with !add command
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add**.
@@ -139,3 +142,35 @@ Example on what you want to have:
 
 -   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
+
+# II. Update items listing settings with `!update` command
+
+Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent` and maybe manually price items that your bot bought. In order to do that, you will need to use `!update` command.
+
+An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items has been added to the pricelist, now you can use new identifying parameter instead of `name`, `defindex` and `sku`: `item` parameter.
+
+To use `item` parameter, simply put the full item name. When you're using the `!add` command with `name` or `defindex` identifying parameter, you need to use sub-parameters to specifically add your targeted item, but not with `item` parameter.
+
+-   Example 1: Let say you want to update the `max` to 3.
+    -   Non-Craftable Tour of Duty Ticket:
+        -   When adding item using `!add` command (3 options):
+            -   `!add name=Tour of Duty Ticket&craftable=false` OR
+            -   `!add defindex=725&craftable=false`
+            -   `!add sku=725;6;uncraftable`
+        -   When updating the item using `!update` command (4 options):
+            -   `!update name=Tour of Duty Ticket&craftable=false&max=3`
+            -   `!update defindex=725&craftable=false&max=3`
+            -   `!update sku=725;6;uncraftable&max=3`
+            -   `!update item=Non-Craftable Tour of Duty Ticket&max=3`
+
+-   Example 2: Let say you want to update the `intent` to sell and manually price the item:
+    -   Pyroland Daydream Smissmas Saxton:
+        -   When adding item using `!add` command (3 options):
+            -   `!add name=Smissmas Saxton&quality=Unusual&effect=Pyroland Daydream` OR
+            -   `!add defindex=31089&quality=Unusual&effect=Pyroland Daydream`
+            -   `!add sku=31089;5;u145`
+        -   When updating the item using `!update` command (4 options):
+            -   `!update name=Smissmas Saxton&quality=Unusual&effect=Pyroland Daydream&intent=sell&sell.keys=300&buy.keys=100`
+            -   `!update defindex=31089&quality=Unusual&effect=Pyroland Daydream&intent=sell&sell.keys=300&buy.keys=100`
+            -   `!update sku=31089;5;u145&intent=sell&sell.keys=300&buy.keys=100`
+            -   `!update item=Pyroland Daydream Smissmas Saxton&intent=sell&sell.keys=300&buy.keys=100`
