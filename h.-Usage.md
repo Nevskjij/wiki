@@ -77,7 +77,7 @@ So how can I find the sku of a specific item?
 -   If "No items found", simply click on the "In stock" button two to the right of the search bar and it will change to "Not In Stock".
 -   If your desired item appeared, click on it and take a look on the URL. The item sku is right at the end of the URL.
 
-<div align="center"><img src="https://user-images.githubusercontent.com/47635037/92546648-a15cb100-f285-11ea-82ba-2078987c2be1.gif" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+<div align="center"><img src="https://media.giphy.com/media/Pj78znBQro1BZu0CiE/giphy.gif" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 Example 1:
 
