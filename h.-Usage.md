@@ -115,27 +115,25 @@ _Table a.2: Listing settings parameters._
 
 Example on what you want to have:
 
-Example 1:
+-   Example 1:
+    -   Item: Max's Severed Head (`162;6`)
+    -   intent: bank
+    -   min: 0
+    -   max: 3
+    -   autoprice: true
+    -   enabled: true
+    -   command: `!add sku=162;6&max=3` (no need to add the other this since they are all default).
 
--   Item: Max's Severed Head (`162;6`)
--   intent: bank
--   min: 0
--   max: 3
--   autoprice: true
--   enabled: true
--   command: `!add sku=162;6&max=3` (no need to add the other this since they are all default).
-
-Example 2:
-
--   Item: Strange Australium Stickybomb Launcher (`207;11;australium`)
--   intent: sell
--   min: 0
--   max: 1
--   autoprice: false
--   enabled: true
--   sell price: 23 keys
--   buy price: 19 keys, 21.55 ref
--   command: `!add sku=207;11;australium&intent=sell&sell.keys=23&buy.keys=19&buy.metal=21.55`
+-   Example 2:
+    -   Item: Strange Australium Stickybomb Launcher (`207;11;australium`)
+    -   intent: sell
+    -   min: 0
+    -   max: 1
+    -   autoprice: false
+    -   enabled: true
+    -   sell price: 23 keys
+    -   buy price: 19 keys, 21.55 ref
+    -   command: `!add sku=207;11;australium&intent=sell&sell.keys=23&buy.keys=19&buy.metal=21.55`
 
 \*Notes:
 -   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
