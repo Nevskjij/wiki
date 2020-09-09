@@ -73,7 +73,7 @@ Example:
 
 ## I.1.2 - `sku` parameter
 
-This parameter is recommended because you will no longer need to use the sub-parameters in a.1 table.
+This parameter is recommended because you will no longer need to use the sub-parameters in Table I.1.
 So how can I find the sku of a specific item?
 
 -   Go to [Marketplace.tf](https://marketplace.tf/).
