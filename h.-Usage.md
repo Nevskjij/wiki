@@ -15,20 +15,20 @@ You have 3 choices of item identifying parameters on how you want to add your it
 
 These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed need more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
 
-|  Parameter   | Default  | Description                                                                                                                     |
-| :----------: | :------: | :------------------------------------------------------------------------------------------------------------------------------ |
-| `craftable`  |  `true`  | Set to `false` if you want the item to be a Non-Craftable.                                                                      |
-|  `quality`   | `Unique` | Normal/Genuine/Vintage/Unusual/Unique/Community/Valve/Self-made/Strange/Haunted/Collector's/Decorated (this is case sensitive). |
-| `australium` | `false`  | Set to `true` if you want that item to be an Australium (Australium-able weapons only).                                         |
-|   `effect`   |  `null`  | An Unusual effect name, for example: `Sunbeams` or `Green Confetti`.                                                            |
-| `killstreak` |   `0`    | This should be in integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak and 3 - Professional Killstreak.           |
-|  `festive`   | `false`  | `true` or `false`.                                                                                                              |
-|  `paintkit`  |  `null`  | When adding a decorated weapon/skin. This should be the War Paint name (broken).                                                |
+|  Parameter   | Default  | Description                                                                                                                                |
+| :----------: | :------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| `craftable`  |  `true`  | Set to `false` if you want the item to be a Non-Craftable.                                                                                 |
+|  `quality`   | `Unique` | Normal/ Genuine/ Vintage/ Unusual/ Unique/ Community/ Valve/ Self-made/ Strange/ Haunted/ Collector's/ Decorated (this is case sensitive). |
+| `australium` | `false`  | Set to `true` if you want that item to be an Australium (Australium-able weapons only).                                                    |
+|   `effect`   |  `null`  | An Unusual effect name, for example: `Sunbeams` or `Green Confetti`.                                                                       |
+| `killstreak` |   `0`    | This should be in integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak and 3 - Professional Killstreak.                      |
+|  `festive`   | `false`  | `true` or `false`.                                                                                                                         |
+|  `paintkit`  |  `null`  | When adding a decorated weapon/skin. This should be the War Paint name (broken).                                                           |
 
 Example:
 
 -   Tour of Duty Ticket:
-    -   `!add name=Tour of Duty Ticket` OR 
+    -   `!add name=Tour of Duty Ticket` OR
     -   `!add defindex=725` (no need to add sub-parameter since this is the default).
 -   Non-Craftable Tour of Duty Ticket:
     -   `!add name=Tour of Duty Ticket&craftable=false` OR
@@ -58,7 +58,7 @@ Example:
 \*Notes:
 
 -   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes. Please choose the one at top with the name **Decoder Ring** and use `!add defindex=5021`.
--   Festive and Festivized are two different things. When adding a Festive weapon, please include `Festive` in the item name, but if `Festivized`, you need to add sub-parameter `festive=true`.
+-   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name, but if `Festivized`, you need to add sub-parameter `festive=true`.
 
 ## a.1.2 - `sku` parameter
 
@@ -83,3 +83,5 @@ Example 2:
 -   URL: https://marketplace.tf/items/tf2/424;11;australium;kt-2;festive
 -   `sku`: 424;11;australium;kt-2;festive
 -   to add: `!add sku=424;11;australium;kt-2;festive`
+
+## a.2 - Item listing characteristics parameters
