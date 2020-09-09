@@ -13,7 +13,7 @@ You have 3 choices of item identifying parameters on how you want to add your it
 
 ## I.1.1 - `name` and `defindex` parameters
 
-These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed to need more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
+These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed to choose the item, so it needs more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
 
 _Table I.1: Sub-parameters for `name` and `defindex`._
 
@@ -23,7 +23,7 @@ _Table I.1: Sub-parameters for `name` and `defindex`._
 |  `quality`   | `Unique` | Normal/ Genuine/ Vintage/ Unusual/ Unique/ Community/ Valve/ Self-made/ Strange/ Haunted/ Collector's/ Decorated (this is case sensitive). |
 | `australium` | `false`  | Set to `true` if you want that item to be an Australium (Australium-able weapons only).                                                    |
 |   `effect`   |  `null`  | An Unusual effect name, for example: `Sunbeams` or `Green Confetti`.                                                                       |
-| `killstreak` |   `0`    | This should be in an integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak and 3 - Professional Killstreak.                      |
+| `killstreak` |   `0`    | This should be in an integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak, and 3 - Professional Killstreak.                      |
 |  `festive`   | `false`  | Set to `true` if the item is Festivized.                                                                                                                         |
 |  `paintkit`  |  `null`  | When adding a decorated weapon/skin. This should be the War Paint name (broken).                                                           |
 
@@ -67,7 +67,7 @@ Example:
 
     <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92545998-0adbc000-f284-11ea-990e-15cf44b7b271.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
--   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name (oh and yes, the item defindex is also different), but if `Festivized`, you need to add sub-parameter `festive=true`.
+-   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name (oh and yes, the item defindex is also different), but if `Festivized`, you need to add the sub-parameter `festive=true`.
 
 -   If you want to add `Name Tag` or `Non-Craftable Name Tag`, you will need to use the correct defindex, which is `5020` instead of `2093`. This bug can not be fixed unless Team Fortress 2 updates its schema to remove the wrong defindex.
 
@@ -104,7 +104,7 @@ _Table I.2: Listing settings parameters._
 
 |   Parameter   | Default | Description                                                                                                                                     |
 | :-----------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `intent`    | `bank`  | Other option is `buy` or `sell`. If set to `buy`, then your bot will only create buy listing for that item and once bought, it will be removed. |
+|   `intent`    | `bank`  | Other option is `buy` or `sell`. If set to `buy`, then your bot will only create a buying listing for that item, and once bought, it will be removed. |
 |     `min`     |   `0`   | Minimum stock to keep.                                                                                                                          |
 |     `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                |
 |  `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.    |
@@ -146,7 +146,7 @@ Example of what you want to have:
 
 Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent`, and maybe manually price items that your bot bought. In order to do that, you will need to use **!update** command.
 
-An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items have been added to the pricelist, now you can use a new identifying parameter instead of `name`, `defindex` and `sku`: the **`item`** identifying parameter.
+An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items have been added to the pricelist, now you can use a new identifying parameter instead of `name`, `defindex`, and `sku`: the **`item`** identifying parameter.
 
 To use `item` parameter, simply put the full item name. When you're using the `!add` command with `name` or `defindex` identifying parameter, you need to use sub-parameters to specifically add your targeted item, but not with `item` parameter.
 
