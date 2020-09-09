@@ -1,4 +1,4 @@
-# a. Add item to pricelist
+# a. Add items to the pricelist
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add**.
