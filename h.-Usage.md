@@ -24,7 +24,7 @@ _Table I.1: Sub-parameters for `name` and `defindex`._
 | `australium` | `false`  | Set to `true` if you want that item to be an Australium (Australium-able weapons only).                                                    |
 |   `effect`   |  `null`  | An Unusual effect name, for example: `Sunbeams` or `Green Confetti`.                                                                       |
 | `killstreak` |   `0`    | This should be in integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak and 3 - Professional Killstreak.                      |
-|  `festive`   | `false`  | `true` or `false`.                                                                                                                         |
+|  `festive`   | `false`  | Set to `true` if the item is Festivized.                                                                                                                         |
 |  `paintkit`  |  `null`  | When adding a decorated weapon/skin. This should be the War Paint name (broken).                                                           |
 
 Example:
