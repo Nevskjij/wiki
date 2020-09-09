@@ -1,9 +1,9 @@
-# a. Add item to pricelist
+# I. Add item to pricelist
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add**.
 
-## a.1 - Item identifying parameter
+## I.1 - Item identifying parameter
 
 You have 3 choices of item identifying parameters on how you want to add your items:
 
@@ -11,11 +11,11 @@ You have 3 choices of item identifying parameters on how you want to add your it
 2. `defindex` - The item definition index. You can find it [here](https://wiki.alliedmods.net/Team_Fortress_2_Item_Definition_Indexes) or [here](https://docs.google.com/spreadsheets/d/11bv5J-l1UCNjvTF2FyiqivbQds8LxBCQj0QBpw6Ukec/edit#gid=0)
 3. `sku` **(recommended)** - The item "Stock Keeping Unit".
 
-## a.1.1 - `name` and `defindex` parameters
+## I.1.1 - `name` and `defindex` parameters
 
 These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed need more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
 
-_Table a.1: Sub-parameters for `name` and `defindex`._
+_Table I.1: Sub-parameters for `name` and `defindex`._
 
 |  Parameter   | Default  | Description                                                                                                                                |
 | :----------: | :------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
@@ -69,7 +69,7 @@ Example:
 
 -   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name (oh and yes, the item defindex is also different), but if `Festivized`, you need to add sub-parameter `festive=true`.
 
-## a.1.2 - `sku` parameter
+## I.1.2 - `sku` parameter
 
 This parameter is recommended because you will no longer need to use the sub-parameters in a.1 table.
 So how can I find the sku of a specific item?
@@ -94,11 +94,11 @@ So how can I find the sku of a specific item?
     -   `sku`: 424;11;australium;kt-2;festive
     -   to add: `!add sku=424;11;australium;kt-2;festive`
 
-## a.2 - Item listing settings parameters
+## I.2 - Item listing settings parameters
 
 When adding items with only identifying parameter, the item will be set to have the default settings for it to be listed on backpack.tf.
 
-_Table a.2: Listing settings parameters._
+_Table I.2: Listing settings parameters._
 
 |   Parameter   | Default | Description                                                                                                                                     |
 | :-----------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
