@@ -23,8 +23,8 @@ _Table I.1: Sub-parameters for `name` and `defindex`._
 |  `quality`   | `Unique` | Normal/ Genuine/ Vintage/ Unusual/ Unique/ Community/ Valve/ Self-made/ Strange/ Haunted/ Collector's/ Decorated (this is case sensitive). |
 | `australium` | `false`  | Set to `true` if you want that item to be an Australium (Australium-able weapons only).                                                    |
 |   `effect`   |  `null`  | An Unusual effect name, for example: `Sunbeams` or `Green Confetti`.                                                                       |
-| `killstreak` |   `0`    | This should be in an integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak, and 3 - Professional Killstreak.                      |
-|  `festive`   | `false`  | Set to `true` if the item is Festivized.                                                                                                                         |
+| `killstreak` |   `0`    | This should be in an integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak, and 3 - Professional Killstreak.                  |
+|  `festive`   | `false`  | Set to `true` if the item is Festivized.                                                                                                   |
 |  `paintkit`  |  `null`  | When adding a decorated weapon/skin. This should be the War Paint name (broken).                                                           |
 
 Example:
@@ -102,17 +102,17 @@ When adding items with only identifying parameter, the item will be set to have 
 
 _Table I.2: Listing settings parameters._
 
-|   Parameter   | Default | Description                                                                                                                                     |
-| :-----------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+|   Parameter   | Default | Description                                                                                                                                           |
+| :-----------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   `intent`    | `bank`  | Other option is `buy` or `sell`. If set to `buy`, then your bot will only create a buying listing for that item, and once bought, it will be removed. |
-|     `min`     |   `0`   | Minimum stock to keep.                                                                                                                          |
-|     `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                |
-|  `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.    |
-|  `buy.keys`   |   `0`   | Manually set buying price in keys.                                                                                                              |
-| `buy.metals`  |   `0`   | Manually set buying price in refined metal.                                                                                                     |
-|  `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                             |
-| `sell.metals` |   `0`   | Manually set selling price in refined metal.                                                                                                    |
-|   `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                 |
+|     `min`     |   `0`   | Minimum stock to keep.                                                                                                                                |
+|     `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                      |
+|  `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.          |
+|  `buy.keys`   |   `0`   | Manually set buying price in keys.                                                                                                                    |
+| `buy.metals`  |   `0`   | Manually set buying price in refined metal.                                                                                                           |
+|  `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                                   |
+| `sell.metals` |   `0`   | Manually set selling price in refined metal.                                                                                                          |
+|   `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                       |
 
 Example of what you want to have:
 
