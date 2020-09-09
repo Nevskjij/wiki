@@ -13,7 +13,7 @@ You have 3 choices of item identifying parameters on how you want to add your it
 
 ## I.1.1 - `name` and `defindex` parameters
 
-These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed need more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
+These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed to need more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
 
 _Table I.1: Sub-parameters for `name` and `defindex`._
 
@@ -23,7 +23,7 @@ _Table I.1: Sub-parameters for `name` and `defindex`._
 |  `quality`   | `Unique` | Normal/ Genuine/ Vintage/ Unusual/ Unique/ Community/ Valve/ Self-made/ Strange/ Haunted/ Collector's/ Decorated (this is case sensitive). |
 | `australium` | `false`  | Set to `true` if you want that item to be an Australium (Australium-able weapons only).                                                    |
 |   `effect`   |  `null`  | An Unusual effect name, for example: `Sunbeams` or `Green Confetti`.                                                                       |
-| `killstreak` |   `0`    | This should be in integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak and 3 - Professional Killstreak.                      |
+| `killstreak` |   `0`    | This should be in an integer of 1 to 3 only. 1 - Killstreak, 2 - Specialized Killstreak and 3 - Professional Killstreak.                      |
 |  `festive`   | `false`  | Set to `true` if the item is Festivized.                                                                                                                         |
 |  `paintkit`  |  `null`  | When adding a decorated weapon/skin. This should be the War Paint name (broken).                                                           |
 
@@ -59,7 +59,7 @@ Example:
 
 \*Notes:
 
--   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes from the tf2 schema. Please choose the one at top with the name **Decoder Ring** and use `!add defindex=5021`.
+-   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes from the tf2 schema. Please choose the one at the top with the name **Decoder Ring** and use `!add defindex=5021`.
 
     <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92546032-221aad80-f284-11ea-8efa-3fd895503ad0.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
@@ -69,7 +69,7 @@ Example:
 
 -   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name (oh and yes, the item defindex is also different), but if `Festivized`, you need to add sub-parameter `festive=true`.
 
--   If you want to add `Name Tag` or `Non-Craftable Name Tag`, you will need to use the correct defindex, which is `5020` instead of `2093`. This bug can not be fixed unless Team Fortress 2 update its schema to remove the wrong defindex.
+-   If you want to add `Name Tag` or `Non-Craftable Name Tag`, you will need to use the correct defindex, which is `5020` instead of `2093`. This bug can not be fixed unless Team Fortress 2 updates its schema to remove the wrong defindex.
 
 ## I.1.2 - `sku` parameter
 
@@ -77,9 +77,9 @@ This parameter is recommended because you will no longer need to use the sub-par
 So how can I find the sku of a specific item?
 
 -   Go to [Marketplace.tf](https://marketplace.tf/).
--   In the search bar, type in the item name or unusual effect or anything related.
+-   In the search bar, type in the item name or unusual effect, or anything related.
 -   If "No items found", simply click on the "In stock" button two to the right of the search bar and it will change to "Not In Stock".
--   If your desired item appeared, click on it and take a look on the URL. The item sku is right at the end of the URL.
+-   If your desired item appeared, click on it and take a look at the URL. The item sku is right at the end of the URL.
 
 <div align="center"><img src="https://media.giphy.com/media/Pj78znBQro1BZu0CiE/giphy.gif" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
@@ -114,7 +114,7 @@ _Table I.2: Listing settings parameters._
 | `sell.metals` |   `0`   | Manually set selling price in refined metal.                                                                                                    |
 |   `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                 |
 
-Example on what you want to have:
+Example of what you want to have:
 
 -   Example 1:
 
@@ -144,9 +144,9 @@ Example on what you want to have:
 
 # II. Update items listing settings with `!update` command
 
-Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent` and maybe manually price items that your bot bought. In order to do that, you will need to use **!update** command.
+Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent`, and maybe manually price items that your bot bought. In order to do that, you will need to use **!update** command.
 
-An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items has been added to the pricelist, now you can use new identifying parameter instead of `name`, `defindex` and `sku`: the **`item`** identifying parameter.
+An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items have been added to the pricelist, now you can use a new identifying parameter instead of `name`, `defindex` and `sku`: the **`item`** identifying parameter.
 
 To use `item` parameter, simply put the full item name. When you're using the `!add` command with `name` or `defindex` identifying parameter, you need to use sub-parameters to specifically add your targeted item, but not with `item` parameter.
 
@@ -177,12 +177,12 @@ To use `item` parameter, simply put the full item name. When you're using the `!
 
 \*Note:
 
--   There is also an option for you to update the listing settings parameter on every items at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
+-   There is also an option for you to update the listing settings parameter on every item at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
     -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
 
 # III. Remove items from pricelist with `!remove` command.
 
-If you want to remove an item from the pricelist, simply use any identifying parameters (`name`, `defindex`, `sku` or `item`).
+If you want to remove an item from the pricelist, simply use any identifying parameters (`name`, `defindex`, `sku`, or `item`).
 
 -   Example: You want to remove Non-Craftable Tour of Duty Ticket (4 options)
     -   `!remove name=Tour of Duty Ticket&craftable=false`
