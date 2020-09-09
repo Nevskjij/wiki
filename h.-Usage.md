@@ -62,7 +62,7 @@ Example:
 
 \*Notes:
 
--   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes. Please choose the one at top with the name **Decoder Ring** and use `!add defindex=5021`.
+-   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes from the tf2 schema. Please choose the one at top with the name **Decoder Ring** and use `!add defindex=5021`.
 
     <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92546032-221aad80-f284-11ea-8efa-3fd895503ad0.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
@@ -71,6 +71,8 @@ Example:
     <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92545998-0adbc000-f284-11ea-990e-15cf44b7b271.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 -   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name (oh and yes, the item defindex is also different), but if `Festivized`, you need to add sub-parameter `festive=true`.
+
+-   If you want to add `Name Tag` or `Non-Craftable Name Tag`, you will need to use the correct defindex, which is `5020` instead of `2093`. This bug can not be fixed unless Team Fortress 2 update its schema to remove the wrong defindex.
 
 ## I.1.2 - `sku` parameter
 
