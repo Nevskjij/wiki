@@ -1,4 +1,4 @@
-# a. Add items to the pricelist
+# a. Add item to pricelist
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add**.
@@ -27,15 +27,33 @@ These two parameters act the same since the defindex (in integer form) is just a
 
 Example:
 
--   Tour of Duty Ticket: `!add name=Tour of Duty Ticket` OR `!add defindex=725` (no need to add sub-parameter since this is the default).
--   Non-Craftable Tour of Duty Ticket: `!add name=Tour of Duty Ticket&craftable=false` OR `!add defindex=725&craftable=false`
--   Vintage Pyro's Beanie: `!add name=Pyro's Beanie&quality=Vintage` OR `!add defindex=51&quality=Vintage`
--   Strange Silver Botkiller Minigun Mk.II: `!add name=Silver Botkiller Minigun Mk.II&quality=Strange` OR `!add defindex=958&quality=Strange`
--   Pyroland Daydream Smissmas Saxton: `!add name=Smissmas Saxton&quality=Unusual&effect=Pyroland Daydream` OR `!add defindex=31089&quality=Unusual&effect=Pyroland Daydream`
--   Strange Australium Tomislav: `!add name=Tomislav&quality=Strange&australium=true` OR `!add defindex=424&quality=Strange&australium=true`
--   Strange Festivized Australium Tomislav: `!add name=Tomislav&quality=Strange&australium=true&festive=true` OR `!add defindex=424&quality=Strange&australium=true&festive=true`
--   Strange Professional Killstreak Australium Tomislav: `!add name=Tomislav&quality=Strange&australium=true&killstreak=3` OR `!add defindex=424&quality=Strange&australium=true&killstreak=3`
--   Festive Black Box: `!add name=Festive Black Box` OR `!add defindex=1085`
+-   Tour of Duty Ticket:
+    -   `!add name=Tour of Duty Ticket` OR 
+    -   `!add defindex=725` (no need to add sub-parameter since this is the default).
+-   Non-Craftable Tour of Duty Ticket:
+    -   `!add name=Tour of Duty Ticket&craftable=false` OR
+    -   `!add defindex=725&craftable=false`
+-   Vintage Pyro's Beanie:
+    -   `!add name=Pyro's Beanie&quality=Vintage` OR
+    -   `!add defindex=51&quality=Vintage`
+-   Strange Silver Botkiller Minigun Mk.II:
+    -   `!add name=Silver Botkiller Minigun Mk.II&quality=Strange` OR
+    -   `!add defindex=958&quality=Strange`
+-   Pyroland Daydream Smissmas Saxton:
+    -   `!add name=Smissmas Saxton&quality=Unusual&effect=Pyroland Daydream` OR
+    -   `!add defindex=31089&quality=Unusual&effect=Pyroland Daydream`
+-   Strange Australium Tomislav:
+    -   `!add name=Tomislav&quality=Strange&australium=true` OR
+    -   `!add defindex=424&quality=Strange&australium=true`
+-   Strange Festivized Australium Tomislav:
+    -   `!add name=Tomislav&quality=Strange&australium=true&festive=true` OR
+    -   `!add defindex=424&quality=Strange&australium=true&festive=true`
+-   Strange Professional Killstreak Australium Tomislav:
+    -   `!add name=Tomislav&quality=Strange&australium=true&killstreak=3` OR
+    -   `!add defindex=424&quality=Strange&australium=true&killstreak=3`
+-   Festive Black Box:
+    -   `!add name=Festive Black Box` OR
+    -   `!add defindex=1085`
 
 \*Notes:
 
