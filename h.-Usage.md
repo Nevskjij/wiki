@@ -81,19 +81,18 @@ So how can I find the sku of a specific item?
 
 <div align="center"><img src="https://media.giphy.com/media/Pj78znBQro1BZu0CiE/giphy.gif" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-Example 1:
+-   Example 1:
 
--   Item: Sunbeams Cosa Nostra Cap
--   URL: https://marketplace.tf/items/tf2/459;5;u17
--   `sku`: 459;5;u17
--   to add: `!add sku=459;5;u17`
+    -   Item: Sunbeams Cosa Nostra Cap
+    -   URL: https://marketplace.tf/items/tf2/459;5;u17
+    -   `sku`: 459;5;u17
+    -   to add: `!add sku=459;5;u17`
 
-Example 2:
-
--   Item: Specialized Festivized Australium Tomislav
--   URL: https://marketplace.tf/items/tf2/424;11;australium;kt-2;festive
--   `sku`: 424;11;australium;kt-2;festive
--   to add: `!add sku=424;11;australium;kt-2;festive`
+-   Example 2:
+    -   Item: Specialized Festivized Australium Tomislav
+    -   URL: https://marketplace.tf/items/tf2/424;11;australium;kt-2;festive
+    -   `sku`: 424;11;australium;kt-2;festive
+    -   to add: `!add sku=424;11;australium;kt-2;festive`
 
 ## a.2 - Item listing settings parameters
 
@@ -116,6 +115,7 @@ _Table a.2: Listing settings parameters._
 Example on what you want to have:
 
 -   Example 1:
+
     -   Item: Max's Severed Head (`162;6`)
     -   intent: bank
     -   min: 0
@@ -136,5 +136,6 @@ Example on what you want to have:
     -   command: `!add sku=207;11;australium&intent=sell&sell.keys=23&buy.keys=19&buy.metal=21.55`
 
 \*Notes:
+
 -   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
