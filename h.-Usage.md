@@ -58,7 +58,14 @@ Example:
 \*Notes:
 
 -   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes. Please choose the one at top with the name **Decoder Ring** and use `!add defindex=5021`.
--   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name, but if `Festivized`, you need to add sub-parameter `festive=true`.
+
+    <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92546032-221aad80-f284-11ea-8efa-3fd895503ad0.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+-   When you want to add a stock weapon (such as Scattergun, Minigun and etc), there are two defindexes for stock weapons. You only need to use
+
+    <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92545998-0adbc000-f284-11ea-990e-15cf44b7b271.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+-   **Festive** and **Festivized** are two different things. When adding a Festive weapon, please include `Festive` in the item name (oh and yes, the item defindex is also different), but if `Festivized`, you need to add sub-parameter `festive=true`.
 
 ## a.1.2 - `sku` parameter
 
