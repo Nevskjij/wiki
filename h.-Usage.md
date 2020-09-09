@@ -61,7 +61,7 @@ Example:
 
     <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92546032-221aad80-f284-11ea-8efa-3fd895503ad0.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
--   When you want to add a stock weapon (such as Scattergun, Minigun and etc), there are two defindexes for stock weapons. You only need to use
+-   When you want to add a stock weapon (such as Scattergun, Minigun and etc), there are two defindexes for stock weapons. You only need to use the one with **Upgradeable_TF_WEAPON_NAME** and use that defindex.
 
     <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92545998-0adbc000-f284-11ea-990e-15cf44b7b271.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
@@ -76,6 +76,8 @@ So how can I find the sku of a specific item?
 -   In the search bar, type in the item name or unusual effect or anything related.
 -   If "No items found", simply click on the "In stock" button two to the right of the search bar and it will change to "Not In Stock".
 -   If your desired item appeared, click on it and take a look on the URL. The item sku is right at the end of the URL.
+
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/92546648-a15cb100-f285-11ea-82ba-2078987c2be1.gif" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 Example 1:
 
