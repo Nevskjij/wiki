@@ -1,6 +1,3 @@
-Used to update Wiki page: https://github.com/idinium96/tf2autobot/wiki/h.-Usage
-Contributors are welcome.
-
 # I. Add item to pricelist with `!add` command
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
