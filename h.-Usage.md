@@ -15,6 +15,8 @@ You have 3 choices of item identifying parameters on how you want to add your it
 
 These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed need more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
 
+_Table a.1: Sub-parameters for `name` and `defindex`._
+
 |  Parameter   | Default  | Description                                                                                                                                |
 | :----------: | :------: | :----------------------------------------------------------------------------------------------------------------------------------------- |
 | `craftable`  |  `true`  | Set to `false` if you want the item to be a Non-Craftable.                                                                                 |
@@ -93,4 +95,48 @@ Example 2:
 -   `sku`: 424;11;australium;kt-2;festive
 -   to add: `!add sku=424;11;australium;kt-2;festive`
 
-## a.2 - Item listing characteristics parameters
+## a.2 - Item listing settings parameters
+
+When adding items with only identifying parameter, the item will be set to have the default settings for it to be listed on backpack.tf.
+
+_Table a.2: Listing settings parameters._
+
+|   Parameter   | Default | Description                                                                                                                                     |
+| :-----------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+|   `intent`    | `bank`  | Other option is `buy` or `sell`. If set to `buy`, then your bot will only create buy listing for that item and once bought, it will be removed. |
+|     `min`     |   `0`   | Minimum stock to keep.                                                                                                                          |
+|     `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                |
+|  `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.    |
+|  `buy.keys`   |   `0`   | Manually set buying price in keys.                                                                                                              |
+| `buy.metals`  |   `0`   | Manually set buying price in refined metal.                                                                                                     |
+|  `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                             |
+| `sell.metals` |   `0`   | Manually set selling price in refined metal.                                                                                                    |
+|   `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                 |
+
+Example on what you want to have:
+
+Example 1:
+
+-   Item: Max's Severed Head (`162;6`)
+-   intent: bank
+-   min: 0
+-   max: 3
+-   autoprice: true
+-   enabled: true
+-   command: `!add sku=162;6&max=3` (no need to add the other this since they are all default).
+
+Example 2:
+
+-   Item: Strange Australium Stickybomb Launcher (`207;11;australium`)
+-   intent: sell
+-   min: 0
+-   max: 1
+-   autoprice: false
+-   enabled: true
+-   sell price: 23 keys
+-   buy price: 19 keys, 21.55 ref
+-   command: `!add sku=207;11;australium&intent=sell&sell.keys=23&buy.keys=19&buy.metal=21.55`
+
+\*Notes:
+-   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
+-   You do not need to set `autoprice=false` if you're about to manually price the item.
