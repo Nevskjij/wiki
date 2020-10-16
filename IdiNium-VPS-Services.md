@@ -52,3 +52,6 @@ _**Price will change based on the current USD/ref, key rate (1 key = x ref), and
 
 ### Q: Any other services other than cloud VPS?
 > A: Yes, visit https://www.hetzner.de/?country=ot and I'll decide the price in pure.
+
+### Q: What if I want to register Hetzner myself?
+> A: Use this [link](https://hetzner.cloud/?ref=68H4N0lNcT1W) and you will get free €20 for a month!
