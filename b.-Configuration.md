@@ -198,6 +198,12 @@ Time will be use in "!time" command and
 | :-------------: | :------: | :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `OFFER_MESSAGE` | `string` |  `""`   | Message that will appear when bot sends an offer to the trade partner. If left empty (""), it will print _**Powered by tf2-automatic**_ by default. |
 
+### Discord server invite link
+
+| Variable | Type | Default | Description |
+| :-: | :-: | :-: | - |
+| `DISCORD_SERVER_INVITE_LINK` | `string` | `""` | Must be your permenant Discord server invite link. You can leave it empty if you don't have one, it will be replaced with [tf2autobot Discord Server](https://discord.gg/ZrVT7mc) link.
+
 ### Discord Webhook Configuration
 
 #### Basic configuration on your embed preferences/appearances
