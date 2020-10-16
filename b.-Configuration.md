@@ -16,7 +16,7 @@ Another 2 variables that are also needed are `ADMINS` and `KEEP`, which both wil
 
 ## Backpack.tf API keys
 
-The bot is made in a way so that you only need to give it an account and it will do the rest for you. If the environment variables `BPTF_ACCESS_TOKEN` or `BPTF_API_KEY` are missing, then the bot will sign in to backpack.tf by itself and get the API key and access token, which then you need to manually add the value to those variables.
+The bot is made in a way so that you only need to give it an account and it will do the rest for you. If the environment variables `BPTF_ACCESS_TOKEN` or `BPTF_API_KEY` are missing, then the bot will sign in to backpack.tf by itself and get the API key and access token, which then you need to manually add the values to those respective variables.
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/445226411461050380/697126889193603082/bptf-api-token.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
