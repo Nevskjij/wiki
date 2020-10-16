@@ -44,11 +44,11 @@ _**Price will change based on the current USD/ref, key rate (1 key = x ref), and
 
 ### Q: Is there any other services available?
 > A: Yes:
-- Backup: automatic copies of your server disks (7 slots for backups) - adds 20%/month
-- Snapshots: instant copies of your disks - add 1 ref/GB/month
-- Floating IPs - adds 40 ref/month
-- Add more Volumes (up to 10 TB) - adds 1.5 ref/GB/month
-- Rescale (change your current service) - add to the respective amount of keys/refs.
+> - Backup: automatic copies of your server disks (7 slots for backups) - adds 20%/month
+> - Snapshots: instant copies of your disks - add 1 ref/GB/month
+> - Floating IPs - adds 40 ref/month
+> - Add more Volumes (up to 10 TB) - adds 1.5 ref/GB/month
+> - Rescale (change your current service) - add to the respective amount of keys/refs.
 
 ### Q: Any other services other than cloud VPS?
 > A: Yes, visit https://www.hetzner.de/?country=ot and I'll decide the price in pure.
