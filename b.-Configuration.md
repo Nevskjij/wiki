@@ -20,7 +20,7 @@ The bot is made in a way so that you only need to give it an account and it will
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/445226411461050380/697126889193603082/bptf-api-token.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-From the above image, you need to copy the value (inside the double quotes `"`) of `apiKey` and `accessToken` onto `BPTF_API_KEY` and `BPTF_ACCESS_TOKEN`, respectively.
+From the above image, you need to copy the values (between the double quotes `""` of `apiKey` and `accessToken` keys) onto `BPTF_API_KEY` and `BPTF_ACCESS_TOKEN`, respectively.
 
 The bot will also set the trade offer URL on backpack.tf, meaning that you don't need to sign in to backpack.tf at all to set up the bot.
 
