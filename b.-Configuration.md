@@ -24,6 +24,11 @@ From the above image, you need to copy the values (between the double quotes `""
 
 The bot will also set the trade offer URL on backpack.tf, meaning that you don't need to sign in to backpack.tf at all to set up the bot.
 
+***
+
+Click [here](https://github.com/idinium96/tf2autobot/wiki/c.-Running-the-bot) to see how to run the bot.
+
+***
 
 ## More description of each variable
 
@@ -355,8 +360,3 @@ For `OVERSTOCKED` and `UNDERSTOCKED`, parameter `%name%` will print out a list o
 |     `CUSTOM_DECLINED_ MESSAGE`      | `string` |  `""`   | Your custom `DECLINED` note. Two parameters can be used - [`%reason%`](https://github.com/idinium96/tf2autobot/blob/master/src/classes/MyHandler.ts#L1430-L1486) and [`%invalid_value_summary%`](https://github.com/idinium96/tf2autobot/blob/master/src/classes/MyHandler.ts#L1488-L1500). |
 |    `CUSTOM_TRADED_ AWAY_MESSAGE`    | `string` |  `""`   | Your custom note when the bot fails to trade because the item is traded away.                                                                                                                                                                                                               |
 | `CUSTOM_CLEARING_ FRIENDS_MESSAGE`  | `string` |  `""`   | Your custom note when the bot is removing friends to add someone else Usable parameter - `%name%` (display trade partner's name).
-
-***
-
-
-Click [here](https://github.com/idinium96/tf2autobot/wiki/c.-Running-the-bot) to see how to run the bot.
