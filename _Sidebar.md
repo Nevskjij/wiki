@@ -1,5 +1,5 @@
 - [Home](https://github.com/idinium96/tf2autobot/wiki)
-    - [about tf2autobot](https://github.com/idinium96/tf2autobot/wiki/tf2autobot-vs.-tf2-automatic)
+    - [About](https://github.com/idinium96/tf2autobot/wiki/tf2autobot-vs.-tf2-automatic)
 - [Installation](https://github.com/idinium96/tf2autobot/wiki/a.-Installation)
 - [Configuration](https://github.com/idinium96/tf2autobot/wiki/b.-Configuration)
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/c.-Running-the-bot)
