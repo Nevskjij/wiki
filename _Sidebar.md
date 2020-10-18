@@ -1,4 +1,5 @@
 - [Home](https://github.com/idinium96/tf2autobot/wiki)
+    - [New Subcategory]
 - [Installation](https://github.com/idinium96/tf2autobot/wiki/a.-Installation)
 - [Configuration](https://github.com/idinium96/tf2autobot/wiki/b.-Configuration)
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/c.-Running-the-bot)
