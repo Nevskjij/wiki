@@ -10,7 +10,7 @@ An alternative to environment files is the [PM2 ecosystem file](https://github.c
 
 ## Required
 
-You are only required to add 4 variables, they are `STEAM_ACCOUNT_NAME`, `STEAM_PASSWORD`, `STEAM_IDENTITY_SECRET` and `STEAM_SHARED_SECRET`. You can get the identity secret and shared secret by authenticating the account with [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator).
+You are only required to add 4 variables, they are `STEAM_ACCOUNT_NAME`, `STEAM_PASSWORD`, `STEAM_IDENTITY_SECRET`, and `STEAM_SHARED_SECRET`. You can get the identity secret and shared secret by authenticating the account with [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator).
 
 Another 2 variables that are also needed are `ADMINS` and `KEEP`, which both will be your SteamID64.
 
@@ -93,8 +93,8 @@ You can run your bot without this initially. On the first run, your bot will pri
 |           `DISABLE_LISTINGS`            | `boolean` | `false` | Temporarily disable trading while your bot is alive.                                                                                                   |
 |        `DISABLE_CRAFTING_ METAL`        | `boolean` | `false` | **NOT RECOMMENDED** to set is as `true` - it will cause your bot and the trade partner to not be able to trade because of missing scrap/reclaimed.     |
 |       `DISABLE_CRAFTING_ WEAPONS`       | `boolean` | `false` | Set to `true` **if you DO NOT** want your bot to automatically craft any duplicated/matched class craftable weapons.                                   |
-|           `DISABLE_MESSAGES`            | `boolean` | `false` | When `true`, people (that are friends with your bot) will be unable send messages to you with "!message" command.                                      |
-|    `DISABLE_SOMETHING_ WRONG_ALERT`     | `boolean` | `false` | Used to notify owner if your bot has a queue problem/full inventory/is low in pure (if Autokeys is on).                                                |
+|           `DISABLE_MESSAGES`            | `boolean` | `false` | When `true`, people (that are friends with your bot) will be unable to send messages to you with "!message" command.                                      |
+|    `DISABLE_SOMETHING_ WRONG_ALERT`     | `boolean` | `false` | Used to notify the owner if your bot has a queue problem/full inventory/is low in pure (if Autokeys is on).                                                |
 |   `DISABLE_CRAFTWEAPON_ AS_CURRENCY`    | `boolean` | `false` | Set it as `true` if you don't want to set craft weapons as currency (0.05 ref).                                                                        |
 | `DISABLE_GIVE_PRICE_ TO_INVALID_ITEMS`  | `boolean` | `false` | Set to `true` if you don't want `INVALID_ITEMS` (items that are not in your pricelist) to be priced using price from Prices.TF.                        |
 |          `DISABLE_ADD_FRIENDS`          | `boolean` | `false` | Set to `true` if you don't want people to add your bot as a Steam friend (not recommended).                                                            |
@@ -107,7 +107,7 @@ You can run your bot without this initially. On the first run, your bot will pri
 
 |           Variable            |   Type    | Default | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | :---------------------------: | :-------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `NORMALIZE_ FESTIVIZED_ITEMS` | `boolean` | `false` | Set to `true` if you want your bot to recognize `Festivized` items as `Non-Festivized` items. For example, if your bot is selling a `Strange Australium Black Box`, but someone sent to your bot a Festivized version with the name `Festivized Strange Australium Black Box`, the bot by default will either decline or skip (depending on if you enable manual review) the offer becuase it's not a match. Thus, set to `true` if you want your bot to recognize `Festivized Strange Australium Black Box` as `Strange Australium Black Box`. |
+| `NORMALIZE_ FESTIVIZED_ITEMS` | `boolean` | `false` | Set to `true` if you want your bot to recognize `Festivized` items as `Non-Festivized` items. For example, if your bot is selling a `Strange Australium Black Box`, but someone sent to your bot a Festivized version with the name `Festivized Strange Australium Black Box`, the bot by default will either decline or skip (depending on if you enable manual review) the offer because it's not a match. Thus, set to `true` if you want your bot to recognize `Festivized Strange Australium Black Box` as `Strange Australium Black Box`. |
 | `NORMALIZE_ STRANGE_UNUSUAL`  | `boolean` | `false` | Set to `true` if you want Strange Unusuals (sku ends with `;strange`) to be recognized as normal Unusuals (sku doesn't end with `;strange`).                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 #### Misc feature
@@ -131,9 +131,9 @@ You can run your bot without this initially. On the first run, your bot will pri
 
 |            Variable             |   Type    | Default | Description                                                                                                                                                                                         |
 | :-----------------------------: | :-------: | :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `SKIP_BPTF_ TRADEOFFERURL`    | `boolean` | `true`  | Not sure why this may not work. Please add trade offer URL by yourself [here](https://backpack.tf/settings##general) (login as your bot Steam account).                                             |
+|   `SKIP_BPTF_ TRADEOFFERURL`    | `boolean` | `true`  | Not sure why this may not work. Please add a trade offer URL by yourself [here](https://backpack.tf/settings##general) (login as your bot Steam account).                                             |
 |   `SKIP_ACCOUNT_ LIMITATIONS`   | `boolean` | `true`  | Used to check your account limitation. It's better to set to `true` if your bot's Steam account is already a [premium account](https://support.steampowered.com/kb_article.php?ref=3330-IAGK-7663). |
-| `SKIP_UPDATE_ PROFILE_SETTINGS` | `boolean` | `true`  | This is just to set your bot's Steam profile to public so backpack.tf can load your bot inventory and etc correctly. If you already set everything to public, just set this to `true`.              |
+| `SKIP_UPDATE_ PROFILE_SETTINGS` | `boolean` | `true`  | This is just to set your bot's Steam profile to public so backpack.tf can load your bot inventory and etc correctly. If you already set everything to the public, just set this to `true`.              |
 
 #### Your time
 
@@ -150,14 +150,14 @@ Time will be use in "!time" command and
 |    Variable     |   Type    | Default | Description                                                                                                                              |
 | :-------------: | :-------: | :-----: | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | `ALLOW_ESCROW`  | `boolean` | `false` | Escrow = trade hold.                                                                                                                     |
-| `ALLOW_OVERPAY` | `boolean` | `true`  | If people offer overpay, your bot will accept. Set it to `false` if you want it to decline.                                              |
+| `ALLOW_OVERPAY` | `boolean` | `true`  | If people offer to overpay, your bot will accept. Set it to `false` if you want it to decline.                                              |
 | `ALLOW_BANNED`  | `boolean` | `false` | I think it's best to set as `false`. If set as `true`, your bot will trade with backpack.tf banned or steamrep.com scammer marked users. |
 
-#### Set time for price to be updated in seconds
+#### Set time for the price to be updated in seconds
 
 |    Variable     |   Type   |     Default     | Description                                                                                                                    |
 | :-------------: | :------: | :-------------: | ------------------------------------------------------------------------------------------------------------------------------ |
-| `MAX_PRICE_AGE` | `number` | `28800` (8 hrs) | If an items price hasn't been updated in longer than this amount of time, it will triggered to check its price with Prices.tf. |
+| `MAX_PRICE_AGE` | `number` | `28800` (8 hrs) | If an item price hasn't been updated in longer than this amount of time, it will be triggered to check its price with Prices.tf. |
 
 #### Compulsory variables
 
@@ -172,7 +172,7 @@ Time will be use in "!time" command and
 
 |   Variable   |   Type    | Default | Description                                                                                                                         |
 | :----------: | :-------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------------- |
-|   `DEBUG`    | `boolean` | `true`  | Used to debug if any problem has occured.                                                                                           |
+|   `DEBUG`    | `boolean` | `true`  | Used to debug if any problem has occurred.                                                                                           |
 | `DEBUG_FILE` | `boolean` | `true`  | Same as above, but this will create a file which can be sent to [issue](https://github.com/idinium96/tf2autobot/issues/new/choose). |
 
 #### Backpack.tf sell or buy order listings note on all items in pricelist
@@ -184,11 +184,11 @@ Time will be use in "!time" command and
 
 **Parameters:**
 
--   `%name%` - display an items name.
+-   `%name%` - display an item's name.
 -   `%price%` - display items buying/selling price.
 -   `%current_stock%` - display an items current stock (by default this is used in `BPTF_DETAILS_BUY`).
--   `%max_stock%` - display an items maximum stock (by default this is used in `BPTF_DETAILS_BUY`).
--   `%amount_trade%` - display the amount that can be traded (between minimum and maximum stock, used in `BPTF_DETAILS_SELL`).
+-   `%max_stock%` - display an item maximum stock (by default this is used in `BPTF_DETAILS_BUY`).
+-   `%amount_trade%` - display the amount that can be traded (between the minimum and maximum stock, used in `BPTF_DETAILS_SELL`).
 -   `%amount_can_buy%` - display the amount that the bot can buy (use it on `BPTF_DETAILS_BUY`).
 -   `%keyPrice%` - display the current key rate (selling price). It will display as `Key rate: x ref/key` only if the item price includes x key. Otherwise, it will show as ✨.
 -   `%dueling%` - display `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)` on only Dueling Mini-Game listings - prefer to only place this on `BPTF_DETAILS_BUY`. On other items it will show as ✨.
@@ -303,7 +303,7 @@ See this: https://gyazo.com/90e9b16d7c54f1b4a96f95b9fae93187 (settings in your r
 |                Variable                 |    Type    | Default | Description                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | :-------------------------------------: | :--------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |         `ENABLE_MANUAL_REVIEW`          | `boolean`  | `true`  | By default, offer with `INVALID_VALUE`/ `INVALID_ITEMS`/ `OVERSTOCKED`/ `UNDERSTOCKED`/ `DUPED_ITEMS`/ `DUPE_CHECK_FAILED` will be manually reviewed by you.                                                                                                                                                                                                                                                                                            |
-|  `DISABLE_SHOW_REVIEW_ OFFER_SUMMARY`   | `boolean`  | `false` | Set to `true` if you do not want your bot to show the trade offer summary to the trade partner - it will only notify trade partner that their offer is being held for review.                                                                                                                                                                                                                                                                           |
+|  `DISABLE_SHOW_REVIEW_ OFFER_SUMMARY`   | `boolean`  | `false` | Set to `true` if you do not want your bot to show the trade offer summary to the trade partner - it will only notify the trade partner that their offer is being held for review.                                                                                                                                                                                                                                                                           |
 |      `DISABLE_REVIEW_ OFFER_NOTE`       | `boolean`  | `false` | By default, it will show notes on each [reason](https://github.com/idinium96/tf2autobot/blob/master/src/classes/MyHandler.ts#L1879-L2015)                                                                                                                                                                                                                                                                                                               |
 |      `DISABLE_SHOW_ CURRENT_TIME`       | `boolean`  | `false` | By default, it will show the owner's time on offer review notification that the trade partner will receive.                                                                                                                                                                                                                                                                                                                                             |
 | `DISABLE_ACCEPT_ INVALID_ITEMS_OVERPAY` | `boolean`  | `false` | Set this to `true` if you do not want your bot to accept trades with `INVALID_ITEMS` but the value of their side is greater than or equal to the value of your bot's side.                                                                                                                                                                                                                                                                              |
@@ -312,8 +312,8 @@ See this: https://gyazo.com/90e9b16d7c54f1b4a96f95b9fae93187 (settings in your r
 |   `DISABLE_AUTO_ DECLINE_OVERSTOCKED`   | `boolean`  | `true`  | Set this to `false` if you want your bot to decline an offer with **ONLY** `OVERSTOCKED` reason (manual review must be enabled.).                                                                                                                                                                                                                                                                                                                       |
 |  `DISABLE_AUTO_ DECLINE_UNDERSTOCKED`   | `boolean`  | `true`  | Set this to `false` if you want your bot to decline an offer with **ONLY** `UNDERSTOCKED` reason (manual review must be enabled.)                                                                                                                                                                                                                                                                                                                       |
 |  `DISABLE_AUTO_ DECLINE_INVALID_VALUE`  | `boolean`  | `false` | Set this to `true` if you do not want your bot to automatically decline trades with **ONLY** `INVALID_VALUE` (which did not match the exception sku(s) and exception value).                                                                                                                                                                                                                                                                            |
-|   `AUTO_DECLINE_ INVALID_VALUE_NOTE`    |  `string`  |  `""`   | Your custom note on why the trade got declined. Default is nothing.                                                                                                                                                                                                                                                                                                                                                                                     |
-|     `INVALID_VALUE_ EXCEPTION_SKUS`     | `string[]` | `[""]`  | An array of sku that will skip `INVALID_VALUE` if the difference between the bot's value and their value is not more than exception value. Let's say your bot is selling an Unusual and someone sent an offer with 0.11 ref less - you want your bot to accept it anyway! By default, it will check only for Unusuals and Australiums: `[";5;u", ";11;australium"]`. You can also leave it empty (`[""]`) so all with `INVALID_VALUE` will be notified. |
+|   `AUTO_DECLINE_ INVALID_VALUE_NOTE`    |  `string`  |  `""`   | Your custom note on why the trade got declined. The default is nothing.                                                                                                                                                                                                                                                                                                                                                                                     |
+|     `INVALID_VALUE_ EXCEPTION_SKUS`     | `string[]` | `[""]`  | An array of sku that will skip `INVALID_VALUE` if the difference between the bot's value and their value is not more than exceptional value. Let's say your bot is selling an Unusual and someone sent an offer with 0.11 ref less - you want your bot to accept it anyway! By default, it will check only for Unusuals and Australiums: `[";5;u", ";11;australium"]`. You can also leave it empty (`[""]`) so all with `INVALID_VALUE` will be notified. |
 | `INVALID_VALUE_ EXCEPTION_VALUE_IN_REF` |  `number`  |   `0`   | - Exception value for the sku(s) that you set above. Default is `0` (no exception).                                                                                                                                                                                                                                                                                                                                                                     |
 |          `INVALID_VALUE_NOTE`           |  `string`  |  `""`   | Your custom `INVALID_VALUE` note.                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |         \*`INVALID_ITEMS_NOTE`          |  `string`  |  `""`   | Your custom `INVALID_ITEMS` note.                                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -326,14 +326,14 @@ See this: https://gyazo.com/90e9b16d7c54f1b4a96f95b9fae93187 (settings in your r
 ---
 
 **Notes:**
-On each reason **except** `INVALID_VALUE`, you can put `%name%` to list all the items that are on that reason, and `%isName%` for plural of "is" - where if `%name%` is just 1 item, it will use "is", else if more then one item, it will use "are".
+On each reason **except** `INVALID_VALUE`, you can put `%name%` to list all the items that are on that reason, and `%isName%` for the plural of "is" - where if `%name%` is just 1 item, it will use "is", else if more then one item, it will use "are".
 
 Example:
-Let say the trade contains items with `INVALID_ITEMS`. The items are: Dueling Mini-Game, Secret Saxton.
+Let say the trade contains items with `INVALID_ITEMS`. The items are Dueling Mini-Game, Secret Saxton.
 
 -   You use custom `INVALID_ITEMS` note as: `"%name% %isName% not in my pricelist. Please wait for my owner to check it."`
 
--   What the trade partner will receive: `"Dueling Mini-Game, Secret Saxton are not in my pricelist. Please wait for my owner to check it."`
+-   What the trade partner will receive: `"Dueling Mini-Game, Secret Saxton is not in my pricelist. Please wait for my owner to check it."`
 
 For `OVERSTOCKED` and `UNDERSTOCKED`, parameter `%name%` will print out a list of `amountCanTrade - item_name` (example, `1 - Secret Saxton, 0 - Jag`).
 
@@ -352,6 +352,7 @@ For `OVERSTOCKED` and `UNDERSTOCKED`, parameter `%name%` will print out a list o
 
 |              Variable               |   Type   | Default | Description                                                                                                                                                                                                                                                                                 |
 | :---------------------------------: | :------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|       `ENABLE_ONLY_ PLAY_TF2`       | `boolean`| `false` | Set to `true` if you want your bot to only play Team Fortress 2, which will ignore the below variable.                                                                                                                                                |
 |     `CUSTOM_PLAYING_ GAME_NAME`     | `string` |  `""`   | Custom name of the game your bot is playing. Limited to only 45 characters. Example: https://gyazo.com/308e4e05bf4c49929520df4e0064864c (you do not need to include `- tf2-automatic`, just your custom game name.)                                                                         |
 |      `CUSTOM_WELCOME_ MESSAGE`      | `string` |  `""`   | Your custom `WELCOME_MESSAGE` note. Two parameters: `%name%` (display trade partner's name) and `%admin%` (if admin, it will use "!help", else "!how2trade").                                                                                                                               |
 | `CUSTOM_I_DONT_KNOW_ WHAT_YOU_MEAN` | `string` |  `""`   | Your custom note when people send the wrong command.                                                                                                                                                                                                                                        |
