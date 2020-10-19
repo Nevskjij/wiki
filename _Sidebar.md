@@ -1,3 +1,4 @@
+# Home
 - [Home](https://github.com/idinium96/tf2autobot/wiki)
     - [About](https://github.com/idinium96/tf2autobot/wiki/About)
 - [Installation](https://github.com/idinium96/tf2autobot/wiki/a.-Installation)
