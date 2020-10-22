@@ -51,7 +51,7 @@ Compile the source using `npm run build`
 
 The compiled code will now be inside a folder called dist.
 
-# TLDR;
+# Short version
 Download and install Git from https://git-scm.com/
 
 Download and install NodeJS from https://nodejs.org/
