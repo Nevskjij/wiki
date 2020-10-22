@@ -1,3 +1,14 @@
+# Table of contents
+- [Introduction](#a-brief-explanation)
+- [Adding items](#i-add-item-to-pricelist-with-add-command)
+	- [Identifying parameters](#i1---item-identifying-parameter)
+		- [`name` and `defindex`](#i11---name-and-defindex-parameters)
+		- [`sku`](#i12---sku-parameter)
+	- [Listings setting parameters](#i2---item-listing-settings-parameters)
+- [Updating items](#ii-update-items-listing-settings-with-update-command)
+- [Removing items](#iii-remove-items-from-pricelist-with-remove-command)
+- [Other commands](#iv-other-commands)
+
 # A brief explanation
 
 The `pricelist.json` is a file stored inside your `files` folder located at `~/tf2autobot/files/steam_account_name/pricelist.json`.
@@ -20,6 +31,7 @@ You have 3 choices of item identifying parameters on how you want to add your it
 3. `sku` **(recommended)** - The item "Stock Keeping Unit".
 
 ## I.1.1 - `name` and `defindex` parameters
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 These two parameters act the same since the defindex (in integer form) is just a replacement for the name of an item (if the bot failed to choose the item, so it needs more specific detail of an item). There are 6 _optional_ sub-parameters under these two item identifying parameters:
 
@@ -80,6 +92,7 @@ Example:
 -   If you want to add `Name Tag` or `Non-Craftable Name Tag`, you will need to use the correct defindex, which is `5020` instead of `2093`. This bug can not be fixed unless Team Fortress 2 updates its schema to remove the wrong defindex.
 
 ## I.1.2 - `sku` parameter
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 This parameter is recommended because you will no longer need to use the sub-parameters in Table I.1.
 So how can I find the sku of a specific item?
@@ -105,6 +118,7 @@ So how can I find the sku of a specific item?
     -   to add: `!add sku=424;11;australium;kt-2;festive`
 
 ## I.2 - Item listing settings parameters
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 When adding items with only identifying parameter, the item will be set to have the default settings for it to be listed on backpack.tf.
 
@@ -151,6 +165,7 @@ Example of what you want to have:
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
 
 # II. Update items listing settings with `!update` command
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent`, and maybe manually price items that your bot bought. In order to do that, you will need to use **!update** command.
 
@@ -207,6 +222,7 @@ You can also remove the entire pricelist with `!remove all=true`. Once you've se
 Confirm to remove all items from the pricelist with `!remove all=true&i_am_sure=yes_i_am`.
 
 # IV. Other commands
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92597293-c7ac3c00-f2d9-11ea-8089-89f9973b4ab4.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
