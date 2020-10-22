@@ -1,7 +1,7 @@
 # Introduction
 - [Home](https://github.com/idinium96/tf2autobot/wiki)
 - [Before you start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start)
-- [Differences between tf2-automatic and TF2Autobot](https://github.com/idinium96/tf2autobot/wiki/Differences-between-tf2-automatic-and-tf2autobot)
+- [Differences between tf2-automatic and TF2Autobot](https://github.com/idinium96/tf2autobot/wiki/Differences-between-TF2Autobot-and-tf2-automatic)
 
 # Installation 
 ### Windows
