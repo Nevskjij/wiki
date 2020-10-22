@@ -21,6 +21,11 @@
 	- [Updating items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#ii-update-items-listing-settings-with-update-command)
 	- [Removing items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#iii-remove-items-from-pricelist-with-remove-command)
 
+# Maintaining the bot
+### Windows
+
+### Linux
+
 # Troubleshooting
 - [Common errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
 	- [Startup errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors#startup-errors)
