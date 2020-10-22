@@ -78,7 +78,7 @@ Example:
     -   `!add name=Festive Black Box` OR
     -   `!add defindex=1085`
 
-\*Notes:
+#### \*Notes:
 
 -   If you want to add **Mann Co. Supply Crate Key** with name parameter, it will list out all possible key defindexes from the tf2 schema. Please choose the one at the top with the name **Decoder Ring** and use `!add defindex=5021`.
 
@@ -160,7 +160,7 @@ Example of what you want to have:
     -   buy price: 19 keys, 21.55 ref
     -   command: `!add sku=207;11;australium&intent=sell&sell.keys=23&buy.keys=19&buy.metal=21.55`
 
-\*Notes:
+#### \*Notes:
 
 -   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
@@ -199,7 +199,7 @@ To use `item` parameter, simply put the full item name. When you're using the `!
             -   `!update sku=31089;5;u145&intent=sell&sell.keys=300&buy.keys=100`
             -   `!update item=Pyroland Daydream Smissmas Saxton&intent=sell&sell.keys=300&buy.keys=100`
 
-\*Note:
+#### \*Note:
 
 -   There is also an option for you to update the listing settings parameter on every item at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
     -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
@@ -215,7 +215,7 @@ If you want to remove an item from the pricelist, simply use any identifying par
     -   `!remove sku=725;6;uncraftable`
     -   `!remove item=Non-Craftable Tour of Duty Ticket`
 
-\*Note:
+#### \*Note:
 
 You can also remove the entire pricelist with `!remove all=true`. Once you've sent this to your bot, it will reply with:
 
