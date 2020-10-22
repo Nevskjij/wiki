@@ -1,6 +1,6 @@
-## Difference between tf2autobot and tf2-automatic
+## Difference between TF2Autobot and tf2-automatic
 
-tf2autobot adds advantageous features on top of the original features in the tf2-automatic repository. Let me list some notable features in the original tf2-automatic and some that have been added in tf2autobot:
+TF2Autobot adds advantageous features on top of the original features in the tf2-automatic repository. Let me list some notable features in the original tf2-automatic and some that have been added in TF2Autobot:
 
 ### Original tf2-automatic
 
@@ -9,7 +9,7 @@ tf2autobot adds advantageous features on top of the original features in the tf2
 -   dupe check on items that are more than a certain amount of keys (you decide/set the number of keys).
 -   trade offer review (if you were offered an invalid value/item, the item is overstocked, or the item is duped).
 
-### tf2autobot version
+### TF2Autobot version
 
 **Added an option to:**
 
