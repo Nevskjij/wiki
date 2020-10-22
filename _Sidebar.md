@@ -23,8 +23,9 @@
 
 # Maintaining the bot
 ### Windows
-
+- (coming soon)
 ### Linux
+- (coming soon)
 
 # Troubleshooting
 - [Common errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
