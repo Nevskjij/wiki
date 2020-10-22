@@ -23,6 +23,7 @@ In order to have your bot to start trading, you will need to tell your bot what 
 The command that you will use is **!add**.
 
 ## I.1 - Item identifying parameter
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 You have 3 choices of item identifying parameters on how you want to add your items:
 
@@ -204,6 +205,7 @@ To use `item` parameter, simply put the full item name. When you're using the `!
     -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
 
 # III. Remove items from pricelist with `!remove` command.
+[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
 If you want to remove an item from the pricelist, simply use any identifying parameters (`name`, `defindex`, `sku`, or `item`).
 
