@@ -45,10 +45,14 @@ pm2 restart ecosystem.json --update-env && pm2 save
 - `pm2 list` - list of pm2 processes 
 - `pm2 stop all` - stop all processes
 
-## Commands needed for running one bot
-- `pm2 restart ecosystem.json --update-env && pm2 save` - restart all bots and apply all changes 
-- `pm2 restart ecosystem.json --only processName` - restart and apply only changes to `processName`
-- `pm2 restart processName` - restart specific process (bot) without applying any changes 
-- `pm2 restart all` - restart all processes (bots) without applying any changes 
+## Stop and (re)start one bot
+- `pm2 restart ecosystem.json --update-env && pm2 save` - (re)start all bots and apply all changes 
+- `pm2 restart ecosystem.json --only processName` - (re)start and apply only changes to `processName`
+- `pm2 stop processName` - stop `processName`
+
+## Stop and (re)start multiple bots
+- `pm2 restart ecosystem.json --update-env && pm2 save` - (re)start all bots and apply all changes 
+- `pm2 restart ecosystem.json --only processName` - (re)start and apply only changes to `processName`
+- `pm2 stop all` - stop all running bots
 
 It is recommended to do `pm2 restart ecosystem.json --update-env && pm2 save && pm2 logs` to see if there are any problems after you change something in your environment file.
