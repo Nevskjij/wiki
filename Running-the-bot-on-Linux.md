@@ -55,4 +55,4 @@ pm2 restart ecosystem.json --update-env && pm2 save
 - `pm2 restart ecosystem.json --only processName` - (re)start and apply only changes to `processName`
 - `pm2 stop all` - stop all running bots
 
-It is recommended to do `pm2 restart ecosystem.json --update-env && pm2 save && pm2 logs` to see if there are any problems after you change something in your environment file.
+No matter if you are running one or multiple bots, it is recommended to do `pm2 restart ecosystem.json --update-env && pm2 save && pm2 logs` to see if there are any problems after you change something in your environment file.
