@@ -9,3 +9,5 @@ To start the bot we will type `node dist/app.js`
 Your bot should be online on Steam in a minute. 
 
 If your bot does not come online you should check the output in the command prompt and see if it matches any of the errors described in our [common errors on startup.](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
+
+To shutdown your bot you can simply close the command prompt.
