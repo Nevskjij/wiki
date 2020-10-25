@@ -8,6 +8,8 @@
      - [Why are my buy orders just suddenly disappearing by time?](#trading)
      - [How much does bot count a Craftable weapon as? 0.05 or 0.11 ref?](#trading)
      - [Why my bot don't accept/decline the trade automatically?](#why-my-bot-dont-acceptdecline-the-trade-automatically)
+- [Custom settings](#custom-settings)
+     - [How to set custom welcome/success messages?](#how-to-set-custom-welcomesuccess-messages)
 
 # Steam Desktop Authenticator
 Steam Desktop Authenticator is a desktop implementation of Steam's mobile authenticator app. Which you can use if you for example do not have a phone, or if you need easy access to your account secrets for a bot account.  
@@ -88,5 +90,29 @@ This can occur when the Steam Client is down. It's temporary but if the trade pa
 <details><summary>⬜_BANNED_CHECK_FAILED</summary>
 <p>
 This can occur when Steamrep.com or backpack.tf is down. This is temporary and will be back in operation when Steamrep.com or backpack.tf is online. You will need to manually browse the trade partner backpack.tf page to see if that person is banned on Steamrep or not. If you just blindly accept the trade, your bot has the potential of getting banned from using backpack.tf services.
+</p>
+</details>
+
+# Custom settings
+
+## How to set a custom welcome/success messages?
+All settings for custom messages can be found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#others) and [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings) (the one with `_NOTE`).
+
+When you're applying your custom messages, make sure to always obey the JSON format. You can not add a new line with `ENTER`, but instead you'll need to add `\n` for the new line. The `\` symbol is called escape characters. Another important escape characters are:
+> `\n` - new line
+> `\"` - double quote
+> `\\` - backslash
+
+<details><summary>Click here to see some example.</summary>
+<p>
+<div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/769613063980318750/unknown.png" alt="accept-message" style="display:block;margin-left:auto;margin-right:auto;"></div>
+
+What it looks like in your environment file:
+
+<b>ecosystem.json</b>
+<code>"CUSTOM_SUCCESS_MESSAGE": "/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!",</code>
+
+<b>.env</b>
+<code>CUSTOM_SUCCESS_MESSAGE="/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!"</code>
 </p>
 </details>
