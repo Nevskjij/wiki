@@ -43,7 +43,7 @@ If someone sent an offer with wrong values, any items that are not in the pricel
 Some description of each reason:
 <details><summary>🟥_INVALID_VALUE</summary>
 <p>
-The value of your side (Asked) and the trade partner side (Offered) and not equal or more. If you want to automatically decline any offer that **ONLY** has this reason, you need to set `DISABLE_AUTO_DECLINE_INVALID_VALUE` to `false`. You can also set an exceptional value for an offer with this reason to be accepted by filling the item sku(s) in the `INVALID_VALUE_EXCEPTION_SKUS` array and set the `INVALID_VALUE_EXCEPTION_VALUE_IN_REF` value. Find more about it [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings).
+The value of your side (Asked) and the trade partner side (Offered) and not equal or more. If you want to automatically decline any offer that <b>ONLY</b> has this reason, you need to set <code>DISABLE_AUTO_DECLINE_INVALID_VALUE</code> to <code>false</code>. You can also set an exceptional value for an offer with this reason to be accepted by filling the item sku(s) in the <code>INVALID_VALUE_EXCEPTION_SKUS</code> array and set the <code>INVALID_VALUE_EXCEPTION_VALUE_IN_REF</code> value. Find more about it <a href="https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings">here</a>.
 </p>
 </details>
 
