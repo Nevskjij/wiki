@@ -99,8 +99,11 @@ This can occur when Steamrep.com or backpack.tf is down. This is temporary and w
 All settings for custom messages can be found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#others) and [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings) (the one with `_NOTE`).
 
 When you're applying your custom messages, make sure to always obey the JSON format. You can not add a new line with `ENTER`, but instead you'll need to add `\n` for the new line. The `\` symbol is called escape characters. Another important escape characters are:
+
 > `\n` - new line
+
 > `\"` - double quote
+
 > `\\` - backslash
 
 <details><summary>Click here to see some example.</summary>
@@ -108,11 +111,12 @@ When you're applying your custom messages, make sure to always obey the JSON for
 <div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/769613063980318750/unknown.png" alt="accept-message" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
 What it looks like in your environment file:
-
 <b>ecosystem.json</b>
+
 <code>"CUSTOM_SUCCESS_MESSAGE": "/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!",</code>
 
 <b>.env</b>
+
 <code>CUSTOM_SUCCESS_MESSAGE="/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!"</code>
 </p>
 </details>
