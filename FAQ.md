@@ -111,12 +111,11 @@ When you're applying your custom messages, make sure to always obey the JSON for
 <div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/769613063980318750/unknown.png" alt="accept-message" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
 What it looks like in your environment file:
-<b>ecosystem.json</b>
 
+<b>ecosystem.json</b>
 <code>"CUSTOM_SUCCESS_MESSAGE": "/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!",</code>
 
 <b>.env</b>
-
 <code>CUSTOM_SUCCESS_MESSAGE="/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!"</code>
 </p>
 </details>
