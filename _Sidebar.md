@@ -22,10 +22,8 @@
 	- [Removing items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#iii-remove-items-from-pricelist-with-remove-command)
 
 # Maintaining the bot
-### Windows
-- (coming soon)
-### Linux
-- (coming soon)
+- Updating the bot
+- [polldata.json](https://github.com/idinium96/tf2autobot/wiki/Maintaining-polldata.json)
 
 # Troubleshooting
 - [Common errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
