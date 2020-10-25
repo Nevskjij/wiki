@@ -11,35 +11,37 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
 
 ### TF2Autobot version
 
-**Added an option to:**
-
--   use Discord Webhooks for your bot to send accepted trade summaries, pending trade offer reviews, and/or private messages to a Discord server.
--   disable "show only metal" in the trade summary (it will show x keys, y ref instead of just x ref on the original version).
-    -enable Autokeys (to maintain ample refined metal stock) and key banking ([jump](https://github.com/idinium96/tf2autobot#autokeys-auto-buy-or-sell-keys-feature)).
--   set your own custom greeting, success/failed messages, and/or trade offer review notes.
--   set craft weapons as currency (0.05 ref) and automatically craft duplicated craftable weapons and matched class weapons into metal.
--   send the trade partner a summary of their offer if it needs to be reviewed ([jump](https://github.com/idinium96/tf2autobot#offer-review-summary-on-trade-partner-side)).
--   automatically accept trades that underpay by a certain amount of refined with `INVALID_VALUE exception` (you decide/set the amount of refined and can be enabled only for certain item qualities).
--   automatically decline (skip manual review) **ONLY** `INVALID_VALUE` trade (if it does not meet the set requirements for `INVALID_VALUE exception`).
--   automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers overpay.
--   request for `INVALID_ITEMS` to be priced by Prices.TF.
--   disable mention (Discord Webhook) on pending trade offers with `INVALID_VALUE`.
--   Dueling Mini-Game check - only accept 5 Uses!
--   Noise Maker check - only accept 25 Uses!
--   option to accept friend requests and invite people to join Steam groups.
--   option to alert admins when there's something wrong, such as a queue problem (the original one is still not fixed yet and I have no idea why), when your bot is out of space, or if your bot has less than the minimum amount of pure (must enable Autokeys feature).
--   new `UNDERSTOCKED` reason for manual review.
--   option to automatically decline `OVERSTOCKED` or `UNDERSTOCKED` reason.
--   option to recognize Strange Unusual as usual Unusual and vice versa.
--   notify owner if someone traded high valued items (spelled).
--   request pricecheck after every successful trade on each item involved in the trade (except craft weapons and pure).
--   automatically add any accepted `INVALID_ITEMS` (except skins) to sell (if and only if it's priced at prices.tf and not from ADMINS).
-
-**Others:**
-
--   automatically restart your bot if there's a queue problem and automatically relist if backpack.tf is not synchronized with your bot's Autokeys listings (sometimes when it's set to automatically buy keys, on backpack.tf it's listed to sell keys).
+-   Discord Webhook:
+    -   use Discord Webhooks for your bot to send accepted trade summaries, pending trade offer reviews, and/or private messages to a Discord server.
+    -   disable mention owner on pending trade offers with `INVALID_VALUE`.
+    -   notify the owner if someone traded high valued items (spelled).
+-   Autokeys:
+    -   enable Autokeys (to maintain ample refined metal stock) and key banking.
+-   Manual review:
+    -   send the trade partner a summary of their offer if it needs to be reviewed.
+    -   automatically accept trades that underpay by a certain amount of refined with `INVALID_VALUE exception` (you decide/set the amount of refined and can be enabled only for certain item qualities).
+    -   automatically decline (skip manual review) **ONLY** `INVALID_VALUE` trade (if it does not meet the set requirements for `INVALID_VALUE exception`).
+    -   automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers to overpay.
+    -   request for `INVALID_ITEMS` to be priced by Prices.TF.
+    -   new `UNDERSTOCKED` reason for manual review.
+    -   option to automatically decline `OVERSTOCKED` or `UNDERSTOCKED` reason.
+    -   automatically add any accepted `INVALID_ITEMS` (except skins) to sell (if and only if it's priced at prices.tf and not from ADMINS).
+    -   list all reasons and items for each trade offer review.
+- Support craft weapons as currency:
+    -   set craft weapons as currency (0.05 ref) and automatically craft duplicated craftable weapons and matched class weapons into metal.
+- Option to only accept full uses items:
+    -   Dueling Mini-Game check - only accept 5 Uses!
+    -   Noise Maker check - only accept 25 Uses!
+- Customs:
+    -   set your own custom greeting, success/failed messages, and/or trade offer review notes.
+    -   disable "show only metal" in the trade summary (it will show x keys, y ref instead of just x ref on the original version).
+    -   option to accept friend requests and invite people to join Steam groups.
+    -   option to recognize Strange Unusual as usual Unusual and vice versa.
+- Improvements:
+    -   request pricecheck after every successful trade on each item involved in the trade (except craft weapons and pure).
+    -   automatically add accepted `INVALID_ITEMS` to the pricelist with autoprice and intent to sell, which when sold, it will be automatically removed.
+- Others:
 -   emojis on almost all messages.
--   list all reasons and items for each trade offer review.
 -   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", and more!
 
 ## Added features
