@@ -49,27 +49,27 @@ The value of your side (Asked) and the trade partner side (Offered) and not equa
 
 <details><summary>🟦_OVERSTOCKED</summary>
 <p>
-Some of their items might already in your bot inventory and will reach or have already reached maximum stock if you accept the trade. The bot will automatically accept overstocked offers by default if the trade partner is overpaying. If you don't want this, simply set `DISABLE_ACCEPT_OVERSTOCKED_OVERPAY` to `true`. If you want your bot to automatically decline any offer that **ONLY** has this reason, you'll need to set `DISABLE_ACCEPT_OVERSTOCKED_OVERPAY` to `false`.
+Some of their items might already in your bot inventory and will reach or have already reached maximum stock if you accept the trade. The bot will automatically accept overstocked offers by default if the trade partner is overpaying. If you don't want this, simply set <code>DISABLE_ACCEPT_OVERSTOCKED_OVERPAY</code> to <code>true</code>. If you want your bot to automatically decline any offer that <b>ONLY</b> has this reason, you'll need to set <code>DISABLE_ACCEPT_OVERSTOCKED_OVERPAY</code> to <code>false</code>.
 </p>
 </details>
 
 <details><summary>🟩_UNDERSTOCKED</summary>
 <p>
-Some of our items will be less than the minimum stock if you accept the trade (if you set the item minimum to other than 0). Your bot will automatically accept understocked offers by default if the trade partner is overpaying. If you don't want this, simply set `DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY` to `true`. If you want your bot to automatically decline any offer that **ONLY** has this reason, you'll need to set `DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY` to `false`.
+Some of our items will be less than the minimum stock if you accept the trade (if you set the item minimum to other than 0). Your bot will automatically accept understocked offers by default if the trade partner is overpaying. If you don't want this, simply set <code>DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY</code> to <code>true</code>. If you want your bot to automatically decline any offer that <b>ONLY</b> has this reason, you'll need to set <code>DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY</code> to <code>false</code>.
 </p>
 </details>
 
 <details><summary>🟨_INVALID_ITEMS</summary>
 <p>
-Some of the items are not in your bot price list. If you have used `tf2-automatic` before, any `INVALID_ITEMS` items will not be priced (0 keys, 0 ref value), but `TF2Autobot` will get the price of that particular item from prices.tf and price it by default. You can disable this feature by changing the `DISABLE_GIVE_PRICE_TO_INVALID_ITEMS` default value to `true`. Your bot will also accept invalid items offers by default if the trade partner is overpaying (set `DISABLE_ACCEPT_INVALID_ITEMS_OVERPAY` to `true` if you want to disable it).
+Some of the items are not in your bot price list. If you have used <code>tf2-automatic</code> before, any <code>INVALID_ITEMS</code> items will not be priced (0 keys, 0 ref value), but <code>TF2Autobot</code> will get the price of that particular item from prices.tf and price it by default. You can disable this feature by changing the <code>DISABLE_GIVE_PRICE_TO_INVALID_ITEMS</code> default value to <code>true</code>. Your bot will also accept invalid items offers by default if the trade partner is overpaying (set <code>DISABLE_ACCEPT_INVALID_ITEMS_OVERPAY</code> to <code>true</code> if you want to disable it).
 
-Don't worry, if your bot has accepted any INVALID_ITEMS, your bot will mention you (if you enable Discord Webhook for trade summary), AND your bot will automatically add that particular item(s) to the pricelist with intent=sell (if and only if the items are priced with prices.tf).
+Don't worry, if your bot has accepted any <code>INVALID_ITEMS</code>, your bot will mention you (if you enable Discord Webhook for trade summary), AND your bot will automatically add that particular item(s) to the pricelist with <code>intent=sell</code> (if and only if the items are priced with prices.tf).
 </p>
 </details>
 
 <details><summary>🟫_DUPED_ITEMS</summary>
 <p>
-The setting for this can be found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#duped-unusual-check-feature). `ENABLE_DUPE_CHECK` is enabled by default. If some items the trade partner is/are offering more than `MINIMUM_KEYS_DUPE_CHECK` value, then your bot will run a duped check on that particular item. If it's found that it's duped, then you should expect your bot to send this to you. If you want to decline duped items that are more than the `MINIMUM_KEYS_DUPE_CHECK` value, simply set the `DECLINE_DUPES` to `true`.
+The setting for this can be found <a href="https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#duped-unusual-check-feature">here</a>. <code>ENABLE_DUPE_CHECK</code> is enabled by default. If some items the trade partner is/are offering more than <code>MINIMUM_KEYS_DUPE_CHECK</code> value, then your bot will run a duped check on that particular item. If it's found that it's duped, then you should expect your bot to send this to you. If you want to decline duped items that are more than the <code>MINIMUM_KEYS_DUPE_CHECK</code> value, simply set the <code>DECLINE_DUPES</code> to <code>true</code>.
 </p>
 </details>
 
@@ -81,12 +81,12 @@ This might occur if the item is not fully loaded by backpack.tf, which the histo
 
 <details><summary>⬜_ESCROW_CHECK_FAILED</summary>
 <p>
-This can occur when Steam client is down.
+This can occur when the Steam Client is down. It's temporary but if the trade partner keeps on sending it, you might just manually accept it. Escrow means trade holds, in which your and their items will be held to the Steam items server for some period of time. If you don't care about Escrow, simply set <code>ALLOW_ESCROW</code> to <code>true</code>. 
 </p>
 </details>
 
 <details><summary>⬜_BANNED_CHECK_FAILED</summary>
 <p>
-This can occur when Steamrep.com or backpack.tf is down.
+This can occur when Steamrep.com or backpack.tf is down. This is temporary and will be back in operation when Steamrep.com or backpack.tf is online. You will need to manually browse the trade partner backpack.tf page to see if that person is banned on Steamrep or not. If you just blindly accept the trade, your bot has the potential of getting banned from using backpack.tf services.
 </p>
 </details>
