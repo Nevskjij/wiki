@@ -11,38 +11,43 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
 
 ### TF2Autobot version
 
--   Discord Webhook:
+-   **Discord Webhook:**
     -   use Discord Webhooks for your bot to send accepted trade summaries, pending trade offer reviews, and/or private messages to a Discord server.
     -   disable mention owner on pending trade offers with `INVALID_VALUE`.
-    -   notify the owner if someone traded high valued items (spelled).
--   Autokeys:
+-   **Autokeys:**
     -   enable Autokeys (to maintain ample refined metal stock) and key banking.
--   Manual review:
+-   **Manual review:**
     -   send the trade partner a summary of their offer if it needs to be reviewed.
     -   automatically accept trades that underpay by a certain amount of refined with `INVALID_VALUE exception` (you decide/set the amount of refined and can be enabled only for certain item qualities).
     -   automatically decline (skip manual review) **ONLY** `INVALID_VALUE` trade (if it does not meet the set requirements for `INVALID_VALUE exception`).
-    -   automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers to overpay.
-    -   request for `INVALID_ITEMS` to be priced by Prices.TF.
+    -   automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers to overpay (will mention owner on Discord Webhook).
     -   new `UNDERSTOCKED` reason for manual review.
     -   option to automatically decline `OVERSTOCKED` or `UNDERSTOCKED` reason.
-    -   automatically add any accepted `INVALID_ITEMS` (except skins) to sell (if and only if it's priced at prices.tf and not from ADMINS).
     -   list all reasons and items for each trade offer review.
-- Support craft weapons as currency:
-    -   set craft weapons as currency (0.05 ref) and automatically craft duplicated craftable weapons and matched class weapons into metal.
-- Option to only accept full uses items:
+-   **Support craft weapons as currency:**
+    -   set craft weapons as currency (0.05 ref) and automatically craft duplicated craftable weapons and matched class weapons into metal (if not in pricelist).
+-   **Option to only accept full uses items:**
     -   Dueling Mini-Game check - only accept 5 Uses!
     -   Noise Maker check - only accept 25 Uses!
-- Customs:
+-   **Customs:**
     -   set your own custom greeting, success/failed messages, and/or trade offer review notes.
+    -   set your custom playing game name.
+    -   option to only play Team Fortress 2.
     -   disable "show only metal" in the trade summary (it will show x keys, y ref instead of just x ref on the original version).
-    -   option to accept friend requests and invite people to join Steam groups.
+    -   option to disable accept friend requests and disable invite people to join Steam groups.
     -   option to recognize Strange Unusual as usual Unusual and vice versa.
-- Improvements:
+    -   option to recognize Festivized items as non-Festivized.
+-   **Improvements:**
     -   request pricecheck after every successful trade on each item involved in the trade (except craft weapons and pure).
-    -   automatically add accepted `INVALID_ITEMS` to the pricelist with autoprice and intent to sell, which when sold, it will be automatically removed.
-- Others:
+    -   option to request for `INVALID_ITEMS` (items that are not in your pricelist) to be priced by Prices.TF.
+    -   automatically add accepted `INVALID_ITEMS` to the pricelist (if priced with prices.tf and not from ADMINS) with autoprice set to true and intent to sell, which when sold, will be automatically removed.
+    -   notify the owner if someone traded high valued items (spelled).
+    -   use the infinity symbol (∞) for infinite stock (maximum set to -1).
+-   **Others:**
 -   emojis on almost all messages.
 -   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", and more!
+
+More info in the [Releases](https://github.com/idinium96/tf2autobot/releases) note pages.
 
 ## Added features
 
@@ -77,7 +82,7 @@ If you want to use this feature, you must use the [ecosystem.template.json](http
 
 ### Autokeys (auto-buy or sell keys) feature
 
-When this feature is enabled, your bot will automatically buy or sell keys depending on the amount of pure your bot currently has. You'll need to set your minimum/maximum keys and minimum/maximum refined metals in your ecosystem.json. Additional explanation can be found [here](https://github.com/idinium96/tf2autobot#autokeys-feature).
+When this feature is enabled, your bot will automatically buy or sell keys depending on the amount of pure your bot currently has. You'll need to set your minimum/maximum keys and minimum/maximum refined metals in your ecosystem.json. Additional explanation can be found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#autokeys-feature).
 
 ```
 .____________________________________________________________.  ._______________________________.
@@ -129,7 +134,7 @@ You can see the code of this feature [here](https://github.com/idinium96/tf2auto
 
 ### INVALID_VALUE exception
 
-If you're having your bot trade unusuals or australiums (which the value, as we know, is more than 5 keys), and someone sends a trade offer with 0.11 ref underpay, your bot will skip this offer and send you a notification to review this offer. With this exception, your bot will accept the trade as long as the underpay is less than the exceptional value that you've set. To use this feature, you'll need to set the exception value on both `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. See [here](https://github.com/idinium96/tf2autobot#manual-review-settings).
+If you're having your bot trade  Unusuals or Australiums (which the value, as we know, is more than 5 keys), and someone sends a trade offer with 0.11 ref underpay, your bot will skip this offer and send you a notification to review this offer. With this exception, your bot will accept the trade as long as the underpay is less than the exceptional value that you've set. To use this feature, you'll need to set the exception value on both `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. See [here](https://github.com/idinium96/tf2autobot#manual-review-settings).
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/84966884-38adde80-b145-11ea-9aac-d28daf9a74e6.PNG" alt="Invalid_value_exception2" style="display:block;margin-left:auto;margin-right:auto;width:540px;height:450px;"></div>
 
