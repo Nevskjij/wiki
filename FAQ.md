@@ -40,7 +40,7 @@ IF you set `DISABLE_CRAFTWEAPON_AS_CURRENCY` to `true`, then all of that craft w
 ## Why my bot don't accept/decline the trade automatically?
 If someone sent an offer with wrong values, any items that are not in the pricelist, items that already reached maximum stock and etc, and `ENABLE_MANUAL_REVIEW` is set to `true`, then you should expect this to happen.
 
-Some description of each reason:
+Some descriptions of each reason:
 <details><summary>🟥_INVALID_VALUE</summary>
 <p>
 The value of your side (Asked) and the trade partner side (Offered) and not equal or more. If you want to automatically decline any offer that <b>ONLY</b> has this reason, you need to set <code>DISABLE_AUTO_DECLINE_INVALID_VALUE</code> to <code>false</code>. You can also set an exceptional value for an offer with this reason to be accepted by filling the item sku(s) in the <code>INVALID_VALUE_EXCEPTION_SKUS</code> array and set the <code>INVALID_VALUE_EXCEPTION_VALUE_IN_REF</code> value. Find more about it <a href="https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings">here</a>.
