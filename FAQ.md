@@ -7,7 +7,7 @@
 	- [I set my items to bank, my bot bought one but never put it to sell. Why?](#trading)
 	- [Why are my buy orders just suddenly disappearing by time?](#trading)
 	- [How much does bot count a Craftable weapon as? 0.05 or 0.11 ref?](#trading)
-        - [Why my bot don't accept/decline the trade automatically?]()
+        - [Why my bot don't accept/decline the trade automatically?](#why-my-bot-dont-acceptdecline-the-trade-automatically)
 
 # Steam Desktop Authenticator
 Steam Desktop Authenticator is a desktop implementation of Steam's mobile authenticator app. Which you can use if you for example do not have a phone, or if you need easy access to your account secrets for a bot account.  
