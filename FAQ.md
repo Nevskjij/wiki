@@ -41,25 +41,25 @@ IF you set `DISABLE_CRAFTWEAPON_AS_CURRENCY` to `true`, then all of that craft w
 If someone sent an offer with wrong values, any items that are not in the pricelist, items that already reached maximum stock and etc, and `ENABLE_MANUAL_REVIEW` is set to `true`, then you should expect this to happen.
 
 Some description of each reason:
-<details><summary>🟥`_INVALID_VALUE`</summary>
+<details><summary>🟥_INVALID_VALUE</summary>
 <p>
 The value of your side (Asked) and the trade partner side (Offered) and not equal or more. If you want to automatically decline any offer that **ONLY** has this reason, you need to set `DISABLE_AUTO_DECLINE_INVALID_VALUE` to `false`. You can also set an exceptional value for an offer with this reason to be accepted by filling the item sku(s) in the `INVALID_VALUE_EXCEPTION_SKUS` array and set the `INVALID_VALUE_EXCEPTION_VALUE_IN_REF` value. Find more about it [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings).
 </p>
 </details>
 
-<details><summary>🟦`_OVERSTOCKED`</summary>
+<details><summary>🟦_OVERSTOCKED</summary>
 <p>
 Some of their items might already in your bot inventory and will reach or have already reached maximum stock if you accept the trade. The bot will automatically accept overstocked offers by default if the trade partner is overpaying. If you don't want this, simply set `DISABLE_ACCEPT_OVERSTOCKED_OVERPAY` to `true`. If you want your bot to automatically decline any offer that **ONLY** has this reason, you'll need to set `DISABLE_ACCEPT_OVERSTOCKED_OVERPAY` to `false`.
 </p>
 </details>
 
-<details><summary>🟩`_UNDERSTOCKED`</summary>
+<details><summary>🟩_UNDERSTOCKED</summary>
 <p>
 Some of our items will be less than the minimum stock if you accept the trade (if you set the item minimum to other than 0). Your bot will automatically accept understocked offers by default if the trade partner is overpaying. If you don't want this, simply set `DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY` to `true`. If you want your bot to automatically decline any offer that **ONLY** has this reason, you'll need to set `DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY` to `false`.
 </p>
 </details>
 
-<details><summary>🟨`_INVALID_ITEMS`</summary>
+<details><summary>🟨_INVALID_ITEMS</summary>
 <p>
 Some of the items are not in your bot price list. If you have used `tf2-automatic` before, any `INVALID_ITEMS` items will not be priced (0 keys, 0 ref value), but `TF2Autobot` will get the price of that particular item from prices.tf and price it by default. You can disable this feature by changing the `DISABLE_GIVE_PRICE_TO_INVALID_ITEMS` default value to `true`. Your bot will also accept invalid items offers by default if the trade partner is overpaying (set `DISABLE_ACCEPT_INVALID_ITEMS_OVERPAY` to `true` if you want to disable it).
 
@@ -67,26 +67,26 @@ Don't worry, if your bot has accepted any INVALID_ITEMS, your bot will mention y
 </p>
 </details>
 
-<details><summary>🟫`_DUPED_ITEMS`</summary>
+<details><summary>🟫_DUPED_ITEMS</summary>
 <p>
-🟫`_DUPED_ITEMS`
+The setting for this can be found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#duped-unusual-check-feature). `ENABLE_DUPE_CHECK` is enabled by default. If some items the trade partner is/are offering more than `MINIMUM_KEYS_DUPE_CHECK` value, then your bot will run a duped check on that particular item. If it's found that it's duped, then you should expect your bot to send this to you. If you want to decline duped items that are more than the `MINIMUM_KEYS_DUPE_CHECK` value, simply set the `DECLINE_DUPES` to `true`.
 </p>
 </details>
 
-<details><summary>🟪`_DUPE_CHECK_FAILED`</summary>
+<details><summary>🟪_DUPE_CHECK_FAILED</summary>
 <p>
-🟪`_DUPE_CHECK_FAILED`
+This might occur if the item is not fully loaded by backpack.tf, which the history page of that particular item is not available.
 </p>
 </details>
 
-<details><summary>⬜`_ESCROW_CHECK_FAILED`</summary>
+<details><summary>⬜_ESCROW_CHECK_FAILED</summary>
 <p>
-⬜`_ESCROW_CHECK_FAILED`
+This can occur when Steam client is down.
 </p>
 </details>
 
-<details><summary>⬜`_BANNED_CHECK_FAILED`</summary>
+<details><summary>⬜_BANNED_CHECK_FAILED</summary>
 <p>
-⬜`_BANNED_CHECK_FAILED`
+This can occur when Steamrep.com or backpack.tf is down.
 </p>
 </details>
