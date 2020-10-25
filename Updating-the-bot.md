@@ -8,11 +8,15 @@ Make sure you've joined the [TF2Autobot Discord server](https://discord.gg/ZrVT7
 Updating the bot is the same for both Windows and Linux.
 
 Open up a command prompt or terminal/ssh window and navigate to your `tf2autobot` folder
-`cd path/to/tf2autobot`
+
+`cd path/to/tf2autobot` OR just `cd tf2autobot` if you follow the instructions in [Downloading the bot](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux).
+
 If your bot is installed on the Desktop you will use
-`cd Desktop/tf2autobot`
+
+`cd Desktop/tf2autobot`.
 
 After that, you will download and install the newest version by typing
+
 `git checkout master && git pull && npm install && npm run build`
 
 Now all you have to do is restart your bot and you will be running the newest version.
