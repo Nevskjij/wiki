@@ -28,7 +28,7 @@ Now re-open your maFile. You should be able to get your secrets now.
 # Trading
 
 ## I set my items to bank, my bot bought one but never put it to sell. Why?
-For your information, every time the bot bought/sold any items, it will run a check on the price list whether a listing for that item already been created or removed. When your bot did not put an item that it bought to sell, it's probably because Backpack.tf still did not fully load your items in their item server. If you see your bot backpack and the item already appeared, make sure it's not in **Using Fallback** status, or you can try to send `!refreshlist` to your bot, which your bot will execute checks on all items that it has and create sell orders for the missing items.
+For your information, every time the bot bought/sold any items, it will run a check on the price list whether a listing for that item already been created or removed. When your bot did not put an item that it bought to sell, it's probably because Backpack.tf still did not fully load your items in their item server. If you see your bot backpack and the item already appeared, make sure it's not in **Using Fallback** status, or you can try to send `!refreshlist` to your bot, which your bot will execute checks on all items that it has and create sell orders for the missing items. If it's still not working, then try restarting your bot.
 
 ## Why are my buy orders just suddenly disappearing by time?
 We don't have enough information regarding this issue. It could be a ratelimit with backpack.tf when your bot updating prices on a lot of items. The only way to solve this issue is by restarting your bot, or just let it recover by itself.
