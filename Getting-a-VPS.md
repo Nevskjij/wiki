@@ -6,7 +6,7 @@ You can get a VPS from many different providers, but I recommend getting one fro
 
 **If you don't have any Credit/Debit Card, Paypal account or you don't have an access to get one, I can help you to get one for your Team Fortress 2 pure. [Click here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services) to see the available services.**
 
-Next, what you need to do once you've created an account:
+If you're planning to get one yourself, the next thing that you need to do once you've created an account:
 - [DigitalOcean](https://m.do.co/c/6be9c5acd3ca):
 	1. Click on **Create** button > **Droplets**.
 	2. Select the highest Ubuntu LTS, (20.04) x64 (as of writing this).
