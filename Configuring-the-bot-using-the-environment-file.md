@@ -153,7 +153,7 @@ Table of contents
 | :------------------------: | :-------: | :-----: | --------------------------------------------------------------------------------------------------------------------------- |
 |    `ENABLE_DUPE_CHECK`     | `boolean` | `true`  | Enable/disable dupe check on unusuals.                                                                                      |
 |      `DECLINE_DUPES`       | `boolean` | `false` | Explains itself.                                                                                                            |
-| `MINIMUM_KEYS_ DUPE_CHECK` | `number`  |  `10`   | Explains itself.                                                                                                            |
+| `MINIMUM_KEYS_DUPE_CHECK` | `number`  |  `10`   | Explains itself.                                                                                                            |
 
 ### Set to true if want to skip
 
