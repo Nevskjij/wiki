@@ -6,7 +6,7 @@ You can get a VPS from many different providers, but I recommend getting one fro
 
 **If you don't have any Credit/Debit Card, Paypal account or you don't have an access to get one, I can help you to get one for your Team Fortress 2 pure. [Click here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services) to see the available services.**
 
-If you're planning to get one yourself, the next thing that you need to do once you've created an account:
+The next thing that you need to do once you've created an account:
 - [DigitalOcean](https://m.do.co/c/6be9c5acd3ca):
 	1. Click on **Create** button > **Droplets**.
 	2. Select the highest Ubuntu LTS, (20.04) x64 (as of writing this).
@@ -18,6 +18,7 @@ If you're planning to get one yourself, the next thing that you need to do once 
 	8. Edit your hostname to whatever you wanted.
 	9. No volume or backups is needed.
 	10. Click on "Create" to create the VPS.
+	11. Complete all steps in [Connecting to your VPS](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS#connecting-to-your-vps) and [Initial Setup for your VPS](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS#initial-setup-of-your-vps) sections.
 - [Hetzner](https://hetzner.cloud/?ref=68H4N0lNcT1W):
 	1. Click **+ NEW PROJECT** > Input a project name, example `tf2autobot` > Click on the `tf2autobot` project > Click on **ADD SERVER**.
 	2. Choose a region in which the VPS will be located.
@@ -28,6 +29,7 @@ If you're planning to get one yourself, the next thing that you need to do once 
 	7. Click on **+ADD SSH KEY** and paste your **SSH Public Key** and click **ADD SSH KEY**
 	8. Edit your server/hostname to whatever you wanted.
 	9. Click on "CREATE & BUY NOW" to create the VPS.
+	10. Complete all steps in [Connecting to your VPS](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS#connecting-to-your-vps) and [Initial Setup for your VPS](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS#initial-setup-of-your-vps) sections.
 
 # Generating your SSH key.
 
