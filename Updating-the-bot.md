@@ -9,7 +9,7 @@ Updating the bot is the same for both Windows and Linux.
 
 Open up a command prompt or terminal/ssh window and navigate to your `tf2autobot` folder
 
-`cd path/to/tf2autobot` OR just `cd tf2autobot` if you follow the instructions in [Downloading the bot](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux).
+`cd path/to/tf2autobot` OR just `cd tf2autobot` if you follow the instructions in [Downloading the bot on Linux](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux).
 
 If your bot is installed on the Desktop you will use
 
