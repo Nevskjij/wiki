@@ -38,10 +38,10 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
     -   option to recognize Strange Unusual as usual Unusual and vice versa.
     -   option to recognize Festivized items as non-Festivized.
 -   **Improvements:**
-    -   request pricecheck after every successful trade on each item involved in the trade (except craft weapons and pure).
+    -   request price check to prices.tf after every successful trade on each item involved in the trade (except craft weapons and pure).
     -   option to request for `INVALID_ITEMS` (items that are not in your pricelist) to be priced by Prices.TF.
     -   automatically add accepted `INVALID_ITEMS` to the pricelist (if priced with prices.tf and not from ADMINS) with autoprice set to true and intent to sell, which when sold, will be automatically removed.
-    -   notify the owner if someone traded high valued items (spelled).
+    -   notify the owner if someone traded high valued items (spelled and/or strange parts).
     -   use the infinity symbol (∞) for infinite stock (maximum set to -1).
 -   **Others:**
 -   emojis on almost all messages.
@@ -134,7 +134,7 @@ You can see the code of this feature [here](https://github.com/idinium96/tf2auto
 
 ### INVALID_VALUE exception
 
-If you're having your bot trade  Unusuals or Australiums (which the value, as we know, is more than 5 keys), and someone sends a trade offer with 0.11 ref underpay, your bot will skip this offer and send you a notification to review this offer. With this exception, your bot will accept the trade as long as the underpay is less than the exceptional value that you've set. To use this feature, you'll need to set the exception value on both `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. See [here](https://github.com/idinium96/tf2autobot#manual-review-settings).
+If you're having your bot trade  Unusuals or Australiums (which the value, as we know, is more than 5 keys), and someone sends a trade offer with 0.11 ref underpay, your bot will skip this offer and send you a notification to review this offer. With this exception, your bot will accept the trade as long as the underpay is less than the exceptional value that you've set. To use this feature, you'll need to set the exception value on both `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. See [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings).
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/84966884-38adde80-b145-11ea-9aac-d28daf9a74e6.PNG" alt="Invalid_value_exception2" style="display:block;margin-left:auto;margin-right:auto;width:540px;height:450px;"></div>
 
