@@ -25,6 +25,13 @@
 - [Updating the bot](https://github.com/idinium96/tf2autobot/wiki/Updating-the-bot)
 - [Maintaining polldata.json](https://github.com/idinium96/tf2autobot/wiki/Maintaining-polldata.json)
 
+# Extra (To do)
+- For VPS
+	- Install/setup tf2-autocord
+	- Canocial Livepatch service
+	- Auto system update and upgrade
+	- Crontab
+
 # Troubleshooting
 - [Common errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
 	- [Startup errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors#startup-errors)
