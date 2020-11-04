@@ -31,7 +31,18 @@ Now re-open your maFile. You should be able to get your secrets now.
 For your information, every time the bot bought/sold any items, it will run a check on the price list whether a listing for that item already been created or removed. When your bot did not put an item that it bought to sell, it's probably because Backpack.tf still did not fully load your items in their item server. If you see your bot backpack and the item already appeared, make sure it's not in **Using Fallback** status, or you can try to send `!refreshlist` to your bot, which your bot will execute checks on all items that it has and create sell orders for the missing items. If it's still not working, then try restarting your bot.
 
 ## Why are my buy orders just suddenly disappearing by time?
-We don't have enough information regarding this issue. It could be a ratelimit with backpack.tf when your bot updating prices on a lot of items. The only way to solve this issue is by restarting your bot, or just let it recover by itself.
+We don't have enough information regarding this issue. It could be a rate-limit with backpack.tf when your bot updating prices on a lot of items. The only way to solve this issue is by restarting your bot, or just let it recover by itself.
+
+<details><summary>UPDATE:</summary>
+<p>
+An experiment conducted by <a href="https://github.com/SkiLEXx">@SkiLEXx</a> that show the effect of Backpack.tf listings count on time. The timezone is CET (GMT +01:00).
+<div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/773688443569700904/unknown.png" alt="Bot1" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+<div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/773688421943083018/unknown.png" alt="Bot2" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+Based on the results above, you're to expect that to happen sometimes. Most autoprice=true items will be affected by this kind of listings disappearing, because at some point prices.tf burst to update multiple items prices and maybe got rate-limited on backpack.tf.
+</p>
+</details>
 
 ## How much does bot count a Craftable weapon as? 0.05 or 0.11 ref?
 All craft weapons listed [here](https://github.com/idinium96/tf2autobot/blob/master/src/classes/MyHandler.ts#L3135-L3423) are counted as 0.05 ref **IF** you set [`DISABLE_CRAFTWEAPON_AS_CURRENCY`](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L47) as `false` and you did not add that particular item in your price list.
