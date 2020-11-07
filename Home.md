@@ -1,5 +1,5 @@
 # Welcome to TF2Autobot
-TF2Autobot was made possible by [tf2-automatic](https://github.com/Nicklason/tf2-automatic) and improved upon by [idiNium.](http://github.com/idinium96/) You can check out the differences [here.](https://github.com/idinium96/tf2autobot/wiki/Differences-between-tf2-automatic-and-tf2autobot)
+TF2Autobot was made possible by [tf2-automatic](https://github.com/Nicklason/tf2-automatic) and improved upon by [idiNium.](http://github.com/idinium96/) You can check out the differences [here.](https://github.com/idinium96/tf2autobot/wiki/Differences-between-TF2Autobot-and-tf2-automatic)
 
 If this is your first time around we strongly urge you to **read the whole wiki** before you decide to install anything.
 
