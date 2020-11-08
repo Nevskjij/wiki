@@ -132,9 +132,9 @@ _Table I.2: Listing settings parameters._
 |     `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                      |
 |  `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.          |
 |  `buy.keys`   |   `0`   | Manually set buying price in keys.                                                                                                                    |
-| `buy.metals`  |   `0`   | Manually set buying price in refined metal.                                                                                                           |
+| `buy.metal`  |   `0`   | Manually set buying price in refined metal.                                                                                                           |
 |  `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                                   |
-| `sell.metals` |   `0`   | Manually set selling price in refined metal.                                                                                                          |
+| `sell.metal` |   `0`   | Manually set selling price in refined metal.                                                                                                          |
 |   `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                       |
 
 Example of what you want to have:
