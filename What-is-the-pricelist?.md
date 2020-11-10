@@ -125,17 +125,20 @@ When adding items with only identifying parameter, the item will be set to have 
 
 _Table I.2: Listing settings parameters._
 
-|   Parameter   | Default | Description                                                                                                                                           |
-| :-----------: | :-----: | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `intent`    | `bank`  | Other option is `buy` or `sell`. If set to `buy`, then your bot will only create a buying listing for that item, and once bought, it will be removed. |
-|     `min`     |   `0`   | Minimum stock to keep.                                                                                                                                |
-|     `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                      |
-|  `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.          |
-|  `buy.keys`   |   `0`   | Manually set buying price in keys.                                                                                                                    |
-| `buy.metal`  |   `0`   | Manually set buying price in refined metal.                                                                                                           |
-|  `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                                   |
-| `sell.metal` |   `0`   | Manually set selling price in refined metal.                                                                                                          |
-|   `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                       |
+|  Parameter   | Default | Description                                                                                                                                                                                                                                               |
+| :----------: | :-----: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|   `intent`   | `bank`  | Other option is `buy` or `sell`. If set to `buy`, then your bot will only create a buying listing for that item, and once bought, it will be removed.                                                                                                     |
+|    `min`     |   `0`   | Minimum stock to keep.                                                                                                                                                                                                                                    |
+|    `max`     |   `1`   | Maximum stock your bot can have.                                                                                                                                                                                                                          |
+| `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually.                                                                                                              |
+|  `buy.keys`  |   `0`   | Manually set buying price in keys.                                                                                                                                                                                                                        |
+| `buy.metal`  |   `0`   | Manually set buying price in refined metal.                                                                                                                                                                                                               |
+| `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                                                                                                                                       |
+| `sell.metal` |   `0`   | Manually set selling price in refined metal.                                                                                                                                                                                                              |
+|  `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                                                                                                                           |
+|   `group`    | `null`  | Items grouping. Example "craftHats" or "craftWeapons" so you can easily manage and update `intent`, `min`, `max`, `autoprice`, or `enabled` parameters only on the items in that particular group. Learn more in how to update pricelist section.          |
+|  `buynote`   | `null`  | Custom buy order listing note on backpack.tf. All parameters found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist) can be used. |
+|  `sellnote`  | `null`  | Same as `buynote`, but this for buy order listing note.                                                                                                                                                                                                  |
 
 Example of what you want to have:
 
@@ -203,6 +206,8 @@ To use `item` parameter, simply put the full item name. When you're using the `!
 
 -   There is also an option for you to update the listing settings parameter on every item at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
     -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
+-   To update all items with a specified group, use `!update all=true&group=/<groupName/>&[Other parameter(s) to update].
+    -   Example: `!update all=true&group=craftHats&intent=sell&max=3`
 
 # III. Remove items from pricelist with `!remove` command.
 [Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
