@@ -16,7 +16,7 @@ This page contains common errors and ways to fix them.
 
 # Startup errors
 ## Missing required environment variable
-When updating your environmental variables, almost make sure you restart the bot with the `--update-env` option if you are using PM2. As explained [here](https://github.com/Nicklason/tf2autobot/wiki/PM2#updating-environment-variables) 
+When updating your environmental variables, almost make sure you restart the bot with the `--update-env` option if you are using PM2. As explained [here](https://github.com/idinium96/tf2autobot/wiki/Updating-the-bot#updating-the-environment-file) 
 #### ecosystem.json
 You need to make sure your file is **NOT** called `ecosystem.template.json`. It needs to be `ecosystem.json`.  
 
