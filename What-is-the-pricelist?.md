@@ -206,7 +206,7 @@ To use `item` parameter, simply put the full item name. When you're using the `!
 
 -   There is also an option for you to update the listing settings parameter on every item at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
     -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
--   To update all items with a specified group, use `!update all=true&group=\<groupName\>&[Other parameter(s) to update].
+-   To update all items with a specified group, use `!update all=true&group=\<groupName\>&[Other parameter(s) to update]`.
     -   Example: `!update all=true&group=craftHats&intent=sell&max=3`
 
 # III. Remove items from pricelist with `!remove` command.
