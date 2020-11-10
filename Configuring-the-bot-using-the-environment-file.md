@@ -199,8 +199,8 @@ Time will be used in the `!time` command and message sent to trade partners if t
 [Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
 |      Variable       |   Type   |                                        Default                                         | Description              |
 | :-----------------: | :------: | :------------------------------------------------------------------------------------: | ------------------------ |
-| `BPTF_DETAILS_BUY`  | `string` | [see](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L85) | Your buy order message.  |
-| `BPTF_DETAILS_SELL` | `string` | [see](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L86) | Your sell order message. |
+| `BPTF_DETAILS_BUY`  | `string` | [see](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L92) | Your buy order listing note.  |
+| `BPTF_DETAILS_SELL` | `string` | [see](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L93) | Your sell order listing note. |
 
 **Parameters:**
 
@@ -209,13 +209,12 @@ Time will be used in the `!time` command and message sent to trade partners if t
 -   `%current_stock%` - display an items current stock (by default this is used in `BPTF_DETAILS_BUY`).
 -   `%max_stock%` - display an item maximum stock (by default this is used in `BPTF_DETAILS_BUY`).
 -   `%amount_trade%` - display the amount that can be traded (between the minimum and maximum stock, used in `BPTF_DETAILS_SELL`).
--   `%amount_can_buy%` - display the amount that the bot can buy (use it on `BPTF_DETAILS_BUY`).
--   `%keyPrice%` - display the current key rate (selling price). It will display as `Key rate: x ref/key` only if the item price includes x key. Otherwise, it will show as ✨.
--   `%dueling%` - display `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)` on only Dueling Mini-Game listings - prefer to only place this on `BPTF_DETAILS_BUY`. On other items it will show as ✨.
+-   `%keyPrice%` - display the current key rate (selling price). It will display as `Key rate: x ref/key` only if the item price includes x key. Otherwise, it will show as an empty string.
+-   `%uses%` - display `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)` on only Dueling Mini-Game, or (𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟐𝟱x 𝗨𝗦𝗘𝗦) on Noise Maker listings (if you enable check uses) - prefer to only place this on `BPTF_DETAILS_BUY`. On other items, it will show as an empty string.
 
 **Usage example:**
 
-<div align="center"><img src="https://user-images.githubusercontent.com/47635037/85929261-f3787200-b8e5-11ea-9ba8-b1acb12a5aad.PNG" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/98710377-878f3580-23be-11eb-9ed5-e0f6ec4e26af.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 ### Custom offer message
 
