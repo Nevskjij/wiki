@@ -29,6 +29,10 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
 -   **Option to only accept full uses items:**
     -   Dueling Mini-Game check - only accept 5 Uses!
     -   Noise Maker check - only accept 25 Uses!
+-   **Custom Listing Note:**
+    -   set custom buy or sell order listing note for any item of your choice!
+-   **Items Grouping in pricelist:**
+    -   set a group for specific items in your pricelist so it will be easy to manage, such as if you only want to update `intent=bank` to `intent=sell` to only "craftHats" items group!
 -   **Customs:**
     -   set your own custom greeting, success/failed messages, and/or trade offer review notes.
     -   set your custom playing game name.
