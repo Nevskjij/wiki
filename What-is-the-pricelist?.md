@@ -229,7 +229,7 @@ You can only update `intent`, `min`, `max`, `autoprice`, and `enabled` parameter
 
 #### Special parameter 
 | Parameter | Type | Description |
-| :-: | :-: | :-: |
+| :-: | :-: | :- |
 | `removenote` | `boolean` | Sending `!update all=true&removenote=true` will set both `note.buy` and `note.sell` to `null` (will use your templates). |
 
 #### \*Important Note
