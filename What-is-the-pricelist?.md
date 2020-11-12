@@ -210,7 +210,7 @@ To use `item` parameter, simply put the full item name. When you're using the `!
 #### Special parameters
 
 | Parameter | Type | Description |
-| :-: | :-: | :-: |
+| :-: | :-: | :- |
 | `resetgroup` | `boolean` | Send with `resetgroup=true` will reset the group of that particular item to `all`. |
 | `removenote` | `boolean` | Send with `removenote=true` will reset both `note.buy` and `note.sell` values to `null` (will use templates). |
 | `removebuynote` | `boolean` | Send with `removebuynote=true` will reset `note.buy` value to `null` (will use buy order template). |
