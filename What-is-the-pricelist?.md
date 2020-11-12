@@ -17,6 +17,8 @@ It contains all the items you added via the `!add` command and stores the parame
 
 It is highly recommended that you take regular backups of this file in case you will ever lose access to your machine or your file gets corrupted. 
 
+---
+
 # I. Add item to pricelist with `!add` command
 
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
@@ -136,7 +138,7 @@ _Table I.2: Listing settings parameters._
 | `sell.keys`  |   `0`   | Manually set selling price in keys.                                                                                                                                                                                                                       |
 | `sell.metal` |   `0`   | Manually set selling price in refined metal.                                                                                                                                                                                                              |
 |  `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                                                                                                                           |
-|   `group`    | `null`  | Items grouping. Example "craftHats" or "craftWeapons" so you can easily manage and update `intent`, `min`, `max`, `autoprice`, or `enabled` parameters only on the items in that particular group. Learn more in how to update pricelist section.          |
+|   `group`    | `all`  | Items grouping. Example "craftHats" or "craftWeapons" so you can easily manage and update `intent`, `min`, `max`, `autoprice`, or `enabled` parameters only on the items in that particular group. Learn more in how to update pricelist section.          |
 |  `note.buy`   | `null`  | Custom buy order listing note on backpack.tf. All parameters found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist) can be used. |
 |  `note.sell`  | `null`  | Same as `note.buy`, but this for buy order listing note.                                                                                                                                                                                                  |
 
@@ -168,9 +170,12 @@ Example of what you want to have:
 -   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
 
+---
+
 # II. Update items listing settings with `!update` command
 [Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
+## II.1. Updating a single item
 Sometime, after you've added the items that you want your bot trade, you might change your mind to adjust the `min` and `max`, change the `intent`, and maybe manually price items that your bot bought. In order to do that, you will need to use **!update** command.
 
 An `!update` command pretty much similar to the `!add` command, where you need to tell your bot what item (identifying parameter) and then include the listing settings parameters that you want to update. That's mean Table I.1 and Table I.2 can also be used here. In addition to Table I.1, since the items have been added to the pricelist, now you can use a new identifying parameter instead of `name`, `defindex`, and `sku`: the **`item`** identifying parameter.
@@ -202,16 +207,51 @@ To use `item` parameter, simply put the full item name. When you're using the `!
             -   `!update sku=31089;5;u145&intent=sell&sell.keys=300&buy.keys=100`
             -   `!update item=Pyroland Daydream Smissmas Saxton&intent=sell&sell.keys=300&buy.keys=100`
 
-#### \*Note:
+#### Special parameters
 
--   There is also an option for you to update the listing settings parameter on every item at once (only for updating `intent`, `min`, `max`, `autoprice` and `enabled`. You can not update `buy` or `sell` prices with this). You can do that with **`!update all=true`** and followed by the listing settings parameters.
-    -   Example: `!update all=true&intent=sell` - This will update all of your items to `intent` to sell.
--   To update all items with a specified group, use `!update all=true&group=<groupName>&[Other parameter(s) to update]`.
-    -   Example: `!update all=true&group=craftHats&intent=sell&max=3`
+| Parameter | Type | Description |
+| :-: | :-: | :-: |
+| `resetgroup` | `boolean` | Send with `resetgroup=true` will reset the group of that particular item to `all`. |
+| `removenote` | `boolean` | Send with `removenote=true` will reset both `note.buy` and `note.sell` values to `null` (will use templates). |
+| `removebuynote` | `boolean` | Send with `removebuynote=true` will reset `note.buy` value to `null` (will use buy order template). |
+| `removesellnote` | `boolean` | Send with `removesellnote=true` will reset `note.sell` value to `null` (will use sell order template). |
+
+## II.2. Updating multiple items
+This bot has an option to update the listing parameters of all items at once, or update all items by group (if you have set the group when adding/updating the items individually).
+
+### II.2.1. Update all items
+Syntax: `!update all=true&[listing parameters to update]`
+Example: 
+1. `!update all=true&intent=sell` - will update all item entries in your pricelist to intent=sell.
+2. `!update all=true&max=5&intent=bank&enabled=false` - will update max to 5, intent to bank and disable listing on backpack.tf for all items.
+
+You can only update `intent`, `min`, `max`, `autoprice`, and `enabled` parameters for `!update all=true` command.
+
+#### Special parameter 
+| Parameter | Type | Description |
+| :-: | :-: | :-: |
+| `removenote` | `boolean` | Sending `!update all=true&removenote=true` will set both `note.buy` and `note.sell` to `null` (will use your templates). |
+
+#### \*Important Note
+- `!update all=true` to update all items at once **DO NOT SUPPORT** to update **buy.keys, buy.metal, sell.keys, sell.metal, note.buy and note.sell** parameters.
+
+### II.2.2. Update all items by group
+Syntax: `!update all=true&withgroup=<groupName>&[listing parameters to update]`
+Example: 
+1. `!update all=true&withgroup=craftw&intent=sell` - will update all item entries with group "craftw" in your pricelist to intent=sell.
+2. `!update all=true&withgroup=craftw&group=craftweapon&max=5&intent=bank&enabled=false` - will update group "craftw" to "craftweapon", max to 5, intent to bank and disable listing on backpack.tf for all "craftw" items.
+
+#### \*Note:
+- Update all items by group **SUPPORT** updating **buy.keys, buy.metal, sell.keys, sell.metal, note.buy and note.sell**, BUT please make sure to adhere to the rules for `sell` and `buy`, which you HAVE to define BOTH of it.
+Example:
+- `!update all=true&withgroup=craft&buy.metal=0.05&sell.metal=0.11` - this will update buy/sell price for all items on the "craft" group.
+
+---
 
 # III. Remove items from pricelist with `!remove` command.
 [Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
 
+## III.1 Removing a single item
 If you want to remove an item from the pricelist, simply use any identifying parameters (`name`, `defindex`, `sku`, or `item`).
 
 -   Example: You want to remove Non-Craftable Tour of Duty Ticket (4 options)
@@ -220,13 +260,21 @@ If you want to remove an item from the pricelist, simply use any identifying par
     -   `!remove sku=725;6;uncraftable`
     -   `!remove item=Non-Craftable Tour of Duty Ticket`
 
-#### \*Note:
+## III.2 Removing multiple items
+This bot has a feature to remove all item entries in your pricelist at once, or remove only items of a specific group.
 
-You can also remove the entire pricelist with `!remove all=true`. Once you've sent this to your bot, it will reply with:
+### III.2.1 Removing all items at once
+Simply send `!remove all=true` to your bot. Once you've sent this to your bot, it will reply with:
 
 "`⚠️ Are you sure that you want to remove x items? Try again with i_am_sure=yes_i_am`"
 
 Confirm to remove all items from the pricelist with `!remove all=true&i_am_sure=yes_i_am`.
+
+### III.2.2 Removing all items by group
+Send `!remove all=true&withgroup=<groupName>`, and your bot will reply for confirmation.
+Once confirmed, send `!remove all=true&withgroup=<groupName>&i_am_sure=yes_i_am`.
+
+---
 
 # IV. Other commands
 [Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#table-of-contents)
