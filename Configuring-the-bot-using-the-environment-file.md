@@ -131,6 +131,7 @@ Table of contents
 |    `DISABLE_CHECK_USES_ NOISE_MAKER`    | `boolean` | `false` | (must have 25 uses left). Set to `true` if you want your bot to buy Noise Makers regardless of how many uses are left.                                 |
 | `DISABLE_OWNER_COMMAND` | `boolean` | `false` | Set this to `true` if you want to disable `!owner` command. |
 |   `DISABLE_AUTO_REMOVE_ INTENT_SELL`    | `boolean` | `false` | By default, any pricelist entry with intent=sell will be automatically removed when the particular item is sold and no longer in the bot inventory.    |
+|   `DISABLE_HIGH_VALUE_HOLD`    | `boolean` | `false` | By default, whenever your bot accepts items with high valued attachments, it will temporarily be disabled so you can decide whether to manually price it. Set this to `true` if you want to disable this feature.  |
 
 ### Set to true if want to enable
 
