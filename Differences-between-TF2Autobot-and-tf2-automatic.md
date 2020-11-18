@@ -47,7 +47,7 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
     -   automatically add accepted `INVALID_ITEMS` to the pricelist (if priced with prices.tf and not from ADMINS) with autoprice set to true and intent to sell, which when sold, will be automatically removed.
     -   notify the owner if someone traded high valued items (spelled and/or strange parts).
     -   use the infinity symbol (∞) for infinite stock (maximum set to -1).
-    -   able to create **sell** orders for specific Mann Co. Supply Crate, Mann Co. Supply Munition and, Salvaged Mann Co. Supply Crate series and Skins/War Paint!
+    -   able to create **sell orders** for specific Mann Co. Supply Crate, Mann Co. Supply Munition and, Salvaged Mann Co. Supply Crate series and Skins/War Paint!
     -   support **buy orders** for targeted specific items such as Crates, Unusualifier, Strangifier, Killstreak Kit, Killstreak Kit Fabricator and Chemistry set!
 -   **Others:**
 -   emojis on almost all messages.
@@ -149,3 +149,17 @@ If you're having your bot trade  Unusuals or Australiums (which the value, as we
 ### New bot reply when adding/updating an item
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/99592362-13dad180-2a2b-11eb-83fb-1c1fb194211c.png" alt="new_bot_reply" style="display:block;margin-left:auto;margin-right:auto;"></div>
+
+### Support buy orders for specific targeted items
+
+<div align="center"><img src="https://cdn.discordapp.com/attachments/715362558256873492/777353181713399828/unknown.png" alt="buy_order_specific_targeted_items" style="display:block;margin-left:auto;margin-right:auto;"></div>
+
+### Support sell orders for Crates/Skins/War paints
+
+_This was not possible on tf2-automatic._
+
+<div align="center"><img src="https://cdn.discordapp.com/attachments/699642379266686997/775584447956254720/unknown-1.png" alt="sell_orders" style="display:block;margin-left:auto;margin-right:auto;"></div>
+
+### High value items
+
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/99593484-adef4980-2a2c-11eb-97e6-7b538e62d0f9.png" alt="sell_orders" style="display:block;margin-left:auto;margin-right:auto;"></div>
