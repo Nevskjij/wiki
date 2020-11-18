@@ -140,7 +140,7 @@ _Table I.2: Listing settings parameters._
 |  `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false`                                                                                                                                                           |
 |   `group`    | `all`  | Items grouping. Example "craftHats" or "craftWeapons" so you can easily manage and update `intent`, `min`, `max`, `autoprice`, or `enabled` parameters only on the items in that particular group. Learn more in how to update pricelist section.          |
 |  `note.buy`   | `null`  | Custom buy order listing note on backpack.tf. All parameters found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist) can be used. |
-|  `note.sell`  | `null`  | Same as `note.buy`, but this for buy order listing note.                                                                                                                                                                                                  |
+|  `note.sell`  | `null`  | Same as `note.buy`, but this for sell order listing note.                                                                                                                                                                                                  |
 
 Example of what you want to have:
 
