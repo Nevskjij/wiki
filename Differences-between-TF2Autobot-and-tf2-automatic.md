@@ -147,4 +147,4 @@ If you're having your bot trade  Unusuals or Australiums (which the value, as we
 
 ### New bot reply when adding/updating an item
 
-<div align="center"><img src="https://user-images.githubusercontent.com/47635037/99592362-13dad180-2a2b-11eb-83fb-1c1fb194211c.png" alt="Invalid_value_exception2" style="display:block;margin-left:auto;margin-right:auto;"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/99592362-13dad180-2a2b-11eb-83fb-1c1fb194211c.png" alt="new_bot_reply" style="display:block;margin-left:auto;margin-right:auto;"></div>
