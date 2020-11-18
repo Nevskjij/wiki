@@ -1,36 +1,40 @@
-Now that you have downloaded and installed the bot you can start with configuring your bot.
+Now that you have downloaded and installed the bot you can start configuring your bot.
 
 First, we will setup the environment file which you will use to configure the bot to your needs.
 
-# Environment file and environment variables
-## For the Windows setup
-The bot is configured through environment variables. These variables can be set using a file that the bot reads when it starts.
+# Environment File and Environment Variables
+## Windows Setup
+For Windows, the bot is configured through environment variables that can be set using a file (`.env`) that the bot reads when it starts.
 
-Please ensure that you've file types extension viewer enabled on your PC settings (click [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) if you are not sure what is this about). Use the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found on your tf2autobot folder and rename it to `.env` (yes, only a dot (`.`) and a word `env`). 
+**Please ensure that you have file extension viewing enabled in your Windows settings prior to continuing (click [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) for more information).**
 
-## For the Linux setup
-The bot is configured through environment variables. These variables can be set using a file that the bot reads when it starts.
+Modify the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`).
 
-If you look at your `tf2autobot` folder you can already see a file called `template.ecosystem.json`
+## Linux Setup
+For Linux, the bot is configured through environment variables that can be set using a file (`ecosystem.json`) that the bot reads when it starts.
 
-The first thing you should do is rename that file to `ecosystem.json`
+Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) file found in your `tf2autobot/` folder, renaming it to `ecosystem.json`
 
-# Required variables for the bot to start
 
-To be able to start the bot, you need to set a few compulsory variables.
+***
 
-If you have followed the [Before you start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) guide you should already have your `STEAM_SHARED_SECRET` and `STEAM_IDENTITY_SECRET` ready.
 
-## ✓ Your bot credentials
+# Required Variables
 
-|        Variable         |   Type   | Description                                                                                                                                                                                                                                                                                                |
-| :---------------------: | :------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  `STEAM_ACCOUNT_NAME`   | `string` | The Steam account username of your bot account                                                                                                                                                      |
-|    `STEAM_PASSWORD`     | `string` | The Steam account password of your bot account                                                                                                                                                                                                                                                                         |
-|  `STEAM_SHARED_SECRET`  | `string` | You can find this in the `<yourBotSteamID>.maFile` file inside `~/SDA/maFiles` folder. Open the file using notepad and search for `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` <-- take only this one (which is `agdgwegdgawfagxafagfkagusbuigiuefh==` in this example. Do not use this one, it is just an example). |
+To be able to start the bot, you need to set a few compulsory variables. **All of the variables in this section must be set or your bot will not run!**
+
+If you have followed the [Before You Start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) section of the guide, you should already have your `STEAM_SHARED_SECRET` and `STEAM_IDENTITY_SECRET` on-hand.
+
+## Bot Credentials
+
+|        Variable       |   Type   | Description |
+| :-------------------: | :------: | ----------- |
+| `STEAM_ACCOUNT_NAME`  | `string` | The Steam account username of your bot account                                                                                                                                                     
+| `STEAM_PASSWORD`      | `string` | The Steam account password of your bot account                                                                                                                                                                                                                                                                        
+| `STEAM_SHARED_SECRET` | `string` | You can find this in the `<yourBotSteamID>.maFile` file inside `~/SDA/maFiles` folder. Open the file using notepad and search for `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` <-- take only this one (which is `agdgwegdgawfagxafagfkagusbuigiuefh==` in this example. Do not use this one, it is just an example). |
 | `STEAM_IDENTITY_SECRET` | `string` | Same as above (but now search for `identity_secret`).                                                                                                                      |
 
-**Q: Where can I get those secrets?**
+**Q: Where can I obtain the above secrets?**
 
 -   A: You need to activate Steam Guard for your bot account using [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator)
 
@@ -136,8 +140,8 @@ Table of contents
 ### High Value Notifications
 |                Variable                 | Type | Default | Description |
 | :-------------------------------------: | :--: | :-----: | ----------- |
-| `HIGH_VALUE_SHEENS`                     | `string[]` | `[""]` | If the bot completes a trade that contains items with any sheen located in this list, the owner will be notified of the trade and the item(s) containing the sheen will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this variable to `["Team Shine"]` will cause any weapons with a `Team Shine` sheen to not be automatically re-listed, and will notify the owner if one is obtained successfully. |
-| `HIGH_VALUE_KILLSTREAKERS`              | `string[]` | `[""]` | If the bot completes a trade that contains items with any killstreaker located in this list, the owner will be notified of the trade and the item(s) containing the killstreaker will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this variable to `["Fire Horns", "Tornado"]` will cause any weapons with a `Fire Horns` or `Tornado` killstreaker to not be automatically re-listed, and will notify the owner if one is obtained successfully. |
+| `HIGH_VALUE_SHEENS`                     | `string[]` | `[""]` | If the bot completes a trade that contains items with any sheen located in this list, the owner will be notified of the trade and the item(s) containing the sheen will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this variable to `["Team Shine"]` will cause any weapons with a `Team Shine` sheen to not be automatically re-listed, and will notify the owner if one is obtained successfully. If this variable is left blank (`[""]`), the bot will hold and notify on **all** sheens. |
+| `HIGH_VALUE_KILLSTREAKERS`              | `string[]` | `[""]` | If the bot completes a trade that contains items with any killstreaker located in this list, the owner will be notified of the trade and the item(s) containing the killstreaker will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this variable to `["Fire Horns", "Tornado"]` will cause any weapons with a `Fire Horns` or `Tornado` killstreaker to not be automatically re-listed, and will notify the owner if one is obtained successfully. If this variable is left blank (`[""]`), the bot will hold and notify on **all** killstreakers. |
 
 ### Set to true if want to enable
 
