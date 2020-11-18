@@ -86,7 +86,9 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 - [Normalization Settings](#normalization-settings)
 - [Trade Statistic Settings](#trade-statistic-settings)
 - [Duplicated Unusual Settings](#duplicated-unusual-settings)
-- [Timezone Settings](#your-time)
+- [Bot Profile Settings](#bot-profile-settings)
+- [Timezone Settings](#timezone-settings)
+- [Trade Bypass Settings](#trade-bypass-settings)
 - [Escrow, Metal Overpay, Banned Check](#set-to-true-if-want-to-allow)
 - [Debug Mode](#set-to-true-if-want-to-enable-debugging-notes-in-console)
 - [Backpack.tf Buy/Sell Order Listing Note](#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist)
@@ -172,32 +174,31 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 | `DECLINE_DUPES`  | `boolean` | `false` | If set to `true`, the bot will decline any unusual items that it determines as having been duplicated. |
 | `MINIMUM_KEYS_DUPE_CHECK` | `number`  |  `10`   | The minimum number of keys an item must be worth before the bot performs a check for whether or not it is duplicated. |
 
-## Backpack.TF 
+## Bot Profile Settings
 
-|            Variable             |   Type    | Default | Description                                                                                                                                                                                         |
-| :-----------------------------: | :-------: | :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   `SKIP_BPTF_ TRADEOFFERURL`    | `boolean` | `true`  | Not sure why this may not work. Please add a trade offer URL by yourself [here](https://backpack.tf/settings##general) (login as your bot Steam account).                                             |
-|   `SKIP_ACCOUNT_ LIMITATIONS`   | `boolean` | `true`  | Used to check your account limitation. It's better to set to `true` if your bot's Steam account is already a [premium account](https://support.steampowered.com/kb_article.php?ref=3330-IAGK-7663). |
-| `SKIP_UPDATE_ PROFILE_SETTINGS` | `boolean` | `true`  | This is just to set your bot's Steam profile to public so backpack.tf can load your bot inventory and etc correctly. If you already set everything to the public, just set this to `true`.              |
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `SKIP_BPTF_TRADEOFFERURL` | `boolean` | `true`  | If set to `false`, your bot will skip the check to set it's Steam Trade Offer URL on backpack.tf. If there are any issues setting this URL, please manually do so [here](https://backpack.tf/settings##general), and be sure to login using your bot's Steam account. If you've already set your Trade Offer URL on backpack.tf manually (as recommended in the guide), just leave this set to `true`. **SETTING THIS TO FALSE IS NOT RECOMMENDED!** |
+| `SKIP_ACCOUNT_LIMITATIONS` | `boolean` | `true` | If set to `false`, your bot will check your Steam account limitations. Read more here: https://support.steampowered.com/kb_article.php?ref=3330-IAGK-7663. If your bot's Steam account is premium, just leave this set to `true`. **SETTING THIS TO FALSE IS NOT RECOMMENDED!** |
+| `SKIP_UPDATE_PROFILE_SETTINGS` | `boolean` | `true`  | If set to `false`, your bot will attempt to set all of your profile settings to public. This is just so that backpack.tf can load your bot inventory correctly. If you already set everything to the public, just leave this set to `true`. **SETTING THIS TO FALSE IS NOT RECOMMENDED!** |
 
-### Your time
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-Time will be used in the `!time` command and message sent to trade partners if their offer needs to be reviewed.
+## Timezone Settings
+The time settings listed here will be used in the `!time` command as well as in messages sent to trade partners if their offer needs to be reviewed.
 
-|         Variable         |   Type   | Default | Description                                                                                                                              |
-| :----------------------: | :------: | :-----: | ---------------------------------------------------------------------------------------------------------------------------------------- |
-|        `TIMEZONE`        | `string` |  `UTC`  | Please only use these [Timezone Format](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example, `Asia/Kuala_Lumpur`. |
-|  `CUSTOM_TIME_FORMAT`   | `string` |    →    | `MMMM Do YYYY, HH:mm:ss ZZ` - Please refer to [this article](https://www.tutorialspoint.com/momentjs/momentjs_format.htm)                |
-| `TIME_ADDITIONAL_ NOTES` | `string` |  `""`   | Optional additional notes when the bot shows your current time - your active hours, etc.                                                 |
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `TIMEZONE` | `string` | `UTC` | The timezone that you currently reside in. Please only use these [Timezone Formats](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example, if you live in Malysia, you can use the value `Asia/Kuala_Lumpur`. Or if you live in New York, you can use the value `America/New_York`.|
+| `CUSTOM_TIME_FORMAT` | `string` | `MMMM Do YYYY, HH:mm:ss ZZ` |  - Please refer to [this article](https://www.tutorialspoint.com/momentjs/momentjs_format.htm) for more information on specifying a custom time format for your bot. |
+| `TIME_ADDITIONAL_NOTES` | `string` | `""` | Optional additional notes when the bot shows your current time. Some examples are your active hours or who to contact if you are offline. |
 
-### Set to true if want to allow
+## Trade Bypass Settings
 
-|    Variable     |   Type    | Default | Description                                                                                                                              |
-| :-------------: | :-------: | :-----: | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `ALLOW_ESCROW`  | `boolean` | `false` | Escrow = trade hold.                                                                                                                     |
-| `ALLOW_OVERPAY` | `boolean` | `true`  | If people offer to overpay, your bot will accept. Set it to `false` if you want it to decline.                                              |
-| `ALLOW_GIFT_ WITHOUT_NOTE` | `boolean` | `false` | Set this to `true` if you want your bot to accept any gift without the need for the trade partner to include anything in the offer message (Not recommended). |
-| `ALLOW_BANNED`  | `boolean` | `false` | I think it's best to set as `false`. If set as `true`, your bot will trade with backpack.tf banned or steamrep.com scammer marked users. |
+| Variable | Type | Default | Description |
+| :----: | :----: | :-----: | ----------- |
+| `ALLOW_ESCROW`  | `boolean` | `false` | If set to `true`, your bot will allow trades to be held for up to 15 days as a result of the trade partner not having Mobile Authentication enabled. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+| `ALLOW_OVERPAY` | `boolean` | `true`  | If set to `true`, your bot will allow trade partners to overpay with items or keys/metal. Otherwise, your bot will decline any trades in which it would receive overpay. |
+| `ALLOW_GIFT_WITHOUT_NOTE` | `boolean` | `false` | If set to `true`, your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](https://github.com/idinium96/tf2autobot/blob/1331f49d1c0217b906fff27f048c58b833bb844f/src/lib/data.ts#L601). **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+| `ALLOW_BANNED`  | `boolean` | `false` | If set to `true`, your bot will trade with users that are banned on backpack.tf or marked as a scammer on steamrep.com. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
 
 ### Set time for the price to be updated in seconds
 
