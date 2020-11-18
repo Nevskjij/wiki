@@ -10,3 +10,5 @@ It answers [common errors](https://github.com/idinium96/tf2autobot/wiki/Common-E
 
 ## Feeling ready?
 If so start by reading the [Before you start section.](https://github.com/idinium96/tf2autobot/wiki/Before-you-start)
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L02PSYG)
