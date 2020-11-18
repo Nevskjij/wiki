@@ -48,6 +48,7 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
     -   notify the owner if someone traded high valued items (spelled and/or strange parts).
     -   use the infinity symbol (∞) for infinite stock (maximum set to -1).
     -   able to create **sell** orders for specific Mann Co. Supply Crate, Mann Co. Supply Munition and, Salvaged Mann Co. Supply Crate series and Skins/War Paint!
+    -   support **buy orders** for targeted specific items such as Crates, Unusualifier, Strangifier, Killstreak Kit, Killstreak Kit Fabricator and Chemistry set!
 -   **Others:**
 -   emojis on almost all messages.
 -   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", and more!
