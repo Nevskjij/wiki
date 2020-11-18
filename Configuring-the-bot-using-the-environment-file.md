@@ -1,6 +1,7 @@
+
 Now that you have downloaded and installed the bot you can start configuring your bot.
 
-First, we will setup the environment file which you will use to configure the bot to your needs.
+First, we will setup the environment file, which you will use to configure the bot to your needs.
 
 # Environment File and Environment Variables
 ## Windows Setup
@@ -8,12 +9,12 @@ For Windows, the bot is configured through environment variables that can be set
 
 **Please ensure that you have file extension viewing enabled in your Windows settings prior to continuing (click [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) for more information).**
 
-Modify the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`).
+Modify the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`). This file will be the file you edit when you want to configure your bot, using the below variables.
 
 ## Linux Setup
 For Linux, the bot is configured through environment variables that can be set using a file (`ecosystem.json`) that the bot reads when it starts.
 
-Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) file found in your `tf2autobot/` folder, renaming it to `ecosystem.json`
+Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) file found in your `tf2autobot/` folder, renaming it to `ecosystem.json`. This file will be the file you edit when you want to configure your bot, using the below variables.
 
 
 ***
@@ -32,90 +33,86 @@ If you have followed the [Before You Start](https://github.com/idinium96/tf2auto
 | `STEAM_ACCOUNT_NAME`  | `string` | The Steam account username of your bot account                                                                                                                                                     
 | `STEAM_PASSWORD`      | `string` | The Steam account password of your bot account                                                                                                                                                                                                                                                                        
 | `STEAM_SHARED_SECRET` | `string` | You can find this in the `<yourBotSteamID>.maFile` file inside `~/SDA/maFiles` folder. Open the file using notepad and search for `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` <-- take only this one (which is `agdgwegdgawfagxafagfkagusbuigiuefh==` in this example. Do not use this one, it is just an example). |
-| `STEAM_IDENTITY_SECRET` | `string` | Same as above (but now search for `identity_secret`).                                                                                                                      |
+| `STEAM_IDENTITY_SECRET` | `string` | Same as above (but now search for `identity_secret`). |                                                                                                                    
 
-**Q: Where can I obtain the above secrets?**
+**Question: Where can I obtain the above secrets?**
+  Answer: You need to activate Steam Guard for your bot account using [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator). This application can be setup on your desktop, and does not need to be setup on the system running the bot. Once SDA is fully setup, all you will need to do is transfer the secrets as described above.
 
--   A: You need to activate Steam Guard for your bot account using [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator)
+## Backpack.tf User Token and API Key
 
-## ✓ Backpack.tf token and API Key
+If you have followed the [Before You Start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) section of the guide, you should already have your `BPTF_ACCESS_TOKEN` and `BPTF_API_KEY` on-hand.
 
-If you have followed the [Before you start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) guide you should already have your `BPTF_ACCESS_TOKEN` and `BPTF_API_KEY` ready.
+You are able to run your bot without the User Token and API Key initially. On the first run, your bot will print out your Backpack.tf User Token and API Key. You'll need to copy and paste these into your `ecosystem.json` (on Linux) or `.env` file (on Windows). Please [see this image](https://cdn.discordapp.com/attachments/697415702637838366/697820077248086126/bptf-api-token.png) for more information. 
 
-If you haven't, you can run your bot without this initially. On the first run, your bot will print out your bot backpack.tf access token and apiKey. You'll need to copy and paste these into your `ecosystem.json` or `.env` file ([see this image](https://cdn.discordapp.com/attachments/697415702637838366/697820077248086126/bptf-api-token.png)). If you want to find it manually:
+After obtaining your Backpack.tf User Token and API Key, update the following variables in your configuration file:
 
-|      Variable       |   Type   | Description                                                                                                                                             |
-| :-----------------: | :------: | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `BPTF_ACCESS_TOKEN` | `string` | While logged into backpack.tf as your bot account go to https://backpack.tf/connections and click on `Show Token` under User Token.                                                                               |
-|   `BPTF_API_KEY`    | `string` | While still logged into backpack.tf as your bot account go to https://backpack.tf/developer/apikey/view - fill in site URL (`http://localhost:4566/tasks`) and comments (`Check if a user is banned on backpack.tf`). |
+|      Variable       |   Type   | Description |                                                                                                                                      
+| :-----------------: | :------: | ----------- |
+| `BPTF_ACCESS_TOKEN` | `string` | Your bot's Backpack.tf User Token |                                                        
+| `BPTF_API_KEY`      | `string` | Your bot's Backpack.tf API Key |
 
-## ✓ Owners' details and other compulsory variables
+**Question: Where can I obtain the above token/key if I am obtaining them manually from Backpack.tf?**
+Answer:
+* User Token: While logged into Backpack.tf as your bot account go to https://backpack.tf/connections and click `Show Token` under "User Token".
+* API Key: While still logged into backpack.tf as your bot account go to https://backpack.tf/developer/apikey/view - fill in the following for the "site URL" `http://localhost:4566/tasks` and the following for "comments" `Check if a user is banned on backpack.tf`.
 
-| Variable |    Type    |                                        Default                                         | Description                                                                                                                                                                                                                               |
-| :------: | :--------: | :------------------------------------------------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ADMINS` | `string[]` |                                         `[""]`                                         | Put your main SteamID64. Example - `["76561198013127982"]`. If you have multiple - `["76561198013127982", "76561198077208792"]`                                                                                                           |
-|  `KEEP`  | `string[]` |                                         `[""]`                                         | Same as `ADMINS`, you must fill in **BOTH**.                                                                                                                                                                                              |
-| `GROUPS` | `string[]` | → | Default groups are [tf2-automatic](https://steamcommunity.com/groups/tf2automatic) and [IdiNium's Trading Bot](https://steamcommunity.com/groups/IdiNiumNetwork) groups. If you have a Steam group, [find your group ID](https://user-images.githubusercontent.com/47635037/97783524-53a05d00-1bd3-11eb-9778-e92545f2de1e.gif) and paste it here. |
-| `ALERTS` | `string[]` |                                      `["trade"]`                                       | By default your bot will send a message/discord webhook every time a successful trade is made. Another option is `["none"]`.                                                                                                                |
+## Owners' Details and Other Required Variables
+| Variable | Type | Default | Description |                                                                                                                                                                                                                            
+| :------: | :--: | :-----: | ----------- |
+| `ADMINS` | `string[]` | `[""]` | The SteamID64 of your primary account (not your bot). Example: `["76561198013127982"]`. If you would like to have multiple admins, you can do the following: `["76561198013127982", "76561198077208792"]`. Any accounts in this list are designated as an admin/owner.                                                                                            
+|  `KEEP`  | `string[]` | `[""]` | The **same list** as `ADMINS`, **you must fill in BOTH**. Any accounts in this will not be removed from the bot's friends list in the event that its friends list is full.
+| `GROUPS` | `string[]` | `["103582791464047777", "103582791462300957"]` | Default groups are [tf2-automatic](https://steamcommunity.com/groups/tf2automatic) and [IdiNium's Trading Bot](https://steamcommunity.com/groups/IdiNiumNetwork) groups. If you have a Steam group, [find your group ID](https://user-images.githubusercontent.com/47635037/97783524-53a05d00-1bd3-11eb-9778-e92545f2de1e.gif) and paste it here. The bot will automatically invite new trade partners to all groups in this list (by group ID). |
+| `ALERTS` | `string[]` | `["trade"]` | By default your bot will send a message/discord webhook every time a successful trade is made. Another option is `["none"]`. |
 
-Please ensure you fill in all of the above variables. In the templates, you can see the value for `ADMINS` and `KEEP` are `["<your steamid 64>"]` and `["<steamid of person to keep in friendslist>"]`, respectively.
+**Please ensure you fill in all of the above variables.** In the templates, you can see the value for `ADMINS` and `KEEP` are `["<your steamid 64>"]` and `["<steamid of person to keep in friendslist>"]`, respectively. Ensure that `<your steamid 64>` contains **YOUR STEAMID64**, and that `<steamid of person to keep in friendslist>` contains the SteamID64 of anyone you don't want removed from the bot's friendslist.
 
-Make sure to replace the whole `<your steamid 64>` and `<steamid of person to keep in friendslist>` with **YOUR STEAMID64**. You can find your SteamID64 by pasting your Steam Profile URL link to [SteamRep.com](https://steamrep.com/)
+**Question: Where can I obtain a player's SteamID64?**
+Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [SteamRep.com](https://steamrep.com/). Please view the gif below for more information.
 
 ![How to get SteamID64](https://user-images.githubusercontent.com/47635037/96715154-be80b580-13d5-11eb-9bd5-39613f600f6d.gif)
 
-# Full explanation of other environment variables
+# Other Environment Variables (Optional)
 
-Table of contents
-- [Prices.tf API token (outdated)](#pricestf-api-token) 
-- [Metal crafting settings](#metal-crafting-settings)
+**Table of Contents**
+- [Metal Crafting Settings](#metal-crafting-settings)
 - [Autokeys settings](#autokeys-feature)
 - [Timezone settings](#your-time)
 - [Escrow, Metal Overpay, Banned check](#set-to-true-if-want-to-allow)
-- [Debug mode](#set-to-true-if-want-to-enable-debugging-notes-in-console)
-- [Backpack.tf buy/sell order listing note](#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist)
-- [Discord server invite link](#discord-server-invite-link)
-- [Discord Webhook configuration](#discord-webhook-configuration)
+- [Debug Mode](#set-to-true-if-want-to-enable-debugging-notes-in-console)
+- [Backpack.tf Buy/Sell Order Listing Note](#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist)
+- [Discord Server Invite Link](#discord-server-invite-link)
+- [Discord Webhook Configuration](#discord-webhook-configuration)
 - [Manual Review Settings](#manual-review-settings)
-- [Custom steam chat messages](#others)
-
-
-## Prices.TF API token
-
-|       Variable       |   Type   | Description                                              |
-| :------------------: | :------: | -------------------------------------------------------- |
-| `PRICESTF_API_TOKEN` | `string` | You can leave this empty. No need to fill it out at all. |
+- [Custom Steam Chat Messages](#others)
 
 ## Backpack.tf Autobump (re-list)
 
-|      Variable       |   Type    | Default | Description                                                                                                                                                   |
-| :-----------------: | :-------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|     `AUTOBUMP`      | `boolean` | `false` | **DEPRECATED** - Please consider donating to backpack.tf or buy backpack.tf Premium. If you enable this, your bot will re-list all listings every 30 minutes. |
-
-## Metal crafting settings
-
 | Variable | Type | Default | Description |
-| :-----------------: | :-------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `MINIMUM_SCRAP` | `integer` | `9` | If your bot has less, it will smelt reclaimed metal to maintain ample scrap metal supply. |
-| `MINIMUM_RECLAIMED` | `integer` | `9` | If your bot has less, it will smelt refined metal to maintain ample reclaimed metal supply. |
-| `METAL_THRESHOLD` | `integer` | `9` | If scrap/reclaimed metal has reached the minimum + threshold (max), it will combine the metal. |
-| `DISABLE_CRAFTING_ METAL` | `boolean` | `false` | **NOT RECOMMENDED** to set is as `true` - it will cause your bot and the trade partner to not be able to trade because of missing scrap/reclaimed. |
-| `DISABLE_CRAFTING_ WEAPONS` | `boolean` | `false` | Set to `true` **if you DO NOT** want your bot to automatically craft any duplicated/matched class craftable weapons. |
-| `ENABLE_SHOW_ ONLY_METAL` | `boolean` | `true` | If set to `false`, it will show `[x keys, y ref]`, example: `(5 keys, 10 ref)`, instead of `[x ref]`, example: `(260 ref)`. |
+| :------: | :--: | :-----: | ----------- |
+| `AUTOBUMP` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. (More information here: https://backpack.tf/premium/subscribe |
 
-### Autokeys feature
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-|               Variable                |   Type    | Default | Description                                                                                                                                                                |
-| :-----------------------------------: | :-------: | :-----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|           `ENABLE_AUTOKEYS`           | `boolean` | `false` | If you set to `true`, your bot will automatically sell/buy keys based on the availability of the refined metals and keys in your bot inventory.                            |
-|      `ENABLE_AUTOKEYS_BANKING`       | `boolean` | `false` | If set to `true`, your bot will bank keys (must also set `ENABLE_AUTOKEYS` to `true`). If current ref supply is in between min and max and keys > min, it will bank keys). |
-|            `MINIMUM_KEYS`             | `number`  |   `3`   | When `current keys > minimum keys` (and if `current ref < minimum ref`), it will start selling keys, else, it will stop.                                                   |
-|            `MAXIMUM_KEYS`             | `number`  |  `15`   | When `current keys < maximum keys` (and if `current ref > maximum ref`), it will start buying keys, else, it will stop.                                                    |
-| `MINIMUM_REFINED_TO_ START_SELL_KEYS` | `number`  |  `30`   | Already explained in `MINIMUM_KEYS`.                                                                                                                                       |
-| `MAXIMUM_REFINED_TO_ STOP_SELL_KEYS`  | `number`  |  `150`  | Already explained in `MAXIMUM_KEYS`.                                                                                                                                       |
-|      `DISABLE_SCRAP_ADJUSTMENT`      | `boolean` | `true`  | Set to `false` to make an adjustment on the key price when selling or buying. It is not possible to do for key banking.                                                    |
-|       `SCRAP_ADJUSTMENT_VALUE`       | `integer` |   `1`   | 1 scrap = 0.11 ref, 9 scrap = 1 ref                                                                                                                                        |
-|    `AUTOKEYS_ACCEPT_UNDERSTOCKED`     | `boolean` | `false` | Set to `true` if you want your bot to accept trades that will lead to key become understocked.                                                                             |
+## Metal Crafting Settings
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `MINIMUM_SCRAP` | `integer` | `9` | If your bot has less scrap metal than this amount, it will smelt down reclaimed metal to maintain ample scrap metal supply. |
+| `MINIMUM_RECLAIMED` | `integer` | `9` | If your bot has less reclaimed metal than this amount, it will smelt down refined metal to maintain ample reclaimed metal supply. |
+| `METAL_THRESHOLD` | `integer` | `9` | If the bot's scrap/reclaimed metal count has reached the minimum amount, and scrap/metal count has reached this threshold (max), it will combine the metal into the next highest denomination. |
+| `DISABLE_CRAFTING_ METAL` | `boolean` | `false` | Setting this to `true` will disable metal crafting entirely. This may cause your bot and the trade partner to not be able to trade because of missing scrap/reclaimed. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+| `DISABLE_CRAFTING_ WEAPONS` | `boolean` | `false` | Setting this to to `true` will prevent your bot from automatically crafting any duplicated/class-matched craftable weapons into scrap. The pricelist takes priority over this config item. That is to say, if a craft weapon is in the pricelist, it will not be crafted into scrap. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+| `ENABLE_SHOW_ONLY_METAL` | `boolean` | `true` | If this is set to `false`, the bot will show all prices in the format of `[x keys, y ref]`. Example: `(5 keys, 10 ref)`. If this is set to `true` the bot will instead show all prices in the format of `[x ref]`. Example: `(260 ref)`. |
+
+### Autokeys Settings
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `ENABLE_AUTOKEYS` | `boolean` | `false` | If set to `true`, your bot will automatically buy/sell keys based on the availability of the refined metals and keys in your bot inventory. This is done in an effort to ensure that your bot has enough pure metal to perform trades. |
+|`ENABLE_AUTOKEYS_BANKING` | `boolean` | `false` | If set to `true`, your bot will bank (buy and sell) keys. If your bot's current refined supply is between `min` and `max` and `keys > min`, it will bank keys. **`ENABLE_AUTOKEYS` must be set to `true` to enable this option.** |
+| `MINIMUM_KEYS` | `integer`  | `3` | When the bot's current stock of keys is **greater than** `minimum keys`, and the bot's current stock of refined metal is **less than** `minimum ref`, the bot will start selling keys in order to convert keys into metal. Otherwise, the bot will not sell keys. |
+| `MAXIMUM_KEYS` | `integer` | `15` | When the bot's current stock of keys is **less than** `maximum keys`, and the bot's current stock of refined metal is **greater than** `maximum ref`, the bot will start buying keys in order to convert metal into keys. Otherwise, the bot will not buy keys. |
+| `MINIMUM_REFINED_TO_START_SELL_KEYS` | `integer`  | `30` | The minimum number of refined the bot can have before it begins selling keys (to turn keys into metal). See `MINIMUM_KEYS` for more information. |
+| `MAXIMUM_REFINED_TO_STOP_SELL_KEYS`  | `integer`  |  `150`  | The maximum number of refined the bot can have before it begins buying keys (to turn metal into keys). See `MAXIMUM_KEYS` for more information. |
+| `DISABLE_SCRAP_ADJUSTMENT` | `boolean` | `true`  | If set to `false`, the bot will make adjustments to the price of keys when selling or buying. For example, if the current key price is "10 refined", the bot will take "10 refined" and add `SCRAP_ADJUSTMENT_VALUE` when buying, and subtract `SCRAP_ADJUSTMENT_VALUE` when selling. This is done in effort to quickly buy and sell keys using autokeys when in a pinch by paying more for keys, and selling keys for less. **This is not possible to do when key banking (`ENABLE_AUTOKEYS_BANKING`).** |
+| `SCRAP_ADJUSTMENT_VALUE` | `integer` | `1` | This is the amount of scrap (.11 refined) the bot will increase the buy listing or decrease the sell listing when buying/selling keys using Autokeys (if `DISABLE_SCRAP_ADJUSTMENT` is set to `false`). For more information, see `DISABLE_SCRAP_ADJUSTMENT`  |
+| `AUTOKEYS_ACCEPT_UNDERSTOCKED` | `boolean` | `false` | If set to `true`, your bot will accept trades that will lead to keys become under-stocked. |
 
 \*\*This feature is meant to have your bot maintain enough pure in their inventory. Enabling "Autokeys - Banking" might cause this feature to not perform as intended.
 
