@@ -1,3 +1,5 @@
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L02PSYG)
+
 # Welcome to TF2Autobot
 TF2Autobot was made possible by [tf2-automatic](https://github.com/Nicklason/tf2-automatic) and improved upon by [idiNium.](http://github.com/idinium96/) You can check out the differences [here.](https://github.com/idinium96/tf2autobot/wiki/Differences-between-TF2Autobot-and-tf2-automatic)
 
@@ -10,5 +12,3 @@ It answers [common errors](https://github.com/idinium96/tf2autobot/wiki/Common-E
 
 ## Feeling ready?
 If so start by reading the [Before you start section.](https://github.com/idinium96/tf2autobot/wiki/Before-you-start)
-
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L02PSYG)
