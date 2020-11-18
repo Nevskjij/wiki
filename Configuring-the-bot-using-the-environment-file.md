@@ -92,7 +92,7 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 
 | Variable | Type | Default | Description |
 | :------: | :--: | :-----: | ----------- |
-| `AUTOBUMP` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. (More information here: https://backpack.tf/premium/subscribe |
+| `AUTOBUMP` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. More information here: https://backpack.tf/premium/subscribe |
 
 ## Metal Crafting Settings
 | Variable | Type | Default | Description |
