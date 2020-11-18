@@ -32,11 +32,12 @@ If you have followed the [Before You Start](https://github.com/idinium96/tf2auto
 | :-------------------: | :------: | ----------- |
 | `STEAM_ACCOUNT_NAME`  | `string` | The Steam account username of your bot account                                                                                                                                                     
 | `STEAM_PASSWORD`      | `string` | The Steam account password of your bot account                                                                                                                                                                                                                                                                        
-| `STEAM_SHARED_SECRET` | `string` | You can find this in the `<yourBotSteamID>.maFile` file inside `~/SDA/maFiles` folder. Open the file using notepad and search for `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` <-- take only this one (which is `agdgwegdgawfagxafagfkagusbuigiuefh==` in this example. Do not use this one, it is just an example). |
+| `STEAM_SHARED_SECRET` | `string` | You can find this in the `<yourBotSteamID>.maFile` file inside the `/SDA/maFiles/` folder. Open the file using notepad and search for your `shared_secret`. An example of what that may look like is `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` . |
 | `STEAM_IDENTITY_SECRET` | `string` | Same as above (but now search for `identity_secret`). |                                                                                                                    
 
 **Question: Where can I obtain the above secrets?**
-  Answer: You need to activate Steam Guard for your bot account using [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator). This application can be setup on your desktop, and does not need to be setup on the system running the bot. Once SDA is fully setup, all you will need to do is transfer the secrets as described above.
+
+Answer: You need to activate Steam Guard for your bot account using [Steam Desktop Authenticator](https://github.com/Jessecar96/SteamDesktopAuthenticator). This application can be setup on your desktop, and does not need to be setup on the system running the bot. Once SDA is fully setup, all you will need to do is transfer the secrets as described above.
 
 ## Backpack.tf User Token and API Key
 
@@ -52,6 +53,7 @@ After obtaining your Backpack.tf User Token and API Key, update the following va
 | `BPTF_API_KEY`      | `string` | Your bot's Backpack.tf API Key |
 
 **Question: Where can I obtain the above token/key if I am obtaining them manually from Backpack.tf?**
+
 Answer:
 * User Token: While logged into Backpack.tf as your bot account go to https://backpack.tf/connections and click `Show Token` under "User Token".
 * API Key: While still logged into backpack.tf as your bot account go to https://backpack.tf/developer/apikey/view - fill in the following for the "site URL" `http://localhost:4566/tasks` and the following for "comments" `Check if a user is banned on backpack.tf`.
@@ -67,6 +69,7 @@ Answer:
 **Please ensure you fill in all of the above variables.** In the templates, you can see the value for `ADMINS` and `KEEP` are `["<your steamid 64>"]` and `["<steamid of person to keep in friendslist>"]`, respectively. Ensure that `<your steamid 64>` contains **YOUR STEAMID64**, and that `<steamid of person to keep in friendslist>` contains the SteamID64 of anyone you don't want removed from the bot's friendslist.
 
 **Question: Where can I obtain a player's SteamID64?**
+
 Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [SteamRep.com](https://steamrep.com/). Please view the gif below for more information.
 
 ![How to get SteamID64](https://user-images.githubusercontent.com/47635037/96715154-be80b580-13d5-11eb-9bd5-39613f600f6d.gif)
