@@ -1,4 +1,6 @@
 
+
+
 Now that you have downloaded and installed the bot you can start configuring your bot.
 
 First, we will setup the environment file, which you will use to configure the bot to your needs.
@@ -43,19 +45,19 @@ Answer: You need to activate Steam Guard for your bot account using [Steam Deskt
 
 If you have followed the [Before You Start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) section of the guide, you should already have your `BPTF_ACCESS_TOKEN` and `BPTF_API_KEY` on-hand.
 
-You are able to run your bot without the User Token and API Key initially. On the first run, your bot will print out your Backpack.tf User Token and API Key. You'll need to copy and paste these into your `ecosystem.json` (on Linux) or `.env` file (on Windows). Please [see this image](https://cdn.discordapp.com/attachments/697415702637838366/697820077248086126/bptf-api-token.png) for more information. 
+You are able to run your bot without the User Token and API Key initially. On the first run, your bot will print out your backpack.tf User Token and API Key. You'll need to copy and paste these into your `ecosystem.json` (on Linux) or `.env` file (on Windows). Please [see this image](https://cdn.discordapp.com/attachments/697415702637838366/697820077248086126/bptf-api-token.png) for more information. 
 
-After obtaining your Backpack.tf User Token and API Key, update the following variables in your configuration file:
+After obtaining your backpack.tf User Token and API Key, update the following variables in your configuration file:
 
 |      Variable       |   Type   | Description |                                                                                                                                      
 | :-----------------: | :------: | ----------- |
-| `BPTF_ACCESS_TOKEN` | `string` | Your bot's Backpack.tf User Token |                                                        
-| `BPTF_API_KEY`      | `string` | Your bot's Backpack.tf API Key |
+| `BPTF_ACCESS_TOKEN` | `string` | Your bot's backpack.tf User Token |                                                        
+| `BPTF_API_KEY`      | `string` | Your bot's backpack.tf API Key |
 
-**Question: Where can I obtain the above token/key if I am obtaining them manually from Backpack.tf?**
+**Question: Where can I obtain the above token/key if I am obtaining them manually from backpack.tf?**
 
 Answer:
-* User Token: While logged into Backpack.tf as your bot account go to https://backpack.tf/connections and click `Show Token` under "User Token".
+* User Token: While logged into backpack.tf as your bot account go to https://backpack.tf/connections and click `Show Token` under "User Token".
 * API Key: While still logged into backpack.tf as your bot account go to https://backpack.tf/developer/apikey/view - fill in the following for the "site URL" `http://localhost:4566/tasks` and the following for "comments" `Check if a user is banned on backpack.tf`.
 
 ## Owners' Details and Other Required Variables
@@ -78,9 +80,14 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 
 **Table of Contents**
 - [Metal Crafting Settings](#metal-crafting-settings)
-- [Autokeys settings](#autokeys-feature)
-- [Timezone settings](#your-time)
-- [Escrow, Metal Overpay, Banned check](#set-to-true-if-want-to-allow)
+- [Autokeys Settings](#autokeys-feature)
+- [Miscellaneous Settings](#miscellaneous-settings)
+- [High Value Item Settings](#high-value-item-settings)
+- [Normalization Settings](#normalization-settings)
+- [Trade Statistic Settings](#trade-statistic-settings)
+- [Duplicated Unusual Settings](#duplicated-unusual-settings)
+- [Timezone Settings](#your-time)
+- [Escrow, Metal Overpay, Banned Check](#set-to-true-if-want-to-allow)
 - [Debug Mode](#set-to-true-if-want-to-enable-debugging-notes-in-console)
 - [Backpack.tf Buy/Sell Order Listing Note](#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist)
 - [Discord Server Invite Link](#discord-server-invite-link)
@@ -104,7 +111,7 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 | `DISABLE_CRAFTING_ WEAPONS` | `boolean` | `false` | Setting this to to `true` will prevent your bot from automatically crafting any duplicated/class-matched craftable weapons into scrap. The pricelist takes priority over this config item. That is to say, if a craft weapon is in the pricelist, it will not be crafted into scrap. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
 | `ENABLE_SHOW_ONLY_METAL` | `boolean` | `true` | If this is set to `false`, the bot will show all prices in the format of `[x keys, y ref]`. Example: `(5 keys, 10 ref)`. If this is set to `true` the bot will instead show all prices in the format of `[x ref]`. Example: `(260 ref)`. |
 
-### Autokeys Settings
+## Autokeys Settings
 | Variable | Type | Default | Description |
 | :------: | :--: | :-----: | ----------- |
 | `ENABLE_AUTOKEYS` | `boolean` | `false` | If set to `true`, your bot will automatically buy/sell keys based on the availability of the refined metals and keys in your bot inventory. This is done in an effort to ensure that your bot has enough pure metal to perform trades. |
@@ -117,56 +124,55 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 | `SCRAP_ADJUSTMENT_VALUE` | `integer` | `1` | This is the amount of scrap (.11 refined) the bot will increase the buy listing or decrease the sell listing when buying/selling keys using Autokeys (if `DISABLE_SCRAP_ADJUSTMENT` is set to `false`). For more information, see `DISABLE_SCRAP_ADJUSTMENT`  |
 | `AUTOKEYS_ACCEPT_UNDERSTOCKED` | `boolean` | `false` | If set to `true`, your bot will accept trades that will lead to keys become under-stocked. |
 
-\*\*This feature is meant to have your bot maintain enough pure in their inventory. Enabling "Autokeys - Banking" might cause this feature to not perform as intended.
+**Note:** The Autokeys feature is meant to have your bot maintain enough pure in its inventory. Enabling "Autokeys - Banking" may cause the Autokeys feature to not perform as intended.
 
-### Set to true if want to disable
+## Miscellaneous Settings
 
-|                Variable                 |   Type    | Default | Description                                                                                                                                            |
-| :-------------------------------------: | :-------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|        `DISABLE_INVENTORY_ SORT`        | `boolean` | `false` | Sort your bot's inventory.                                                                                                                             |
-|           `DISABLE_LISTINGS`            | `boolean` | `false` | Temporarily disable trading while your bot is alive.                                                                                                   |
-|           `DISABLE_MESSAGES`            | `boolean` | `false` | When `true`, people (that are friends with your bot) will be unable to send messages to you with "!message" command.                                      |
-|    `DISABLE_SOMETHING_ WRONG_ALERT`     | `boolean` | `false` | Used to notify the owner if your bot has a queue problem/full inventory/is low in pure (if Autokeys is on).                                                |
-|   `DISABLE_CRAFTWEAPON_ AS_CURRENCY`    | `boolean` | `false` | Set it as `true` if you don't want to set craft weapons as currency (0.05 ref).                                                                        |
-| `DISABLE_GIVE_PRICE_ TO_INVALID_ITEMS`  | `boolean` | `false` | Set to `true` if you don't want `INVALID_ITEMS` (items that are not in your price list) to be priced using price from Prices.TF.                        |
-|          `DISABLE_ADD_FRIENDS`          | `boolean` | `false` | Set to `true` if you don't want people to add your bot as a Steam friend (not recommended).                                                            |
-|        `DISABLE_GROUPS_ INVITE`         | `boolean` | `false` | Set to `true` if you don't want your bot to invite people to join Steam groups **(You still need to have at least 1 group ID in the `GROUPS` array)**. |
-| `DISABLE_CHECK_USES_ DUELING_MINI_GAME` | `boolean` | `false` | (must have 5 uses left). Set to `true` if you want your bot to buy Dueling Mini-Games regardless of how many uses are left.                            |
-|    `DISABLE_CHECK_USES_ NOISE_MAKER`    | `boolean` | `false` | (must have 25 uses left). Set to `true` if you want your bot to buy Noise Makers regardless of how many uses are left.                                 |
-| `DISABLE_OWNER_COMMAND` | `boolean` | `false` | Set this to `true` if you want to disable `!owner` command. |
-|   `DISABLE_AUTO_REMOVE_ INTENT_SELL`    | `boolean` | `false` | By default, any pricelist entry with intent=sell will be automatically removed when the particular item is sold and no longer in the bot inventory.    |
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISABLE_INVENTORY_ SORT` | `boolean` | `false` | If set to `true` your bot will not automatically sort its own inventory |
+| `DISABLE_LISTINGS` | `boolean` | `false` | If set to `true`, you bot will not list items for trade while it is running. |
+| `DISABLE_MESSAGES` | `boolean` | `false` | If set to `true`, people that are friends with your bot will be unable to send messages to you with the "!message" command. |
+| `DISABLE_SOMETHING_WRONG_ALERT` | `boolean` | `false` | If set to `true`, your bot will not notify owner(s) of queue problems, full inventories, or a low amount of pure (if Autokeys is on). |
+| `DISABLE_CRAFTWEAPON_AS_CURRENCY` | `boolean` | `false` | If set to`true`, your bot will not value craft weapons as currency (0.05 refined). |
+| `DISABLE_GIVE_PRICE_TO_INVALID_ITEMS` | `boolean` | `false` | If set to `true`, your bot will not price `INVALID_ITEMS` (items that are not in your price list) using prices from prices.tf. |
+| `DISABLE_ADD_FRIENDS` | `boolean` | `false` | If set to `true`, your bot will not allow others to add it as a Steam friend. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+|  `DISABLE_GROUPS_INVITE` | `boolean` | `false` | If set to `true`, your bot to will not invite people to join Steam groups. **NOTE: (You still need to have at least 1 group ID in the `GROUPS` array). See `Owners' Details and Other Required Variables` for more information.** |
+| `DISABLE_CHECK_USES_DUELING_MINI_GAME` | `boolean` | `false` | If set to `true`, your bot will buy Dueling Mini-Games regardless of how many uses are left. Otherwise, it will **only accept** full Dueling Mini-Games **(5 uses left)**. |
+| `DISABLE_CHECK_USES_NOISE_MAKER` | `boolean` | `false` | If set to `true`, your bot will buy Noise Makers regardless of how many uses are left. Otherwise, it will **only accept** full Noise Makers **(25 uses left)**. |
+| `DISABLE_OWNER_COMMAND` | `boolean` | `false` | If set to `true`, the `!owner` command (used to contact the owner(s) of the bot will be disabled. |
+| `DISABLE_AUTO_REMOVE_INTENT_SELL` | `boolean` | `false` | If set to `true`, your bot will no longer remove pricelist entries that have an `intent` of `sell` after completely selling out of that specific item. For example, if you list an item with `intent=sell` and the item sells out, the item will remain in your pricelist instead of being removed. |
 
-### High Value Configuration Items
+## High Value Item Settings
 |                Variable                 | Type | Default | Description |
 | :-------------------------------------: | :--: | :-----: | ----------- |
 |   `DISABLE_HIGH_VALUE_HOLD`    | `boolean` | `false` | By default, whenever your bot accepts items with high valued attachments, it will temporarily be disabled so you can decide whether to manually price it. Set this to `true` if you want to disable this feature.  |
 | `HIGH_VALUE_SHEENS`                     | `string[]` | `[""]` | If the bot completes a trade that contains items with any sheen located in this list, the owner will be notified of the trade and the item(s) containing the sheen will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this variable to `["Team Shine"]` will cause any weapons with a `Team Shine` sheen to not be automatically re-listed, and will notify the owner if one is obtained successfully. If this variable is left blank (`[""]`), the bot will hold and notify on **all** sheens. |
 | `HIGH_VALUE_KILLSTREAKERS`              | `string[]` | `[""]` | If the bot completes a trade that contains items with any killstreaker located in this list, the owner will be notified of the trade and the item(s) containing the killstreaker will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this variable to `["Fire Horns", "Tornado"]` will cause any weapons with a `Fire Horns` or `Tornado` killstreaker to not be automatically re-listed, and will notify the owner if one is obtained successfully. If this variable is left blank (`[""]`), the bot will hold and notify on **all** killstreakers. |
 
-### Set to true if want to enable
+## Normalization Settings
 
-|           Variable            |   Type    | Default | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| :---------------------------: | :-------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `NORMALIZE_ FESTIVIZED_ITEMS` | `boolean` | `false` | Set to `true` if you want your bot to recognize `Festivized` items as `Non-Festivized` items. For example, if your bot is selling a `Strange Australium Black Box`, but someone sent to your bot a Festivized version with the name `Festivized Strange Australium Black Box`, the bot by default will either decline or skip (depending on if you enable manual review) the offer because it's not a match. Thus, set to `true` if you want your bot to recognize `Festivized Strange Australium Black Box` as `Strange Australium Black Box`. |
-| `NORMALIZE_ STRANGE_UNUSUAL`  | `boolean` | `false` | Set to `true` if you want Strange Unusuals (sku ends with `;strange`) to be recognized as normal Unusuals (sku doesn't end with `;strange`).                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `NORMALIZE_FESTIVIZED_ITEMS` | `boolean` | `false` | If set to `true`, your bot will recognize `Festivized` items as their `Non-Festivized` variant. For example, if your bot is selling a `Strange Australium Black Box` and someone sends an offer to your bot containing a `Festivized Strange Australium Black Box`, the bot will recognize the `Festivized Strange Australium Black Box` as `Strange Australium Black Box`. Otherwise, the bot will determine each item's price by it's specific name, quality, and unique identifiers. |
+| `NORMALIZE_STRANGE_UNUSUAL`  | `boolean` | `false` | If set to `true`, Strange Unusuals (items whose SKU ends with `;strange`) will be recognized as the normal variant of said Unusuals (items whose SKU doesn't end with `;strange`). Otherwise, the bot will determine each item's price by it's specific name, quality, and unique identifiers. |
 
-### Misc feature
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-|           Variable            |       Type       | Default | Description                                                                                                                                                                                                                                        |
-| :---------------------------: | :--------------: | :-----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `TRADES_MADE_ STARTER_VALUE`  |    `integer`     |   `0`   | Used mainly for displaying how many total trades your bot has made found in your bot Steam Profile page (leave it 0 if you don't care about it, used for discord webhook).                                                                         |
-|     `LAST_TOTAL_ TRADES`      |    `integer`     |   `0`   | Used if your polldata.json is getting bigger (which consumes a lot of RAM) but you want to keep the number of total successful trades that your bot has made (leave it 0 if you don't care about it).                                              |
-| `TRADING_STARTING_ TIME_UNIX` | `integer` (Unix) |   `0`   | Also same as `LAST_TOTAL_TRADES`, but this is the latest time (leave it 0 if you don't care about it). To read more, check out my [Discord server post](https://discordapp.com/channels/664971400678998016/666909518604533760/707706994932449410). |
+##  Trade Statistic Settings
+| Variable  | Type | Default | Description |
+| :-------: | :--: | :-----: | ----------- |
+| `TRADES_MADE_STARTER_VALUE` | `integer` | `0` | The starting value for the number of successful trades your bot has made. Used in discord webhooks for statistical purposes. |
+| `LAST_TOTAL_TRADES` | `integer` | `0` | An offset value for your bot's `TRADES_MADE_STARTER_VALUE`. If you clear out your `polldata.json` file, it will reset your total trades count back to zero. This variable can be used as an offset to ensure you never lose track of how many trades your bot has completed in total. An example would be if you bot has completed 1000 trades and you want to clear out your `polldata.json` file. If you set `LAST_TOTAL_TRADES` to `1000`, your bot will remember that it has completed 1000 trades in the past. |
+| `TRADING_STARTING_TIME_UNIX` | `integer` (Unix) |   `0`   | Similar to `LAST_TOTAL_TRADES`, this variable sets the latest instance a trade was made. To read more about this variable, please read [IdiNium's Discord Message Regarding This](https://discordapp.com/channels/664971400678998016/666909518604533760/707706994932449410). |
 
-### Duped unusual check feature
+## Duplicated Unusual Settings
 
-|          Variable          |   Type    | Default | Description                                                                                                                 |
-| :------------------------: | :-------: | :-----: | --------------------------------------------------------------------------------------------------------------------------- |
-|    `ENABLE_DUPE_CHECK`     | `boolean` | `true`  | Enable/disable dupe check on unusuals.                                                                                      |
-|      `DECLINE_DUPES`       | `boolean` | `false` | Explains itself.                                                                                                            |
-| `MINIMUM_KEYS_DUPE_CHECK` | `number`  |  `10`   | Explains itself.                                                                                                            |
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `ENABLE_DUPE_CHECK` | `boolean` | `true`  | If set to `true`, the bot will perform checks on items to determine whether or not they are duplicated. |
+| `DECLINE_DUPES`  | `boolean` | `false` | If set to `true`, the bot will decline any unusual items that it determines as having been duplicated. |
+| `MINIMUM_KEYS_DUPE_CHECK` | `number`  |  `10`   | The minimum number of keys an item must be worth before the bot performs a check for whether or not it is duplicated. |
 
-### Set to true if want to skip
+## Backpack.TF 
 
 |            Variable             |   Type    | Default | Description                                                                                                                                                                                         |
 | :-----------------------------: | :-------: | :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
