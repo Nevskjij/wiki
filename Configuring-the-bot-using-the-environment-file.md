@@ -1,6 +1,7 @@
 
 
 
+
 Now that you have downloaded and installed the bot you can start configuring your bot.
 
 First, we will setup the environment file, which you will use to configure the bot to your needs.
@@ -89,13 +90,15 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 - [Bot Profile Settings](#bot-profile-settings)
 - [Timezone Settings](#timezone-settings)
 - [Trade Bypass Settings](#trade-bypass-settings)
+- [Auto-Price Update Settings](#auto-price-update-settings)
+- [Custom Offer Message Settings](#custom-offer-message-settings)
 - [Escrow, Metal Overpay, Banned Check](#set-to-true-if-want-to-allow)
 - [Debug Mode](#set-to-true-if-want-to-enable-debugging-notes-in-console)
 - [Backpack.tf Buy/Sell Order Listing Note](#backpacktf-sell-or-buy-order-listings-note-on-all-items-in-pricelist)
 - [Discord Server Invite Link](#discord-server-invite-link)
 - [Discord Webhook Configuration](#discord-webhook-configuration)
-- [Manual Review Settings](#manual-review-settings)
-- [Custom Steam Chat Messages](#others)
+- [Manual Review Configuration](#manual-review-configuration)
+- [Other Configuration Items](#other-configuration-items)
 
 ## Backpack.tf Autobump (re-list)
 
@@ -200,165 +203,138 @@ The time settings listed here will be used in the `!time` command as well as in 
 | `ALLOW_GIFT_WITHOUT_NOTE` | `boolean` | `false` | If set to `true`, your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](https://github.com/idinium96/tf2autobot/blob/1331f49d1c0217b906fff27f048c58b833bb844f/src/lib/data.ts#L601). **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
 | `ALLOW_BANNED`  | `boolean` | `false` | If set to `true`, your bot will trade with users that are banned on backpack.tf or marked as a scammer on steamrep.com. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
 
-### Set time for the price to be updated in seconds
+## Auto-Price Update Settings
 
-|    Variable     |   Type   |     Default     | Description                                                                                                                    |
-| :-------------: | :------: | :-------------: | ------------------------------------------------------------------------------------------------------------------------------ |
-| `MAX_PRICE_AGE` | `number` | `28800` (8 hrs) | If an item price hasn't been updated in longer than this amount of time, it will be triggered to check its price with Prices.tf. |
+| Variable | Type |     Default     | Description |
+| :------: | :--: | :-------------: | ----------- |
+| `MAX_PRICE_AGE` | `integer` | `28800` ms (8 hrs) | If an item in the pricelist's last price update exceeds this value, the bot will automatically request a pricecheck for the item from prices.tf. |
 
-### Set to true if want to enable debugging notes in console
+## Debug Settings
 
-|   Variable   |   Type    | Default | Description                                                                                                                         |
-| :----------: | :-------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------------- |
-|   `DEBUG`    | `boolean` | `true`  | Used to debug if any problem has occurred.                                                                                           |
-| `DEBUG_FILE` | `boolean` | `true`  | Same as above, but this will create a file which can be sent to [issue](https://github.com/idinium96/tf2autobot/issues/new/choose). |
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+|   `DEBUG`    | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur into the console. |
+| `DEBUG_FILE` | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur to a file. This file can be later be used to create a GitHub [issue](https://github.com/idinium96/tf2autobot/issues/new/choose) to report any issues to the developers. |
 
-### Backpack.tf sell or buy order listings note on all items in pricelist
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-|      Variable       |   Type   |                                        Default                                         | Description              |
-| :-----------------: | :------: | :------------------------------------------------------------------------------------: | ------------------------ |
-| `BPTF_DETAILS_BUY`  | `string` | [see](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L92) | Your buy order listing note.  |
-| `BPTF_DETAILS_SELL` | `string` | [see](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json#L93) | Your sell order listing note. |
+## Listing Note Settings
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `BPTF_DETAILS_BUY`  | `string` | `"I am buying your %name% for %price%, I have %current_stock% / %max_stock%, so I am buying %amount_trade%."` | This is the note that will be included with each buy order placed on backpack.tf  |
+| `BPTF_DETAILS_SELL` | `string` | `"I am selling my %name% for %price%, I am selling %amount_trade%."` | This is the note that will be included with each sell order placed on backpack.tf |
 
 **Parameters:**
-
--   `%name%` - display an item's name.
--   `%price%` - display items buying/selling price.
--   `%current_stock%` - display an items current stock (by default this is used in `BPTF_DETAILS_BUY`).
--   `%max_stock%` - display an item maximum stock (by default this is used in `BPTF_DETAILS_BUY`).
--   `%amount_trade%` - display the amount that can be traded (between the minimum and maximum stock, used in `BPTF_DETAILS_SELL`).
--   `%keyPrice%` - display the current key rate (selling price). It will display as `Key rate: x ref/key` only if the item price includes x key. Otherwise, it will show as an empty string.
--   `%uses%` - display `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)` on only Dueling Mini-Game, or (𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟐𝟱x 𝗨𝗦𝗘𝗦) on Noise Maker listings (if you enable check uses) - prefer to only place this on `BPTF_DETAILS_BUY`. On other items, it will show as an empty string.
+-   `%name%` -  An item's name
+-   `%price%` - An item's buying/selling price
+-   `%current_stock%` - An item's current stock (by default this is used in `BPTF_DETAILS_BUY`)
+-   `%max_stock%` - An item's maximum stock (by default this is used in `BPTF_DETAILS_BUY`)
+-   `%amount_trade%` - How much of an item can be traded (between the minimum and maximum stock, used in `BPTF_DETAILS_SELL`)
+-   `%keyPrice%` - The current key rate (selling price). If the item's selling price is above one key, this parameter will be displayed as `Key rate: x ref/key`. Otherwise, this parameter will not be shown on listings
+-   `%uses%` - Display `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)` on Dueling Mini-Game listings if `DISABLE_CHECK_USES_DUELING_MINI_GAME` is set to `false`, and `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟐𝟱x 𝗨𝗦𝗘𝗦)` on Noise Maker listings  if `DISABLE_CHECK_USES_NOISE_MAKER` is set to `false`. It is recommended to only place this on buy listings (`BPTF_DETAILS_BUY`). On other items, this parameter will not be shown
 
 **Usage example:**
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/98710377-878f3580-23be-11eb-9ed5-e0f6ec4e26af.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-### Custom offer message
+## Custom Offer Message Settings
 
-|    Variable     |   Type   | Default | Description                                                                                                                                         |
-| :-------------: | :------: | :-----: | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `OFFER_MESSAGE` | `string` |  `""`   | Message that will appear when bot sends an offer to the trade partner. If left empty (""), it will print _**Powered by TF2Autobot**_ by default. |
-
-## Discord server invite link
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
 | Variable | Type | Default | Description |
-| :-: | :-: | :-: | - |
-| `DISCORD_SERVER_INVITE_LINK` | `string` | `""` | Must be your permenant Discord server invite link. You can leave it empty if you don't have one, it will be replaced with [tf2autobot Discord Server](https://discord.gg/ZrVT7mc) link.
+| :------: | :--: | :-----: | ----------- |
+| `OFFER_MESSAGE` | `string` | `""` | This message will appear when the bot sends an offer to a trade partner. If left empty `("")`, it will print _**`Powered by TF2Autobot`**_ by default. |
+
+## Discord Server Invite Settings
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISCORD_SERVER_INVITE_LINK` | `string` | `""` | You can place a Discord server invite link here, which would be shown when a trade partner enters the `!discord` command. You can leave this empty if you don't have one, as it will be replaced with the [tf2Autobot Discord Server](https://discord.gg/ZrVT7mc) invite link by default.
 
 ## Discord Webhook Configuration
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-### Basic configuration on your embed preferences/appearances
+### General Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISCORD_OWNER_ID` | `string` | `""` | Your Discord ID. To obtain this, right-click on yourself on Discord and click `Copy ID`. Be sure to enable Developer Mode on Discord by navigating to `Settings > Appearance > Advanced`. |
+| `DISCORD_WEBHOOK_USERNAME` | `string` | `""` | The name you'd like to give your bot when when it sends a message on Discord. |
+| `DISCORD_WEBHOOK_AVATAR_URL` | `string` | `""` | A URL to the image you'd like your bot to have when it sends a discord message. **This must be in URL form.** An example of how to obtain your bot's avatar from Steam: https://gyazo.com/421792b5ea817c36054c7991fb18cdbc |
+| `DISCORD_WEBHOOK_EMBED_COLOR_IN_DECIMAL_INDEX` | `string` | `""` | The color you'd like associated with your bot's discord messages. You can view the different colors at [spycolor.com](https://www.spycolor.com/). Copy the `Decimal value`. An example of this would be `16769280` for the color `#ffe100` |
 
-`X = DISCORD_WEBHOOK`
+#### Note on how to obtain your Discord Webhook URL
 
-|             Variable              |   Type   | Default | Description                                                                                                                                                                                |
-| :-------------------------------: | :------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-|        `DISCORD_OWNER_ID`         | `string` |  `""`   | Right click on yourself, click `Copy ID`, and paste it here. Make sure to enable developer mode on your Discord settings > Appearance > Advanced.                                          |
-|           `X_USERNAME`            | `string` |  `""`   | Your Discord Webhook name. Example: ※Fumino⚡                                                                                                                                              |
-|          `X_AVATAR_URL`           | `string` |  `""`   | Your Discord Webhook Avatar - must be in URL form. Example: https://gyazo.com/421792b5ea817c36054c7991fb18cdbc                                                                             |
-| `X_EMBED_COLOR_IN_ DECIMAL_INDEX` | `string` |  `""`   | Embed color - you can find yours at [spycolor.com](https://www.spycolor.com/). Copy the one that says "has decimal index of: `take the value here`". Example: "9171753" for #8bf329 color. |
+Please view this [image](https://gyazo.com/90e9b16d7c54f1b4a96f95b9fae93187) for instructions on how to obtain your Discord Webhook URL. These settings would be set in your own personal Discord channel.
 
----
+### Trade Alert Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISABLE_DISCORD_WEBHOOK_SOMETHING_WRONG_ALERT` | `boolean` | `false` |  If set to `true`, the bot will notify you through Steam chat if there is something wrong. Otherwise, the bot will notify you through Discord. |
+| `DISCORD_WEBHOOK_SOMETHING_WRONG_ALERT_URL` | `string` | `""` | The Discord Webhook URL you'd like `SOMETHING_WRONG_ALERT`'s to be sent to. |
 
-## Note on How to get `DISCORD_WEBHOOK_X_URL`
+### Pricelist Update Alert Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISABLE_DISCORD_WEBHOOK_PRICE_UPDATE` | `boolean` | `false` |  If set to `true`, the bot will notify you through Steam chat if there is a price update for an item on your price-list. Otherwise, the bot will notify you through Discord. |
+| `DISCORD_WEBHOOK_PRICE_UPDATE_URL` | `string` | `""` | The Discord Webhook URL you'd like price update alerts to be sent to. |
+| `DISCORD_WEBHOOK_PRICE_UPDATE_ADDITIONAL_DESCRIPTION_NOTE` | `string` | `""` | Any additional notes you'd like included with price update alerts |
 
-`X = SOMETHING_WRONG_ALERT | PRICE_UPDATE | TRADE_SUMMARY | OFFER_REVIEW | MESSAGE_FROM_PARTNER`
+### Trade Summary Alert Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISABLE_DISCORD_WEBHOOK_TRADE_SUMMARY` | `boolean`  | `false` | Display each successful trade summary on your trade summary/live-trades channel via Discord Webhook. If set to `true`, it will send to your Steam Chat. |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_URL` | `string[]` | `[""]`  | An array of Discord Webhook URLs for `TRADE_SUMMARY`. You will need to format it like so: `["yourDiscordWebhookLink"]`, or if you want to add more than one, you format them like so: `["link1", "link2"]` (separate each link with a comma, make sure `link1` is your **own** Discord Webhook URL). |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_SHOW_QUICK_LINKS` | `boolean`  | `true`  | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_SHOW_KEY_RATE` | `boolean`  | `true`  | Show your bot's key rate |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_SHOW_PURE_STOCK` | `boolean` | `true` | Show your bot's pure stock |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_SHOW_INVENTORY` | `boolean` | `true`  | Show the total amount of items in your bot's inventory. |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_ADDITIONAL_DESCRIPTION_NOTE` | `string` | `""` | Any additional notes you'd like included with trade summaries. Notes must be in the following format: `[YourText](Link)` |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_MENTION_OWNER` | `boolean`  | `false` | If set to `true`, your bot will mention you on each successful trade. |
+| `DISCORD_WEBHOOK_TRADE_SUMMARY_MENTION_OWNER_ONLY_ITEMS_SKU` | `string[]` | `[""]`  | Your bot will mention you whenever a trade contains an SKU in this list. Supports multiple item SKUs. For example, let say you just want to be mentioned on every unusual and australium trade. You would input `[";5;u", ";11;australium"]`. If you want to be mentioned on specific items, just fill in the full item SKU, like so: `["725;6;uncraftable"]`. To add more, just separate new items with a comma between each SKU `string`. |
 
-See this: https://gyazo.com/90e9b16d7c54f1b4a96f95b9fae93187 (settings in your respective channels)
+**Note**: Want to feature your bots trades on the tf2autobot Discord server? Contact IdiNium for a Webhook URL!
 
----
-
-### Queue alert
-
-`X = DISCORD_WEBHOOK_SOMETHING_WRONG_ALERT`
-
-|  Variable   |   Type    | Default | Description                                                                                                                                                               |
-| :---------: | :-------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `DISABLE_X` | `boolean` | `false` | Same as [`DISABLE_SOMETHING_WRONG_ALERT`](https://github.com/idinium96/tf2autobot#set-to-true-if-want-to-disable), but if set to `true`, it will send to your Steam Chat. |
-|   `X_URL`   | `string`  |  `""`   | Discord Webhook URL for `SOMETHING_WRONG_ALERT`.                                                                                                                          |
-
-### Pricelist update
-
-`X = DISCORD_WEBHOOK_PRICE_UPDATE`
-
-|             Variable             |   Type    | Default | Description                                                    |
-| :------------------------------: | :-------: | :-----: | -------------------------------------------------------------- |
-|           `DISABLE_X`            | `boolean` | `false` | Display price updates on the items that are in your pricelist. |
-|             `X_URL`              | `string`  |  `""`   | Discord Webhook URL for `PRICE_UPDATE`.                        |
-| `X_ADDITIONAL_DESCRIPTION_NOTE` | `string`  |  `""`   | You can add some notes there or just leave it empty.           |
-
-### Successful trade summary
-
-`X = DISCORD_WEBHOOK_TRADE_SUMMARY`
-
-|             Variable              |    Type    | Default | Description                                                                                                                                                                                                                                                                                                                      |
-| :-------------------------------: | :--------: | :-----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|            `DISABLE_X`            | `boolean`  | `false` | Display each successful trade summary on your trade summary/live-trades channel via Discord Webhook. If set to `true`, it will send to your Steam Chat.                                                                                                                                                                          |
-|              `X_URL`              | `string[]` | `[""]`  | An array of the Discord Webhook URL for `TRADE_SUMMARY`. You will need to put it like this: `["yourDiscordWebhookLink"]`, or if you want to add more than one, you can do it like this: `["link1", "link2"]` (separate each link with a comma, make sure `link1` is your **own** Discord Webhook URL).                           |
-|       `X_SHOW_QUICK_LINKS`        | `boolean`  | `true`  | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages.                                                                                                                                                                                                                                    |
-|         `X_SHOW_KEY_RATE`         | `boolean`  | `true`  | Refer example below.                                                                                                                                                                                                                                                                                                             |
-|        `X_SHOW_PURE_STOCK`        | `boolean`  | `true`  | Refer example below.                                                                                                                                                                                                                                                                                                             |
-|        `X_SHOW_INVENTORY`         | `boolean`  | `true`  | Show the total amount of items in your bot's inventory.                                                                                                                                                                                                                                                                          |
-| `X_ADDITIONAL_ DESCRIPTION_NOTE`  |  `string`  |  `""`   | If you want to do like in the example below, it will be `[YourText](Link)`                                                                                                                                                                                                                                                       |
-|         `X_MENTION_OWNER`         | `boolean`  | `false` | Set this to `true` if you want to be mentioned on each successful trade.                                                                                                                                                                                                                                                           |
-| `X_MENTION_OWNER_ ONLY_ITEMS_SKU` | `string[]` | `[""]`  | Support multiple items sku - let say you just want to be mentioned on every unusual and australium trade - just do`[";5;u", ";11;australium"]`. If you want to be mentioned on specific items, just fill in the full item sku like`["725;6;uncraftable"]`. To add more, just separate it with a comma between each sku `string`. |
-
-**\*Note**: Want to feature your bots trades on the tf2autobot Discord server? Sure! I will give you the link upon request.
-
+#### A visual breakdown of each Discord Webhook Trade Alert setting
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/86468435-ffdb4f80-bd69-11ea-9ab6-a7f5be2c22f0.PNG" alt="trade-summary-full" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/86468438-0073e600-bd6a-11ea-8bc0-040229c997d5.PNG" alt="trade-summary-full2" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-### Offer review summary
+### Trade Offer Review Alert Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISABLE_DISCORD_WEBHOOK_REVIEW_OFFER` | `boolean` | `false` | If set to `true`, messages regarding trade offers that require manual review will be sent to your Steam Chat. Otherwise, these messages will be sent on Discord. |
+| `DISCORD_WEBHOOK_REVIEW_OFFER_URL` | `string`  | `""` | Discord Webhook URL for `REVIEW_OFFER`. |
+| `DISCORD_WEBHOOK_REVIEW_OFFER_DISABLE_MENTION_ INVALID_VALUE` | `boolean` | `false` | If set to `true`, your bot only mention you for `INVALID_VALUE` offers. |
+| `DISCORD_WEBHOOK_REVIEW_OFFER_SHOW_QUICK_LINKS` | `boolean` | `true`  | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
+| `DISCORD_WEBHOOK_REVIEW_OFFER_SHOW_KEY_RATE` | `boolean` | `true`  | Show your bot's key rate. |
+| `DISCORD_WEBHOOK_REVIEW_OFFER_SHOW_PURE_STOCK` | `boolean` | `true`  | Show your bot's pure stock. |
 
-`X = DISCORD_WEBHOOK_REVIEW_OFFER`
-
-|              Variable              |   Type    | Default | Description                                                                                                                    |
-| :--------------------------------: | :-------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------ |
-|            `DISABLE_X`             | `boolean` | `false` | Used to alert you on the trade that needs offer review via Discord Webhook. If set to `true`, it will send to your Steam Chat. |
-|              `X_URL`               | `string`  |  `""`   | Discord Webhook URL for `REVIEW_OFFER`.                                                                                        |
-| `X_DISABLE_MENTION_ INVALID_VALUE` | `boolean` | `false` | Set to `true` if you want your bot to not mention you on only `INVALID_VALUE` offers.                                            |
-|        `X_SHOW_QUICK_LINKS`        | `boolean` | `true`  | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages.                                  |
-|         `X_SHOW_KEY_RATE`          | `boolean` | `true`  | Refer example below.                                                                                                           |
-|        `X_SHOW_PURE_STOCK`         | `boolean` | `true`  | Refer example below.                                                                                                           |
-
+#### A visual breakdown of each Discord Webhook Review Alert setting
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/86468430-feaa2280-bd69-11ea-8f25-26a7a430b2e1.PNG" alt="only non-invalid-value2" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
-### Messages
+### Trade Partner Message Alert Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `DISABLE_DISCORD_WEBHOOK_MESSAGE_FROM_PARTNER` | `boolean` | `false` | Used to alert you on any messages sent from the trade partner via Discord Webhook. If set to `true`, it will send to your Steam Chat. |
+| `DISCORD_WEBHOOK_MESSAGE_FROM_PARTNER_URL` | `string` | `""` | Discord Webhook URL for `MESSAGE_FROM_PARTNER`. |
+| `DISCORD_WEBHOOK_MESSAGE_FROM_PARTNER_SHOW_ QUICK_LINKS` | `boolean` | `true`  | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
 
-`X = DISCORD_WEBHOOK_MESSAGE_FROM_PARTNER`
-
-|       Variable        |   Type    | Default | Description                                                                                                                           |
-| :-------------------: | :-------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------- |
-|      `DISABLE_X`      | `boolean` | `false` | Used to alert you on any messages sent from the trade partner via Discord Webhook. If set to `true`, it will send to your Steam Chat. |
-|        `X_URL`        | `string`  |  `""`   | Discord Webhook URL for `MESSAGE_FROM_PARTNER`.                                                                                       |
-| `X_SHOW_ QUICK_LINKS` | `boolean` | `true`  | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages.                                         |
-
-## Manual Review settings
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-|                Variable                 |    Type    | Default | Description                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| :-------------------------------------: | :--------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|         `ENABLE_MANUAL_REVIEW`          | `boolean`  | `true`  | By default, offer with `INVALID_VALUE`/ `INVALID_ITEMS`/ `OVERSTOCKED`/ `UNDERSTOCKED`/ `DUPED_ITEMS`/ `DUPE_CHECK_FAILED` will be manually reviewed by you.                                                                                                                                                                                                                                                                                            |
-|  `DISABLE_SHOW_REVIEW_ OFFER_SUMMARY`   | `boolean`  | `false` | Set to `true` if you do not want your bot to show the trade offer summary to the trade partner - it will only notify the trade partner that their offer is being held for review.                                                                                                                                                                                                                                                                           |
-|      `DISABLE_REVIEW_ OFFER_NOTE`       | `boolean`  | `false` | By default, it will show notes on each [reason](https://github.com/idinium96/tf2autobot/wiki/FAQ#why-my-bot-dont-acceptdecline-the-trade-automatically)                                                                                                                                                                                                                                                                                                               |
-|      `DISABLE_SHOW_ CURRENT_TIME`       | `boolean`  | `false` | By default, it will show the owner's time on offer review notification that the trade partner will receive.                                                                                                                                                                                                                                                                                                                                             |
-| `DISABLE_ACCEPT_ INVALID_ITEMS_OVERPAY` | `boolean`  | `false` | Set this to `true` if you do not want your bot to accept trades with `INVALID_ITEMS` but the value of their side is greater than or equal to the value of your bot's side.                                                                                                                                                                                                                                                                              |
-|  `DISABLE_ACCEPT_ OVERSTOCKED_OVERPAY`  | `boolean`  | `true`  | Set this to `false` if you want your bot to accept trades with `OVERSTOCKED` but the value of their side is greater than or equal to the value of your bot's side.                                                                                                                                                                                                                                                                                      |
-| `DISABLE_ACCEPT_ UNDERSTOCKED_OVERPAY`  | `boolean`  | `true`  | Set to `false` if you want your bot to accept a trade with `UNDERSTOCKED` but with their value more or equal to our value.                                                                                                                                                                                                                                                                                                                              |
-|   `DISABLE_AUTO_ DECLINE_OVERSTOCKED`   | `boolean`  | `true`  | Set this to `false` if you want your bot to decline an offer with **ONLY** `OVERSTOCKED` reason (manual review must be enabled.).                                                                                                                                                                                                                                                                                                                       |
-|  `DISABLE_AUTO_ DECLINE_UNDERSTOCKED`   | `boolean`  | `true`  | Set this to `false` if you want your bot to decline an offer with **ONLY** `UNDERSTOCKED` reason (manual review must be enabled.)                                                                                                                                                                                                                                                                                                                       |
-|  `DISABLE_AUTO_ DECLINE_INVALID_VALUE`  | `boolean`  | `false` | Set this to `true` if you do not want your bot to automatically decline trades with **ONLY** `INVALID_VALUE` (which did not match the exception sku(s) and exception value).                                                                                                                                                                                                                                                                            |
-|   `AUTO_DECLINE_ INVALID_VALUE_NOTE`    |  `string`  |  `""`   | Your custom note on why the trade got declined. The default is nothing.                                                                                                                                                                                                                                                                                                                                                                                     |
-|     `INVALID_VALUE_ EXCEPTION_SKUS`     | `string[]` | `[""]`  | An array of sku that will skip `INVALID_VALUE` if the difference between the bot's value and their value is not more than exceptional value. Let's say your bot is selling an Unusual and someone sent an offer with 0.11 ref less - you want your bot to accept it anyway! By default, it will check only for Unusuals and Australiums: `[";5;u", ";11;australium"]`. You can also leave it empty (`[""]`) so all with `INVALID_VALUE` will be notified. |
-| `INVALID_VALUE_ EXCEPTION_VALUE_IN_REF` |  `number`  |   `0`   | - Exception value for the sku(s) that you set above. The default is `0` (no exception).                                                                                                                                                                                                                                                                                                                                                                     |
-|          `INVALID_VALUE_NOTE`           |  `string`  |  `""`   | Your custom `INVALID_VALUE` note.                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|         \*`INVALID_ITEMS_NOTE`          |  `string`  |  `""`   | Your custom `INVALID_ITEMS` note.                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|          \*`OVERSTOCKED_NOTE`           |  `string`  |  `""`   | Your custom `OVERSTOCKED` note.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|          \*`UNDERSTOCKED_NOTE`          |  `string`  |  `""`   | Your custom `UNDERSTOCKED` note.                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|           \*`DUPE_ITEMS_NOTE`           |  `string`  |  `""`   | Your custom `DUPE_ITEMS` note.                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|       \*`DUPE_CHECK_FAILED_NOTE`        |  `string`  |  `""`   | Your custom `DUPE_CHECK_FAILED` note.                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|            `ADDITIONAL_NOTE`            |  `string`  |  `""`   | Your custom `ADDITIONAL` note.                                                                                                                                                                                                                                                                                                                                                                                                                          |
+## Manual Review Configuration
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `ENABLE_MANUAL_REVIEW` | `boolean`  | `true`  | By default, offers with `INVALID_VALUE`/ `INVALID_ITEMS`/ `OVERSTOCKED`/ `UNDERSTOCKED`/ `DUPED_ITEMS`/ `DUPE_CHECK_FAILED` will require manual review by you. |
+| `DISABLE_SHOW_REVIEW_OFFER_SUMMARY` | `boolean` | `false` | If set to `true`, your bot will show the trade offer summary to the trade partner. Otherwise, it will only notify the trade partner that their offer is being held for review. |
+| `DISABLE_REVIEW_OFFER_NOTE` | `boolean` | `false` | By default, your bot will show notes on for each [manual review reason](https://github.com/idinium96/tf2autobot/wiki/FAQ#why-my-bot-dont-acceptdecline-the-trade-automatically) |
+| `DISABLE_SHOW_CURRENT_TIME` | `boolean`  | `false` | By default, your bot will show the owner's time when sending your trade partner any manual offer review notifications. |
+| `DISABLE_ACCEPT_INVALID_ITEMS_OVERPAY` | `boolean`  | `false` | If set to `true`, your bot will accept trades with `INVALID_ITEMS` where the value of their side is greater than or equal to the value of your bot's side. |
+| `DISABLE_ACCEPT_OVERSTOCKED_OVERPAY` | `boolean` | `true` | Set this to `false` if you want your bot to accept trades with `OVERSTOCKED` items, where the value of their side is greater than or equal to the value of your bot's side. |
+| `DISABLE_ACCEPT_UNDERSTOCKED_OVERPAY`  | `boolean` | `true` | Set this to `false` if you want your bot to accept trades with `UNDERSTOCKED` items, where the value of their side is greater than or equal to the value of your bot's side. |
+| `DISABLE_AUTO_DECLINE_OVERSTOCKED` | `boolean` | `true` | Set this to `false` if you want your bot to decline an offer with `OVERSTOCKED` as the **ONLY** manual review reason (manual review must be enabled). |
+| `DISABLE_AUTO_DECLINE_UNDERSTOCKED` | `boolean` | `true` | Set this to `false` if you want your bot to decline an offer with **ONLY** `UNDERSTOCKED` reason (manual review must be enabled). |
+| `DISABLE_AUTO_DECLINE_INVALID_VALUE` | `boolean` | `false` | Set this to `true` if you do not want your bot to automatically decline trades with `INVALID_VALUE` as the **ONLY** manual review reason where items do not match `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_ EXCEPTION_VALUE_IN_REF` |
+| `AUTO_DECLINE_INVALID_VALUE_NOTE` | `string` | `""` | Your custom note on why the trade got declined. The default is nothing. |
+| `INVALID_VALUE_EXCEPTION_SKUS` | `string[]` | `[""]` | An array of SKUs that will bypass the `INVALID_VALUE` manual review reason if the difference between the bot's value and their value is not more than `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. Let's say your bot is selling an Unusual and someone sent an offer with 0.11 ref less, and you want your bot to accept it anyway. By default, it will check only for Unusuals and Australiums: `[";5;u", ";11;australium"]`. You can also leave it empty (`[""]`) so that all items with `INVALID_VALUE` create notifications. |
+| `INVALID_VALUE_EXCEPTION_VALUE_IN_REF` | `integer` |   `0`   | Exception value for the SKUs that you set above. The default is `0` (no exception). |
+| `INVALID_VALUE_NOTE` | `string` | `""` | Your custom `INVALID_VALUE` note. |
+| `INVALID_ITEMS_NOTE` | `string` | `""` | Your custom `INVALID_ITEMS` note. |
+| `OVERSTOCKED_NOTE` | `string` | `""` | Your custom `OVERSTOCKED` note. |
+| `UNDERSTOCKED_NOTE` | `string` | `""` | Your custom `UNDERSTOCKED` note. |
+| `DUPE_ITEMS_NOTE` | `string` | `""` | Your custom `DUPE_ITEMS` note. |
+| `DUPE_CHECK_FAILED_NOTE` | `string` | `""` | Your custom `DUPE_CHECK_FAILED` note. |
+| `ADDITIONAL_NOTE` | `string` | `""` | Your custom `ADDITIONAL` note. |
 
 ---
 
@@ -385,16 +361,15 @@ For `OVERSTOCKED` and `UNDERSTOCKED`, parameter `%name%` will print out a list o
 
 ---
 
-## Others
-[Go back to Table of contents](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#full-explanation-of-other-environment-variables)
-|              Variable               |   Type   | Default | Description                                                                                                                                                                                                                                                                                 |
-| :---------------------------------: | :------: | :-----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|       `ENABLE_ONLY_ PLAY_TF2`       | `boolean`| `false` | Set to `true` if you want your bot to only play Team Fortress 2, which will ignore the below variable.                                                                                                                                                |
-|     `CUSTOM_PLAYING_ GAME_NAME`     | `string` |  `""`   | Custom name of the game your bot is playing. Limited to only 60 characters. Example: https://gyazo.com/308e4e05bf4c49929520df4e0064864c (you do not need to include `- TF2Autobot, just your custom game name.)                                                                         |
-|      `CUSTOM_WELCOME_ MESSAGE`      | `string` |  `""`   | Your custom `WELCOME_MESSAGE` note. Two parameters: `%name%` (display trade partner's name) and `%admin%` (if admin, it will use "!help", else "!how2trade").                                                                                                                               |
-| `CUSTOM_I_DONT_KNOW_ WHAT_YOU_MEAN` | `string` |  `""`   | Your custom note when people send the wrong command.                                                                                                                                                                                                                                        |
-|     `CUSTOM_HOW2TRADE_ MESSAGE`     | `string` |  `""`   | Your custom `HOW2TRADE` note.                                                                                                                                                                                                                                                               |
-|      `CUSTOM_SUCCESS_ MESSAGE`      | `string` |  `""`   | Your custom `SUCCESS` note.                                                                                                                                                                                                                                                                 |
-|     `CUSTOM_DECLINED_ MESSAGE`      | `string` |  `""`   | Your custom `DECLINED` note. Two parameters can be used - `%reason%` and `%invalid_value_summary%`. |
-|    `CUSTOM_TRADED_ AWAY_MESSAGE`    | `string` |  `""`   | Your custom note when the bot fails to trade because the item is traded away.                                                                                                                                                                                                               |
-| `CUSTOM_CLEARING_ FRIENDS_MESSAGE`  | `string` |  `""`   | Your custom note when the bot is removing friends to add someone else Usable parameter - `%name%` (display trade partner's name).
+## Other Configuration Items
+| Variable | Type | Default | Description |
+| :------: | :--: | :-----: | ----------- |
+| `ENABLE_ONLY_PLAY_TF2` | `boolean`| `false` | Set to `true` if you want your bot to only play Team Fortress 2. Setting this to `true` will ignore the below variable. |
+| `CUSTOM_PLAYING_GAME_NAME` | `string` | `""` | Name of the custom game you'd like your bot to play. Limited to only 60 characters. Example: https://gyazo.com/308e4e05bf4c49929520df4e0064864c |
+| `CUSTOM_WELCOME_MESSAGE` | `string` | `""` | Your custom `WELCOME_MESSAGE` note. Two parameters: `%name%` (display trade partner's name) and `%admin%` (if admin, it will use "!help", else "!how2trade"). |
+| `CUSTOM_I_DONT_KNOW_WHAT_YOU_MEAN` | `string` | `""` | Your custom note when people send the wrong command. |
+| `CUSTOM_HOW2TRADE_MESSAGE` | `string` | `""` | Your custom `HOW2TRADE` note. |
+| `CUSTOM_SUCCESS_MESSAGE` | `string` | `""` | Your custom `SUCCESS` note. |
+| `CUSTOM_DECLINED_MESSAGE` | `string` | `""` | Your custom `DECLINED` note. Two parameters can be used - `%reason%` and `%invalid_value_summary%`. |
+| `CUSTOM_TRADED_AWAY_MESSAGE` | `string` | `""` | Your custom note when the bot fails to trade because the item is traded away. |
+| `CUSTOM_CLEARING_FRIENDS_MESSAGE` | `string` | `""` | Your custom note when the bot is removing friends to add someone else Usable parameter - `%name%` (display trade partner's name).
