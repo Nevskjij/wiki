@@ -81,7 +81,7 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 
 **Table of Contents**
 - [Metal Crafting Settings](#metal-crafting-settings)
-- [Autokeys Settings](#autokeys-feature)
+- [Autokeys Settings](#autokeys-settings)
 - [Miscellaneous Settings](#miscellaneous-settings)
 - [High Value Item Settings](#high-value-item-settings)
 - [Normalization Settings](#normalization-settings)
