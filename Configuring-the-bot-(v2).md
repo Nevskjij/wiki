@@ -213,7 +213,8 @@ The content of the `options.json` file is as follow:
     "highValue": {
         "enableHold": true,
         "sheens": [],
-        "killstreakers": []
+        "killstreakers": [],
+        "strangeParts": []
     },
     "checkUses": {
         "duel": true,
