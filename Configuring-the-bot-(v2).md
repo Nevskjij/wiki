@@ -109,8 +109,8 @@ If you have followed the [Before You Start](https://github.com/idinium96/tf2auto
 
 ## Bot Credentials
 
-| Variable | Type | Default | Description |
-| :------: | :--: | :-----: | ----------- |
+| Variable | Type | Description |
+| :------: | :--: | ----------- |
 | `STEAM_ACCOUNT_NAME` | `string` | The Steam account username of your bot account |
 | `STEAM_PASSWORD` | `string` | The Steam account password of your bot account |
 |  `STEAM_SHARED_SECRET`  | `string` | You can find this in the `<yourBotSteamID>.maFile` file inside the `/SDA/maFiles/` folder. Open the file using notepad and search for your `shared_secret`. An example of what that may look like is `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` . |
