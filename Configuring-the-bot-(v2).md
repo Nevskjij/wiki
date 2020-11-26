@@ -192,7 +192,8 @@ This file will be generated once you run your bot for the first time. The file c
 
 The content of the `options.json` file is as follow:
 
-```{
+```
+{
     "showOnlyMetal": true,
     "sortInventory": true,
     "createListings": true,
