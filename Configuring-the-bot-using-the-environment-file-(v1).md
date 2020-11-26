@@ -1,7 +1,3 @@
-
-
-
-
 Now that you have downloaded and installed the bot you can start configuring your bot.
 
 First, we will setup the environment file, which you will use to configure the bot to your needs.
