@@ -7,26 +7,25 @@ Want a VPS to run your bot? Your VAT is too high? You don't have a Credit/Debit 
 **I am here to help you to get one for your TF2 pure!**
 
 ## Services
-1. **CX11**:
-`[1 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 1 key + 20 ref/month
+`[1 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 1 key + 45 ref/month
 2. **CPX11**:
-`[2 vCPU¹, 2  GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 2 keys + 10 ref/month
+`[2 vCPU¹, 2  GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 2 keys + 45 ref/month
 3. **CX21**: 
-`[2 vCPU⁰, 4 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3 keys/month
+`[2 vCPU⁰, 4 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3 keys + 45 ref/month
 4. **CPX21**:
-`[3 vCPU¹, 4 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 4 keys + 15 ref/month
+`[3 vCPU¹, 4 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 5 keys + 20 ref/month
 5. **CX31**:
-`[2 vCPU⁰, 8 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 5 keys + 29 ref/month
+`[2 vCPU⁰, 8 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 6 keys + 40 ref/month
 6. **CPX31**:
-`[4 vCPU¹, 8 GB RAM, 160 GB NVMe SSD, 20 TB Traffic]` — 8 keys/month
+`[4 vCPU¹, 8 GB RAM, 160 GB NVMe SSD, 20 TB Traffic]` — 9 keys + 50 ref/month
 7. **CX41**:
-`[4 vCPU⁰, 16 GB RAM, 160 GB NVMe SSD, 20 TB Traffic]` — 10 keys/month
+`[4 vCPU⁰, 16 GB RAM, 160 GB NVMe SSD, 20 TB Traffic]` — 12 keys + 20 ref/month
 8. **CPX41**:
-`[8 vCPU¹, 16 GB RAM, 240 GB NVMe SSD, 20 TB Traffic]` — 14 keys + 30 ref/month
+`[8 vCPU¹, 16 GB RAM, 240 GB NVMe SSD, 20 TB Traffic]` — 17 keys + 55 ref/month
 9. **CX51**:
-`[8 vCPU⁰, 32 GB RAM, 240 GB NVMe SSD, 20 TB Traffic]` — 18 keys + 30 ref/month
+`[8 vCPU⁰, 32 GB RAM, 240 GB NVMe SSD, 20 TB Traffic]` — 22 keys + 55 ref/month
 10. **CPX51**:
-`[16 vCPU¹, 32 GB RAM, 360 GB NVMe SSD, 20 TB Traffic]` — 31 keys + 10 ref/month
+`[16 vCPU¹, 32 GB RAM, 360 GB NVMe SSD, 20 TB Traffic]` — 38 keys + 30 ref/month
 
 Note:
 **CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
