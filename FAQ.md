@@ -40,7 +40,7 @@ An experiment conducted by <a href="https://github.com/SkiLEXx">@SkiLEXx</a> tha
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/773688421943083018/unknown.png" alt="Bot2" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-Based on the results above, you're to expect that to happen sometimes. Most autoprice=true items will be affected by this kind of listings disappearing, because at some point prices.tf burst to update multiple items prices and maybe got rate-limited on backpack.tf.
+Based on the results above, you're about to expect that this will happen sometimes. Most autoprice=true items will be affected by this kind of listings disappearing, because at some point prices.tf burst to update multiple items prices and maybe got rate-limited on backpack.tf.
 </p>
 </details>
 
