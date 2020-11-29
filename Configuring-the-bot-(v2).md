@@ -210,6 +210,9 @@ The content of the `options.json` file is as follow:
     "allowBanned": false,
     "sendOfferMessage": "",
     "autobump": false,
+    "tradeSummary": {
+        "showStockChanges": false
+    },
     "highValue": {
         "enableHold": true,
         "sheens": [],
@@ -482,6 +485,15 @@ The content of the `options.json` file is as follow:
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `autobump` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. More information here: https://backpack.tf/premium/subscribe |
+
+## Trade Summary Settings
+Object: `tradeSummary`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|  `.showStockChanges`   | `boolean`  | `false`  | Refer images below |
+- `false`: ![Disabled](https://user-images.githubusercontent.com/47635037/100530206-fdeabf00-3229-11eb-8026-674f5543ff38.png)
+- `true`: ![Enabled](https://user-images.githubusercontent.com/47635037/100530193-ca0f9980-3229-11eb-8b44-576d1ff37c21.png)
 
 ## High-Value Item Settings
 Object: `highValue`
@@ -773,7 +785,7 @@ Object: `discordWebhook.tradeSummary`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean`  | `true` | Display each successful trade summary on your trade summary/live-trades channel via Discord Webhook. If set to `false`, it will send to your Steam Chat. |
-| `.url` | `string[]` | `[]`  | An array of Discord Webhook URLs for `TRADE_SUMMARY`. You will need to format it like so: `["yourDiscordWebhookLink"]`, or if you want to add more than one, you format them like so: `["link1", "link2"]` (separate each link with a comma, make sure `link1` is your **own** Discord Webhook URL). |
+| `.url` | `string[]` | `[]`  | An array of Discord Webhook URLs for `TRADE_SUMMARY`. You will need to format it like so: `["yourDiscordWebhookLink"]`, or if you want to add more than one, you format them like so: `["link1", "link2"]` (separate each link with a comma, make sure `link1` is your **own** Discord Webhook URL - Mention owner and show stock changes will only be shown in link1). |
 
 #### Misc
 Object: `discordWebhook.tradeSummary.misc`
