@@ -379,7 +379,7 @@ The content of the `options.json` file is as follow:
     	"property1_Obj3": "valueProperty1_Obj3",
         "property2_Obj3": {
         	"property1_Prop2_Obj3": "valueProperty1_Prop2_Obj3"
-        }
+        	}
 	}
 }
 ```
