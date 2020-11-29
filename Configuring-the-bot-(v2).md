@@ -828,7 +828,7 @@ Object: `discordWebhook.offerReview`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `false` | If set to `true`, messages regarding trade offers that require manual review will be sent to your Steam Chat. Otherwise, these messages will be sent on Discord. |
+| `.enable` | `boolean` | `true` | If set to `false`, messages regarding trade offers that require manual review will be sent to your Steam Chat. Otherwise, these messages will be sent on Discord. |
 | `.url` | `string`  |  `""` | Discord Webhook URL for `REVIEW_OFFER`. |
 | `.mentionInvalidValue` | `boolean` | `false` | If set to `true`, your bot only mention you for `INVALID_VALUE` offers. |
 
