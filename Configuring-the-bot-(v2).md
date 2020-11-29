@@ -492,10 +492,12 @@ Object: `tradeSummary`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 |  `.showStockChanges`   | `boolean`  | `false`  | Refer images below |
-- `false`: 
+- `false`:
+
 ![Disabled](https://user-images.githubusercontent.com/47635037/100530206-fdeabf00-3229-11eb-8026-674f5543ff38.png)
 
-- `true`: 
+- `true`:
+
 ![Enabled](https://user-images.githubusercontent.com/47635037/100530193-ca0f9980-3229-11eb-8b44-576d1ff37c21.png)
 
 ## High-Value Item Settings
