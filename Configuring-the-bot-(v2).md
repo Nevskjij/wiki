@@ -491,7 +491,7 @@ Object: `tradeSummary`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|  `.showStockChanges`   | `boolean`  | `false`  | Refer images below |
+|  `.showStockChanges`   | `boolean`  | `false`  | Refer below images |
 - `false`:
 
 ![Disabled](https://user-images.githubusercontent.com/47635037/100530206-fdeabf00-3229-11eb-8026-674f5543ff38.png)
