@@ -106,7 +106,7 @@ This can occur when Steamrep.com or backpack.tf is down. This is temporary and w
 </details>
 
 ## Why my bot doesn't list some of the items that I have recently added?
-If you add your items using [tf2-automatic-gui](https://github.com/ZeusJunior/tf2-automatic-gui/) while your bot is running, then this might be the cause of the problem. Adding items while your bot is still running will cause the items added will not be priced correctly (see [this](https://cdn.discordapp.com/attachments/666909760666468377/769802385526226974/unknown.png)) and will not list it on backpack.tf. One way of fixing this issue is to send `!update all=true` to your bot and it will fix the prices.
+If you add your items using [tf2-automatic-gui](https://github.com/ZeusJunior/tf2-automatic-gui/) while your bot is running, then this might be the cause of the problem. Adding items while your bot is still running will cause the items added will not be priced correctly (see [this](https://cdn.discordapp.com/attachments/666909760666468377/769802385526226974/unknown.png)) and will not list it on backpack.tf. One way of fixing this issue is to send `!update all=true&autoprice=false` and then send `!update all=true&autoprice=true` to your bot and it will fix the prices.
 
 Please make sure to stop your bot when you're replacing your `pricelist.json` from the tf2-automatic-gui config folder to your bot files folder, or if you change the path of the tf2-automatic-gui, make sure your bot is not running when you're using it.
 
