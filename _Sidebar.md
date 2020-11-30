@@ -6,13 +6,13 @@
 # Installation 
 ### Windows
 - [Downloading the bot](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Windows)
-- [Configuring the bot](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-(v2)) ([v1](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file-(v1)))
+- [Configuring the bot](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-(v2)) / ([v1](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file-(v1)))
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Windows)
 ### Linux
 - [Getting a VPS](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS)
 	- [IdiNium VPS Services](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services)
 - [Downloading the bot](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux)
-- [Configuring the bot](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-(v2)) ([v1](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file-(v1)))
+- [Configuring the bot](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-(v2)) / ([v1](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file-(v1)))
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux)
 
 # Using the bot
