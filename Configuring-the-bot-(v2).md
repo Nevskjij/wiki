@@ -466,7 +466,6 @@ The content of the `options.json` file is as follow:
 |     `enableGroupInvites`      | `boolean` | `true`  | If set to `false`, your bot will not invite people to join Steam groups. **NOTE: (You still need to have at least 1 group ID in the `GROUPS` array). See `Owners' Details and Other Required Variables` for more information.** |
 |     `enableOwnerCommand`      | `boolean` | `true`  | If set to `false`, the `!owner` command (used to contact the owner(s) of the bot will be disabled. |
 |    `autoRemoveIntentSell`     | `boolean` | `false` | If set to `false`, your bot will no longer remove pricelist entries that have an `intent` of `sell` after completely selling out of that specific item. For example, if you list an item with `intent=sell` and the item sells out, the item will remain in your pricelist instead of being removed. |
-| `enableCraftweaponAsCurrency` | `boolean` | `true`  | If set to `false`, your bot will not value craft weapons as currency (0.05 refined). |
 
 ## Trade Bypass Settings
 
@@ -488,6 +487,14 @@ The content of the `options.json` file is as follow:
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `autobump` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. More information here: https://backpack.tf/premium/subscribe |
+
+## Weapons as currency (0.05 ref)
+Object: `weaponsAsCurrency`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `true`  | If set to `false`, your bot will not value craft/uncraft weapons as currency (0.05 refined). |
+| `.withUncraft` | `boolean` | `true`  | If set to `false`, your bot will exclude uncraft weapons as currency (0.05 refined). |
 
 ## Trade Summary Settings
 Object: `tradeSummary`
