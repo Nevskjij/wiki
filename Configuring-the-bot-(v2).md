@@ -203,13 +203,16 @@ The content of the `options.json` file is as follow:
     "enableGroupInvites": true,
     "enableOwnerCommand": true,
     "autoRemoveIntentSell": false,
-    "enableCraftweaponAsCurrency": true,
     "allowEscrow": false,
     "allowOverpay": true,
     "allowGiftNoMessage": false,
     "allowBanned": false,
     "sendOfferMessage": "",
     "autobump": false,
+    "weaponsAsCurrency": {
+        "enable": true,
+        "withUncraft": true
+    },
     "tradeSummary": {
         "showStockChanges": false
     },
