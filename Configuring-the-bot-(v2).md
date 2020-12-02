@@ -173,8 +173,8 @@ The time settings listed here will be used in the `!time` command as well as in 
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|       `TIMEZONE`        | `string` |            `UTC`            | The timezone that you currently reside in. Please only use these [Timezone Formats](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example, if you live in Malaysia, you can use the value `Asia/Kuala_Lumpur`. Or if you live in New York, you can use the value `America/New_York`. |
-|  `CUSTOM_TIME_FORMAT`   | `string` | `MMMM Do YYYY, HH:mm:ss ZZ` | - Please refer to [this article](https://www.tutorialspoint.com/momentjs/momentjs_format.htm) for more information on specifying a custom time format for your bot. |
+|       `TIMEZONE`        | `string` |            `Europe/London`            | The timezone that you currently reside in. Please only use these [Timezone Formats](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). For example, if you live in Malaysia, you can use the value `Asia/Kuala_Lumpur`. Or if you live in New York, you can use the value `America/New_York`. |
+|  `CUSTOM_TIME_FORMAT`   | `string` | `MMMM DD YYYY, HH:mm:ss ZZ` | - Please refer to [this article](https://www.tutorialspoint.com/momentjs/momentjs_format.htm) for more information on specifying a custom time format for your bot. |
 | `TIME_ADDITIONAL_NOTES` | `string` |            `""`             | Optional additional notes when the bot shows your current time. Some examples are your active hours or who to contact if you are offline. |
 
 ## Debug Settings
@@ -350,7 +350,8 @@ The content of the `options.json` file is as follow:
             "misc": {
                 "showQuickLinks": true,
                 "showKeyRate": true,
-                "showPureStock": true
+                "showPureStock": true,
+                "showInventory": true
             }
         },
         "messages": {
@@ -850,6 +851,7 @@ Object: `discordWebhook.offerReview.misc`
 | `.showQuickLinks` | `boolean` | `true` | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
 | `.showKeyRate` | `boolean` | `true` | Show your bot's key rate. |
 | `.showPureStock` | `boolean` | `true`  | Show your bot's pure stock. |
+| `.showInventory` | `boolean`  | `true`  | Show the total amount of items in your bot's inventory. |
 
 #### A visual breakdown of each Discord Webhook Review setting
 
