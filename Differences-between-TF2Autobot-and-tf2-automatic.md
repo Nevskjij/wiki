@@ -4,54 +4,57 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
 
 ### Original tf2-automatic
 
--   free auto pricing (using prices from [prices.tf](https://prices.tf/)) and unlimited listings (only limited by your backpack.tf listings cap).
--   automatically craft/smelt pure metal (to maintain supply in all metal types).
--   dupe check on items that are more than a certain amount of keys (you decide/set the number of keys).
--   trade offer review (if you were offered an invalid value/item, the item is overstocked, or the item is duped).
+-   Free auto pricing (using prices from [prices.tf](https://prices.tf/)) and unlimited listings (only limited by your backpack.tf listings cap).
+-   Automatically craft/smelt pure metal (to maintain supply in all metal types).
+-   Dupe check on items that are more than a certain amount of keys (you decide/set the number of keys).
+-   Trade offer review (if you were offered an invalid value/item, the item is overstocked, or the item is duped).
 
 ### TF2Autobot version
 
 -   **Discord Webhook:**
-    -   use Discord Webhooks for your bot to send accepted trade summaries, pending trade offer reviews, and/or private messages to a Discord server.
-    -   disable mention owner on pending trade offers with `INVALID_VALUE`.
+    -   Use Discord Webhooks for your bot to send accepted trade summaries, pending trade offer reviews, and/or private messages to a Discord server.
+    -   Disable mention owner on pending trade offers with `INVALID_VALUE`.
 -   **Autokeys:**
-    -   enable Autokeys (to maintain ample refined metal stock) and key banking.
+    -   Enable Autokeys (to maintain ample refined metal stock) and key banking.
 -   **Manual review:**
-    -   send the trade partner a summary of their offer if it needs to be reviewed.
-    -   automatically accept trades that underpay by a certain amount of refined with `INVALID_VALUE exception` (you decide/set the amount of refined and can be enabled only for certain item qualities).
-    -   automatically decline (skip manual review) **ONLY** `INVALID_VALUE` trade (if it does not meet the set requirements for `INVALID_VALUE exception`).
-    -   automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers to overpay (will mention owner on Discord Webhook).
-    -   new `UNDERSTOCKED` reason for manual review.
-    -   option to automatically decline `OVERSTOCKED` or `UNDERSTOCKED` reason.
-    -   list all reasons and items for each trade offer review.
+    -   Send the trade partner a summary of their offer if it needs to be reviewed.
+    -   Automatically accept trades that underpay by a certain amount of refined with `INVALID_VALUE exception` (you decide/set the amount of refined and can be enabled only for certain item qualities).
+    -   Automatically decline (skip manual review) **ONLY** `INVALID_VALUE` trade (if it does not meet the set requirements for `INVALID_VALUE exception`).
+    -   Automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers to overpay (will mention owner on Discord Webhook).
+    -   New `UNDERSTOCKED` reason for manual review.
+    -   Option to automatically decline `OVERSTOCKED` or `UNDERSTOCKED` reason.
+    -   List all reasons and items for each trade offer review.
 -   **Support craft weapons as currency:**
-    -   set craft weapons as currency (0.05 ref) and automatically craft duplicated craftable weapons and matched class weapons into metal (if not in pricelist).
+    -   Set craft weapons as currency (0.05 ref) and automatically craft duplicated craftable weapons and matched class weapons into metal (if not in pricelist).
 -   **Option to only accept full uses items:**
     -   Dueling Mini-Game check - only accept 5 Uses!
     -   Noise Maker check - only accept 25 Uses!
 -   **Custom Listing Note:**
-    -   set custom buy or sell order listing note for any item of your choice!
+    -   Set a custom buy or sell order listing note for any item of your choice!
 -   **Items Grouping in pricelist:**
-    -   set a group for specific items in your pricelist so it will be easy to manage, such as if you only want to update `intent=bank` to `intent=sell` to only "craftHats" items group!
+    -   Set a group for specific items in your pricelist so it will be easy to manage, such as if you only want to update `intent=bank` to `intent=sell` to only "craftHats" items group!
 -   **Customs:**
-    -   set your own custom greeting, success/failed messages, and/or trade offer review notes.
-    -   set your custom playing game name.
-    -   option to only play Team Fortress 2.
-    -   disable "show only metal" in the trade summary (it will show x keys, y ref instead of just x ref on the original version).
-    -   option to disable accept friend requests and disable invite people to join Steam groups.
-    -   option to recognize Strange Unusual as usual Unusual and vice versa.
-    -   option to recognize Festivized items as non-Festivized.
+    -   Set your own custom greeting, success/failed messages, and/or trade offer review notes.
+    -   Set your custom playing game name.
+    -   Option to only play Team Fortress 2.
+    -   Disable "show only metal" in the trade summary (it will show x keys, y ref instead of just x ref on the original version).
+    -   Option to disable accept friend requests and disable invite people to join Steam groups.
+    -   Option to recognize Strange Unusual as usual Unusual and vice versa.
+    -   Option to recognize Festivized items as non-Festivized.
 -   **Improvements:**
-    -   request price check to prices.tf after every successful trade on each item involved in the trade (except craft weapons and pure).
-    -   option to request for `INVALID_ITEMS` (items that are not in your pricelist) to be priced by Prices.TF.
-    -   automatically add accepted `INVALID_ITEMS` to the pricelist (if priced with prices.tf and not from ADMINS) with autoprice set to true and intent to sell, which when sold, will be automatically removed.
-    -   notify the owner if someone traded high valued items (spelled and/or strange parts).
-    -   use the infinity symbol (∞) for infinite stock (maximum set to -1).
-    -   able to create **sell orders** for specific Mann Co. Supply Crate, Mann Co. Supply Munition and, Salvaged Mann Co. Supply Crate series and Skins/War Paint!
-    -   support **buy orders** for targeted specific items such as Crates, Unusualifier, Strangifier, Killstreak Kit, Killstreak Kit Fabricator and Chemistry set!
+    -   Request price check to prices.tf after every successful trade on each item involved in the trade (except craft weapons and pure).
+    -   Option to request for `INVALID_ITEMS` (items that are not in your pricelist) to be priced by Prices.TF.
+    -   Automatically add accepted `INVALID_ITEMS` to the pricelist (if priced with prices.tf and not from ADMINS) with autoprice set to true and intent to sell, which when sold, will be automatically removed.
+    -   Notify the owner if someone traded high-valued items (spelled, user-selected sheens, killstreakers, strange parts, and paints).
+    -   Automatically inform the owner and temporarily disable item bought if it contains high-valued.
+    -   Use the infinity symbol (∞) for infinite stock (maximum set to -1).
+    -   Able to promote sell orders (Backpack.tf Premium only)!
+    -   Able to create **sell orders** for specific Mann Co. Supply Crate, Mann Co. Supply Munition and, Salvaged Mann Co. Supply Crate series and Skins/War Paint!
+    -   Support **buy orders** for targeted specific items such as Crates, Unusualifier, Strangifier, Killstreak Kit, Killstreak Kit Fabricator and Chemistry set!
+    -   Added the ability to donate to Backpack.tf with `!donatebptf` command!
 -   **Others:**
 -   emojis on almost all messages.
--   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", and more!
+-   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", "!shuffle" and more!
 
 More info in the [Releases](https://github.com/idinium96/tf2autobot/releases) note pages.
 
