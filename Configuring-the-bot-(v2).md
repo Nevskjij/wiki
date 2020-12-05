@@ -214,13 +214,15 @@ The content of the `options.json` file is as follow:
         "withUncraft": true
     },
     "tradeSummary": {
-        "showStockChanges": false
+        "showStockChanges": false,
+        "showTimeTakenInMS": true
     },
     "highValue": {
         "enableHold": true,
         "sheens": [],
         "killstreakers": [],
-        "strangeParts": []
+        "strangeParts": [],
+        "painted": []
     },
     "checkUses": {
         "duel": true,
@@ -236,7 +238,14 @@ The content of the `options.json` file is as follow:
     },
     "details": {
         "buy": "I am buying your %name% for %price%, I have %current_stock% / %max_stock%.",
-        "sell": "I am selling my %name% for %price%, I am selling %amount_trade%."
+        "sell": "I am selling my %name% for %price%, I am selling %amount_trade%.",
+        "highValue": {
+            "showSpells": true,
+            "showStrangeParts": false,
+            "showKillstreaker": true,
+            "showSheen": true,
+            "showPainted": true
+        }
     },
     "customMessage": {
         "welcome": "",
@@ -502,7 +511,9 @@ Object: `tradeSummary`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|  `.showStockChanges`   | `boolean`  | `false`  | Refer below images (This feature is sometime buggy) |
+|  `.showStockChanges`   | `boolean`  | `false`  | Refer below images. |
+|  `.showTimeTakenInMS`   | `boolean`  | `true`  | Set this to `false` if you don't want the time taken display time in milliseconds in bracket. |
+
 - `false`:
 
 ![Disabled](https://user-images.githubusercontent.com/47635037/100530206-fdeabf00-3229-11eb-8026-674f5543ff38.png)
@@ -519,7 +530,8 @@ Object: `highValue`
 |  `.enableHold`   | `boolean`  | `true`  | By default, whenever your bot accepts items with high valued attachments, it will temporarily be disabled so you can decide whether to manually price it. Set this to `false` if you want to disable this feature. |
 |    `.sheens`     | `string[]` |  `[]`   | If the bot completes a trade that contains items with any sheen located in this list, the owner will be notified of the trade and the item(s) containing the sheen will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this Option to `["Team Shine"]` will cause any weapons with a `Team Shine` sheen to not be automatically re-listed, and will notify the owner if one is obtained successfully. If this Option is left blank (`[""]`), the bot will hold and notify on **all** sheens. See [Valid Sheens](https://github.com/idinium96/tf2autobot/blob/master/src/lib/data.ts#L556-L564) |
 | `.killstreakers` | `string[]` |  `[]`   | If the bot completes a trade that contains items with any killstreaker located in this list, the owner will be notified of the trade and the item(s) containing the killstreaker will be automatically disabled. These items will not be automatically re-listed, and the owner must manually re-list the item. For example, setting this Option to `["Fire Horns", "Tornado"]` will cause any weapons with a `Fire Horns` or `Tornado` killstreaker to not be automatically re-listed, and will notify the owner if one is obtained successfully. If this Option is left blank (`[""]`), the bot will hold and notify on **all** killstreakers. See [Valid Killstreakers](https://github.com/idinium96/tf2autobot/blob/master/src/lib/data.ts#L566-L574) |
-| `.strangeParts` | `string[]` | `[]` | Let the bot mention/highlight items with filled strange parts. See [Valid Strange Parts](https://github.com/idinium96/tf2autobot/blob/master/src/lib/data.ts#L500-L554) |
+| `.strangeParts` | `string[]` | `[]` | Let the bot mention/disable items with filled strange parts. See [Valid Strange Parts](https://github.com/idinium96/tf2autobot/blob/master/src/lib/data.ts#L500-L554) |
+| `.painted` | `string[]` | `[]` | Let the bot mention/disable items with filled painted. See [Valid Painted](https://github.com/idinium96/tf2autobot/blob/master/src/lib/data.ts#L576-L606) |
 
 ## Check Dueling Mini-Game or Noise Maker uses
 Object: `checkUses`
@@ -566,6 +578,18 @@ Object: `details`
 **Usage example:**
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/98710377-878f3580-23be-11eb-9ed5-e0f6ec4e26af.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+### High-value in listings note
+Object: `details.highValue`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.showSpells` | `boolean` | `true` | Show spell(s) in the listings note. [See Example](https://user-images.githubusercontent.com/47635037/101237085-0f900300-3711-11eb-877e-cc3b5c904682.png). |
+| `.showStrangeParts` | `boolean` | `false` | Show Strange parts (only the one you specified in `highValue.strangeParts`) |
+| `.showKillstreaker` | `boolean` | `true` | Show killstreaker in the listings note. [See Example](https://user-images.githubusercontent.com/47635037/101237131-4a923680-3711-11eb-84f8-6e1384868111.png) |
+| `.showSheen` | `boolean` | `true` | Show Sheen in the listings note. |
+| `.showPainted` | `boolean` | `true` | Show painted color in the listings note. [See Example](https://user-images.githubusercontent.com/47635037/101237099-27678700-3711-11eb-994c-4291f6196645.png) |
+\*Note: Only for sell orders.
 
 ## Custom bot reply
 Object: `customMessage`
