@@ -37,7 +37,7 @@ sudo apt install git
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install typescript@latest -g
-git clone https://github.com/idinium96/tf2autobot.git
+git clone https://github.com/TF2Autobot/tf2autobot.git
 cd tf2autobot
 npm install
 npm run build
