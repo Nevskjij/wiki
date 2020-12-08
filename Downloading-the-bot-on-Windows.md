@@ -62,7 +62,7 @@ Now type in the following commands:
 
 `cd Desktop`
 
-`git clone https://github.com/idinium96/tf2autobot.git --branch master`
+`git clone https://github.com/TF2Autobot/tf2autobot.git --branch master`
 
 `cd tf2autobot`
 
