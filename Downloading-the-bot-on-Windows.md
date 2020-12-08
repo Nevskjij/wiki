@@ -45,7 +45,7 @@ When the bot has been downloaded you need to install the modules. Do this by nav
 
 # Compiling source
 
-If you already have installed TypeScript, then `npm run build` will compile the code. If you haven't then see #Installing TypeScript.
+If you already have installed TypeScript, then `npm run build` will compile the code. If you haven't then see [Installing TypeScript](#Installing TypeScript).
 
 Compile the source using `npm run build`
 
