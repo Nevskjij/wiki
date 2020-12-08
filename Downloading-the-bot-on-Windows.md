@@ -27,7 +27,7 @@ Now you will type some commands into your command prompt.
 
 `cd Desktop` to navigate to the Desktop.
 
-`git clone https://github.com/idinium96/tf2autobot.git --branch master` to clone the repository and choose the master branch. The master branch contains released code and is considered to be stable.
+`git clone https://github.com/TF2Autobot/tf2autobot.git --branch master` to clone the repository and choose the master branch. The master branch contains released code and is considered to be stable.
 
 Once it has been cloned a new folder will be made called `tf2autobot`.
 
@@ -45,7 +45,7 @@ When the bot has been downloaded you need to install the modules. Do this by nav
 
 # Compiling source
 
-If you already have installed TypeScript, then `npm run build` will compile the code. If you haven't then see [Installing TypeScript](https://github.com/idinium96/tf2autobot/wiki/a.-Installation#installing-typescript).
+If you already have installed TypeScript, then `npm run build` will compile the code. If you haven't then see #Installing TypeScript.
 
 Compile the source using `npm run build`
 
