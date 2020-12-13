@@ -209,6 +209,7 @@ The content of the `options.json` file is as follow:
     "allowBanned": false,
     "sendOfferMessage": "",
     "autobump": false,
+    "skipItemsInTrade": true,
     "weaponsAsCurrency": {
         "enable": true,
         "withUncraft": true
@@ -497,6 +498,12 @@ The content of the `options.json` file is as follow:
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `autobump` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. More information here: https://backpack.tf/premium/subscribe |
+
+## Skip items that are currently in another active trades
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `skipItemsInTrade` | `boolean` | `true` | By default, when your bot is constructing an offer (trade partner buy/sell through command), your bot will skip any items that are currently in another active trades. Set this to `false` if you want to disable this feature. |
 
 ## Weapons as currency (0.05 ref)
 Object: `weaponsAsCurrency`
