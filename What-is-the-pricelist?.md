@@ -282,4 +282,4 @@ Once confirmed, send `!remove all=true&withgroup=<groupName>&i_am_sure=yes_i_am`
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/92597293-c7ac3c00-f2d9-11ea-8089-89f9973b4ab4.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-If you need any help, please contact us at our [Discord server](https://discord.gg/ZrVT7mc).
+If you need any help, please contact us at our [Discord server](https://discord.gg/D2GNnp7tv8).
