@@ -810,7 +810,7 @@ For `OVERSTOCKED` and `UNDERSTOCKED`, parameter `%name%` will print out a list o
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `discordInviteLink` | `string` |  `""`   | You can place a Discord server invite link here, which would be shown when a trade partner enters the `!discord` command. You can leave this empty if you don't have one, as it will be replaced with the [TF2Autobot Discord Server](https://discord.gg/ZrVT7mc) invite link by default. |
+| `discordInviteLink` | `string` |  `""`   | You can place a Discord server invite link here, which would be shown when a trade partner enters the `!discord` command. You can leave this empty if you don't have one, as it will be replaced with the [TF2Autobot Discord Server](https://discord.gg/D2GNnp7tv8) invite link by default. |
 
 ## Discord Webhook
 
