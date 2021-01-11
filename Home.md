@@ -1,1 +1,1 @@
-[My Awesome Wiki](../../wiki)
+![My Awesome Wiki](../../wiki)
