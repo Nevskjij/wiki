@@ -15,11 +15,16 @@ If your bot is installed on the Desktop you will use
 
 `cd Desktop/tf2autobot`.
 
+It is recommended to firstly delete the `node_modules` folder.
+On Windows simply right-click and delete it.
+On Linux use `rm -rf node_modules` while inside your tf2autobot directory.
+
 After that, you will download and install the newest version by typing
 
-`git checkout master && git pull && npm install && npm run build`
+`git checkout master && git stash && git pull && npm install && npm run build`
 
-## Updating the environment file
+## Updating the environment file - ecosystem.json
+
 Some updates introduce new variables to your environment file which add new and improved features to your bot.
 You must update your environment file with the newly added variables for everything to function properly. 
 
@@ -27,6 +32,12 @@ To do that you should check out the updated environment files for [Windows](http
 
 Once you have the respective file open, it's usually recommended to copy-paste it into your existing environment file and fill everything out. 
 If you know the exact variables that were changed/added since the last time you updated the bot and your environment file, you can feel free to only copy-paste those into your existing environment file.
+
+## Updating the configuration file - options.json
+Some updates also introduce new variables to your options.json file located in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/`.
+You must update your configuration file with the newly added variables mentioned in the release notes. Sometimes it's also necessary to remove old variables.
+
+Please make sure to read the release notes carefully. Otherwise your bot might not function properly.
 
 ## You are all set!
 Now all you have to do is restart your bot and you will be running the newest version including all the new variables.
