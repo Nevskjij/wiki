@@ -158,7 +158,7 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 ![How to get SteamID64](https://user-images.githubusercontent.com/47635037/96715154-be80b580-13d5-11eb-9bd5-39613f600f6d.gif)
 
 Now you have configured all the necessary variables and you could start your bot. We strongly urge you to take a look at the rest of the variables because they provide lots of awesome functionality that you don't want to miss out on.
-If you still aren't convinced you can proceed to learning how to run the bot [on Windows](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Windows) or [on Linux.](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux)
+If you still aren't convinced you can proceed to the instructions how to run the bot [on Windows](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Windows) or [on Linux.](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux)
 
 # Optional Variables
 
@@ -950,5 +950,5 @@ Object: `discordWebhook.sendAlert`
 | :----: | :--: | :-----: | :---------- |
 | `maxPriceAge` | `integer` | `28800` ms | (8 hrs) If an item in the pricelist's last price update exceeds this value, the bot will automatically request a price check for the item from prices.tf. |
 
-# Confirgured every variable?
+# Configured every variable?
 Great, then you are all set to run your bot [on Windows](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Windows) or [on Linux.](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux)
