@@ -56,3 +56,5 @@ pm2 restart ecosystem.json --update-env && pm2 save
 - `pm2 stop all` - stop all running bots
 
 No matter if you are running one or multiple bots, it is recommended to do `pm2 restart ecosystem.json --update-env && pm2 save && pm2 logs` to see if there are any problems after you change something in your environment file.
+
+The next thing you should do is set up your pricelist so that your bot can start trading items. Learn how to do it [here.](https://github.com/TF2Autobot/tf2autobot/wiki/What-is-the-pricelist%3F)
