@@ -500,7 +500,7 @@ The content of the `options.json` file is as follow:
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `autobump` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. More information here: https://backpack.tf/premium/subscribe |
+| `autobump` | `boolean` | `false` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - This feature is broken if Backpack.tf down. You'll need to restart your bot if that happens. Please consider donating to Backpack.tf or purchase Backpack.tf Premium to enable automatic listing bumping. More information here: https://backpack.tf/premium/subscribe |
 
 ## Skip items that are currently in another active trades
 
