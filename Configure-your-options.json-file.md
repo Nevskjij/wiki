@@ -2,7 +2,7 @@
 
 This file will be generated once you run your bot for the first time. The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder.
 
-Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionjson-content) to view the content.
+Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) to view the content.
 
 ## How to read?
 
