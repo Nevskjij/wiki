@@ -15,6 +15,10 @@
 - [Configuring the bot](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot-on-Linux)
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux)
 
+# Options
+
+- [Configure options.json file](https://github.com/idinium96/tf2autobot/wiki/Configure-optionsjson-file)
+
 # Using the bot
 - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F)
 	- [Adding items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#i-add-item-to-pricelist-with-add-command)
