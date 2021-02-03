@@ -55,7 +55,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 
 ## Options.json structure
 
-*   [`miscSettings`](#-miscellaneous-settings)
+*   [`miscSettings`](#-miscellaneous-settings-)
     -   [`.showOnlyMetal`](#--show-only-metal-%EF%B8%8F-)
     -   [`.sortInventory`](#--sort-inventory--)
     -   [`.createListings`](#--creating-listings-on-backpacktf-%EF%B8%8F-)
@@ -167,7 +167,7 @@ Property: `.sendGroupInvite`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `true`  | If set to `false`, your bot will not invite people to join Steam groups. **NOTE: (You still need to have at least 1 group ID in the `GROUPS` array). See [Owners' Details and Other Required Variables](#owners-details-and-other-required-variables) for more information.** |
+| `.enable` | `boolean` | `true`  | If set to `false`, your bot will not invite people to join Steam groups. |
 
 ### - Autobump (auto-relist) 🔄 [^](#optionsjson-structure)
 Property: `.autobump`
@@ -313,14 +313,14 @@ property: `.giftWithoutMessage`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.allow` | `boolean` | `false` | If set to `true`, your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](https://github.com/idinium96/tf2autobot/blob/1331f49d1c0217b906fff27f048c58b833bb844f/src/lib/data.ts#L601). **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+| `.allow` | `boolean` | `false` | If set to `true` (Not recommended), your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](https://github.com/TF2Autobot/tf2autobot/wiki/Library#gift-words-). |
 
 ### - Allow trade with banned account ⛔✅ [^](#optionsjson-structure)
 property: `.bannedPeople`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|    `.allow`     | `boolean` | `false` | If set to `true`, your bot will trade with users that are banned on backpack.tf or marked as a scammer on steamrep.com. **SETTING THIS TO TRUE IS NOT RECOMMENDED!** |
+|    `.allow`     | `boolean` | `false` | If set to `true` (Not recommended), your bot will trade with users that are banned on backpack.tf or marked as a scammer on steamrep.com. |
 
 ---
 
