@@ -21,9 +21,14 @@
 
 # Using the bot
 - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F)
-	- [Adding items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#i-add-item-to-pricelist-with-add-command)
-	- [Updating items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#ii-update-items-listing-settings-with-update-command)
-	- [Removing items](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F#iii-remove-items-from-pricelist-with-remove-command)
+- Parameters
+    - [Item identifying paramaters](https://github.com/idinium96/tf2autobot/wiki/Item-Identifying-parameters)
+    - [Listing settings paramaters](https://github.com/idinium96/tf2autobot/wiki/Listing-settings-parameters)
+- Manage pricelist
+    - [Adding items](https://github.com/idinium96/tf2autobot/wiki/Adding-items)
+    - [Updating items](https://github.com/idinium96/tf2autobot/wiki/Updating-items)
+    - [Removing items](https://github.com/idinium96/tf2autobot/wiki/Removing-items)
+- [Other commands](https://github.com/idinium96/tf2autobot/wiki/Other-commands)
 
 # Maintaining the bot
 - [Updating the bot](https://github.com/idinium96/tf2autobot/wiki/Updating-the-bot)
