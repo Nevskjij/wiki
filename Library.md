@@ -13,7 +13,7 @@
     - [Accepted message](#--accepted-message-)
         - [Automatic](#-automatic-)
         - [Manual](#-manual-)
-- [Gift words](#-gift-words-)
+- [Gift words](#gift-words-)
 
 # Options.json content [^](#table-of-content)
 
