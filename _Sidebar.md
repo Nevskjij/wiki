@@ -17,7 +17,7 @@
 
 # Options
 
-- [Configure options.json file](https://github.com/idinium96/tf2autobot/wiki/Configure-optionsjson-file)
+- [Configure options.json file](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
 
 # Using the bot
 - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F)
