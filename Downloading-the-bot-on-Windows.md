@@ -72,6 +72,6 @@ Now type in the following commands:
 
 `npm run build`
 
-# All done? (/.-test)
+# All done?
 
 Then the next step will be [to configure your bot.](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot-(v2))
