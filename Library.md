@@ -17,7 +17,7 @@
 
 # Options.json content [^](#table-of-content)
 
-```
+```json
 {
     "miscSettings": {
         "showOnlyMetal": {
