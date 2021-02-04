@@ -347,8 +347,8 @@
         },
         "accepted": {
             "automatic": {
-                "largeOffer": '',
-                "smallOffer": ''
+                "largeOffer": "",
+                "smallOffer": ""
             },
             "manual": {
                 "largeOffer": "",
