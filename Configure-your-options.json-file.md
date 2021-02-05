@@ -1,3 +1,5 @@
+# Configure options.json file (Optional)
+
 This file will be generated once you run your bot for the first time. The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder.
 
 Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) to view the content.
@@ -71,7 +73,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.backpackFull`](#--backpack-fullalmost-full-alert--)
     -   [`.highValue`](#--high-value-items-alert--)
     -   [`.autoRemoveIntentSellFailed`](#--automatic-remove-intentsell-failed--)
-    -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
+    -   [`.autoAddPaintedItems`](#--automatic-add-painted-items---)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
@@ -1478,8 +1480,12 @@ Property: `.painted[paintName].stringNote`
 
 - Custom string to be shown in listing note if [`details.highValue.showPainted`](#--high-value-in-listings-note-decoration--) set to `true`
 
+===
+
 #### • Custom additional price for automatic add painted items
 Property: `.painted[paintName].price`
+
+- What is this use for? [Click here](#--automatic-add-painted-items---)
 
 ///
 
