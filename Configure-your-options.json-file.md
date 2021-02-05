@@ -249,7 +249,7 @@ Property: `.highValue`
 | :----: | :--: | :-----: | :---------- |
 | `.autoRemoveIntent SellFailed` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when an item is sold with intent sell, and `pricelist.autoRemoveIntentSell.enable` is `true` but the bot failed to remove it. |
 
-### - Automatic add painted items 🎀 [^](#optionsjson-structure) [↓](#-custom-painted-text-on-listing-note)
+### - Automatic add painted items 🎀 [^](#optionsjson-structure)
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
@@ -275,7 +275,7 @@ property: `.autoAddInvalidItems`
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true`  | If set to `false`, any accepted `🟨_INVALID_ITEMS` will **NOT** be automatically added to the pricelist. |
 
-### - Automatic add painted items 🎀➕ [^](#optionsjson-structure)
+### - Automatic add painted items 🎀➕ [^](#optionsjson-structure) [↓](#-custom-painted-text-on-listing-note)
 property: `.autoAddPaintedItems`
 
 | Option | Type | Default | Description |
