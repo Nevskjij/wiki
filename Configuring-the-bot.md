@@ -6,6 +6,7 @@ First, we will set up the environment file, which you will use to configure the 
 
 <details>
 <summary>Click here if you are running the bot on Linux</summary>
+
 For Linux, the bot is configured through environment variables that can be set using a file called `ecosystem.json` that the bot reads when it starts.
 
 The content of `ecosystem.json` file:
@@ -62,6 +63,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
 </details>
 <details>
 <summary>Click here if you are running the bot on Windows</summary>
+
 For Windows, the bot is configured through environment variables that can be set using a file (`.env`) that the bot reads when it starts.
 
 The content of the `.env` file:
