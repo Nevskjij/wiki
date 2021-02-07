@@ -7,7 +7,7 @@
 ### Windows
 - [Downloading the bot](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Windows)
 - Configuring the bot
-	- [environment file] (https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot)
+	- [environment file](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot)
 	- [options.json](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Windows)
 ### Linux
@@ -15,7 +15,7 @@
 	- [IdiNium VPS Services](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services)
 - [Downloading the bot](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux)
 - Configuring the bot
-	- [environment file] (https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot)
+	- [environment file](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot)
 	- [options.json](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux)
 
