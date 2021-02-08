@@ -70,7 +70,9 @@
             "tryingToTake": true
         },
         "autoRemoveIntentSellFailed": true,
-        "autoAddPaintedItems": true
+        "autoAddPaintedItems": true,
+        "failedAccept": true,
+        "unableToProcessOffer": true
     },
     "pricelist": {
         "autoRemoveIntentSell": {
