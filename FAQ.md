@@ -113,7 +113,7 @@ Please make sure to stop your bot when you're replacing your `pricelist.json` fr
 # Custom settings
 
 ## How to set custom welcome/success messages?
-All settings for custom messages can be found [here](https://github.com/idinium96/tf2autobot/wiki/Configuring-the-bot#💬-custom-message/reply).
+All settings for custom messages can be found [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#-custom-messagereply-).
 
 When you're applying your custom messages, make sure to always obey the JSON format. You can not add a new line with `ENTER`, but instead you'll need to add `\n` for the new line. The `\` symbol is called escape characters. Another important escape characters are:
 
