@@ -41,7 +41,8 @@ The content of `ecosystem.json` file:
                 "GROUPS": ["103582791464047777", "103582791462300957"],
                 "ALERTS": ["trade", "version"],
 
-                "PRICESTF_API_TOKEN": "",
+                "CUSTOM_PRICER_URL": "",
+                "CUSTOM_PRICER_API_TOKEN": "",
 
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
@@ -87,7 +88,8 @@ KEEP=["<steamid of person to keep in friendslist>"]
 GROUPS=["103582791464047777","103582791462300957"]
 ALERTS=["trade", "version"]
 
-PRICESTF_API_TOKEN=""
+CUSTOM_PRICER_URL=""
+CUSTOM_PRICER_API_TOKEN=""
 
 SKIP_BPTF_TRADEOFFERURL=true
 SKIP_UPDATE_PROFILE_SETTINGS=true
@@ -191,12 +193,15 @@ The time settings listed here will be used in the `!time` command as well as in 
 | `DEBUG_FILE` | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur to a file. This file can be later be used to create a GitHub [issue](https://github.com/idinium96/tf2autobot/issues/new/choose) to report any issues to the developers. |
 
 
-## Prices.tf token
+## Custom Pricer Settings
+
+Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
+prices.tf. If you are using another price source refer to the alternative price source's documentation.
+
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `PRICESTF_API_TOKEN` | `string` | `""`  | Please leave this empty. You no longer need any API Token to access prices.tf. |
-
----
+|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
+| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
 
 ---
 
