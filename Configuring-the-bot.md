@@ -196,7 +196,7 @@ The time settings listed here will be used in the `!time` command as well as in 
 ## Custom Pricer Settings
 
 Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
-prices.tf. If you are using another price source refer to the alternative price source's documentation.
+prices.tf. If you are using another price source refer to the alternative [price source's documentation](https://github.com/TF2Autobot/tf2autobot/blob/v3.2.0/src/classes/Pricer.ts#L10-L16).
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
