@@ -85,6 +85,9 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.giftWithoutMessage`](#--allow-receiving-free-items-without-message--)
     -   [`.bannedPeople`](#--allow-trade-with-banned-account--)
 *   [`tradeSummary`](#-trade-summary-settings-)
+    -   [`.customText`](#--custom-text--)
+*   [`steamChat`](#-steam-chat-settings-)
+    -   `.customInitializer`
 *   [`highValue`](#-high-value-items-settings-)
 *   [`normalize`](#-items-normalization-settings-)
     -   [`.festivized`](#--festivized-items--)
@@ -337,6 +340,29 @@ Parent property: `tradeSummary`
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/106510028-56c82380-6509-11eb-9038-228ceb459af2.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
+===
+
+### Custom text [^](#optionsjson-structure)
+Property: `customText`
+
+- Set your own preferred customizable text in the trade summary (both accepted and review summary).
+- Discord Webhook available markdown (formatting): [Click here](https://birdie0.github.io/discord-webhooks-guide/other/discord_markdown.html)
+
+---
+
+## Steam chat settings [^](#optionsjson-structure)
+Parent property key: `steamChat`
+
+### Custom initializer
+
+- Set your own preferred initializer.
+- Available initializer:
+    - [`/me`](https://prnt.sc/youg01)
+    - [`/pre`](https://prnt.sc/youh3p)
+    - [`/quote`](https://prnt.sc/youi3i)
+    - `/code` - [`image1`](https://prnt.sc/youkf2), [`image2`](https://prnt.sc/yountp)
+    - leave empty - normal text
+
 ---
 
 ## 🥇 High-value Items settings [^](#optionsjson-structure)
@@ -442,6 +468,13 @@ Property: `.highValue`
 | `.showSheen` | `boolean` | `true` | Show Sheen in the listings note. |
 | `.showPainted` | `boolean` | `true` | Show painted color in the listings note. [See Example](https://user-images.githubusercontent.com/47635037/101237099-27678700-3711-11eb-994c-4291f6196645.png) |
 \*Note: Only for sell orders.
+
+### Custom text [^](#optionsjson-structure)
+Sub-Property: `.highValue.customText`
+
+- Set your own preferred customizable high-value text
+
+===
 
 ### - Custom `%uses%` parameter output 💯 [^](#optionsjson-structure)
 Property: `.uses`
