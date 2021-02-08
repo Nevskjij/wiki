@@ -85,8 +85,8 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.giftWithoutMessage`](#--allow-receiving-free-items-without-message--)
     -   [`.bannedPeople`](#--allow-trade-with-banned-account--)
 *   [`tradeSummary`](#-trade-summary-settings-)
-    -   [`.customText`](#--custom-text--)
-*   [`steamChat`](#-steam-chat-settings-)
+    -   [`.customText`](#custom-text--)
+*   [`steamChat`](#steam-chat-settings-)
     -   `.customInitializer`
 *   [`highValue`](#-high-value-items-settings-)
 *   [`normalize`](#-items-normalization-settings-)
