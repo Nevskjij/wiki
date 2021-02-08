@@ -103,7 +103,60 @@
     "tradeSummary": {
         "showStockChanges": false,
         "showTimeTakenInMS": false,
-        "showItemPrices": false
+        "showItemPrices": false,
+        "customText": {
+            "summary": {
+                "steamChat": "Summary",
+                "discordWebhook": "__**Summary**__"
+            },
+            "asked": {
+                "steamChat": "• Asked:",
+                "discordWebhook": "**• Asked:**"
+            },
+            "offered": {
+                "steamChat": "• Offered:",
+                "discordWebhook": "**• Offered:**"
+            },
+            "profitFromOverpay": {
+                "steamChat": "📈 Profit from overpay:",
+                "discordWebhook": "📈 ***Profit from overpay:***"
+            },
+            "lossFromUnderpay": {
+                "steamChat": "📉 Loss from underpay:",
+                "discordWebhook": "📉 ***Loss from underpay:***"
+            },
+            "timeTaken": {
+                "steamChat": "⏱ Time taken:",
+                "discordWebhook": "⏱ **Time taken:**"
+            },
+            "keyRate": {
+                "steamChat": "🔑 Key rate:",
+                "discordWebhook": "🔑 Key rate:"
+            },
+            "pureStock": {
+                "steamChat": "💰 Pure stock:",
+                "discordWebhook": "💰 Pure stock:"
+            },
+            "totalItems": {
+                "steamChat": "🎒 Total items:",
+                "discordWebhook": "🎒 Total items:"
+            },
+            "spells": "🎃 Spells:",
+            "strangeParts": "🎰 Parts:",
+            "killstreaker": "🔥 Killstreaker:",
+            "sheen": "✨ Sheen:",
+            "painted": "🎨 Painted:"
+        }
+    },
+    "steamChat": {
+        "customInitializer": {
+            "acceptedTradeSummary": "/me",
+            "review": "",
+            "message": {
+                "onReceive": "/quote",
+                "toOtherAdmins": "/quote"
+            }
+        }
     },
     "highValue": {
         "enableHold": true,
@@ -134,7 +187,16 @@
             "showStrangeParts": false,
             "showKillstreaker": true,
             "showSheen": true,
-            "showPainted": true
+            "showPainted": true,
+            "customText": {
+                "spells": "🎃 Spells:",
+                "strangeParts": "🎰 Parts:",
+                "killstreaker": "🤩 Killstreaker:",
+                "sheen": "✨ Sheen:",
+                "painted": "🎨 Painted:",
+                "separator": "| ",
+                "ender": " |"
+            }
         },
         "uses": {
             "duel": "(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)",
