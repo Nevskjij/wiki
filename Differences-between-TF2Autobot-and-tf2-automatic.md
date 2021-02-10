@@ -21,7 +21,7 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
     -   Automatically accept trades that underpay by a certain amount of refined with `INVALID_VALUE exception` (you decide/set the amount of refined and can be enabled only for certain item qualities).
     -   Automatically decline (skip manual review) **ONLY** `INVALID_VALUE` trade (if it does not meet the set requirements for `INVALID_VALUE exception`).
     -   Automatically accept (skip manual review) `INVALID_ITEMS` or `OVERSTOCKED` trades if the trade partner offers to overpay (will mention owner on Discord Webhook).
-    -   New `UNDERSTOCKED` reason for manual review.
+    -   New `UNDERSTOCKED` and `DISABLED_ITEMS` reasons for manual review.
     -   Option to automatically decline `OVERSTOCKED` or `UNDERSTOCKED` reason.
     -   List all reasons and items for each trade offer review.
 -   **Support craft weapons as currency:**
@@ -33,13 +33,15 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
     -   Set a custom buy or sell order listing note for any item of your choice!
 -   **Items Grouping in pricelist:**
     -   Set a group for specific items in your pricelist so it will be easy to manage, such as if you only want to update `intent=bank` to `intent=sell` to only "craftHats" items group!
+-   **Support creating separate listings for painted items!**
+    -   You have an option to make your bot recognize painted items as different than other non-painted items.
 -   **Customs:**
     -   Set your own custom greeting, success/failed messages, and/or trade offer review notes.
     -   Set your custom playing game name.
     -   Option to only play Team Fortress 2.
     -   Disable "show only metal" in the trade summary (it will show x keys, y ref instead of just x ref on the original version).
     -   Option to disable accept friend requests and disable invite people to join Steam groups.
-    -   Option to recognize Strange Unusual as usual Unusual and vice versa.
+    -   Option to recognize Strange as Second Quality (such as Strange Unusual, Strange Genuine and etc) as usual single Quality and vice versa.
     -   Option to recognize Festivized items as non-Festivized.
 -   **Improvements:**
     -   Request price check to prices.tf after every successful trade on each item involved in the trade (except craft weapons and pure).
