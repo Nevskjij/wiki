@@ -75,6 +75,9 @@
         "unableToProcessOffer": true
     },
     "pricelist": {
+        "filterCantAfford": {
+            "enable": false
+        },
         "autoRemoveIntentSell": {
             "enable": false
         },
@@ -106,6 +109,7 @@
         "showStockChanges": false,
         "showTimeTakenInMS": false,
         "showItemPrices": false,
+        "showPureInEmoji": false,
         "customText": {
             "summary": {
                 "steamChat": "Summary",
