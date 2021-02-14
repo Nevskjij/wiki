@@ -75,6 +75,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.autoRemoveIntentSellFailed`](#--automatic-remove-intentsell-failed--)
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
 *   [`pricelist`](#-pricelist-manager-)
+    -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items---)
@@ -265,6 +266,13 @@ Property: `.highValue`
 ## 📑 Pricelist manager [^](#optionsjson-structure)
 Parent property key: `pricelist`
 
+### - Filter can't afford to buy 🔁 [^](#optionsjson-structure)
+property: `.filterCantAfford`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `false`  | By default, your bot will list all items in the pricelist. Please read [#332](https://github.com/TF2Autobot/tf2autobot/pull/332) to know more about this feature. |
+
 ### - Automatic remove intent=sell 🚮 [^](#optionsjson-structure)
 property: `.autoRemoveIntentSell`
 
@@ -337,6 +345,7 @@ Parent property: `tradeSummary`
 | `.showStockChanges` | `boolean` | `false`  | By default the summary will **NOT** include to show stock changes, example: B.M.O.C (0 → 1/1). Set to `true` to enable it. |
 | `.showTimeTakenInMS` | `boolean` | `false`  | Set to `true` if you want to include time taken to complete the trade in milliseconds. |
 | `.showItemPrices` | `boolean` | `true`  | Set to `false` if you don't want to include item prices (buying/selling prices). |
+| `.showPureInEmoji` | `boolean` | `false` | Set to `true` if you want to enable this. Example: [image](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png)
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/106510028-56c82380-6509-11eb-9038-228ceb459af2.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
