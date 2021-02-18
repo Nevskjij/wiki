@@ -39,7 +39,7 @@ The content of `ecosystem.json` file:
                 "ADMINS": ["<your steamid 64>"],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
-                "GROUPS": ["103582791464047777", "103582791462300957"],
+                "GROUPS": ["103582791469033930"],
                 "ALERTS": ["trade", "version"],
 
                 "CUSTOM_PRICER_URL": "",
@@ -87,7 +87,7 @@ BPTF_API_KEY=""
 ADMINS=["<your steamid 64>"]
 KEEP=["<steamid of person to keep in friendslist>"]
 ITEM_STATS_WHITELIST=[]
-GROUPS=["103582791464047777","103582791462300957"]
+GROUPS=["103582791469033930"]
 ALERTS=["trade", "version"]
 
 CUSTOM_PRICER_URL=""
