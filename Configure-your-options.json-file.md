@@ -7,9 +7,8 @@ Once you selected everything on the config generator to your liking, you can dow
 The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder.
 
 
-**Only for advanced users** 
-
-If you haven't started the bot yet, you will have to create the directory yourself which is only advisable for advanced users because it can lead to mistakes.
+**Only for advanced users:** 
+If you haven't started the bot yet, you will have to create the directory yourself which is only advisable for advanced users because it can lead to mistakes.  
 Inside the root directory created a folder called `files` and inside that folder create another one called `your_bot_steam_login_name` (so the login name that you use to sign into steam). There you can copy the options.json file obtained from the config generator or use the template from [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-).
 
 ## Using the manual method
