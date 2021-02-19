@@ -3,24 +3,25 @@
 You can use the config generator located [here](https://bonfire.github.io/tf2autobot-config/) if it's your first time using the bot.
 It will guide you through the configuration and give explanations. You can also read about the individual settings later on this page.
 
-Once you selected everything on the config generator to your liking, you can download the file called `options.json` and replace it with the default options.json which was created during the first start of your bot.
-The file can be found in ~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/ folder.
+Once you selected everything on the config generator to your liking, you can download the file called `options.json` and replace it with the default `options.json` which was created during the first start of your bot.
+The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder.
 
 
-**Only for advanced users**
+**Only for advanced users** 
+
 If you haven't started the bot yet, you will have to create the directory yourself which is only advisable for advanced users because it can lead to mistakes.
 Inside the root directory created a folder called `files` and inside that folder create another one called `your_bot_steam_login_name` (so the login name that you use to sign into steam). There you can copy the options.json file obtained from the config generator or use the template from [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-).
 
 ## Using the manual method
-If you don't want to use the config generator for the initial setup of your options.json file you can do it manually.
+If you don't want to use the config generator for the initial setup of your `options.json` file you can do it manually.
 
-To do so you can either start up the bot for the first time, which will create your options.json file located in ~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/  folder and then edit this file yourself by using the explanations for the variables on this page.
+To do so you can either start up the bot for the first time, which will create your `options.json` file located in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder and then edit this file yourself by using the explanations for the variables on this page.
 
 Or if you are an advanced user you can obtain the template from [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) and continue to create the appropriate folders using the method described above.
 
 # Configure options.json file after the initial setup (Optional)
 
-After the initial setup and creation of your options.json file you might want to edit some things. You can do so by opening the file and editing the variables.
+After the initial setup and creation of your `options.json` file you might want to edit some things. You can do so by opening the file and editing the variables.
 
 Remember:
 This file was generated after you ran your bot for the first time. The file can be found in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder. 
