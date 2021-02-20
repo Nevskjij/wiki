@@ -74,4 +74,4 @@ Now type in the following commands:
 
 # All done?
 
-Then the next step will be [to configure your bot.](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot-on-Windows)
+Then the next step will be [to configure your bot.](https://github.com/TF2Autobot/tf2autobot/wiki/Introduction---Configuring-the-bot)
