@@ -367,7 +367,7 @@ Parent property: `tradeSummary`
 | `.showStockChanges` | `boolean` | `false`  | By default the summary will **NOT** include to show stock changes, example: B.M.O.C (0 → 1/1). Set to `true` to enable it. |
 | `.showTimeTakenInMS` | `boolean` | `false`  | Set to `true` if you want to include time taken to complete the trade in milliseconds. |
 | `.showItemPrices` | `boolean` | `true`  | Set to `false` if you don't want to include item prices (buying/selling prices). |
-| `.showPureInEmoji` | `boolean` | `false` | Set to `true` if you want to enable this. Example: [image1](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png), [image2](https://user-images.githubusercontent.com/47635037/107866197-0063c900-6ea9-11eb-8996-42ea98142637.png)
+| `.showPureInEmoji` | `boolean` | `false` | [Discord Webhook only] Set to `true` if you want to enable this. Example: [image1](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png), [image2](https://user-images.githubusercontent.com/47635037/107866197-0063c900-6ea9-11eb-8996-42ea98142637.png). **You will also need to set [this](https://prnt.sc/101hflc) permission on your trade summary channel**
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/106510028-56c82380-6509-11eb-9038-228ceb459af2.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
