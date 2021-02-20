@@ -104,7 +104,7 @@ Example:
 
 #### \*Notes:
 
--   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter, but then you still need to include the `buy.keys` and/or `buy.metal` parameters.
+-   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter.
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
 
 ---
