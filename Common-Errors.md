@@ -10,6 +10,7 @@ This page contains common errors and ways to fix them.
    - [Access denied](#access-denied)
    - [Ratelimit exceeded](#ratelimit-exceeded)
    - [Could not get account limitations](#could-not-get-account-limitations)
+   - [TypeError: input.match is not a function](#TypeError:-input.match-is-not-a-function)
 - [Other errors](#other-errors)
    - [Unexpected token in JSON](#unexpected-token-in-json)
    - [Reason: Failed to accept mobile confirmation.](#reason-failed-to-accept-mobile-confirmation)
@@ -37,6 +38,12 @@ You have logged in too many times (possibly due to it crashing and restarting to
 
 ## Could not get account limitations
 As it says in the console with the message about the error, set `SKIP_ACCOUNT_LIMITATIONS` to `true` in your `.env` or `ecosystem.json`.
+
+## TypeError: input.match is not a function
+The error looks like this: ![https://i.imgur.com/fZ9bFLr.png](https://i.imgur.com/fZ9bFLr.png "error")
+This is caused, by not adding `" "` between the SteamID64 you added in your `ITEM_STATS_WHITELIST` variable inside your environment file (on Windows: `.env` - on Linux: `ecosystem.json`).
+
+The array should look like this: `["SteamID64"]`
 
 # Other errors
 
