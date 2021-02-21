@@ -10,7 +10,7 @@ This page contains common errors and ways to fix them.
    - [Access denied](#access-denied)
    - [Ratelimit exceeded](#ratelimit-exceeded)
    - [Could not get account limitations](#could-not-get-account-limitations)
-   - [TypeError: input.match is not a function](#TypeError:-input.match-is-not-a-function)
+   - [TypeError: input.match is not a function](#typeerror-inputmatch-is-not-a-function)
 - [Other errors](#other-errors)
    - [Unexpected token in JSON](#unexpected-token-in-json)
    - [Reason: Failed to accept mobile confirmation.](#reason-failed-to-accept-mobile-confirmation)
