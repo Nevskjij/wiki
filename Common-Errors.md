@@ -43,7 +43,7 @@ As it says in the console with the message about the error, set `SKIP_ACCOUNT_LI
 The error looks like this: ![https://i.imgur.com/fZ9bFLr.png](https://i.imgur.com/fZ9bFLr.png "error")
 This is caused, by not adding `" "` between the SteamID64 you added in your `ITEM_STATS_WHITELIST` variable inside your environment file (on Windows: `.env` - on Linux: `ecosystem.json`).
 
-The array should look like this: `["SteamID64"]` \ 
+The array should look like this: `["SteamID64"]` 
 You can also leave it empty if you are the only person who should use that command. This is because you, as the owner, can use this command no matter what's inside that array.
 
 # Other errors
