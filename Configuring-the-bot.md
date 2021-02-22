@@ -108,7 +108,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "DEBUG": true,
                 "DEBUG_FILE": true
             }
-        }
+        },
         {
             "name": "tf2autobot",
             "script": "dist/app.js",
