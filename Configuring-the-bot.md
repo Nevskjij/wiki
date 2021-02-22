@@ -153,7 +153,9 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
     ]
 }
 ```
+
 </details>
+
 <details>
 <summary>**ecosystem.json for more than two bots**</summary>
 
@@ -161,6 +163,7 @@ You should feel familiar with the layout of the ecosystem.json from the example 
 
 Every bot is an object inside your `apps` array. The bot's environment starts with a curly bracket and ends with one.
 </details>
+
 </details>
 
 ## - Windows
@@ -227,6 +230,7 @@ You can follow these instructions:
 
 Now all that is left to do is to configure your [`.env`](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#--windows) and [`options.json`](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file) file.
 </details>
+
 </details>
 
 # Required Variables
