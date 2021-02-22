@@ -205,6 +205,28 @@ DEBUG_FILE=true
 ### Please ensure that you have file extension viewing enabled in your Windows settings prior to continuing (click [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) for more information).
 
 Modify the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`). This file will be the file you edit when you want to configure your bot, using the below variables.
+
+<details>
+<summary>Click here if you want to run multiple bots on Windows</summary>
+
+Running multiple bots on Windows is very simple. You just need to clone and build the bot again. 
+
+You can follow these instructions:
+
+`git clone https://github.com/TF2Autobot/tf2autobot.git <folderName>`
+
+**Make sure to replace `<folderName>` with whatever you would like to call the folder, for example `tf2autobot2`**
+
+`cd <folderName>`
+
+`npm install typescript@latest -g`
+
+`npm install`
+
+`npm run build`
+
+Now all that is left to do is to configure your [`.env`](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#--windows) and [`options.json`](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file) file.
+</details>
 </details>
 
 # Required Variables
