@@ -1,6 +1,6 @@
 # Setting up options.json for the first time
 ## Using the config generator
-You can use the config generator located [here](https://bonfire.github.io/tf2autobot-config/) (credit to [@Bonfie](https://github.com/Bonfire)) if it's your first time using the bot.\
+You can use the config generator located [here](https://bonfire.github.io/tf2autobot-config/) (credit to [@Bonfire](https://github.com/Bonfire)) if it's your first time using the bot.\
 It will guide you through the configuration and give explanations. You can also read about the individual settings later on this page.
 
 Once you selected everything on the config generator to your liking, you can download the file called `options.json` and replace it with the default `options.json` which was created during the first start of your bot.
