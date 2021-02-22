@@ -62,6 +62,105 @@ The content of `ecosystem.json` file:
 
 Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) file found in your `tf2autobot/` folder, renaming it to `ecosystem.json`. This file will be the file you edit when you want to configure your bot, using the below variables.
 
+<details>
+<summary>Click here if you want to setup your ecosystem.json to run multiple bots at the same time</summary>
+
+Now that you are looking to upgrade your ecosystem.json to support multiple bots, you should already be familiar with the layout of it.
+
+Inside the "apps" array you got your bots surrounded by curly brackets.
+
+<details>
+<summary>ecosystem.json for two bots</summary>
+
+```
+{
+    "apps": [
+        {
+            "name": "tf2autobot",
+            "script": "dist/app.js",
+            "exec_mode": "fork",
+            "shutdown_with_message": false,
+            "max_memory_restart": "1500M",
+            "kill_retry_time": 30000,
+            "kill_timeout": 60000,
+            "out_file": "NULL",
+            "error_file": "NULL",
+            "env": {
+                "NODE_ENV": "production",
+
+                "STEAM_ACCOUNT_NAME": "",
+                "STEAM_PASSWORD": "",
+                "STEAM_SHARED_SECRET": "",
+                "STEAM_IDENTITY_SECRET": "",
+
+                "BPTF_ACCESS_TOKEN": "",
+                "BPTF_API_KEY": "",
+
+                "ADMINS": ["<your steamid 64>"],
+                "KEEP": ["<steamid of person to keep in friendslist>"],
+                "ITEM_STATS_WHITELIST": [],
+                "GROUPS": ["103582791469033930"],
+                "ALERTS": ["trade", "version"],
+
+                "CUSTOM_PRICER_URL": "",
+                "CUSTOM_PRICER_API_TOKEN": "",
+
+                "SKIP_BPTF_TRADEOFFERURL": true,
+                "SKIP_UPDATE_PROFILE_SETTINGS": true,
+
+                "TIMEZONE": "",
+                "CUSTOM_TIME_FORMAT": "",
+                "TIME_ADDITIONAL_NOTES": "",
+
+                "DEBUG": true,
+                "DEBUG_FILE": true
+            }
+        }
+        {
+            "name": "tf2autobot",
+            "script": "dist/app.js",
+            "exec_mode": "fork",
+            "shutdown_with_message": false,
+            "max_memory_restart": "1500M",
+            "kill_retry_time": 30000,
+            "kill_timeout": 60000,
+            "out_file": "NULL",
+            "error_file": "NULL",
+            "env": {
+                "NODE_ENV": "production",
+
+                "STEAM_ACCOUNT_NAME": "",
+                "STEAM_PASSWORD": "",
+                "STEAM_SHARED_SECRET": "",
+                "STEAM_IDENTITY_SECRET": "",
+
+                "BPTF_ACCESS_TOKEN": "",
+                "BPTF_API_KEY": "",
+
+                "ADMINS": ["<your steamid 64>"],
+                "KEEP": ["<steamid of person to keep in friendslist>"],
+                "ITEM_STATS_WHITELIST": [],
+                "GROUPS": ["103582791469033930"],
+                "ALERTS": ["trade", "version"],
+
+                "CUSTOM_PRICER_URL": "",
+                "CUSTOM_PRICER_API_TOKEN": "",
+
+                "SKIP_BPTF_TRADEOFFERURL": true,
+                "SKIP_UPDATE_PROFILE_SETTINGS": true,
+
+                "TIMEZONE": "",
+                "CUSTOM_TIME_FORMAT": "",
+                "TIME_ADDITIONAL_NOTES": "",
+
+                "DEBUG": true,
+                "DEBUG_FILE": true
+            }
+        }
+    ]
+}
+```
+</details>
 ---
 </details>
 
