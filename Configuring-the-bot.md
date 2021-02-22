@@ -153,13 +153,13 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
     ]
 }
 ```
+</details>
 <details>
-<summary> ecosystem.json for more than two bots</summary>
+<summary>ecosystem.json for more than two bots</summary>
 
 You should feel familiar with the layout of the ecosystem.json from the example of the ecosystem.json for two bots.
 
 Every bot is an object inside your `apps` array. The bot's environment starts with a curly bracket and ends with one.
-</details>
 </details>
 </details>
 
