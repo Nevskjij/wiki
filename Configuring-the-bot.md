@@ -6,7 +6,7 @@ First, we will set up the environment file, which you will use to configure the 
 
 ## - Linux
 <details>
-<summary>Click here if you are running the bot on Linux</summary>
+<summary>**Click here if you are running the bot on Linux**</summary>
 
 For Linux, the bot is configured through environment variables that can be set using a file called `ecosystem.json` that the bot reads when it starts.
 
@@ -63,7 +63,7 @@ The content of `ecosystem.json` file:
 Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) file found in your `tf2autobot/` folder, renaming it to `ecosystem.json`. This file will be the file you edit when you want to configure your bot, using the below variables.
 
 <details>
-<summary>ecosystem.json for two bots</summary>
+<summary>**ecosystem.json for two bots**</summary>
 
 ```
 {
@@ -155,7 +155,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
 ```
 </details>
 <details>
-<summary>ecosystem.json for more than two bots</summary>
+<summary>**ecosystem.json for more than two bots**</summary>
 
 You should feel familiar with the layout of the ecosystem.json from the example of the ecosystem.json for two bots.
 
@@ -165,7 +165,7 @@ Every bot is an object inside your `apps` array. The bot's environment starts wi
 
 ## - Windows
 <details>
-<summary>Click here if you are running the bot on Windows</summary>
+<summary>**Click here if you are running the bot on Windows**</summary>
 
 For Windows, the bot is configured through environment variables that can be set using a file (`.env`) that the bot reads when it starts.
 
@@ -207,7 +207,7 @@ DEBUG_FILE=true
 Modify the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`). This file will be the file you edit when you want to configure your bot, using the below variables.
 
 <details>
-<summary>Click here if you want to run multiple bots on Windows</summary>
+<summary>**Click here if you want to run multiple bots on Windows**</summary>
 
 Running multiple bots on Windows is very simple. You just need to clone and build the bot again. 
 
