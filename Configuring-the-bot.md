@@ -63,13 +63,6 @@ The content of `ecosystem.json` file:
 Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) file found in your `tf2autobot/` folder, renaming it to `ecosystem.json`. This file will be the file you edit when you want to configure your bot, using the below variables.
 
 <details>
-<summary>Click here if you want to setup your ecosystem.json to run multiple bots at the same time</summary>
-
-Now that you are looking to upgrade your ecosystem.json to support multiple bots, you should already be familiar with the layout of it.
-
-Inside the "apps" array you got your bots surrounded by curly brackets.
-
-<details>
 <summary>ecosystem.json for two bots</summary>
 
 ```
@@ -160,8 +153,14 @@ Inside the "apps" array you got your bots surrounded by curly brackets.
     ]
 }
 ```
+<details>
+<summary> ecosystem.json for more than two bots</summary>
+
+You should feel familiar with the layout of the ecosystem.json from the example of the ecosystem.json for two bots.
+
+Every bot is an object inside your `apps` array. The bot's environment starts with a curly bracket and ends with one.
 </details>
----
+</details>
 </details>
 
 ## - Windows
