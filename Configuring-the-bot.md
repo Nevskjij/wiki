@@ -6,7 +6,7 @@ First, we will set up the environment file, which you will use to configure the 
 
 ## - Linux
 <details>
-<summary>**Click here if you are running the bot on Linux**</summary>
+<summary><bold>Click here if you are running the bot on Linux</bold></summary>
 
 For Linux, the bot is configured through environment variables that can be set using a file called `ecosystem.json` that the bot reads when it starts.
 
