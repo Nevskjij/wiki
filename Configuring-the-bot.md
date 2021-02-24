@@ -332,4 +332,4 @@ prices.tf. If you are using another price source refer to the alternative [price
 
 # Done?
 
-Then the next step will be [to run the bot for the first time](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux) to get your [`options.json`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) generated, and then you can proceed to [configure your options.json file](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
+Then the next step will be to run the bot for the first time ([Windows](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Windows) | [Linux](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux)) to get your [`options.json`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) generated, and then you can proceed to [configure your options.json file](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
