@@ -11,6 +11,7 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
 
 ### TF2Autobot version
 
+-   All tf2-automatic features
 -   **Discord Webhook:**
     -   Use Discord Webhooks for your bot to send accepted trade summaries, pending trade offer reviews, and/or private messages to a Discord server.
     -   Disable mention owner on pending trade offers with `INVALID_VALUE`.
