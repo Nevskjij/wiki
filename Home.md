@@ -1,7 +1,7 @@
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L02PSYG)
 
 # Welcome to TF2Autobot
-TF2Autobot was made possible by [tf2-automatic](https://github.com/Nicklason/tf2-automatic) and improved upon by [idiNium.](http://github.com/idinium96/) You can check out the differences [here.](https://github.com/TF2Autobot/tf2autobot/wiki/Differences-between-TF2Autobot-and-tf2-automatic)
+TF2Autobot was made possible by [tf2-automatic](https://github.com/Nicklason/tf2-automatic) and improved upon by [IdiNium.](http://github.com/idinium96/) You can check out the differences [here.](https://github.com/TF2Autobot/tf2autobot/wiki/Differences-between-TF2Autobot-and-tf2-automatic)
 
 If this is your first time around we strongly urge you to **read the whole wiki** before you decide to install anything.
 
