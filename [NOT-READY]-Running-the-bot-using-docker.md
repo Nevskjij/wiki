@@ -7,9 +7,9 @@
 - [Versioning](#versioning-)
 <!--- Sidebar --->
 
-# What is Docker [^](#table-of-contents-)
+# What is Docker [^](#table-of-contents)
 
-According to Wikipedia: **Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.**
+According to Wikipedia: **Docker is a set of the platform as service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels.**
 
 You can run tf2autobot anywhere, on any operating system that supports Docker, without having to configure additional instances, additional software or having to set up networking.
 
@@ -23,9 +23,9 @@ With tf2autobot on Docker, you can learn quickly how to power up a bot without p
 
 ### Running in Kubernetes
 
-For advanced users, you can orchestrate multiple bots dynamically, both network and workload, using [Kubernetes](https://kubernetes.io/). It can be scheduled as Pod or a StatefulSet replica with 1 replicas.
+For advanced users, you can orchestrate multiple bots dynamically, both network and workload, using [Kubernetes](https://kubernetes.io/). It can be scheduled as Pod or a StatefulSet replica with 1 replica.
 
-# Running a container [^](#table-of-contents-)
+# Running a container [^](#table-of-contents)
 
 Starting with tf2autobot v3.5.0, Docker images are available and you can run the latest, lightweight version of tf2autobot (we recommend using a specific version to avoid breaks):
 
@@ -53,11 +53,11 @@ $ docker run \
 
 **Make sure to replace `123456` with your account name, [as explained in the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#using-the-config-generator).**
 
-**The `$(pwd)` at the start of the path name tells Docker to look for the current context - the current folder we run the command from.**
+**The `$(pwd)` at the start of the pathname tells Docker to look for the current context - the current folder we run the command from.**
 
 Every time the container or you will (manually) change files within `~/tf2autobot/files/123456/`, they will persist and you can keep using the bot without fearing the configuration will get lost.
 
-# Configure the container [^](#table-of-contents-)
+# Configure the container [^](#table-of-contents)
 
 ## Environment variables
 
@@ -76,7 +76,7 @@ The environment variables are identical to the ones specified [in the example .e
 
 ### ecosystem.json
 
-[According to the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot), you will need to persist an `ecosystem.json` file in `~/tf2autobot` to configure multiple bots. Like we learnt how to persist the data with the `tf2autobot_data` folder, we can as well persist files:
+[According to the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot), you will need to persist an `ecosystem.json` file in `~/tf2autobot` to configure multiple bots. Like we learned how to persist the data with the `tf2autobot_data` folder, we can as well persist files:
 
 ```
 $ docker run \
@@ -108,7 +108,7 @@ $ docker run \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
-# Versioning [^](#table-of-contents-)
+# Versioning [^](#table-of-contents)
 
 Each Github Release for tf2autobot will automatically create tags for Docker images. The tags follow this pattern:
 
