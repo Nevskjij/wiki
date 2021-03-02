@@ -1,13 +1,13 @@
 <!--- Sidebar --->
-### Docker
-- [What is Docker?](#what-is-docker)
-- [Running a container](#running-a-container)
-- [Configure the container](#configure-the-container)
-    - [Running multiple bots](#running-multiple-bots)
-- [Versioning](#versioning)
+# Table of Contents
+- [What is Docker?](#what-is-docker-)
+- [Running a container](#running-a-container=)
+- [Configure the container](#configure-the-container-)
+    - [Running multiple bots](#running-multiple-bots-)
+- [Versioning](#versioning-)
 <!--- Sidebar --->
 
-# What is Docker
+# What is Docker [^](#table-of-contents-)
 
 According to Wikipedia: **Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.**
 
@@ -25,7 +25,7 @@ With tf2autobot on Docker, you can learn quickly how to power up a bot without p
 
 For advanced users, you can orchestrate multiple bots dynamically, both network and workload, using [Kubernetes](https://kubernetes.io/). It can be scheduled as Pod or a StatefulSet replica with 1 replicas.
 
-# Running a container
+# Running a container [^](#table-of-contents-)
 
 Starting with tf2autobot v3.5.0, Docker images are available and you can run the latest, lightweight version of tf2autobot (we recommend using a specific version to avoid breaks):
 
@@ -57,9 +57,9 @@ $ docker run \
 
 Every time the container or you will (manually) change files within `~/tf2autobot/files/123456/`, they will persist and you can keep using the bot without fearing the configuration will get lost.
 
-## Configure the container
+# Configure the container [^](#table-of-contents-)
 
-### Environment variables
+## Environment variables
 
 The recommended way of configuring the container is by using environment variables. In Docker, [you can attach environment variables at runtime](https://docs.docker.com/compose/environment-variables/#set-environment-variables-in-containers) by using the `-e` flag:
 
@@ -108,7 +108,7 @@ $ docker run \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
-## Versioning
+# Versioning [^](#table-of-contents-)
 
 Each Github Release for tf2autobot will automatically create tags for Docker images. The tags follow this pattern:
 
