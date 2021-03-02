@@ -3,7 +3,7 @@
 - [What is Docker?](#what-is-docker-)
 - [Running a container](#running-a-container-)
 - [Configure the container](#configure-the-container-)
-    - [Running multiple bots](#running-multiple-bots-)
+    - [Running multiple bots](#running-multiple-bots)
 - [Versioning](#versioning-)
 <!--- Sidebar --->
 
