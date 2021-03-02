@@ -9,7 +9,7 @@
 - [Configuring the bot](https://github.com/TF2Autobot/tf2autobot/wiki/Introduction---Configuring-the-bot)
 	- [environment file](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot)
 	- [options.json](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
-- [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Windows)
+- [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Windows) (node)
 ### Linux
 - [Getting a VPS](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS)
 	- [IdiNium VPS Services](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services)
@@ -17,7 +17,7 @@
 - [Configuring the bot](https://github.com/TF2Autobot/tf2autobot/wiki/Introduction---Configuring-the-bot)
 	- [environment file](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot)
 	- [options.json](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
-- [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux)
+- [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux) (node and PM2)
 
 # Using the bot
 - Parameters
