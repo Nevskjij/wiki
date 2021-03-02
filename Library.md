@@ -72,9 +72,14 @@
         "autoRemoveIntentSellFailed": true,
         "autoAddPaintedItems": true,
         "failedAccept": true,
-        "unableToProcessOffer": true
+        "unableToProcessOffer": true,
+        "autoUpdateNotInStockPricesFailed": true
     },
     "pricelist": {
+        "onlyUpdateBuyingPriceIfInStock": {
+            "enable": false,
+            "thresholdInSeconds": 604800
+        },
         "filterCantAfford": {
             "enable": false
         },
@@ -166,6 +171,7 @@
     },
     "highValue": {
         "enableHold": true,
+        "spells": [],
         "sheens": [],
         "killstreakers": [],
         "strangeParts": [],
@@ -249,6 +255,9 @@
         }
     },
     "offerReceived": {
+        "sendPreAcceptMessage": {
+            "enable": true
+        },
         "invalidValue": {
             "autoDecline": {
                 "enable": true,
@@ -379,6 +388,7 @@
         },
         "priceUpdate": {
             "enable": true,
+            "showOnlyInStock": false,
             "url": "",
             "note": ""
         },
