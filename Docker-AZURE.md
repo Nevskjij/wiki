@@ -1,3 +1,5 @@
+you need to have [azure CLI](https://docs.microsoft.com/en-us/cli/azure/)
+
 here is script for powershell that will create new storage
 
 ```powershell
