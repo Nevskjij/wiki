@@ -36,6 +36,7 @@
 
 # Extra
 - [Library](https://github.com/TF2Autobot/tf2autobot/wiki/Library)
+- [Running the bot using Docker](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-using-docker)
 
 # Troubleshooting
 - [Common errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
