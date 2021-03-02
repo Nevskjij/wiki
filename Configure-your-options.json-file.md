@@ -96,7 +96,11 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.highValue`](#--high-value-items-alert--)
     -   [`.autoRemoveIntentSellFailed`](#--automatic-remove-intentsell-failed--)
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
+    -   [`.failedAccept`](#--failed-to-accept-offer--)
+    -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
+    -   [`.autoUpdateNotInStockPricesFailed`](#--failed-to-auto-update-previously-fixed-selling-price--)
 *   [`pricelist`](#-pricelist-manager-)
+    -   [`.onlyUpdateBuyingPriceIfInStock`](#--only-update-buying-price-if-in-stock--)
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
@@ -283,10 +287,36 @@ Property: `.highValue`
 | :----: | :--: | :-----: | :---------- |
 | `.autoAddPaintedItems` | `boolean` | `true`  | (Discord Webhook mentioned if failed) Send an alert when painted items has been successfully added to sell |
 
+### - Failed to accept offer ❌ [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.failedAccept` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when the bot failed to accept an offer. See [Example](https://user-images.githubusercontent.com/47635037/109648983-3d60d880-7b96-11eb-9ef7-d1d9fb16f1de.png) |
+
+### - Unable to process offer ❌ [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.unableToProcessOffer` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when the bot failed to process an offer due to the broken offer data. The bot will retry but itself, but this is just to inform you if that happened. See [Example](https://user-images.githubusercontent.com/47635037/109649238-97619e00-7b96-11eb-994b-694f24ac2f0d.png) |
+
+### - Failed to auto-update previously fixed selling price ❌ [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.autoUpdateNotInStockPricesFailed` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot failed to update the prices for previously fixed selling prices (related to [`pricelist.onlyUpdateBuyingPriceIfInStock`](#--only-update-buying-price-if-in-stock--) |
+
 ---
 
 ## 📑 Pricelist manager [^](#optionsjson-structure)
 Parent property key: `pricelist`
+
+### - Only update buying price if in stock 🔁 [^](#optionsjson-structure)
+property: `.onlyUpdateBuyingPriceIfInStock`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `false`  | By default, this feature is disabled. Read more about it [here](https://github.com/TF2Autobot/tf2autobot/pull/337). |
+| `.thresholdInSeconds` | `integer` | `604800`  | Default value is 7 days. Minimum you can set here is only 1 day (86400 seconds) |
 
 ### - Filter can't afford to buy 🔁 [^](#optionsjson-structure)
 property: `.filterCantAfford`
@@ -402,13 +432,14 @@ Parent property key: `highValue`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enableHold` | `boolean` | `true`  | By default, whenever your bot accepts items with high valued attachments, it will **temporarily be disabled** so you can decide whether to manually price it. Set this to `false` if you want to disable this feature. |
-| `.sheens` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element (Refer: [Sheen](https://github.com/TF2Autobot/tf2autobot/wiki/Library#sheens-)). If leave empty (`[]`) will mention/disable on all sheens. Example: `["Team Shine"]`. |
-| `.killstreakers` | `string[]` | `[]`  | Refer: [Killstreaker](https://github.com/TF2Autobot/tf2autobot/wiki/Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
-| `.strangeParts` | `string[]` | `[]`  | Refer: [Strange Parts](https://github.com/TF2Autobot/tf2autobot/wiki/Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
-| `.painted` | `string[]` | `[]`  | Refer: [Paints](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-). Example: `["After Eight"]`. |
+| `.spells` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](https://github.com/TF2Autobot/tf2autobot/wiki/Library#spells-)). Example: `["Team Spirit Footprints"]`. |
+| `.sheens` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element. (Refer: [Sheen](https://github.com/TF2Autobot/tf2autobot/wiki/Library#sheens-)). Example: `["Team Shine"]`. |
+| `.killstreakers` | `string[]` | `[]`  | An array of killstreakers. Must be the killstreakers **full name** in each element. Refer: [Killstreaker](https://github.com/TF2Autobot/tf2autobot/wiki/Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
+| `.strangeParts` | `string[]` | `[]`  | An array of strange parts. Must be the strange parts **full name** in each element. Refer: [Strange Parts](https://github.com/TF2Autobot/tf2autobot/wiki/Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
+| `.painted` | `string[]` | `[]`  | An array of paints. Must be the paints **full name** in each element. Refer: [Paints](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-). Example: `["After Eight"]`. |
 
 
-**Note: All must be the exact match. Please refer to the valid names (not the partial sku listed in the references).**
+**Note: All must be the exact match. Please refer to the valid names (not the partial sku listed in the references). If left empty (`[]`), then everything in the reference will be considered high-value**
 
 ---
 
@@ -605,6 +636,12 @@ Property: `.metals`
 
 ## 📥 Offer received filter settings [^](#optionsjson-structure)
 Parent property key: `offerReceived`
+
+### - Send pre-accept message 💬 [^](#optionsjson-structure)
+Property: `.sendPreAcceptMessage`
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot t osend [pre-accepted](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-) message to the trade partner. |
 
 ### - On offer with `🟥_INVALID_VALUE` [^](#optionsjson-structure)
 Property: `.invalidValue`
@@ -989,12 +1026,13 @@ Property: `.priceUpdate`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | Set to `false` to disable this feature. |
+| `.showOnlyInStock` | `boolean` | `false` | Set to `true` if you want your bot to show price changes that is only in stock. |
 | `.url` | `string` | `""` | The [Discord Webhook URL](#note-on-how-to-obtain-your-discord-webhook-url) you'd like price update webhook to be sent to. |
 | `.note` | `string` | `""` | Any additional notes you'd like included with price update webhook. |
 
 ---
 
-<div align="center"><img src="https://user-images.githubusercontent.com/47635037/100345689-a415a980-301d-11eb-9f49-bd3e560bcb5b.png" alt="only non-invalid-value2" style="display:block;margin-left:auto;margin-right:auto;"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/109650775-a9dcd700-7b98-11eb-8787-a9457a09cb34.png" alt="only non-invalid-value2" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
 ---
 
