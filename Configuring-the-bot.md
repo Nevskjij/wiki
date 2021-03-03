@@ -42,6 +42,7 @@ The content of `ecosystem.json` file:
                 "GROUPS": ["103582791469033930"],
                 "ALERTS": ["trade", "version"],
 
+                "ENABLE_SOCKET": true,
                 "CUSTOM_PRICER_URL": "",
                 "CUSTOM_PRICER_API_TOKEN": "",
 
@@ -95,6 +96,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "GROUPS": ["103582791469033930"],
                 "ALERTS": ["trade", "version"],
 
+                "ENABLE_SOCKET": true,
                 "CUSTOM_PRICER_URL": "",
                 "CUSTOM_PRICER_API_TOKEN": "",
 
@@ -136,6 +138,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "GROUPS": ["103582791469033930"],
                 "ALERTS": ["trade", "version"],
 
+                "ENABLE_SOCKET": true,
                 "CUSTOM_PRICER_URL": "",
                 "CUSTOM_PRICER_API_TOKEN": "",
 
@@ -191,6 +194,7 @@ ITEM_STATS_WHITELIST=[]
 GROUPS=["103582791469033930"]
 ALERTS=["trade", "version"]
 
+ENABLE_SOCKET=true
 CUSTOM_PRICER_URL=""
 CUSTOM_PRICER_API_TOKEN=""
 
@@ -325,6 +329,7 @@ prices.tf. If you are using another price source refer to the alternative [price
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
+|      `ENABLE_SOCKET`      | `boolean`| `true`| Read: [#383](https://github.com/TF2Autobot/tf2autobot/pull/383) |
 |    `CUSTOM_PRICER_URL`    | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
 | `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
 
