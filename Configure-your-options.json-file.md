@@ -98,9 +98,15 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
     -   [`.failedAccept`](#--failed-to-accept-offer--)
     -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
+<!--
+v3.5.0
     -   [`.partialPrice`](#--partial-price-update-alert--)
+-->
 *   [`pricelist`](#-pricelist-manager-)
+<!--
+v3.5.0
     -   [`.partialPriceUpdate`](#--partial-price-update--)
+-->
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
@@ -136,6 +142,10 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.weapons`](#--weapons--)
     -   [`.metals`](#--pure-metals-%EF%B8%8F-)
 *   [`offerReceived`](#-offer-received-filter-settings-)
+<!--
+v3.5.0
+    -   [.`sendPreAcceptMessage`](#--send-pre-accept-message)
+-->
     -   [`.invalidValue`](#--on-offer-with-_invalid_value-)
     -   [`.invalidItems`](#--on-offer-with-_invalid_items-)
     -   [`.disabledItems`](#--on-offer-with-_disabled_items-)
@@ -299,6 +309,8 @@ Property: `.highValue`
 | :----: | :--: | :-----: | :---------- |
 | `.unableToProcessOffer` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when the bot failed to process an offer due to the broken offer data. The bot will retry but itself, but this is just to inform you if that happened. See [Example](https://user-images.githubusercontent.com/47635037/109649238-97619e00-7b96-11eb-994b-694f24ac2f0d.png) |
 
+<!--
+v3.5.0
 ### - Partial price update alert 💱 [^](#optionsjson-structure)
 Sub-property: `.partialPrice` - related to [`pricelist.partialPriceUpdate`](#--partial-price-update--)
 
@@ -307,12 +319,14 @@ Sub-property: `.partialPrice` - related to [`pricelist.partialPriceUpdate`](#--p
 | `.onUpdate` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot partially update item prices. |
 | `.onSuccessUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot successfully update the prices for previously partially updated prices. |
 | `.onFailedUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot failed to update the prices for previously partially updated prices. |
-
+-->
 ---
 
 ## 📑 Pricelist manager [^](#optionsjson-structure)
 Parent property key: `pricelist`
 
+<!--
+v3.5.0
 ### - Partial price update 🔁 [^](#optionsjson-structure)
 property: `.partialPriceUpdate`
 
@@ -320,6 +334,7 @@ property: `.partialPriceUpdate`
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `false`  | By default, this feature is disabled. Read more about this [here](https://github.com/TF2Autobot/tf2autobot/pull/337). |
 | `.thresholdInSeconds` | `integer` | `604800`  | Default value is 7 days. Minimum you can set here is only 1 day (86400 seconds) |
+-->
 
 ### - Filter can't afford to buy 🔁 [^](#optionsjson-structure)
 property: `.filterCantAfford`
@@ -435,12 +450,15 @@ Parent property key: `highValue`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enableHold` | `boolean` | `true`  | By default, whenever your bot accepts items with high valued attachments, it will **temporarily be disabled** so you can decide whether to manually price it. Set this to `false` if you want to disable this feature. |
-| `.spells` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](https://github.com/TF2Autobot/tf2autobot/wiki/Library#spells-)). Example: `["Team Spirit Footprints"]`. |
 | `.sheens` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element. (Refer: [Sheen](https://github.com/TF2Autobot/tf2autobot/wiki/Library#sheens-)). Example: `["Team Shine"]`. |
 | `.killstreakers` | `string[]` | `[]`  | An array of killstreakers. Must be the killstreakers **full name** in each element. Refer: [Killstreaker](https://github.com/TF2Autobot/tf2autobot/wiki/Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
 | `.strangeParts` | `string[]` | `[]`  | An array of strange parts. Must be the strange parts **full name** in each element. Refer: [Strange Parts](https://github.com/TF2Autobot/tf2autobot/wiki/Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
 | `.painted` | `string[]` | `[]`  | An array of paints. Must be the paints **full name** in each element. Refer: [Paints](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-). Example: `["After Eight"]`. |
 
+<!--
+v3.5.0
+| `.spells` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](https://github.com/TF2Autobot/tf2autobot/wiki/Library#spells-)). Example: `["Team Spirit Footprints"]`. |
+-->
 
 **Note: All must be the exact match. Please refer to the valid names (not the partial sku listed in the references). If left empty (`[]`), then everything in the reference will be considered high-value**
 
@@ -640,11 +658,14 @@ Property: `.metals`
 ## 📥 Offer received filter settings [^](#optionsjson-structure)
 Parent property key: `offerReceived`
 
+<!--
+v3.5.0
 ### - Send pre-accept message 💬 [^](#optionsjson-structure)
 Property: `.sendPreAcceptMessage`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot t osend [pre-accepted](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-) message to the trade partner. |
+-->
 
 ### - On offer with `🟥_INVALID_VALUE` [^](#optionsjson-structure)
 Property: `.invalidValue`
@@ -1029,9 +1050,13 @@ Property: `.priceUpdate`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | Set to `false` to disable this feature. |
-| `.showOnlyInStock` | `boolean` | `false` | Set to `true` if you want your bot to show price changes that is only in stock. |
 | `.url` | `string` | `""` | The [Discord Webhook URL](#note-on-how-to-obtain-your-discord-webhook-url) you'd like price update webhook to be sent to. |
 | `.note` | `string` | `""` | Any additional notes you'd like included with price update webhook. |
+
+<!--
+v3.5.0
+| `.showOnlyInStock` | `boolean` | `false` | Set to `true` if you want your bot to show price changes that is only in stock. |
+-->
 
 ---
 
