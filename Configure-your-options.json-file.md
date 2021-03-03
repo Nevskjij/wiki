@@ -98,8 +98,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
     -   [`.failedAccept`](#--failed-to-accept-offer--)
     -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
-    -   [`.partialPriceUpdate`](#--partial-price-update-triggered--)
-    -   [`.autoUpdatePartialPriceFailed`](#--failed-to-auto-update-previously-fixed-selling-price--)
+    -   [`.partialPrice`](#--partial-price-update-alert--)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
@@ -300,17 +299,14 @@ Property: `.highValue`
 | :----: | :--: | :-----: | :---------- |
 | `.unableToProcessOffer` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when the bot failed to process an offer due to the broken offer data. The bot will retry but itself, but this is just to inform you if that happened. See [Example](https://user-images.githubusercontent.com/47635037/109649238-97619e00-7b96-11eb-994b-694f24ac2f0d.png) |
 
-### - Partial price update triggered 💱 [^](#optionsjson-structure)
+### - Partial price update alert 💱 [^](#optionsjson-structure)
+Sub-property: `.partialPrice` - related to [`pricelist.partialPriceUpdate`](#--partial-price-update--)
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.partialPriceUpdate` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot partially update item prices (related to [`pricelist.partialPriceUpdate`](#--partial-price-update--) |
-
-### - Failed to auto-update previously fixed selling price ❌ [^](#optionsjson-structure)
-
-| Option | Type | Default | Description |
-| :----: | :--: | :-----: | :---------- |
-| `.autoUpdatePartialPriceFailed` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot failed to update the prices for previously fixed selling prices (related to [`pricelist.partialPriceUpdate`](#--partial-price-update--) |
+| `.onUpdate` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot partially update item prices. |
+| `.onSuccessUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot successfully update the prices for previously partially updated prices. |
+| `.onFailedUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot failed to update the prices for previously partially updated prices. |
 
 ---
 
