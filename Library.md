@@ -73,10 +73,11 @@
         "autoAddPaintedItems": true,
         "failedAccept": true,
         "unableToProcessOffer": true,
-        "autoUpdateNotInStockPricesFailed": true
+        "partialPriceUpdate": true,
+        "autoUpdatePartialPriceFailed": true
     },
     "pricelist": {
-        "onlyUpdateBuyingPriceIfInStock": {
+        "partialPriceUpdate": {
             "enable": false,
             "thresholdInSeconds": 604800
         },
