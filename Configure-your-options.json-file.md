@@ -98,15 +98,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
     -   [`.failedAccept`](#--failed-to-accept-offer--)
     -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
-<!--
-v3.5.0
-    -   [`.partialPrice`](#--partial-price-update-alert--)
--->
 *   [`pricelist`](#-pricelist-manager-)
-<!--
-v3.5.0
-    -   [`.partialPriceUpdate`](#--partial-price-update--)
--->
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
@@ -142,10 +134,6 @@ v3.5.0
     -   [`.weapons`](#--weapons--)
     -   [`.metals`](#--pure-metals-%EF%B8%8F-)
 *   [`offerReceived`](#-offer-received-filter-settings-)
-<!--
-v3.5.0
-    -   [.`sendPreAcceptMessage`](#--send-pre-accept-message)
--->
     -   [`.invalidValue`](#--on-offer-with-_invalid_value-)
     -   [`.invalidItems`](#--on-offer-with-_invalid_items-)
     -   [`.disabledItems`](#--on-offer-with-_disabled_items-)
@@ -170,6 +158,16 @@ v3.5.0
     -   `...`
 *   [`detailsExtra`](#extra-)
     -   `...`
+
+<!--
+v3.5.0
+- sendAlert
+    -   [`.partialPrice`](#--partial-price-update-alert--)
+- pricelist
+    -   [`.partialPriceUpdate`](#--partial-price-update--)
+- offerReceived
+    -   [.`sendPreAcceptMessage`](#--send-pre-accept-message)
+-->
 
 ## 🔰 Miscellaneous Settings [^](#optionsjson-structure)
 Parent property key: `miscSettings`
