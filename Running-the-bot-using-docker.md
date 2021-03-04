@@ -37,17 +37,17 @@ Congrats! You have created your first tf2autobot **container** that runs, **but 
 
 ## Persisting the data
 
-The only downside of tf2autobot on Docker is that you need to persist data between your operating system and the container. If you run the container and then you stop it, your `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder created within the container will no longer exist and will be re-regenerated every time.
+The only downside of tf2autobot on Docker is that you need to persist data between your operating system and the container. If you run the container and then you stop it, your `/app/files/<STEAM_ACCOUNT_NAME>/` folder created within the container will no longer exist and will be re-regenerated every time.
 
-To overcome this, we will tell the container to [mount a volume](https://docs.docker.com/storage/volumes/) at the `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/` folder with a given path in our operating system (like on Desktop for example).
+To overcome this, we will tell the container to [mount a volume](https://docs.docker.com/storage/volumes/) at the `/app/files/<STEAM_ACCOUNT_NAME>/` folder with a given path in our operating system (like on Desktop for example).
 
-You can use the `-v` flag to specify a mirror between a local path (the path in your PC or on the server) and the container path (which should be, obviously, `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/`).
+You can use the `-v` flag to specify a mirror between a local path (the path in your PC or on the server) and the container path (which should be, obviously, `/app/files/<STEAM_ACCOUNT_NAME>/`).
 
 We assume the following example, running the command while you're on Desktop and `tf2autobot_data/123456/` folder exists, and the account name is `123456`:
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
+    -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
@@ -55,7 +55,7 @@ $ docker run \
 
 **The `$(pwd)` at the start of the pathname tells Docker to look for the current context - the current folder we run the command from.**
 
-Every time the container or you will (manually) change files within `~/tf2autobot/files/123456/`, they will persist and you can keep using the bot without fearing the configuration will get lost.
+Every time the container or you will (manually) change files within `/app/files/123456/`, they will persist and you can keep using the bot without fearing the configuration will get lost.
 
 # Configure the container [^](#table-of-contents)
 
@@ -65,7 +65,7 @@ The recommended way of configuring the container is by using environment variabl
 
 ```bash
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
+    -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
     -e STEAM_ACCOUNT_NAME=some-account-name \
     -e STEAM_PASSWORD=mysecurepassword \
     -e STEAM_SHARED_SECRET="agdgwegdgawfagxafagfkagusbuigiuefh==" \
@@ -76,12 +76,12 @@ The environment variables are identical to the ones specified [in the example .e
 
 ### ecosystem.json
 
-[According to the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot), you will need to persist an `ecosystem.json` file in `~/tf2autobot` to configure multiple bots. Like we learned how to persist the data with the `tf2autobot_data` folder, we can as well persist files:
+[According to the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot), you will need to persist an `ecosystem.json` file in `/app` to configure multiple bots. Like we learned how to persist the data with the `tf2autobot_data` folder, we can as well persist files:
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
-    -v $(pwd)/tf2autobot_data/ecosystem.json:/home/node/app/ecosystem.json \
+    -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
+    -v $(pwd)/tf2autobot_data/ecosystem.json:/app/ecosystem.json \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
@@ -91,8 +91,8 @@ Just like `ecosystem.json`, you can as well [configure](https://github.com/TF2Au
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
-    -v $(pwd)/tf2autobot_data/.env:/home/node/app/.env \
+    -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
+    -v $(pwd)/tf2autobot_data/.env:/app/.env \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
@@ -102,9 +102,9 @@ It's highly recommended to run one bot per container to keep the Docker base con
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/11111:/home/node/app/files/11111 \
-    -v $(pwd)/tf2autobot_data/22222:/home/node/app/files/22222 \
-    -v $(pwd)/tf2autobot_data/ecosystem.json:/home/node/app/ecosystem.json \
+    -v $(pwd)/tf2autobot_data/11111:/app/files/11111 \
+    -v $(pwd)/tf2autobot_data/22222:/app/files/22222 \
+    -v $(pwd)/tf2autobot_data/ecosystem.json:/app/ecosystem.json \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
