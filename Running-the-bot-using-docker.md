@@ -47,7 +47,7 @@ We assume the following example, running the command while you're on Desktop and
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/tf2autobot/files/123456 \
+    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
@@ -65,7 +65,7 @@ The recommended way of configuring the container is by using environment variabl
 
 ```bash
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/tf2autobot/files/123456 \
+    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
     -e STEAM_ACCOUNT_NAME=some-account-name \
     -e STEAM_PASSWORD=mysecurepassword \
     -e STEAM_SHARED_SECRET="agdgwegdgawfagxafagfkagusbuigiuefh==" \
@@ -80,8 +80,8 @@ The environment variables are identical to the ones specified [in the example .e
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/tf2autobot/files/123456 \
-    -v $(pwd)/tf2autobot_data/ecosystem.json:/home/node/tf2autobot/ecosystem.json \
+    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
+    -v $(pwd)/tf2autobot_data/ecosystem.json:/home/node/app/ecosystem.json \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
@@ -91,8 +91,8 @@ Just like `ecosystem.json`, you can as well [configure](https://github.com/TF2Au
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/123456:/home/node/tf2autobot/files/123456 \
-    -v $(pwd)/tf2autobot_data/.env:/home/node/tf2autobot/.env \
+    -v $(pwd)/tf2autobot_data/123456:/home/node/app/files/123456 \
+    -v $(pwd)/tf2autobot_data/.env:/home/node/app/.env \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
@@ -102,9 +102,9 @@ It's highly recommended to run one bot per container to keep the Docker base con
 
 ```
 $ docker run \
-    -v $(pwd)/tf2autobot_data/11111:/home/node/tf2autobot/files/11111 \
-    -v $(pwd)/tf2autobot_data/22222:/home/node/tf2autobot/files/22222 \
-    -v $(pwd)/tf2autobot_data/ecosystem.json:/home/node/tf2autobot/ecosystem.json \
+    -v $(pwd)/tf2autobot_data/11111:/home/node/app/files/11111 \
+    -v $(pwd)/tf2autobot_data/22222:/home/node/app/files/22222 \
+    -v $(pwd)/tf2autobot_data/ecosystem.json:/home/node/app/ecosystem.json \
     tf2autobot/tf2autobot:latest-14.16.0-alpine
 ```
 
