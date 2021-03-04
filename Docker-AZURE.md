@@ -4,7 +4,7 @@ here is script for powershell that will create new storage
 
 ```powershell
 # Change these four parameters as needed
-$ACI_PERS_RESOURCE_GROUP="test"
+$ACI_PERS_RESOURCE_GROUP="<group>"
 $ACI_PERS_STORAGE_ACCOUNT_NAME="<name>"
 $ACI_PERS_LOCATION="eastus2"
 $ACI_PERS_SHARE_NAME="acishare"
@@ -85,3 +85,7 @@ properties:
 tags: {}
 type: Microsoft.ContainerInstance/containerGroups
 ```
+```powershell 
+az container create --resource-group <group> --file .\azureConfig.yaml 
+```
+if you want to update your bot, and you are using latest image, then just restart it, for example with this command `az container restart -g="<group>" -n="tf2autobot"`
