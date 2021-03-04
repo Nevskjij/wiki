@@ -21,7 +21,7 @@ On Linux use `rm -rf node_modules` while inside your tf2autobot directory.
 
 After that, you will download and install the newest version by typing
 
-`git checkout master && git stash && git pull && npm install && npm run build`
+`git reset HEAD --hard && git pull && npm install && npm run build`
 
 ## Updating the environment file - ecosystem.json
 
