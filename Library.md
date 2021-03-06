@@ -77,12 +77,14 @@
             "onUpdate": true,
             "onSuccessUpdatePartialPriced": true,
             "onFailedUpdatePartialPriced": true
-        }
+        },
+        "receivedUnusualNotInPricelist": true
     },
     "pricelist": {
         "partialPriceUpdate": {
             "enable": false,
-            "thresholdInSeconds": 604800
+            "thresholdInSeconds": 604800,
+            "excludeSKU": []
         },
         "filterCantAfford": {
             "enable": false
@@ -92,6 +94,9 @@
         },
         "autoAddInvalidItems": {
             "enable": true
+        },
+        "autoAddInvalidUnusual": {
+            "enable": false
         },
         "autoAddPaintedItems": {
             "enable": true
@@ -119,6 +124,7 @@
         "showTimeTakenInMS": false,
         "showItemPrices": false,
         "showPureInEmoji": false,
+        "showProperName": false,
         "customText": {
             "summary": {
                 "steamChat": "Summary",
