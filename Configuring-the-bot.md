@@ -54,7 +54,10 @@ The content of `ecosystem.json` file:
                 "TIME_ADDITIONAL_NOTES": "",
 
                 "DEBUG": true,
-                "DEBUG_FILE": true
+                "DEBUG_FILE": true,
+
+                "ENABLE_HTTP_API": false,
+                "HTTP_API_PORT": 3001
             }
         }
     ]
@@ -108,7 +111,10 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "TIME_ADDITIONAL_NOTES": "",
 
                 "DEBUG": true,
-                "DEBUG_FILE": true
+                "DEBUG_FILE": true,
+
+                "ENABLE_HTTP_API": false,
+                "HTTP_API_PORT": 3001
             }
         },
         {
@@ -150,7 +156,10 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "TIME_ADDITIONAL_NOTES": "",
 
                 "DEBUG": true,
-                "DEBUG_FILE": true
+                "DEBUG_FILE": true,
+
+                "ENABLE_HTTP_API": false,
+                "HTTP_API_PORT": 3001
             }
         }
     ]
@@ -207,6 +216,9 @@ TIME_ADDITIONAL_NOTES=""
 
 DEBUG=true
 DEBUG_FILE=true
+
+ENABLE_HTTP_API=false
+HTTP_API_PORT=3001
 ```
 
 ### Please ensure that you have file extension viewing enabled in your Windows settings prior to continuing (click [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) for more information).
@@ -333,6 +345,13 @@ prices.tf. If you are using another price source refer to the alternative [price
 |    `CUSTOM_PRICER_URL`    | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
 | `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
 
+
+## API
+
+| Variable | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|     `ENABLE_HTTP_API`   | `boolean`| `true` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413) |
+|      `HTTP_API_PORT`    | `number` | `3001` | [To be updated.] |
 ---
 
 # Done?
