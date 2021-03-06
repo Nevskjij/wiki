@@ -348,10 +348,25 @@ prices.tf. If you are using another price source refer to the alternative [price
 
 ## API
 
+The bot can expose an HTTP server to check for availability/health or uptime.
+
+By default is disabled, and you might turn it on in case you are [running the bot with Docker](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-using-docker) and check periodically if the bot is up and running.
+
+Keep in mind that if you run multiple instances and enable the HTTP API, you should use different `HTTP_API_PORT` values for each bot since no two bots can open the same port in the same network.
+
+When running, you can access it from `http://127.0.0.1:[HTTP_API_PORT]`. Below you will also find the available paths for different functionalities.
+
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|     `ENABLE_HTTP_API`   | `boolean`| `true` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413) |
-|      `HTTP_API_PORT`    | `number` | `3001` | [To be updated.] |
+|     `ENABLE_HTTP_API`   | `boolean`| `true` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413); Wether the API should be turned on. |
+|      `HTTP_API_PORT`    | `number` | `3001` | Defaults to a non-conflicting |
+
+Each of the following paths can be appended to the HTTP API URL.
+
+| Endpoint | Description | Response example |
+| :----: | :--: | :-----: |
+| `/health` | Check for health. Returns 200 OK if the bot is running. | `OK` |
+| `/uptime` | Get the current bot uptime, in seconds. | `{"uptime": 3600}` |
 ---
 
 # Done?
