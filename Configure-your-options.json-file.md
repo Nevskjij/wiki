@@ -99,10 +99,12 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.failedAccept`](#--failed-to-accept-offer--)
     -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
     -   [`.partialPrice`](#--partial-price-update-alert--)
+    -   [`.receivedUnusualNotInPricelist`](#--received-unusual-not-in-pricelist--)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
+    -   [`.autoAddInvalidUnusual`](#--automatic-add-invalid-unusual--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
     -   [`.autoAddPaintedItems`](#--automatic-add-painted-items---)
     -   [`.priceAge`](#--price-age-%EF%B8%8F-)
@@ -309,6 +311,11 @@ Sub-property: `.partialPrice` - related to [`pricelist.partialPriceUpdate`](#--p
 | `.onSuccessUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot successfully update the prices for previously partially updated prices. |
 | `.onFailedUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot failed to update the prices for previously partially updated prices. |
 
+### - Received unusual not in pricelist ✨ [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.receivedUnusualNotInPricelist` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when the bot received Unusual (probably because your bot bought one from Generic Unusual buy order - read more about it [here](https://github.com/TF2Autobot/tf2autobot/pull/412)) that is not in the pricelist - Only if you set `pricelist.autoAddInvalidUnusual.enable` to `false`. |
 
 ---
 
@@ -321,8 +328,8 @@ property: `.partialPriceUpdate`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `false`  | By default, this feature is disabled. Read more about this [here](https://github.com/TF2Autobot/tf2autobot/pull/337). |
-| `.thresholdInSeconds` | `integer` | `604800`  | Default value is 7 days. Minimum you can set here is only 1 day (86400 seconds) |
-
+| `.thresholdInSeconds` | `integer` | `604800`  | Default value is 7 days. Minimum you can set here is only 1 day (86400 seconds). |
+| `.excludeSKU` | `string[]` | `[]`  | By default, this value is an empty string, but Mann Co. Supply Crate Key will always excluded. |
 
 ### - Filter can't afford to buy 🔁 [^](#optionsjson-structure)
 property: `.filterCantAfford`
@@ -345,6 +352,15 @@ property: `.autoAddInvalidItems`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true`  | If set to `false`, any accepted `🟨_INVALID_ITEMS` will **NOT** be automatically added to the pricelist. |
+
+
+### - Automatic add Invalid Unusual ✨ [^](#optionsjson-structure)
+property: `.autoAddInvalidUnusual`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `false`  | If set to `true`, any accepted Unusual bought from Generic Unusual Buy Order will automatically be added to the pricelist (if the prices from prices.tf are available). Read: [#412](https://github.com/TF2Autobot/tf2autobot/pull/412) |
+
 
 ### - Automatic add painted items 🎀➕ [^](#optionsjson-structure) [↓](#-custom-painted-text-on-listing-note)
 property: `.autoAddPaintedItems`
@@ -403,7 +419,8 @@ Parent property: `tradeSummary`
 | `.showStockChanges` | `boolean` | `false`  | By default the summary will **NOT** include to show stock changes, example: B.M.O.C (0 → 1/1). Set to `true` to enable it. |
 | `.showTimeTakenInMS` | `boolean` | `false`  | Set to `true` if you want to include time taken to complete the trade in milliseconds. |
 | `.showItemPrices` | `boolean` | `true`  | Set to `false` if you don't want to include item prices (buying/selling prices). |
-| `.showPureInEmoji` | `boolean` | `false` | [Discord Webhook only] Set to `true` if you want to enable this. Example: [image1](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png), [image2](https://user-images.githubusercontent.com/47635037/107866197-0063c900-6ea9-11eb-8996-42ea98142637.png). **You will also need to set [this](https://prnt.sc/101hflc) permission on your trade summary channel**
+| `.showPureInEmoji` | `boolean` | `false` | [Discord Webhook only] Set to `true` if you want to enable this. Example: [image1](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png), [image2](https://user-images.githubusercontent.com/47635037/107866197-0063c900-6ea9-11eb-8996-42ea98142637.png). **You will also need to set [this](https://prnt.sc/101hflc) permission on your trade summary channel** |
+| `.showProperName` | `boolean` | `false`  | Set to `true` if you want the item name to be shown with "The" (if the item `proper_name` property in schema is set to `true`) and full name (will not shorten "Non-Craftable" to "NC" for example). |
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/106510028-56c82380-6509-11eb-9038-228ceb459af2.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
