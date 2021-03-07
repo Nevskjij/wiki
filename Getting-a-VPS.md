@@ -42,9 +42,11 @@ If you're using:
 3. Click on `Generate` and move your mouse over the blank area.
 4. Once the key has been generated, it's optional to change your "Key comment" and/or set your "Key passphrase" and confirm it.
 5. After you've edited (if you did edit your "Key comment" and/or set "Key passphrase"), your **SSH Public Key** are in the box. Example:
+
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAwAloG4rFTBhM4/8t6OawuAKeG4MA5vImcNMr0V+X4PzKA554o8YrWX3/+sTqMeV4PHTEKL+CphpCN6XaXkp5ggPVp5vvXDAw6quNVeCBMUyjKkfRTqSXhWbHQB0y6KS0whXJkkjGizrY11RExFZbNPQfN+yl9WA5c5+7EHg+/966P+7vakx+wfvDABbK4mqk5IiEOWbDyogVaRIt/xq+1NNLdRF8VGfgIaWlnWEC4sSuGrU7+pv/0CHHVZTAqHUJBu0UzAy/J/jHDGGd/QDllmx70Eui9E9SEhD9uRJ7iyzw+WiRGeJsHdQfwMTFdbIDXnsRQrtGAUDG04GLeTA+sQ== rsa-key-20200904
 ```
+
 6. Copy and paste this **SSH Public Key** into the SSH Key section when creating your DigitalOcean or Hetzner VPS.
 7. Save your **SSH Private Key** somewhere safe on your computer by clicking on `Save private key`. You will need to use this private key to connect to your VPS. **DO NOT SHARE THIS SSH PRIVATE KEY WITH ANYONE INCLUDING ME.**
 
@@ -57,7 +59,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAwAloG4rFTBhM4/8t6OawuAKeG4MA5vImcNMr0V+X4PzK
 4. Type a passphrase (characters will not appear in Terminal).
 5. Confirm your passphrase to finish SSH Keygen. You should get an output that looks something like this:
 
-```Your identification has been saved in /Users/myname/.ssh/id_rsa.
+```
+Your identification has been saved in /Users/myname/.ssh/id_rsa.
 Your public key has been saved in /Users/myname/.ssh/id_rsa.pub.
 The key fingerprint is:
 ae:89:72:0b:85:da:5a:f4:7c:1f:c2:43:fd:c6:44:30 myname@mymac.local
@@ -125,20 +128,26 @@ Please follow the steps below. We assume you've already connected to your VPS on
 
 1. Create a new username **ubuntu**: `adduser ubuntu`
 2. Grant ubuntu administrative privileges:
+
 ```
 usermod -aG sudo ubuntu
 chmod 0700 /home/ubuntu
 ```
+
 3. Copy your SSH Public key from **root** to **ubuntu**:
+
 ```rsync --archive --chown=ubuntu:ubuntu ~/.ssh /home/ubuntu```
+
 4. Install updates: `sudo apt-get update && sudo apt-get upgrade -y`
 5. Setup Firewall:
+
 ```
 sudo ufw allow ssh
 sudo ufw allow 22
 sudo ufw allow proto tcp from any to any port 80,443
 sudo ufw enable
 ```
+
 6. Reboot your system: `sudo reboot`
 7. Now your VPS will reboot and you'll lose connection to your VPS. Do not panic. Close the current terminal.
 8. log in as `ubuntu`:
