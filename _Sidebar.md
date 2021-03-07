@@ -40,4 +40,6 @@
 
 # Troubleshooting
 - [Common errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors)
+    - [Startup errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors#startup-errors)
+    - [Other errors](https://github.com/idinium96/tf2autobot/wiki/Common-Errors#other-errors)
 - [Frequently Asked Questions](https://github.com/idinium96/tf2autobot/wiki/FAQ)
