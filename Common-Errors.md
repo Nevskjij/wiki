@@ -40,7 +40,9 @@ You have logged in too many times (possibly due to it crashing and restarting to
 As it says in the console with the message about the error, set `SKIP_ACCOUNT_LIMITATIONS` to `true` in your `.env` or `ecosystem.json`.
 
 ## TypeError: input.match is not a function
-The error looks like this: ![https://i.imgur.com/fZ9bFLr.png](https://i.imgur.com/fZ9bFLr.png "error")
+The error looks like this:
+![https://i.imgur.com/fZ9bFLr.png](https://i.imgur.com/fZ9bFLr.png "error")
+
 This is caused, by not adding `" "` between the SteamID64 you added in your `ITEM_STATS_WHITELIST` variable inside your environment file (on Windows: `.env` - on Linux: `ecosystem.json`).
 
 The array should look like this: `["SteamID64"]` 
