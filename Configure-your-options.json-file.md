@@ -1136,6 +1136,7 @@ Parent property: `customMessage`
 | `.success`| `string` | `""` | Bot message when a trade has been sucessfully made. |
 
 - Default message:
+
 ```
 ✅ Success! The offer has gone through successfully, but you will receive your items after several days. To prevent this from happening in the future, please enable Steam Guard Mobile Authenticator.
 
@@ -1200,7 +1201,6 @@ Sub-property: `.accepted`
 - Parameter:
     - `%name%` - partner's name
 
-
 ---
 
 ## ❗ Command settings [^](#optionsjson-structure)
@@ -1219,8 +1219,9 @@ Property: `.how2trade.customReply`
 | `.reply`| `string` | `""` |
 
 - Default reply:
+
 ```
-/quote You can either send me an offer yourself, or use one of my commands to request a trade. Say you want to buy a Team Captain, just type "!buy Team Captain", if want to buy more, just add the [amount] - "!buy 2 Team Captain". Type "!help" for all the commands.
+/quote You can either send me an offer yourself or use one of my commands to request a trade. Say you want to buy a Team Captain, just type "!buy Team Captain", if want to buy more, just add the [amount] - "!buy 2 Team Captain". Type "!help" for all the commands.
 You can also buy or sell multiple items by using the "!buycart [amount] <item name>" or "!sellcart [amount] <item name>" commands.
 ```
 
@@ -1307,7 +1308,7 @@ Property: `.addToQueue`
 
 ///
 
-#### • Already in queue, processing offer
+#### • Already in the queue, processing offer
 
 | Option | Type | Default | Default reply |
 | :----: | :--: | :-----: | :------ |
@@ -1315,7 +1316,7 @@ Property: `.addToQueue`
 
 ///
 
-#### • Already in queue, waiting turn
+#### • Already in the queue, waiting a turn
 
 | Option | Type | Default |
 | :----: | :--: | :-----: |
@@ -1328,7 +1329,7 @@ Property: `.addToQueue`
 
 ///
 
-#### • Added to queue, waiting turn
+#### • Added to queue, waiting a turn
 
 | Option | Type | Default |
 | :----: | :--: | :-----: |
@@ -1518,17 +1519,17 @@ Sub-Property: `.customReply`
 
 
 - `!rate`
+    - Parameters:
+        - `%keyprice%` - current sell price
+        - `%keyrate%` - current buy/sell price
+        - `%source%` - show pricestf url if autopriced, "manual" if manually priced
     - Default reply:
+
 ```
 I value 🔑 Mann Co. Supply Crate Keys at %keyprice%. This means that one key is the same as %keyprice% and %keyprice% is the same as one key.
 
 Key rate source: %source%"
 ```
-
-    - Parameters:
-        - `%keyprice%` - current sell price
-        - `%keyrate%` - current buy/sell price
-        - `%source%` - show pricestf url if autopriced, "manual" if manually priced
 
 ===
 
@@ -1610,7 +1611,7 @@ Property: `.painted[paintName].stringNote`
 #### • Custom additional price for automatic add painted items
 Property: `.painted[paintName].price`
 
-- What is this use for? [Click here](#--automatic-add-painted-items---)
+- What is this useful for? [Click here](#--automatic-add-painted-items---)
 
 ///
 
