@@ -136,7 +136,9 @@ chmod 0700 /home/ubuntu
 
 3. Copy your SSH Public key from **root** to **ubuntu**:
 
-```rsync --archive --chown=ubuntu:ubuntu ~/.ssh /home/ubuntu```
+```
+rsync --archive --chown=ubuntu:ubuntu ~/.ssh /home/ubuntu
+```
 
 4. Install updates: `sudo apt-get update && sudo apt-get upgrade -y`
 5. Setup Firewall:
