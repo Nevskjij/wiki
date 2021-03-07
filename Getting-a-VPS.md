@@ -56,6 +56,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAwAloG4rFTBhM4/8t6OawuAKeG4MA5vImcNMr0V+X4PzK
 3. Press ENTER to store the key in the default folder `/Users/Username/.ssh/id_rsa` or `/home/Username/.ssh/id_rsa`.
 4. Type a passphrase (characters will not appear in Terminal).
 5. Confirm your passphrase to finish SSH Keygen. You should get an output that looks something like this:
+
 ```Your identification has been saved in /Users/myname/.ssh/id_rsa.
 Your public key has been saved in /Users/myname/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -73,6 +74,7 @@ The key's randomart image is:
 |.  oo.o .        |
 +-----------------+
 ```
+
 6. Copy your Public SSH Key to your clipboard using the following code: `pbcopy < ~/.ssh/id_rsa.pub`
 7. Use `Ctrl + V` or Right-Click to paste your Public SSH Key on DigitalOcean or Hetzner and you're good to go!
 
