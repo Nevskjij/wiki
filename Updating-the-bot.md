@@ -13,13 +13,15 @@ Open up a command prompt or terminal/ssh window and navigate to your `tf2autobot
 
 If your bot is installed on the Desktop you will use
 
-`cd Desktop/tf2autobot`.
+`cd Desktop/tf2autobot`
+(or in Linux/VPS, you probably installed it right in the username directory, so it will be `cd tf2autobot` right after you log in to your machine)
 
-It is recommended to firstly delete the `node_modules` folder.
-On Windows simply right-click and delete it.
-On Linux use `rm -rf node_modules` while inside your tf2autobot directory.
+It is recommended to first delete the `node_modules` and `dist` folders.
 
-After that, you will download and install the newest version by typing
+- On Windows, simply right-click and delete it.
+- On Linux, use `rm -rf node_modules dist` while inside your tf2autobot directory.
+
+After that, you will need to pull the latest changes and install the newest version by typing
 
 `git reset HEAD --hard && git pull && npm install && npm run build`
 
