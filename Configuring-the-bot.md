@@ -358,7 +358,7 @@ When running, you can access it from `http://127.0.0.1:[HTTP_API_PORT]`. Below y
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|     `ENABLE_HTTP_API`   | `boolean`| `true` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413); Wether the API should be turned on. |
+|     `ENABLE_HTTP_API`   | `boolean`| `false` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413); Wether the API should be turned on. |
 |      `HTTP_API_PORT`    | `number` | `3001` | Defaults to a non-conflicting |
 
 Each of the following paths can be appended to the HTTP API URL.
