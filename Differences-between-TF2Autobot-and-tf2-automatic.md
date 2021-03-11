@@ -160,7 +160,7 @@ If you're having your bot trade  Unusuals or Australiums (which the value, as we
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/715362558256873492/777353181713399828/unknown.png" alt="buy_order_specific_targeted_items" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
-### Support sell orders for Crates/Skins/War paints
+### Support sell orders as well as buy orders for Crates/Skins/War paints
 
 _This was not possible on tf2-automatic._
 
