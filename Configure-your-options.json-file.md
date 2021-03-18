@@ -33,10 +33,10 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 	"object1": "valueObj1",
 	"object2": "valueObj2",
 	"object3": {
-    	"property1_Obj3": "valueProperty1_Obj3",
-        "property2_Obj3": {
+    	    "property1_Obj3": "valueProperty1_Obj3",
+            "property2_Obj3": {
         	"property1_Prop2_Obj3": "valueProperty1_Prop2_Obj3"
-        	}
+            }
 	}
 }
 ```
@@ -61,11 +61,11 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
             "enable": false		// autokeys.banking.enable = false
         },
         "scrapAdjustment": {
-            "enable": false, 	// autokeys.scrapAdjustment.enable = false
+            "enable": false, 	        // autokeys.scrapAdjustment.enable = false
             "value": 1			// autokeys.scrapAdjustment.value = 1
         },
         "accept": {
-            "understock": false	// autokeys.accept.understock = false
+            "understock": false	        // autokeys.accept.understock = false
         }
     }
 }
