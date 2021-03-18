@@ -52,22 +52,22 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 ```
 {
 	"autokeys": {
-        "enable": false, 		// autokeys.enable = false
-        "minKeys": 3,			// autokeys.minKeys = 3
-        "maxKeys": 15,			// autokeys.maxKeys = 15
-        "minRefined": 30, 		// autokeys.minRefined = 30
-        "maxRefined": 150,		// autokeys.maxRefined = 150
-        "banking": {
-            "enable": false		// autokeys.banking.enable = false
-        },
-        "scrapAdjustment": {
-            "enable": false, 	        // autokeys.scrapAdjustment.enable = false
-            "value": 1			// autokeys.scrapAdjustment.value = 1
-        },
-        "accept": {
-            "understock": false	        // autokeys.accept.understock = false
+            "enable": false, 		// autokeys.enable = false
+            "minKeys": 3,		// autokeys.minKeys = 3
+            "maxKeys": 15,		// autokeys.maxKeys = 15
+            "minRefined": 30, 		// autokeys.minRefined = 30
+            "maxRefined": 150,		// autokeys.maxRefined = 150
+            "banking": {
+                "enable": false		// autokeys.banking.enable = false
+            },
+            "scrapAdjustment": {
+                "enable": false, 	// autokeys.scrapAdjustment.enable = false
+                "value": 1		// autokeys.scrapAdjustment.value = 1
+            },
+            "accept": {
+                "understock": false	// autokeys.accept.understock = false
+            }
         }
-    }
 }
 ```
 
