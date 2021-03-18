@@ -1050,6 +1050,7 @@ Property: `.priceUpdate`
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | Set to `false` to disable this feature. |
 | `.showOnlyInStock` | `boolean` | `false` | Set to `true` if you want your bot to show price changes that is only in stock. |
+| `.showFailedToUpdate` | `boolean` | `true` | Set to `false` if you don't want your bot to show any error while updating prices. |
 | `.url` | `string` | `""` | The [Discord Webhook URL](#note-on-how-to-obtain-your-discord-webhook-url) you'd like price update webhook to be sent to. |
 | `.note` | `string` | `""` | Any additional notes you'd like included with price update webhook. |
 
