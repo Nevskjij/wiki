@@ -28,7 +28,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 
 ## How to read?
 
-```
+```js
 {
 	"object1": "valueObj1",
 	"object2": "valueObj2",
@@ -49,7 +49,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 
 ### Example:
 
-```
+```js
 {
 	"autokeys": {
             "enable": false, 		// autokeys.enable = false
