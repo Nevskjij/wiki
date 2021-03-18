@@ -399,6 +399,7 @@
         "priceUpdate": {
             "enable": true,
             "showOnlyInStock": false,
+            "showFailedToUpdate": true,
             "url": "",
             "note": ""
         },
