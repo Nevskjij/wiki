@@ -1470,6 +1470,7 @@ Property: `.message`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable`| `boolean` | `true` | Set to `false` if want to disable `!message` command (ADMINS are immune). |
+| `.showOwnerName`| `boolean` | `true` | Set to `false` if don't want to the bot to show your name (will be replaced with "the owner"). |
 
 #### • Custom reply
 Sub-Property: `.customReply`
