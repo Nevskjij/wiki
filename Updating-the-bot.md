@@ -18,7 +18,7 @@ If your bot is installed on the Desktop you will use
 
 It is recommended to first delete the `node_modules` and `dist` folders.
 
-- On Windows, simply right-click and delete it.
+- On Windows, simply right-click and delete it (or run `rmdir /s /q node_modules dist` on the CMD).
 - On Linux, use `rm -rf node_modules dist` while inside your tf2autobot directory.
 
 After that, you will need to pull the latest changes and install the newest version by typing
