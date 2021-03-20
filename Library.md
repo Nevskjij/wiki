@@ -574,6 +574,7 @@
         },
         "message": {
             "enable": true,
+            "showOwnerName": true,
             "customReply": {
                 "disabled": "",
                 "wrongSyntax": "",
