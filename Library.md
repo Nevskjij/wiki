@@ -78,7 +78,8 @@
             "onSuccessUpdatePartialPriced": true,
             "onFailedUpdatePartialPriced": true
         },
-        "receivedUnusualNotInPricelist": true
+        "receivedUnusualNotInPricelist": true,
+        "failedToUpdateOldPrices": true
     },
     "pricelist": {
         "partialPriceUpdate": {
