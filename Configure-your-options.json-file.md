@@ -317,6 +317,11 @@ Sub-property: `.partialPrice` - related to [`pricelist.partialPriceUpdate`](#--p
 | :----: | :--: | :-----: | :---------- |
 | `.receivedUnusualNotInPricelist` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when the bot received Unusual (probably because your bot bought one from Generic Unusual buy order - read more about it [here](https://github.com/TF2Autobot/tf2autobot/pull/412)) that is not in the pricelist - Only if you set `pricelist.autoAddInvalidUnusual.enable` to `false`. |
 
+### - Failed to update old prices ❌ [^](#optionsjson-structure)
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.failedToUpdateOldPrices` | `boolean` | `true`  | Send an alert when the bot fails to update an old price. This can happen when using a custom autopricer. Read more about it [here.](https://github.com/TF2Autobot/tf2autobot/pull/489)|
+
 ---
 
 ## 📑 Pricelist manager [^](#optionsjson-structure)
