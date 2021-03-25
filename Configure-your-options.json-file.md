@@ -100,6 +100,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
     -   [`.partialPrice`](#--partial-price-update-alert--)
     -   [`.receivedUnusualNotInPricelist`](#--received-unusual-not-in-pricelist--)
+    -   [`.failedToUpdateOldPrices`](#--failed-to-update-old-prices--)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
