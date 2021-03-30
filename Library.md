@@ -938,60 +938,61 @@
 
 # Strange Parts (Excluding built-in parts) [^](#table-of-content)
 
-```json
+```js
 {
-    "Scouts Killed": "sp10-6003",
-    "Snipers Killed": "sp11-6005",
-    "Soldiers Killed": "sp12-6002",
-    "Demomen Killed": "sp13-6001",
-    "Heavies Killed": "sp14-6000",
-    "Pyros Killed": "sp15-6006",
-    "Spies Killed": "sp16-6008",
-    "Engineers Killed": "sp17-6004",
-    "Medics Killed": "sp18-6007",
-    "Buildings Destroyed": "sp19-6009",
-    "Projectiles Reflected": "sp20-6010",
-    "Headshot Kills": "sp21-6011",
-    "Airborne Enemy Kills": "sp22-6012",
-    "Gib Kills": "sp23-6013",
-    "Kills Under A Full Moon": "sp27-6015",
-    "Dominations": "sp28-6016",
-    "Revenges": "sp30-6018",
-    "Posthumous Kills": "sp31-6019",
-    "Teammates Extinguished": "sp32-6020",
-    "Critical Kills": "sp33-6021",
-    "Kills While Explosive-Jumping": "sp34-6022",
-    "Sappers Removed": "sp36-6025",
-    "Cloaked Spies Killed": "sp37-6024",
-    "Medics Killed That Have Full ÜberCharge": "sp38-6023",
-    "Robots Destroyed": "sp39-6026",
-    "Giant Robots Destroyed": "sp40-6028",
-    "Kills While Low Health": "sp44-6032",
-    "Kills During Halloween": "sp45-6033",
-    "Robots Killed During Halloween": "sp46-6034",
-    "Defenders Killed": "sp47-6035",
-    "Submerged Enemy Kills": "sp48-6036",
-    "Kills While Invuln ÜberCharged": "sp49-6037",
-    "Tanks Destroyed": "sp61-6038",
-    "Long-Distance Kills": "sp62-6039",
-    "Kills During Victory Time": "sp67-6041",
-    "Robot Scouts Destroyed": "sp68-6042",
-    "Robot Spies Destroyed": "sp74-6048",
-    "Taunt Kills": "sp77-6051",
-    "Unusual-Wearing Player Kills": "sp78-6052",
-    "Burning Player Kills": "sp79-6053",
-    "Killstreaks Ended": "sp80-6054",
-    "Freezecam Taunt Appearances": "sp81-6055",
-    "Damage Dealt": "sp82-6056",
-    "Fires Survived": "sp83-6057",
-    "Allied Healing Done": "sp84-6058",
-    "Point Blank Kills": "sp85-6059",
-    "Kills": "sp87-6060",
-    "Full Health Kills": "sp88-6061",
-    "Taunting Player Kills": "sp89-6062",
-    "Not Crit nor MiniCrit Kills": "sp93-6063",
-    "Players Hit": "sp94-6064",
-    "Assists": "sp95-6065",
+    // "Description Name": "Partial SKU"       Defindex
+    "Scouts Killed": "sp10", //                  6003
+    "Snipers Killed": "sp11", //                 6005
+    "Soldiers Killed": "sp12", //                6002
+    "Demomen Killed": "sp13", //                 6001
+    "Heavies Killed": "sp14", //                 6000
+    "Pyros Killed": "sp15", //                   6006
+    "Spies Killed": "sp16", //                   6008
+    "Engineers Killed": "sp17", //               6004
+    "Medics Killed": "sp18", //                  6007
+    "Buildings Destroyed": "sp19", //            6009
+    "Projectiles Reflected": "sp20", //          6010
+    "Headshot Kills": "sp21", //                 6011
+    "Airborne Enemy Kills": "sp22", //           6012
+    "Gib Kills": "sp23", //                      6013
+    "Kills Under A Full Moon": "sp27", //        6015
+    "Dominations": "sp28", //                    6016
+    "Revenges": "sp30", //                       6018
+    "Posthumous Kills": "sp31", //               6019
+    "Teammates Extinguished": "sp32", //         6020
+    "Critical Kills": "sp33", //                 6021
+    "Kills While Explosive-Jumping": "sp34", //  6022
+    "Sappers Removed": "sp36", //                6025
+    "Cloaked Spies Killed": "sp37", //           6024
+    "Medics Killed That Have Full ÜberCharge": "sp38", // 6023
+    "Robots Destroyed": "sp39", //               6026
+    "Giant Robots Destroyed": "sp40", //         6028
+    "Kills While Low Health": "sp44", //         6032
+    "Kills During Halloween": "sp45", //         6033
+    "Robots Killed During Halloween": "sp46", // 6034
+    "Defenders Killed": "sp47", //               6035
+    "Submerged Enemy Kills": "sp48", //          6036
+    "Kills While Invuln ÜberCharged": "sp49", // 6037
+    "Tanks Destroyed": "sp61", //                6038
+    "Long-Distance Kills": "sp62", //            6039
+    "Kills During Victory Time": "sp67", //      6041
+    "Robot Scouts Destroyed": "sp68", //         6042
+    "Robot Spies Destroyed": "sp74", //          6048
+    "Taunt Kills": "sp77", //                    6051
+    "Unusual-Wearing Player Kills": "sp78", //   6052
+    "Burning Player Kills": "sp79", //           6053
+    "Killstreaks Ended": "sp80", //              6054
+    "Freezecam Taunt Appearances": "sp81", //    6055
+    "Damage Dealt": "sp82", //                   6056
+    "Fires Survived": "sp83", //                 6057
+    "Allied Healing Done": "sp84", //            6058
+    "Point Blank Kills": "sp85", //              6059
+    "Kills": "sp87", //                          6060
+    "Full Health Kills": "sp88", //              6061
+    "Taunting Player Kills": "sp89", //          6062
+    "Not Crit nor MiniCrit Kills": "sp93", //    6063
+    "Players Hit": "sp94", //                    6064
+    "Assists": "sp95", //                        6065
 }
 ```
 
