@@ -41,7 +41,7 @@ If you're using:
 2. Search for `PuTTYgen` and open the app.
 3. Click on `Generate` and move your mouse over the blank area.
 4. Once the key has been generated, it's optional to change your "Key comment" and/or set your "Key passphrase" and confirm it.
-5. After you've edited (if you did edit your "Key comment" and/or set "Key passphrase"), your **SSH Public Key** are in the box. Example:
+5. After you've edited (if you did edit your "Key comment" and/or set "Key passphrase"), your **SSH Public Key** is in the box. Example:
 
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAwAloG4rFTBhM4/8t6OawuAKeG4MA5vImcNMr0V+X4PzKA554o8YrWX3/+sTqMeV4PHTEKL+CphpCN6XaXkp5ggPVp5vvXDAw6quNVeCBMUyjKkfRTqSXhWbHQB0y6KS0whXJkkjGizrY11RExFZbNPQfN+yl9WA5c5+7EHg+/966P+7vakx+wfvDABbK4mqk5IiEOWbDyogVaRIt/xq+1NNLdRF8VGfgIaWlnWEC4sSuGrU7+pv/0CHHVZTAqHUJBu0UzAy/J/jHDGGd/QDllmx70Eui9E9SEhD9uRJ7iyzw+WiRGeJsHdQfwMTFdbIDXnsRQrtGAUDG04GLeTA+sQ== rsa-key-20200904
