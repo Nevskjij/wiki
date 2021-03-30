@@ -54,7 +54,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAwAloG4rFTBhM4/8t6OawuAKeG4MA5vImcNMr0V+X4PzK
 
 ## Mac OS or Linux
 1. Search for and Launch the Terminal app.
-2. Enter the following code and press enter: ```ssh-keygen -t rsa```
+2. Enter the following command and press enter: ```ssh-keygen -t rsa```
 3. Press ENTER to store the key in the default folder `/Users/Username/.ssh/id_rsa` or `/home/Username/.ssh/id_rsa`.
 4. Type a passphrase (characters will not appear in Terminal).
 5. Confirm your passphrase to finish SSH Keygen. You should get an output that looks something like this:
@@ -78,10 +78,10 @@ The key's randomart image is:
 +-----------------+
 ```
 
-6. Copy your Public SSH Key to your clipboard using the following code: `pbcopy < ~/.ssh/id_rsa.pub`
+6. Copy your Public SSH Key to your clipboard using the following command: `pbcopy < ~/.ssh/id_rsa.pub`
 7. Use `Ctrl + V` or Right-Click to paste your Public SSH Key on DigitalOcean or Hetzner and you're good to go!
 
-*Note: If you're using Ubuntu or other Linux distro and you got an error when running the code in step 6, you'll need to setup this: https://garywoodfine.com/use-pbcopy-on-ubuntu/
+*Note: If you're using Ubuntu or other Linux distro and you got an error when running the command in step 6, you'll need to setup this: https://garywoodfine.com/use-pbcopy-on-ubuntu/
 
 # Connecting to your VPS
 
