@@ -128,7 +128,7 @@ Some screenshots:
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/84581310-9c1cd100-ae12-11ea-80fa-085ad8bff73e.png" alt="autokeys3" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
-You can see the code of this feature [here](https://github.com/TF2Autobot/tf2autobot/blob/master/src/classes/Autokeys.ts).
+You can see the code of this feature [here](https://github.com/TF2Autobot/tf2autobot/blob/master/src/classes/Autokeys/Autokeys.ts).
 
 ### Emojis and more commands added
 
