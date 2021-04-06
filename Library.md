@@ -125,7 +125,7 @@
     "tradeSummary": {
         "showStockChanges": false,
         "showTimeTakenInMS": false,
-        "showDetailedTimeTaken" true,
+        "showDetailedTimeTaken": true,
         "showItemPrices": false,
         "showPureInEmoji": false,
         "showProperName": false,
