@@ -415,7 +415,7 @@ property: `.bannedPeople`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|    `.allow`     | `boolean` | `false` | Not recommended to set to `true` because it may get you banned should someone report you. Your bot will trade with users that are banned on backpack.tf, marked as a scammer on steamrep.com, or both. |
+|    `.allow`     | `boolean` | `false` | Not recommended to set to `true` because it may get you banned should someone report you. If you set it to `true` your bot will trade with users that are banned on backpack.tf, marked as a scammer on steamrep.com, or both. |
 
 ---
 
