@@ -76,7 +76,9 @@
         "partialPrice": {
             "onUpdate": true,
             "onSuccessUpdatePartialPriced": true,
-            "onFailedUpdatePartialPriced": true
+            "onFailedUpdatePartialPriced": true,
+            "onBulkUpdatePartialPriced": true,
+            "onResetAfterThreshold": true
         },
         "receivedUnusualNotInPricelist": true,
         "failedToUpdateOldPrices": true
@@ -123,6 +125,7 @@
     "tradeSummary": {
         "showStockChanges": false,
         "showTimeTakenInMS": false,
+        "showDetailedTimeTaken" true,
         "showItemPrices": false,
         "showPureInEmoji": false,
         "showProperName": false,
