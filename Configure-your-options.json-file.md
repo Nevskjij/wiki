@@ -311,6 +311,8 @@ Sub-property: `.partialPrice` - related to [`pricelist.partialPriceUpdate`](#--p
 | `.onUpdate` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot partially update item prices. |
 | `.onSuccessUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot successfully update the prices for previously partially updated prices. |
 | `.onFailedUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot failed to update the prices for previously partially updated prices. |
+| `.onResetAfterThreshold` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the threshold for partialPriceUpdate exipres and the pricing goes back to normal. |
+| `.onBulkUpdatePartialPriced` | `boolean` | `true`  | (Discord Webhook not mentioned) Send an alert when the bot updates many partial priced items at once. |
 
 ### - Received unusual not in pricelist ✨ [^](#optionsjson-structure)
 
@@ -424,6 +426,7 @@ Parent property: `tradeSummary`
 | :----: | :--: | :-----: | :---------- |
 | `.showStockChanges` | `boolean` | `false`  | By default the summary will **NOT** include to show stock changes, example: B.M.O.C (0 → 1/1). Set to `true` to enable it. |
 | `.showTimeTakenInMS` | `boolean` | `false`  | Set to `true` if you want to include time taken to complete the trade in milliseconds. |
+| `.showDetailedTimeTaken` | `boolean` | `true` | Set to `false if you don't want to see the detailed time taken. |
 | `.showItemPrices` | `boolean` | `true`  | Set to `false` if you don't want to include item prices (buying/selling prices). |
 | `.showPureInEmoji` | `boolean` | `false` | [Discord Webhook only] Set to `true` if you want to enable this. Example: [image1](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png), [image2](https://user-images.githubusercontent.com/47635037/107866197-0063c900-6ea9-11eb-8996-42ea98142637.png). **You will also need to set [this](https://prnt.sc/101hflc) permission on your trade summary channel** |
 | `.showProperName` | `boolean` | `false`  | Set to `true` if you want the item name to be shown with "The" (if the item `proper_name` property in schema is set to `true`) and full name (will not shorten "Non-Craftable" to "NC" for example). |
