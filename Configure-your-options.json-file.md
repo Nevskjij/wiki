@@ -335,7 +335,7 @@ property: `.partialPriceUpdate`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `false`  | By default, this feature is disabled. Read more about this [here](https://github.com/TF2Autobot/tf2autobot/pull/337). |
+| `.enable` | `boolean` | `false`  | By default, this feature is disabled. Read more about this [here](https://github.com/TF2Autobot/tf2autobot/pull/520). |
 | `.thresholdInSeconds` | `integer` | `604800`  | Default value is 7 days. Minimum you can set here is only 1 day (86400 seconds). |
 | `.excludeSKU` | `string[]` | `[]`  | By default, this value is an empty string, but Mann Co. Supply Crate Key will always excluded. |
 
