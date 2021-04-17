@@ -34,7 +34,7 @@ Steps on how to obtain them:
 1. Open up the folder in which you installed Steam Desktop Authenticator.
 2. Go to the `maFiles` folder.
 3. The `.maFile` you will want to open with notepad is named after the SteamID64 of the new account (example: `my_bot_SteamID64.maFile`).
-4. Once you have opened that file search for `"shared_secret":` and copy the string that comes after it (example: searching for `"shared_secret"` gives us this result `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh=="` so what we copy is only this `agdgwegdgawfagxafagfkagusbuigiuefh==`)
+4. Once you have opened that file search for `"shared_secret":` and copy the string that comes after it (example: searching for `"shared_secret"` gives us this result `"shared_secret": "agdgwegdgawfagxafagfkagusbuigiuefh="` so what we copy is only this `agdgwegdgawfagxafagfkagusbuigiuefh=`)
 5. Now search for `"identity_secret":` and repeat what you did in step 4.
 
 If you open your `.maFile` in notepad and all you see is gibberish, it means your file is encrypted. For you to be able to obtain and write down the secrets you will have to decrypt your file and once you got both of them you can feel free to encrypt them again.
