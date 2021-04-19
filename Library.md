@@ -879,6 +879,13 @@
                     "keys": 0,
                     "metal": 30
                 }
+            },
+            "Legacy Paint": {
+                "stringNote": "🔵⛔",
+                "price": {
+                    "keys": 4,
+                    "metal": 0
+                }
             }
         },
         "strangeParts": {
