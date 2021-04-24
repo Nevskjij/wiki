@@ -139,7 +139,8 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.weapons`](#--weapons--)
     -   [`.metals`](#--pure-metals-%EF%B8%8F-)
 *   [`offerReceived`](#-offer-received-filter-settings-)
-    -   [.`sendPreAcceptMessage`](#--send-pre-accept-message)
+    -   [`.sendPreAcceptMessage`](#--send-pre-accept-message--)
+    -   [`.alwaysDeclineNonTF2Items`](#--auto-decline-offer-that-contains-non-TF2-items--)
     -   [`.invalidValue`](#--on-offer-with-_invalid_value-)
     -   [`.invalidItems`](#--on-offer-with-_invalid_items-)
     -   [`.disabledItems`](#--on-offer-with-_disabled_items-)
@@ -674,6 +675,11 @@ Property: `.sendPreAcceptMessage`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot t osend [pre-accepted](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-) message to the trade partner. |
+
+### - Auto-decline offer that contains Non-TF2 items ❌ [^](#optionsjson-structure)
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.alwaysDeclineNonTF2Items` | `boolean` |   `true`   | Set this to `false` if you want you do not want your bot to always decline trades that contains non-TF2 items (all Non-TF2 items will be held for review, read [#580](https://github.com/TF2Autobot/tf2autobot/pull/580). |
 
 ### - On offer with `🟥_INVALID_VALUE` [^](#optionsjson-structure)
 Property: `.invalidValue`
