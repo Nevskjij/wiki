@@ -1450,7 +1450,7 @@ Property: `.discord`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable`| `boolean` | `true` | Set to `false` if want to disable `!discord` command (ADMINS are immune). |
-| `.inviteURL`| `string` | `""` | Default: `https://discord.gg/D2GNnp7tv8`. |
+| `.inviteURL`| `string` | `""` | Default: `https://discord.gg/4k5tmMkXjB`. |
 
 #### • Custom reply
 Sub-Property: `.customReply`
@@ -1462,9 +1462,9 @@ Sub-Property: `.customReply`
 
 - Default:
     - If `discord.inviteURL` is not empty:
-        - `TF2Autobot Discord Server: https://discord.gg/D2GNnp7tv8\nOwner's Discord Server: ${inviteURL}`
+        - `TF2Autobot Discord Server: https://discord.gg/4k5tmMkXjB\nOwner's Discord Server: ${inviteURL}`
     - If empty:
-        - "TF2Autobot Discord Server: https://discord.gg/D2GNnp7tv8"
+        - "TF2Autobot Discord Server: https://discord.gg/4k5tmMkXjB"
 - Parameter: `%discordurl%` - your [`commands.discord.inviteURL`](#--`!discord`)
 
 ===
