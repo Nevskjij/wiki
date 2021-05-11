@@ -1,4 +1,4 @@
-Please contact me through Discord Server: [![Discord](https://img.shields.io/discord/664971400678998016.svg)](https://discord.gg/D2GNnp7tv8)
+Please contact me through Discord Server: [![Discord](https://img.shields.io/discord/664971400678998016.svg)](https://discord.gg/4k5tmMkXjB)
 
 # Standalone VPS Service
 
