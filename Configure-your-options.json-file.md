@@ -674,7 +674,7 @@ Parent property key: `offerReceived`
 Property: `.sendPreAcceptMessage`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot t osend [pre-accepted](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-) message to the trade partner. |
+| `.enable` | `boolean` |   `true`   | Set this to `false` if you do not want your bot to send [pre-accepted](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--accepted-message-) message to the trade partner. |
 
 ### - Auto-decline offer that contains Non-TF2 items ❌ [^](#optionsjson-structure)
 | Option | Type | Default | Description |
