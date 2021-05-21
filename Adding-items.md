@@ -59,6 +59,8 @@ Example:
 
 ## 3.4.2 Using [sku](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#322---sku-parameter) parameter
 
+There are two ways of obtaining the sku of an item. You can use [the marketplace.tf method](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-marketplacetf) or you can use [the !sku command](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-sku-command)
+
 -   Example 1:
 
     -   Item: Sunbeams Cosa Nostra Cap
