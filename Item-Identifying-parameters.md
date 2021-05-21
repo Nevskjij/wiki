@@ -34,14 +34,14 @@ _Table 3.2: Sub-parameters for `name` and `defindex`._
 This parameter is recommended because you will no longer need to use the sub-parameters in [Table 3.2](#3.2.1---`name`-and-`defindex`-parameters).
 So how can I find the sku of a specific item?
 
-Using marketplace.tf
+#### Using marketplace.tf
 -   Go to [Marketplace.tf](https://marketplace.tf/).
 -   In the search bar, type in the item name or Unusual effect, or anything related.
 -   If "No items found", simply click on the "In stock" button two to the right of the search bar and it will change to "Not In Stock".
 -   If your desired item appeared, click on it and take a look at the URL. The item sku is right at the end of the URL.
 <div align="center"><img src="https://media.giphy.com/media/Pj78znBQro1BZu0CiE/giphy.gif" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
-Using `!sku` command
+#### Using `!sku` command
 -   You can use the !sku command in the steam chat to obtain the sku. You will need to use the full item name.
 -   Example: <div align="center"><img src="https://cdn.discordapp.com/attachments/666909760666468377/845365874151653396/unknown.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
