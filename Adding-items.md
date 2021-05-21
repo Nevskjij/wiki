@@ -70,7 +70,7 @@ There are two ways of obtaining the sku of an item. You can use [the marketplace
 
 -   Example 2:
     -   Item: Specialized Festivized Australium Tomislav
-    -   URL: https://marketplace.tf/items/tf2/424;11;australium;kt-2;festive
+    -   Steam chat command: `!sku Specialized Killstreak Festivized Australium Tomislav`
     -   `sku`: 424;11;australium;kt-2;festive
     -   to add: `!add sku=424;11;australium;kt-2;festive`
 
