@@ -37,7 +37,7 @@
             "enable": true
         },
         "autobump": {
-            "enable": false
+            "enable": true
         },
         "skipItemsInTrade": {
             "enable": true
@@ -52,7 +52,7 @@
         },
         "game": {
             "playOnlyTF2": false,
-            "customName": ""
+            "customName": "TF2Autobot"
         }
     },
     "sendAlert": {
@@ -129,7 +129,7 @@
         "showStockChanges": false,
         "showTimeTakenInMS": false,
         "showDetailedTimeTaken": true,
-        "showItemPrices": false,
+        "showItemPrices": true,
         "showPureInEmoji": false,
         "showProperName": false,
         "customText": {
@@ -444,6 +444,7 @@
         "successEscrow": "",
         "decline": {
             "general": "",
+            "hasNonTF2Items": "",
             "giftNoNote": "",
             "crimeAttempt": "",
             "onlyMetal": "",
@@ -679,7 +680,7 @@
         },
         "sheens": {
             "Team Shine": "🔵🔴",
-            "Hot Rod": "🎗️",
+            "Hot Rod": "🌸",
             "Manndarin": "🟠",
             "Deadly Daffodil": "🟡",
             "Mean Green": "🟢",
@@ -886,14 +887,14 @@
                 }
             },
             "The Value of Teamwork": {
-                "stringNote": "👨🏽‍🤝‍👨🏻",
+                "stringNote": "🎎",
                 "price": {
                     "keys": 0,
                     "metal": 30
                 }
             },
             "Waterlogged Lab Coat": {
-                "stringNote": "👨🏽‍🤝‍👨🏽",
+                "stringNote": "🎏",
                 "price": {
                     "keys": 0,
                     "metal": 30
