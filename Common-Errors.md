@@ -78,6 +78,7 @@ Then your `pricelist.json` is corrupted which is very bad because it holds all o
 
 ### Unexpected token in options.json
 If your error looks somewhat like this:
+
 ![https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png](https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png "error")
 
 You should check out the mentioned line (here: line 27) in your options.json file to see if there are any syntax errors (here: missing quotes around Team Shine).
