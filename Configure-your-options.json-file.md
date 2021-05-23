@@ -115,6 +115,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.giftWithoutMessage`](#--allow-receiving-free-items-without-message--)
     -   [`.bannedPeople`](#--allow-trade-with-banned-account--)
 *   [`tradeSummary`](#-trade-summary-settings-)
+    -   [`.declinedTrade`](##declined-trade-summary-)
     -   [`.customText`](#custom-text--)
 *   [`steamChat`](#steam-chat-settings-)
     -   `.customInitializer`
@@ -428,7 +429,7 @@ Property: `.declinedTrade`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enabled` | | `boolean` | `false` | By default declined trades will not be sent to your steam chat / discord webhook.
+| `.enabled` | | `boolean` | `false` | By default declined trades will not be sent to your steam chat / discord webhook. |
 
 ### General [^](#optionsjson-structure)
 | Option | Type | Default | Description |
@@ -498,6 +499,7 @@ property: `.festivized`
 | :----: | :--: | :-----: | :---------- |
 | `.our` | `boolean` | `false`  | Our side (Bot) |
 | `.their` | `boolean` | `false`  | Trade partner's side |
+| `.amountIncludeNonFestivized` | `boolean` | `false` | Enabling this option will take the non-festivzed version of an item into account when creating buy/sell orders. See the [detailed explanation.](https://github.com/TF2Autobot/tf2autobot/pull/597) |
 
 ### - Strange as Second Quality (elevated quality) 🎰 [^](#optionsjson-structure)
 property: `.strangeAsSecondQuality`
@@ -510,7 +512,7 @@ property: `.strangeAsSecondQuality`
 | :----: | :--: | :-----: | :---------- |
 | `.our` | `boolean` | `false`  | Our side (Bot) |
 | `.their` | `boolean` | `false`  | Trade partner's side |
-
+| `.amountIncludeNonStrange` | `boolean` | `false` | Enabling this option will take the non-strange version of an item into account when creating buy/sell orders. See the [detailed explanation.](https://github.com/TF2Autobot/tf2autobot/pull/597) |
 
 ### - Painted items 🎨 [^](#optionsjson-structure)
 property: `.painted`
@@ -528,7 +530,7 @@ property: `.painted`
 | :----: | :--: | :-----: | :---------- |
 | `.our` | `boolean` | `true`  | Our side (Bot) |
 | `.their` | `boolean` | `true`  | Trade partner's side (`false` is not recommended) |
-
+| `.amountIncludeNonPainted` | `boolean` | `false` | Enabling this option will take the non-painted version of an item into account when creating buy/sell orders. See the [detailed explanation.](https://github.com/TF2Autobot/tf2autobot/pull/597) |
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/715362558256873492/800094187180916766/unknown.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
