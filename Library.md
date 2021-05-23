@@ -123,6 +123,9 @@
         }
     },
     "tradeSummary": {
+        "declinedTrade": {
+            "enable": false
+        },
         "showStockChanges": false,
         "showTimeTakenInMS": false,
         "showDetailedTimeTaken": true,
@@ -176,6 +179,7 @@
     "steamChat": {
         "customInitializer": {
             "acceptedTradeSummary": "/me",
+            "declinedTradeSummary": "/me",
             "review": "",
             "message": {
                 "onReceive": "/quote",
@@ -194,15 +198,18 @@
     "normalize": {
         "festivized": {
             "our": false,
-            "their": false
+            "their": false,
+            "amountIncludeNonFestivized": false
         },
         "strangeAsSecondQuality": {
             "our": false,
-            "their": false
+            "their": false,
+            "amountIncludeNonStrange": false
         },
         "painted": {
             "our": true,
-            "their": true
+            "their": true,
+            "amountIncludeNonPainted": false
         }
     },
     "details": {
@@ -381,6 +388,17 @@
                 "enable": false,
                 "itemSkus": [],
                 "tradeValueInRef": 0
+            }
+        },
+        "declinedTrade": {
+            "enable": true,
+            "url": [],
+            "misc": {
+                "showQuickLinks": true,
+                "showKeyRate": true,
+                "showPureStock": true,
+                "showInventory": true,
+                "note": ""
             }
         },
         "offerReview": {
