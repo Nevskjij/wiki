@@ -155,7 +155,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 *   [`discordWebhook`](#%EF%B8%8F-discord-webhook-)
     -   `...`
     -   [`.tradeSummary`](#--trade-summary-configuration-)
-    -   [`.declinedTrade`]
+    -   [`.declinedTrade`](#--declined-trade-configuration-)
     -   [`.offerReview`](#--trade-offer-review-configuration-)
     -   [`.messages`](#--trade-partner-message-configuration-)
     -   [`.priceUpdate`](#--pricelist-update-configuration-)
@@ -1038,10 +1038,10 @@ Object: `.misc`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.showQuickLinks` | `boolean` | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
-| `.showKeyRate` | `boolean` | Show your bot's key rate. |
-| `.showPureStock` | `boolean` | Show your bot's pure stock. |
-| `.showInventory` | `boolean` | Show the total amount of items in your bot's inventory. |
+| `.showQuickLinks` | `boolean` | `true` |Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
+| `.showKeyRate` | `boolean` | `true` |Show your bot's key rate. |
+| `.showPureStock` | `boolean` | `true` |Show your bot's pure stock. |
+| `.showInventory` | `boolean` | `true` |Show the total amount of items in your bot's inventory. |
 | `.note` | `string` | `""` | Any additional notes you'd like included with declined trade webhook. |
 
 
