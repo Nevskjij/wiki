@@ -13,6 +13,8 @@ This page contains common errors and ways to fix them.
    - [TypeError: input.match is not a function](#typeerror-inputmatch-is-not-a-function)
 - [Other errors](#other-errors)
    - [Unexpected token in JSON](#unexpected-token-in-json)
+      -[polldata.json](#unexpected-token-in-polldatajson)
+      -[pricelist.json](#unexpected-token-in-pricelistjson)
    - [Reason: Failed to accept mobile confirmation.](#reason-failed-to-accept-mobile-confirmation)
 
 # Startup errors
