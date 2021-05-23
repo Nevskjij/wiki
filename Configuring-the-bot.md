@@ -73,7 +73,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
 {
     "apps": [
         {
-            "name": "tf2autobot",
+            "name": "tf2autobot-1",
             "script": "dist/app.js",
             "exec_mode": "fork",
             "shutdown_with_message": false,
@@ -118,7 +118,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
             }
         },
         {
-            "name": "tf2autobot",
+            "name": "tf2autobot-2",
             "script": "dist/app.js",
             "exec_mode": "fork",
             "shutdown_with_message": false,
