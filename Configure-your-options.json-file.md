@@ -155,6 +155,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 *   [`discordWebhook`](#%EF%B8%8F-discord-webhook-)
     -   `...`
     -   [`.tradeSummary`](#--trade-summary-configuration-)
+    -   [`.declinedTrade`]
     -   [`.offerReview`](#--trade-offer-review-configuration-)
     -   [`.messages`](#--trade-partner-message-configuration-)
     -   [`.priceUpdate`](#--pricelist-update-configuration-)
@@ -1023,6 +1024,26 @@ Sub-Property: `.mentionOwner`
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/86468438-0073e600-bd6a-11ea-8bc0-040229c997d5.PNG" alt="trade-summary-full2" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 ---
+
+### - Declined Trade Configuration [^](#optionsjson-structure)
+Property: `.declinedTrade`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `true` | If set to `false`, messages regarding declined trade offers will be sent to your Steam Chat. Otherwise, these messages will be sent on Discord. |
+| `.url` | `string[]` | `[]` | Discord Webhook URL for `DECLINED_TRADE`. |
+
+#### • Misc
+Object: `.misc`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.showQuickLinks` | `boolean` | Show the trade partner's quick links to their Steam profile, backpack.tf, and SteamREP pages. |
+| `.showKeyRate` | `boolean` | Show your bot's key rate. |
+| `.showPureStock` | `boolean` | Show your bot's pure stock. |
+| `.showInventory` | `boolean` | Show the total amount of items in your bot's inventory. |
+| `.note` | `string` | `""` | Any additional notes you'd like included with declined trade webhook. |
+
 
 ### - Trade Offer Review Configuration [^](#optionsjson-structure)
 Property: `.offerReview`
