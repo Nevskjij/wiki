@@ -51,7 +51,7 @@ You can also leave it empty if you are the only person who should use that comma
 # Other errors
 
 ## Unexpected token in JSON
-These errors are usually caused by either your `polldata.json` or your `pricelist.json` being corrupted. You should examine the error in your log and see if it matches the one of the [unexpected token in polldata.json(#unexpected-token-in-polldatajson) or the [unexpected token in pricelist.json.](#unexpected-token-in-pricelistjson)
+These errors are usually caused by either your `polldata.json` or your `pricelist.json` being corrupted. You should examine the error in your log and see if it matches the one of the [unexpected token in polldata.json](#unexpected-token-in-polldatajson) or the [unexpected token in pricelist.json.](#unexpected-token-in-pricelistjson)
 
 ### Unexpected token in polldata.json
 There are multiple cases where this may happen. If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png](https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png "error")  
