@@ -51,7 +51,7 @@ You can also leave it empty if you are the only person who should use that comma
 # Other errors
 
 ## Unexpected token in JSON
-There are multiple cases where this may happen. If your error looks somewhat like this: ![https://i.imgur.com/mKMp3i5.png](https://i.imgur.com/mKMp3i5.png "error")  
+There are multiple cases where this may happen. If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png](https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png "error")  
 Then something went wrong with your `polldata.json` file. This is located in the `tf2autobot/files/{your steamid}/` folder. Simply deleting it will fix the issue.
 
 If this issue is not solved by deleting your `polldata.json` file, check your `pricelist.json` file for corruption. Making a regular backup of your `pricelist.json` file is always recommended.
