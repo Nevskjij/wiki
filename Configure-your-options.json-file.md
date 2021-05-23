@@ -1044,6 +1044,7 @@ Object: `.misc`
 | `.showInventory` | `boolean` | `true` |Show the total amount of items in your bot's inventory. |
 | `.note` | `string` | `""` | Any additional notes you'd like included with declined trade webhook. |
 
+---
 
 ### - Trade Offer Review Configuration [^](#optionsjson-structure)
 Property: `.offerReview`
