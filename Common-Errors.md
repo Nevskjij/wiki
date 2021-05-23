@@ -15,6 +15,7 @@ This page contains common errors and ways to fix them.
    - [Unexpected token in JSON](#unexpected-token-in-json)
       - [polldata.json](#unexpected-token-in-polldatajson)
       - [pricelist.json](#unexpected-token-in-pricelistjson)
+      - [options.json](#unexpected-token-in-optionsjson)
    - [Reason: Failed to accept mobile confirmation.](#reason-failed-to-accept-mobile-confirmation)
 
 # Startup errors
@@ -72,6 +73,13 @@ If this issue is not solved by deleting your `polldata.json` file, check your `p
 
 ### Unexpected token in pricelist.json
 If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png](https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png "error")
+
+Then your `pricelist.json` is corrupted which is very bad because it holds all of the items you added to your pricelist. You **should not** delete this file and instead ask in the discord server for help.
+
+### Unexpected token in options.json
+If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png](https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png "error")
+
+You should check out the mentioned line (here: line 27) in your options.json file to see if there are any syntax errors (here: missing quotes around Team Shine).
 
 ## Reason Failed to accept mobile confirmation
 The bot may produce this error when a user attempts to trade using the !buy or !sell commands.  
