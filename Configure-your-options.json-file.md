@@ -423,6 +423,14 @@ property: `.bannedPeople`
 ## 📜 Trade Summary settings [^](#optionsjson-structure)
 Parent property: `tradeSummary`
 
+### Declined Trade Summary [^](#optionsjson-structure)
+Property: `.declinedTrade`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enabled` | | `boolean` | `false` | By default declined trades will not be sent to your steam chat / discord webhook.
+
+### General [^](#optionsjson-structure)
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.showStockChanges` | `boolean` | `false`  | By default the summary will **NOT** include to show stock changes, example: B.M.O.C (0 → 1/1). Set to `true` to enable it. |
