@@ -51,10 +51,11 @@ You can also leave it empty if you are the only person who should use that comma
 # Other errors
 
 ## Unexpected token in JSON
+These errors are usually caused by either your `polldata.json` or your `pricelist.json` being corrupted. You should examine the error in your log and see if it matches the one of the [unexpected token in polldata.json(#unexpected-token-in-polldatajson) or the [unexpected token in pricelist.json.](#unexpected-token-in-pricelistjson)
+
+### Unexpected token in polldata.json
 There are multiple cases where this may happen. If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png](https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png "error")  
 Then something went wrong with your `polldata.json` file. This is located in the `tf2autobot/files/{your steamid}/` folder. Simply deleting it will fix the issue.
-
-If this issue is not solved by deleting your `polldata.json` file, check your `pricelist.json` file for corruption. Making a regular backup of your `pricelist.json` file is always recommended.
 
 If the error is bigger, and starts with 
 ```cmd
@@ -64,6 +65,11 @@ SyntaxError: Unexpected token o in JSON at position 1
 ```
 Or something similar, then you did not set your `ALERTS` properly in your `.env` or `ecosystem.json`.  
 It is supposed to look like `["trade"]` or `["none"]`. This error usually happens if you forget the `[]` brackets.
+
+If this issue is not solved by deleting your `polldata.json` file, check your `pricelist.json` file for corruption. Making a regular backup of your `pricelist.json` file is always recommended.
+
+### Unexpected token in pricelist.json
+If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png](https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png "error")
 
 ## Reason Failed to accept mobile confirmation
 The bot may produce this error when a user attempts to trade using the !buy or !sell commands.  
