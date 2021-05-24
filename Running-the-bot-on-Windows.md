@@ -12,4 +12,4 @@ If your bot does not come online you should check the output in the command prom
 
 To properly shut down your bot, you can simply click Cltr + C and let it complete all processes, then close the command prompt.
 
-The next thing you should do is set up your pricelist so that your bot can start trading items. Learn how to do it [here.](https://github.com/TF2Autobot/tf2autobot/wiki/What-is-the-pricelist%3F)
+The next thing you should do is set up your pricelist so that your bot can start trading items. Learn how to do it [here.](https://github.com/TF2Autobot/tf2autobot/wiki/What-is-the-pricelist)
