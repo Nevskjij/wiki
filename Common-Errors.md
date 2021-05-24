@@ -21,12 +21,12 @@ This page contains common errors and ways to fix them.
 # Startup errors
 ## Missing required environment variable
 When updating your environmental variables, almost make sure you restart the bot with the `--update-env` option if you are using PM2. As explained [here](https://github.com/idinium96/tf2autobot/wiki/Updating-the-bot#updating-the-environment-file) 
-#### ecosystem.json
+### `ecosystem.json`
 You need to make sure your file is **NOT** called `ecosystem.template.json`. It needs to be `ecosystem.json`.  
 
-#### .env
+### `.env`
 Before trying to fix this error, you should [enable viewing file extensions](https://fileinfo.com/help/windows_10_show_file_extensions).  
-MAKE SURE THE FILE IS NOT CALLED `config.env` OR `bot.env` OR ANYTHING. JUST `.env`.  
+**MAKE SURE THE FILE IS NOT CALLED** `config.env` OR `bot.env` OR ANYTHING. JUST `.env` (a dot and "env").  
 If your computer does not allow you to name it `.env`, simply call it `.env.` (with the extra `.`).
 
 ## Unknown SteamID input format
@@ -53,14 +53,29 @@ You can also leave it empty if you are the only person who should use that comma
 
 # Other errors
 
-## Unexpected token in JSON
-These errors are usually caused by either your `polldata.json` or your `pricelist.json` being corrupted. You should examine the error in your log and see if it matches the one of the [unexpected token in polldata.json](#unexpected-token-in-polldatajson) or the [unexpected token in pricelist.json.](#unexpected-token-in-pricelistjson)
+## Corrupted JSON file
+These errors are usually caused by either your `polldata.json` or your `pricelist.json` being corrupted. You should examine the error in your log and see if it matches the one of the [polldata.json corruption](#polldatajson-corruption) or the [pricelist.json corruption](#pricelistjson-corruption).
 
-### Unexpected token in polldata.json
+### polldata.json corruption
 There are multiple cases where this may happen. If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png](https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png "error")  
 Then something went wrong with your `polldata.json` file. This is located in the `tf2autobot/files/{your steamid}/` folder. Simply deleting it will fix the issue.
 
-If the error is bigger, and starts with 
+### pricelist.json corruption
+If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png](https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png "error")
+
+Then your `pricelist.json` is corrupted which is very bad because it holds all of the items you added to your pricelist. You **should not** delete this file and instead ask in the discord server for help.
+
+**Making a regular backup of your `pricelist.json` file is always recommended.**
+
+### Error in options.json
+If your error looks somewhat like this:
+
+![https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png](https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png "error")
+
+You should check out the mentioned line (here: line 27) in your options.json file to see if there are any syntax errors (here: missing quotes around Team Shine).
+
+### Unexpected token in JSON error
+If you get an error somewhat like this:
 ```cmd
 SyntaxError: Unexpected token o in JSON at position 1
     at JSON.parse (<anonymous>)
@@ -69,19 +84,7 @@ SyntaxError: Unexpected token o in JSON at position 1
 Or something similar, then you did not set your `ALERTS` properly in your `.env` or `ecosystem.json`.  
 It is supposed to look like `["trade"]` or `["none"]`. This error usually happens if you forget the `[]` brackets.
 
-If this issue is not solved by deleting your `polldata.json` file, check your `pricelist.json` file for corruption. Making a regular backup of your `pricelist.json` file is always recommended.
-
-### Unexpected token in pricelist.json
-If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png](https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png "error")
-
-Then your `pricelist.json` is corrupted which is very bad because it holds all of the items you added to your pricelist. You **should not** delete this file and instead ask in the discord server for help.
-
-### Unexpected token in options.json
-If your error looks somewhat like this:
-
-![https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png](https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png "error")
-
-You should check out the mentioned line (here: line 27) in your options.json file to see if there are any syntax errors (here: missing quotes around Team Shine).
+---
 
 ## Reason Failed to accept mobile confirmation
 The bot may produce this error when a user attempts to trade using the !buy or !sell commands.  
