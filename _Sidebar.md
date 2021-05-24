@@ -24,7 +24,7 @@
     - [Item identifying paramaters](https://github.com/idinium96/tf2autobot/wiki/Item-Identifying-parameters)
     - [Listing settings paramaters](https://github.com/idinium96/tf2autobot/wiki/Listing-settings-parameters)
 - Manage pricelist
-    - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist%3F)
+    - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist)
     - [Adding items](https://github.com/idinium96/tf2autobot/wiki/Adding-items)
     - [Updating items](https://github.com/idinium96/tf2autobot/wiki/Updating-items)
     - [Removing items](https://github.com/idinium96/tf2autobot/wiki/Removing-items)
