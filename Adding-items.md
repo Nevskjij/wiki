@@ -110,3 +110,5 @@ There are two ways of obtaining the sku of an item. You can use [the marketplace
 -   You do not need to set `autoprice=false` if you're about to manually price the item.
 
 ---
+
+Continue: [Updating an item or multiple items](https://github.com/TF2Autobot/tf2autobot/wiki/Updating-items)
