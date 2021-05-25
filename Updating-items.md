@@ -74,3 +74,4 @@ Example:
 
 ---
 
+Continue: [Removing an item, items by group, or all items](https://github.com/TF2Autobot/tf2autobot/wiki/Removing-items)
