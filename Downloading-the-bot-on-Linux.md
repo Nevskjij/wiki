@@ -20,7 +20,7 @@ Install TypeScript by typing `sudo npm install typescript@latest -g` into your t
 
 # Downloading the bot
 To download the bot from the GitHub repository type
-`git clone https://github.com/idinium96/tf2autobot.git`
+`git clone https://github.com/TF2Autobot/tf2autobot.git`
 
 Next, navigate to the `tf2autobot` folder by typing
 `cd tf2autobot`
