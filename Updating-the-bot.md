@@ -23,7 +23,7 @@ It is recommended to first delete the `node_modules` and `dist` folders.
 
 After that, you will need to pull the latest changes and install the newest version by typing
 
-`git reset HEAD --hard && git pull && npm install && npm run build`
+`git reset HEAD --hard && git pull --prune && npm install && npm run build`
 
 ## Updating the environment file - ecosystem.json
 
