@@ -40,20 +40,19 @@ pm2 restart ecosystem.json --update-env && pm2 save
 # Collection of all useful pm2 commands
 
 ## Global commands
-- `pm2 kill` - forced stop 
-- `pm2 log` - to see bot’s logs 
-- `pm2 list` - list of pm2 processes 
+- `pm2 kill` - forced stop
+- `pm2 log [processName or processId]` - to see bot’s logs
+- `pm2 list` - list of pm2 processes
+- `pm2 restart <processName or processId>` - restart selected processName or processId
+- `pm2 restart all` - restart all processes
+- `pm2 stop <processName or processId>` - stop selected processName or processId
 - `pm2 stop all` - stop all processes
+- `pm2 reset <processName or processId>` - reset stats (such as restart count) of the selected processName or processId
+- `pm2 reset all` - reset stats for all processes
 
-## Stop and (re)start one bot
-- `pm2 restart ecosystem.json --update-env && pm2 save` - (re)start all bots and apply all changes 
-- `pm2 restart ecosystem.json --only processName` - (re)start and apply only changes to `processName`
-- `pm2 stop processName` - stop `processName`
-
-## Stop and (re)start multiple bots
-- `pm2 restart ecosystem.json --update-env && pm2 save` - (re)start all bots and apply all changes 
-- `pm2 restart ecosystem.json --only processName` - (re)start and apply only changes to `processName`
-- `pm2 stop all` - stop all running bots
+## Updating `ecosystem.json` file
+- `pm2 restart ecosystem.json --update-env` - Restart the bot and apply changes for all apps
+- `pm2 restart ecosystem.json --only <processName>` - ONLY restart and apply changes on selected app 
 
 No matter if you are running one or multiple bots, it is recommended to do `pm2 restart ecosystem.json --update-env && pm2 save && pm2 logs` to see if there are any problems after you change something in your environment file.
 
