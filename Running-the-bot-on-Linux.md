@@ -42,6 +42,7 @@ pm2 restart ecosystem.json --update-env && pm2 save
 ## Global commands
 - `pm2 kill` - forced stop
 - `pm2 log [processName or processId]` - to see bot’s logs
+- `pm2 monit` - interactive monitor
 - `pm2 list` - list of pm2 processes
 - `pm2 restart <processName or processId>` - restart selected processName or processId
 - `pm2 restart all` - restart all processes
