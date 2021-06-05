@@ -12,10 +12,10 @@ This page contains common errors and ways to fix them.
    - [Could not get account limitations](#could-not-get-account-limitations)
    - [TypeError: input.match is not a function](#typeerror-inputmatch-is-not-a-function)
 - [Other errors](#other-errors)
-   - [Unexpected token in JSON](#unexpected-token-in-json)
-      - [polldata.json](#unexpected-token-in-polldatajson)
-      - [pricelist.json](#unexpected-token-in-pricelistjson)
-      - [options.json](#unexpected-token-in-optionsjson)
+   - [Corrupted JSON file](#corrupted-json-file)
+      - [polldata.json](#polldatajson-corruption)
+      - [pricelist.json](#pricelistjson-corruption)
+      - [options.json](#error-in-optionsjson)
    - [Reason: Failed to accept mobile confirmation.](#reason-failed-to-accept-mobile-confirmation)
 
 # Startup errors
