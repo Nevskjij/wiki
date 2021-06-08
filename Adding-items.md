@@ -78,7 +78,7 @@ There are two ways of obtaining the sku of an item. You can use [the marketplace
 
 ## 3.4.3 Example with situation/intention:
 
--   Example 1: "I want to **bank** `Max's Severed Head` for a **max** of `3`"
+-   Example 1: "I want to **bank** `Max's Severed Head` for a **max** of `3` with **autoprice** enabled"
 -   Summary:
     -   Item: [**Max's Severed Head**](https://backpack.tf/stats/Unique/Max%27s%20Severed%20Head/Tradable/Craftable) (`162;6`)
     -   intent: bank
