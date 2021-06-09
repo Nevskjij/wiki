@@ -6,7 +6,7 @@ _Table 3.3: Listing settings parameters._
 
 |  Parameter   | Default | Description |
 | :----------: | :-----: | :---------- |
-|   `intent`   | `bank`  | Default option is `bank` which means the bot will create a buy listing and once the item is bought a sell listing will be created automatically. Other option is `buy` or `sell`. If set to `buy`, then your bot will only create a buying listing for that item, and once bought, it will be removed. `sell` being the opposite where only a sell listings will be created. |
+|   `intent`   | `bank`  | Default option is `bank` which means the bot will create a buy listing and once the item is bought, a sell listing will be created automatically. Other options are `buy` or `sell`. If set to `buy`, your bot will only create a buy listing for that item, and once bought, it will be removed. `sell` being the opposite where only a sell listing will be created. |
 |    `min`     |   `0`   | Minimum stock to keep. |
 |    `max`     |   `1`   | Maximum stock your bot can have. |
 | `autoprice`  | `true`  | If you set to `false`, then you need to include the `buy` AND `sell` (yes, AND means both) parameters to set the price of the item manually. |
