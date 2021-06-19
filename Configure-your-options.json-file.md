@@ -450,6 +450,7 @@ Property: `.declinedTrade`
 | `.showItemPrices` | `boolean` | `true`  | Set to `false` if you don't want to include item prices (buying/selling prices). |
 | `.showPureInEmoji` | `boolean` | `false` | [Discord Webhook only] Set to `true` if you want to enable this. Example: [image1](https://user-images.githubusercontent.com/47635037/107742639-6554dd00-6d4a-11eb-8a64-fa9d81b2d8cc.png), [image2](https://user-images.githubusercontent.com/47635037/107866197-0063c900-6ea9-11eb-8996-42ea98142637.png). **You will also need to set [this](https://prnt.sc/101hflc) permission on your trade summary channel** |
 | `.showProperName` | `boolean` | `false`  | Set to `true` if you want the item name to be shown with "The" (if the item `proper_name` property in schema is set to `true`) and full name (will not shorten "Non-Craftable" to "NC" for example). |
+| `.showOfferMessage` | `boolean` | `false` | Set to `true` if you want to include offer message in the trade summary. |
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/106510028-56c82380-6509-11eb-9038-228ceb459af2.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
