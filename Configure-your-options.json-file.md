@@ -119,8 +119,8 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.declinedTrade`](##declined-trade-summary-)
     -   [`.customText`](#custom-text--)
 *   [`steamChat`](#steam-chat-settings-)
-    -   `.customInitializer`
-    -   `.notifyTradePartner`
+    -   [`.customInitializer`](#custom-initializer)
+    -   [`.notifyTradePartner`](#toggle-send-notification-to-the-trade-partner--)
 *   [`highValue`](#-high-value-items-settings-)
 *   [`normalize`](#-items-normalization-settings-)
     -   [`.festivized`](#--festivized-items--)
