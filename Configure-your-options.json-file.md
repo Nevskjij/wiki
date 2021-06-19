@@ -86,6 +86,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.addFriends`](#--add-as-friend-%EF%B8%8F-)
     -   [`.sendGroupInvite`](#--send-group-invite-%EF%B8%8F-)
     -   [`.autobump`](#--autobump-auto-relist--)
+    -   [`.counterOffer`](#--counter-invalid-value-offer)
     -   [`.skipItemsInTrade`](#--skip-items-in-trade--)
     -   [`.weaponsAsCurrency`](#--weapons-as-currency--)
     -   [`.checkUses`](#--full-uses-check-%EF%B8%8F-)
@@ -215,6 +216,14 @@ Property: `.autobump`
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - The bot will fail to re-list items if Backpack.tf website is down for maintenance or experiencing major outage. Please consider [donating to Backpack.tf](https://backpack.tf/donate) or [purchase Backpack.tf Premium](https://backpack.tf/premium/subscribe) to enable automatic listing bumping. |
 
+
+### - Counter invalid value offer 🔂 [^](#optionsjson-structure)
+Property: `.counterOffer`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `true` | By default, your bot will automatically attempt to counter an offer with only `🟥_INVALID_VALUE` error/reason |
+| `.skipIncludeMessage` | `boolean` | `false` | If set to `true`, if someone sent an offer with incorrect value but they include offer message, the offer will not be automatically countered but will skip for your review instead. |
 
 ### - Skip items in trade ⭕ [^](#optionsjson-structure)
 Property: `.skipItemsInTrade`
@@ -1142,7 +1151,14 @@ Parent property: `customMessage`
 ### - Sending offer message [^](#optionsjson-structure)
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.sendOffer`| `string` | `""` | "Powered by TF2Autobot" (not removed)|
+| `.sendOffer`| `string` | `""` | "Thank you for the trade!" |
+
+===
+
+### - Counter offer message [^](#optionsjson-structure)
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.counterOffer`| `string` | `""` | "Your offer contains wrong value. You've probably made a few mistakes, here's the correct offer." |
 
 ===
 
@@ -1171,7 +1187,7 @@ Parent property: `customMessage`
 ### - Message on trade completed [^](#optionsjson-structure)
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.success`| `string` | `""` | Bot message when a trade has been sucessfully made. |
+| `.success`| `string` | `""` | Bot message when a trade has been successfully made. |
 
 - Default message: **/pre ✅ Success! The offer went through successfully.**
 - Read: [FAQ](https://github.com/TF2Autobot/tf2autobot/wiki/FAQ#how-to-set-custom-welcomesuccess-messages)
@@ -1181,7 +1197,7 @@ Parent property: `customMessage`
 ### - Message on accepted escrow trade [^](#optionsjson-structure)
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.success`| `string` | `""` | Bot message when a trade has been sucessfully made. |
+| `.success`| `string` | `""` | Bot message when a trade has been successfully made. |
 
 - Default message:
 
