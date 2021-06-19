@@ -120,6 +120,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.customText`](#custom-text--)
 *   [`steamChat`](#steam-chat-settings-)
     -   `.customInitializer`
+    -   `.notifyTradePartner`
 *   [`highValue`](#-high-value-items-settings-)
 *   [`normalize`](#-items-normalization-settings-)
     -   [`.festivized`](#--festivized-items--)
@@ -468,6 +469,7 @@ Property: `customText`
 Parent property key: `steamChat`
 
 ### Custom initializer
+Property: `.customInitializer`
 
 - Set your own preferred initializer.
 - Available initializer:
@@ -476,6 +478,20 @@ Parent property key: `steamChat`
     - [`/quote`](https://prnt.sc/youi3i)
     - `/code` - [`image1`](https://prnt.sc/youkf2), [`image2`](https://prnt.sc/yountp)
     - leave empty - normal text
+
+===
+
+### Toggle send notification to the trade partner 🔔 [^](#optionsjson-structure)
+Property: `.notifyTradePartner`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.onSuccessAccepted` | `boolean` | `true`  | Send notification to the trade partner when the trade was completed. |
+| `.onSuccessAcceptedEscrow` | `boolean` | `true`  | Send notification to the trade partner when the trade was accepted but on hold due to trade hold. |
+| `.onDeclined` | `boolean` | `true`  | Send notification to the trade partner when the trade was declined. |
+| `.onCancelled` | `boolean` | `true`  | Send notification to the trade partner when the trade was canceled due to a problem with Steam, or canceled by user. |
+| `.onTradedAway` | `boolean` | `true`  | Send notification to the trade partner when the trade was invalid because some of the items were traded away. |
+| `.onOfferForReview` | `boolean` | `true`  | Send notification to the trade partner when the trade is under review |
 
 ---
 
