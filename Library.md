@@ -284,7 +284,7 @@ Refer: https://github.com/TF2Autobot/tf2autobot/blob/master/.example/options.jso
 | `banned` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because you're currently banned on backpack.tf or labeled as a scammer on steamrep.com or another community." |
 | `escrow` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because I do not accept escrow (trade holds). To prevent this from happening in the future, please enable Steam Guard Mobile Authenticator.\nRead:\n• Steam Guard Mobile Authenticator - https://support.steampowered.com/kb_article.php?ref=8625-WRAH-9030\n• How to set up Steam Guard Mobile Authenticator - https://support.steampowered.com/kb_article.php?ref=4440-RTUI-9218" |
 | `manual` | "/pre ❌ Ohh nooooes! The offer is no longer available. . Reason: The offer has been declined by the owner." |
-| `failedToCounter` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined. Counteroffer is not possible because either one of us does not have enough pure." |
+| `failedToCounter` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined. Counteroffer is not possible because either one of us does not have enough pure, or Steam might be down, or your inventory is private (failed to load your inventory)." |
 
 ## - Accepted message [^](#table-of-content)
 
