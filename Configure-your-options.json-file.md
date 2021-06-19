@@ -1030,7 +1030,7 @@ Property: `.declinedTrade`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `true` | If set to `false`, messages regarding declined trade offers will be sent to your Steam Chat. Otherwise, these messages will be sent on Discord. |
+| `.enable` | `boolean` | `true` | If set to `false`, messages regarding declined trade offers will be sent to your Steam Chat. Otherwise, these messages will be sent on Discord (only if `.url` is not empty). |
 | `.url` | `string[]` | `[]` | Discord Webhook URL for `DECLINED_TRADE`. |
 
 #### • Misc
