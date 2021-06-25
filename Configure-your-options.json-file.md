@@ -501,11 +501,42 @@ Parent property key: `highValue`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enableHold` | `boolean` | `true`  | By default, whenever your bot accepts items with high valued attachments, it will **temporarily be disabled** so you can decide whether to manually price it. Set this to `false` if you want to disable this feature. |
-| `.spells` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](https://github.com/TF2Autobot/tf2autobot/wiki/Library#spells-)). Example: `["Team Spirit Footprints"]`. |
-| `.sheens` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element. (Refer: [Sheen](https://github.com/TF2Autobot/tf2autobot/wiki/Library#sheens-)). Example: `["Team Shine"]`. |
-| `.killstreakers` | `string[]` | `[]`  | An array of killstreakers. Must be the killstreakers **full name** in each element. Refer: [Killstreaker](https://github.com/TF2Autobot/tf2autobot/wiki/Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
-| `.strangeParts` | `string[]` | `[]`  | An array of strange parts. Must be the strange parts **full name** in each element. Refer: [Strange Parts](https://github.com/TF2Autobot/tf2autobot/wiki/Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
-| `.painted` | `string[]` | `[]`  | An array of paints. Must be the paints **full name** in each element. Refer: [Paints](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-). Example: `["After Eight"]`. |
+
+### - Spells 👻 [^](#optionsjson-structure)
+property: `.spells`
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.names` | `string[]` | `[]`  | An array of spells. Must be the spells **full name** in each element. (Refer: [Spells](https://github.com/TF2Autobot/tf2autobot/wiki/Library#spells-)). Example: `["Team Spirit Footprints"]`. |
+
+### - Sheens ✨ [^](#optionsjson-structure)
+property: `.sheens`
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.names` | `string[]` | `[]`  | An array of sheens. Must be the sheens **full name** in each element. (Refer: [Sheen](https://github.com/TF2Autobot/tf2autobot/wiki/Library#sheens-)). Example: `["Team Shine"]`. |
+
+### - Killstreakers 🔥 [^](#optionsjson-structure)
+property: `.killstreakers`
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.names` | `string[]` | `[]`  | An array of killstreakers. Must be the killstreakers **full name** in each element. Refer: [Killstreaker](https://github.com/TF2Autobot/tf2autobot/wiki/Library#killstreakers-). Example: `["Fire Horns", "Tornado"]`. |
+
+### - Strange Parts 🎰 [^](#optionsjson-structure)
+property: `.strangeParts`
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.names` | `string[]` | `[]`  | An array of strange parts. Must be the strange parts **full name** in each element. Refer: [Strange Parts](https://github.com/TF2Autobot/tf2autobot/wiki/Library#strange-parts-excluding-built-in-parts-). Example: `["Headshot Kills", "Kills"]`. |
+
+### - Painted 🎨 [^](#optionsjson-structure)
+property: `.painted`
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.names` | `string[]` | `[]`  | An array of paints. Must be the paints **full name** in each element. Refer: [Paints](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-). Example: `["After Eight"]`. |
+
+
+#### Exception skus [^](#optionsjson-structure)
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.exceptionSkus` | `string[]` | `[]`  | An array of full or partial sku that you want to make an exception for it to not considered as high-value. Example: `[";5;u"]` - this is a partial sku for all Unusual - useful if you want to ignore painted Unusual cosmetic. |
 
 
 **Note: All must be the exact match. Please refer to the valid names (not the partial sku listed in the references). If left empty (`[]`), then everything in the reference will be considered high-value**
