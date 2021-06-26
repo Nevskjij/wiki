@@ -38,4 +38,4 @@ _**Price might change based on the current EUR/USD rate**_
 > A: Yes, visit https://www.hetzner.de/?country=ot and I'll decide the price in pure.
 
 ### Q: What if I want to register Hetzner myself?
-> A: Use this [link](https://hetzner.cloud/?ref=68H4N0lNcT1W) and you will get free €20 ~for a month~!
+> A: Use this [link](https://hetzner.cloud/?ref=68H4N0lNcT1W) and you will get free €20 [~for a month~](https://console.hetzner.cloud/assets/legal/Referral-Programm_en.pdf)!
