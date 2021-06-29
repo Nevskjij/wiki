@@ -20,11 +20,12 @@
 - [Running the bot](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux) (node and PM2)
 
 # Using the bot
+- Introduction to pricelist
+    - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist)
 - Parameters
     - [Item identifying paramaters](https://github.com/idinium96/tf2autobot/wiki/Item-Identifying-parameters)
     - [Listing settings paramaters](https://github.com/idinium96/tf2autobot/wiki/Listing-settings-parameters)
 - Manage pricelist
-    - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist)
     - [Adding items](https://github.com/idinium96/tf2autobot/wiki/Adding-items)
     - [Updating items](https://github.com/idinium96/tf2autobot/wiki/Updating-items)
     - [Removing items](https://github.com/idinium96/tf2autobot/wiki/Removing-items)
