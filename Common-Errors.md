@@ -17,6 +17,7 @@ This page contains common errors and ways to fix them.
       - [pricelist.json](#pricelistjson-corruption)
       - [options.json](#error-in-optionsjson)
    - [Reason: Failed to accept mobile confirmation.](#reason-failed-to-accept-mobile-confirmation)
+   - [warn: Socket connection error xhr poll error](#warn-socket-connection-error-xhr-poll-error)
 
 # Startup errors
 ## Missing required environment variable
@@ -89,3 +90,21 @@ It is supposed to look like `["trade"]` or `["none"]`. This error usually happen
 ## Reason Failed to accept mobile confirmation
 The bot may produce this error when a user attempts to trade using the !buy or !sell commands.  
 This issue occurs when SDA is left open. Please close SDA.
+
+## warn: Socket connection error xhr poll error
+If your error looks like this:  
+![https://i.imgur.com/m6w2Yyj.png](https://i.imgur.com/m6w2Yyj.png)
+
+Then you are using a node version that is not supported.  
+
+To fix the issue;  
+On Windows: Uninstall NodeJS then download the LTS version from https://nodejs.org/en/  
+On Ubuntu(Linux): 
+```bash
+npm i -g n && n lts
+```
+then
+```bash
+node -v
+```
+and make sure output starts with `v14`
