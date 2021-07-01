@@ -14,7 +14,7 @@ Download Git from https://git-scm.com/
 ## NodeJS
 NodeJS is required to run the bot. 
 
-Download from https://nodejs.org/.
+Download the LTS version from https://nodejs.org/.
 
 
 # Downloading the bot
