@@ -1035,7 +1035,7 @@ Parent property: `discordWebhook`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.ownerID` | `string[]` (number) | `""` | Your Discord ID(s). To obtain this, right-click on yourself on Discord and click `Copy ID`. Be sure to enable Developer Mode on Discord by navigating to `Settings > Appearance > Advanced`. **It must be a number** in string like `527868979600031765` not `IdiNium#8965`. |
+| `.ownerID` | `string[]` (number) | `[]` | Your Discord ID(s). To obtain this, right-click on yourself on Discord and click `Copy ID`. Be sure to enable Developer Mode on Discord by navigating to `Settings > Appearance > Advanced`. **It must be a number** in string like `"527868979600031765"` not `"IdiNium#8965"`. |
 | `.displayName` | `string` | `""` | The name you'd like to give your bot when it sends a message on Discord. |
 | `.avatarURL` | `string` | `""` | A URL to the image you'd like your bot to have when it sends a discord message. **This must be in URL form.** An example of how to obtain your bot's avatar from Steam: [Click here](https://gyazo.com/421792b5ea817c36054c7991fb18cdbc). |
 | `.embedColor` | `string` (number) | `""` | The color you'd like associated with your bot's discord messages. You can view the different colors at [spycolor.com](https://www.spycolor.com/). Copy the `Decimal value`. An example of this would be `16769280` for the color `#ffe100` |
