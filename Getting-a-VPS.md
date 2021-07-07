@@ -1,8 +1,8 @@
-This page will go through how to get and set up a Linux server which can be online 24/7 without the needing to keep your own computer or laptop running.
+This page will go through how to get and set up a Linux server that can be online 24/7 without the needing to keep your own computer or laptop running.
 
 # Virtual Private Server (VPS)
 
-You can get a VPS from many different providers, but I recommend getting one from DigitalOcean OR Hetzner. If you want to use DigitalOcean, you can register from [this link](https://m.do.co/c/6be9c5acd3ca) and get $100 that expires after 2 months, OR [this link](https://hetzner.cloud/?ref=68H4N0lNcT1W) for Hetzner and get free €20 [~for a month~](https://console.hetzner.cloud/assets/legal/Referral-Programm_en.pdf)!
+You can get a VPS from many different providers, but I recommend getting one from DigitalOcean OR Hetzner. If you want to use DigitalOcean, you can register from [this link](https://m.do.co/c/6be9c5acd3ca) and get $100 that expires after 2 months, OR [this link](https://hetzner.cloud/?ref=68H4N0lNcT1W) for Hetzner and get free €20 [~for a month~ with no specific expiration period](https://console.hetzner.cloud/assets/legal/Referral-Programm_en.pdf)!
 
 **If you don't have any Credit/Debit Card, Paypal account or you don't have an access to get one, I can help you to get one for your Team Fortress 2 pure. [Click here](https://github.com/idinium96/tf2autobot/wiki/IdiNium-VPS-Services) to see the available services.**
 
