@@ -1,4 +1,3 @@
-# Before you start
 There are a few things you need to take care of before you can start setting up your own bot.
 
 ## 1. Creating a new unrestricted Steam account
