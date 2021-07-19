@@ -22,6 +22,7 @@
 # Using the bot
 - Introduction to pricelist
     - [What is the pricelist?](https://github.com/idinium96/tf2autobot/wiki/What-is-the-pricelist)
+    - [What is the autopricer?](https://github.com/TF2Autobot/tf2autobot/wiki/What-is-the-autopricer)
 - Parameters
     - [Item identifying paramaters](https://github.com/idinium96/tf2autobot/wiki/Item-Identifying-parameters)
     - [Listing settings paramaters](https://github.com/idinium96/tf2autobot/wiki/Listing-settings-parameters)
