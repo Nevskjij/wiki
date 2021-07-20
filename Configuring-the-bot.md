@@ -334,16 +334,18 @@ The time settings listed here will be used in the `!time` command as well as in 
 | `DEBUG_FILE` | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur to a file. This file can be later be used to create a GitHub [issue](https://github.com/idinium96/tf2autobot/issues/new/choose) to report any issues to the developers. |
 
 
-## Custom Pricer Settings
+## Custom Pricer Settings - only for advanced users
 
 Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
 prices.tf. If you are using another price source refer to the alternative [price source's documentation](https://github.com/TF2Autobot/tf2autobot/blob/v3.2.0/src/classes/Pricer.ts#L10-L16).
 
+**Leave these variables untouched if you don't know what you are doing.**
+
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 |      `ENABLE_SOCKET`      | `boolean`| `true`| Read: [#383](https://github.com/TF2Autobot/tf2autobot/pull/383) |
-|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
-| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Please leave this empty unless needed. This is unnecessary for prices.tf. |
+|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf. |
+| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf. |
 
 
 ## API
