@@ -344,8 +344,8 @@ prices.tf. If you are using another price source refer to the alternative [price
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 |      `ENABLE_SOCKET`      | `boolean`| `true`| Read: [#383](https://github.com/TF2Autobot/tf2autobot/pull/383) |
-|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf. |
-| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf. |
+|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
+| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
 
 
 ## API
