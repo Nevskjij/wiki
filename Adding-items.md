@@ -104,6 +104,28 @@ There are two ways of obtaining the sku of an item. You can use [the marketplace
 
 ---
 
+## 3.4.4 Adding items in bulk
+To add items in bulk you will be using the `!addbulk` command. It allows you to use the same item identifying and listing setting paramters as using the `!add` command.
+
+The syntax is as follows:
+
+```
+!addbulk item_one
+item_two
+item_two
+```
+
+Let's look at an example:
+```
+!addbulk sku=5021;6&intent=sell
+name=Tomislav&quality=Strange&australium=true
+defindex=424&quality=Strange&australium=true&festive=true
+```
+
+As always, any listing setting parameters you don't specify are using default values.
+
+---
+
 #### \*Notes:
 
 -   If you want to sell it for only in keys, then you can ignore the `sell.metal` parameter.
