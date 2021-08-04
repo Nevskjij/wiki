@@ -1664,8 +1664,8 @@ Sub-Property: `.customReply`
 
 - `!rate`
     - Parameters:
-        - `%keyprice%` - current sell price
-        - `%keyrate%` - current buy/sell price
+        - `%keyPrice%` - current sell price
+        - `%keyRate%` - current buy/sell price
         - `%source%` - show pricestf url if autopriced, "manual" if manually priced
     - Default reply:
 
