@@ -91,6 +91,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.weaponsAsCurrency`](#--weapons-as-currency--)
     -   [`.checkUses`](#--full-uses-check-%EF%B8%8F-)
     -   [`.game`](#--bot-playing-game--)
+    -   [`.alwaysRemoveItemAttributes`](#--always-remove-item-attributes--)
 *   [`sendAlert`](#-send-alert-to-owner--)
     -   [`.autokeys`](#--autokeys-alert--)
     -   [`.backpackFull`](#--backpack-fullalmost-full-alert--)
@@ -257,6 +258,16 @@ Property: `.game`
 | :----: | :--: | :-----: | :---------- |
 | `.playOnlyTF2` | `boolean` | `false` | Set to `true` if you want your bot to only play Team Fortress 2. Setting this to `true` will ignore the below Option. |
 | `.customName` | `string` | `""` | Name of the custom game you'd like your bot to play. Limited to only 60 characters. Example: [Click here](https://gyazo.com/308e4e05bf4c49929520df4e0064864c) |
+
+### - Always remove item attributes 🔥 [^](#optionsjson-structure)
+Property: `.alwaysRemoveItemAttributes`
+
+#### - Remove custom texture on decalable items
+Sub-property: `.customTexture`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `true` | Set to `false` if you don't want your bot to remove any custom texture (or image) applied to the _decalable_ items (Conscientious Objector, Clan Pride, Photo Badge, Flair!). |
 
 ---
 
@@ -1616,7 +1627,7 @@ Property: `.time` | `.uptime` | `.pure` | `.rate`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable`| `boolean` | `true` | Set to `false` if want to disable any of these command (ADMINS are immune). |
+| `.enable`| `boolean` | `true` | Set to `false` if want to disable any of these commands (ADMINS are immune). |
 
 #### • Custom reply
 Sub-Property: `.customReply`
@@ -1687,6 +1698,7 @@ Property: `.craftweapon` | `.uncraftweapon`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable`| `boolean` | `true` | Set to `false` if want to disable `!craftweapon` or `!uncraftweapon` command (ADMINS are immune). |
+| `.showOnlyExist`| `boolean` | `true` | Set to `false` if want show all weapons, including no stock. |
 
 #### • Custom reply
 Sub-Property: `.customReply`
