@@ -30,7 +30,7 @@ Before trying to fix this error, you should [enable viewing file extensions](htt
 **MAKE SURE THE FILE IS NOT CALLED** `config.env` OR `bot.env` OR ANYTHING. JUST `.env` (a dot and "env").  
 If your computer does not allow you to name it `.env`, simply call it `.env.` (with the extra `.`).
 
-[!image](https://cdn.discordapp.com/attachments/666909760666468377/872319195814178846/unknown.png)
+![image](https://cdn.discordapp.com/attachments/666909760666468377/872319195814178846/unknown.png)
 
 ## Unknown SteamID input format
 In your `.env` or `ecosystem.json`, the `ADMINS` and `KEEP` options need to have valid SteamID64's in them. For example: `76561198144346135` is a valid SteamID64.  
