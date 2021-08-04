@@ -140,6 +140,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.scrapAdjustment`](#--scrap-adjustment--)
     -   [`.accept`](#--accepting-_understocked-)
 *   [`crafting`](#-craftingsmelting-settings-)
+    -   [`.manual`](#--manual-crafting--)
     -   [`.weapons`](#--weapons--)
     -   [`.metals`](#--pure-metals-%EF%B8%8F-)
 *   [`offerReceived`](#-offer-received-filter-settings-)
@@ -727,6 +728,11 @@ Property: `.accept`
 
 ## 🔩 Crafting/Smelting Settings [^](#optionsjson-structure)
 Parent property key: `crafting`
+
+### - Manual crafting 🔨 [^](#optionsjson-structure)
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|  `.manual`  | `boolean` | `false` | Set this to `true` if you want to use `!craftToken` command (more will come in the future). |
 
 ### - Weapons 🏹 [^](#optionsjson-structure)
 Property: `.weapons`
