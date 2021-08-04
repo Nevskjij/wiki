@@ -150,6 +150,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.overstocked`](#--on-offer-with-_overstocked-)
     -   [`.understocked`](#--on-offer-with-_understocked-)
     -   [`.duped`](#--on-offer-with-_duped_items-)
+    -   [`.failedToCheckDuped`](#--on-offer-with-_dupe_check_failed-)
     -   [`.escrowCheckFailed`](#--_escrow_check_failed-)
     -   [`.bannedCheckFailed`](#--_banned_check_failed-)
 *   [`manualReview`](#-manual-review-configuration-)
@@ -869,7 +870,20 @@ Sub-Property: `.autoDecline`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` |   `false`   | If set to `true`, the bot will decline any unusual items that it determines as having been duplicated. |
+| `.enable` | `boolean` |   `false`   | If set to `true`, the bot will decline any unusual or values more than `minKeys` items that it determines as having been duplicated. |
+| `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
+
+===
+
+### - On offer with `🟪_DUPE_CHECK_FAILED` [^](#optionsjson-structure)
+Property: `.failedToCheckDuped`
+
+#### • Automatic decline settings ❌
+Sub-Property: `.autoDecline`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` |   `false`   | If set to `true`, the bot will decline offer that was failed to check for duped. |
 | `.declineReply` | `string` |   `""`   | See default [declined reply](https://github.com/TF2Autobot/tf2autobot/wiki/Library#--auto-decline-reply-). |
 
 ===
