@@ -3,7 +3,40 @@
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add** command. 
 
-## 3.4.1 Using item [`name` or `defindex`](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#321---name-and-defindex-parameters) parameters
+## 3.4.1 Using [item](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#321---item-parameter) parameter
+
+You can just copy the item full name from Backpack.tf, and send to your bot.
+Example:
+- `!add item=Max's Severed Head`
+- `!add item=Taunt: The Schadenfreude`
+- `!add item=Terror-Watt Stately Steel Toe`
+
+Just make sure to not put a space between the `item` and the equal sign (`=`). You can add other [listings settings parameter(s)](https://github.com/TF2Autobot/tf2autobot/wiki/Listing-settings-parameters) if needed.
+Example:
+- `!add item=Max's Severed Head&max=3`
+
+===
+
+## 3.4.2 Using [sku](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#322---sku-parameter) parameter
+
+There are two ways of obtaining the sku of an item. You can use [the marketplace.tf method](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-marketplacetf) or you can use [the !sku command](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-sku-command)
+
+-   Example 1:
+
+    -   Item: Sunbeams Cosa Nostra Cap
+    -   URL: https://marketplace.tf/items/tf2/459;5;u17
+    -   `sku`: 459;5;u17
+    -   to add: `!add sku=459;5;u17`
+
+-   Example 2:
+    -   Item: Specialized Festivized Australium Tomislav
+    -   Steam chat command: `!sku Specialized Killstreak Festivized Australium Tomislav`
+    -   `sku`: 424;11;australium;kt-2;festive
+    -   to add: `!add sku=424;11;australium;kt-2;festive`
+
+===
+
+## 3.4.3 Using item [`name` or `defindex`](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#321---name-and-defindex-parameters) parameters
 
 Example:
 
@@ -57,24 +90,7 @@ Example:
 
 -   If you want to add `Name Tag` or `Non-Craftable Name Tag`, you will need to use the correct defindex, which is `5020` instead of `2093`. This bug can not be fixed unless Team Fortress 2 updates its schema to remove the wrong defindex.
 
-## 3.4.2 Using [sku](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#322---sku-parameter) parameter
-
-There are two ways of obtaining the sku of an item. You can use [the marketplace.tf method](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-marketplacetf) or you can use [the !sku command](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-sku-command)
-
--   Example 1:
-
-    -   Item: Sunbeams Cosa Nostra Cap
-    -   URL: https://marketplace.tf/items/tf2/459;5;u17
-    -   `sku`: 459;5;u17
-    -   to add: `!add sku=459;5;u17`
-
--   Example 2:
-    -   Item: Specialized Festivized Australium Tomislav
-    -   Steam chat command: `!sku Specialized Killstreak Festivized Australium Tomislav`
-    -   `sku`: 424;11;australium;kt-2;festive
-    -   to add: `!add sku=424;11;australium;kt-2;festive`
-
----
+===
 
 ## 3.4.3 Example with situation/intention:
 
