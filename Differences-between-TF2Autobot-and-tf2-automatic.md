@@ -94,7 +94,7 @@ If you want to use this feature, you must use the [ecosystem.template.json](http
 
 ### Autokeys (auto-buy or sell keys) feature
 
-When this feature is enabled, your bot will automatically buy or sell keys depending on the amount of pure your bot currently has. You'll need to set your minimum/maximum keys and minimum/maximum refined metals in your ecosystem.json. Additional explanation can be found [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#-autokeys-settings-).
+When this feature is enabled, your bot will automatically buy or sell keys depending on the amount of pure your bot currently has. You'll need to set your minimum/maximum keys and minimum/maximum refined metals in your options.json file. Additional explanation can be found [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#-autokeys-settings-).
 
 ```
 .____________________________________________________________.  ._______________________________.
