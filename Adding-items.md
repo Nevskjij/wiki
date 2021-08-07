@@ -92,7 +92,7 @@ Example:
 
 ===
 
-## 3.4.3 Example with situation/intention:
+## 3.4.4 Example with situation/intention:
 
 -   Example 1: "I want to **bank** `Max's Severed Head` for a **max** of `3` with **autoprice** enabled"
 -   Summary:
@@ -120,7 +120,7 @@ Example:
 
 ---
 
-## 3.4.4 Adding items in bulk
+## 3.4.5 Adding items in bulk
 To add items in bulk you will be using the `!addbulk` command. It allows you to use the same item identifying and listing setting paramters as using the `!add` command.
 
 The syntax is as follows:
