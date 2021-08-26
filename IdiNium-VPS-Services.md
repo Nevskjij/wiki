@@ -8,9 +8,9 @@ Want a VPS to run your bot? Your VAT is too high? You don't have a Credit/Debit 
 
 ## Services
 1. **CX11**:
-`[1 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 2 keys/month
+`[1 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 2.75 keys/month
 2. **CPX11**:
-`[2 vCPU¹, 2  GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 2.75 keys/month
+`[2 vCPU¹, 2  GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3.25 keys/month
 
 Note:
 **CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
