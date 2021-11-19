@@ -453,7 +453,7 @@ Property: `.declinedTrade`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enabled` | | `boolean` | `false` | By default declined trades will not be sent to your steam chat / discord webhook. |
+| `.enabled` | `boolean` | `false` | By default declined trades will not be sent to your steam chat / discord webhook. |
 
 ### General [^](#optionsjson-structure)
 | Option | Type | Default | Description |
