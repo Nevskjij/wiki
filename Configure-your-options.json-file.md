@@ -441,7 +441,8 @@ property: `.bannedPeople`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|    `.allow`     | `boolean` | `false` | Not recommended to set to `true` because it may get you banned should someone report you. If you set it to `true` your bot will trade with users that are banned on backpack.tf, marked as a scammer on steamrep.com, or both. |
+|    `.allow`     | `boolean` | `false` | Not recommended to set to `true` because it may get you banned should someone report you. If you set it to `true` your bot will trade with users that are banned on the backpack.tf, marked as a scammer on steamrep.com, or both. |
+|    `.checkMptfBanned`     | `boolean` | `true` | This is especially for Marketplace.tf whitelisted sellers, which stated in the Seller Terms & Conditions that "You will not trade with MarketplaceTF banned users, including any bots they may own".|
 
 ---
 
@@ -632,6 +633,11 @@ Parent property key: `details`
 **Usage example:**
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/98710377-878f3580-23be-11eb-9ed5-e0f6ec4e26af.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+### - Show bold text [^](#optionsjson-structure)
+Sub-parent property key: `.showBoldText`
+
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/149046086-aee9e1e1-d036-41a3-8dd8-7b651f457172.png" alt="show bold text" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 ### - High-value in listings note (decoration) ✨ [^](#optionsjson-structure)
 Property: `.highValue`
