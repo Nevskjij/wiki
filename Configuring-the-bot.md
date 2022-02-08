@@ -4,13 +4,13 @@ First, we will set up the environment file, which you will use to configure the 
 
 # Environment File and Environment Variables
 
+**Optional:** You can use this [generator](https://ecosystem.autobot.tf/) - credit to [mabdu11ah](https://github.com/mabdu11ah)
+
 ## - Linux
 <details>
 <summary>CLICK HERE IF YOU ARE RUNNING THE BOT ON LINUX</summary>
 
 For Linux, the bot is configured through environment variables that can be set using a file called `ecosystem.json` that the bot reads when it starts.
-
-**Optional:** You can use this [generator](https://ecosystem.autobot.tf/) - credit to [mabdu11ah](https://github.com/mabdu11ah)
 
 The content of `ecosystem.json` file:
 
