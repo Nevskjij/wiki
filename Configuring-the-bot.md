@@ -9,6 +9,7 @@ First, we will set up the environment file, which you will use to configure the 
 <summary>CLICK HERE IF YOU ARE RUNNING THE BOT ON LINUX</summary>
 
 For Linux, the bot is configured through environment variables that can be set using a file called `ecosystem.json` that the bot reads when it starts.
+*Optional: You can use this [generator](https://ecosystem.autobot.tf/) - credit to [mabdu11ah](https://github.com/mabdu11ah)
 
 The content of `ecosystem.json` file:
 
@@ -360,7 +361,7 @@ When running, you can access it from `http://127.0.0.1:[HTTP_API_PORT]`. Below y
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|     `ENABLE_HTTP_API`   | `boolean`| `false` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413); Wether the API should be turned on. |
+|     `ENABLE_HTTP_API`   | `boolean`| `false` | Read: [#413](https://github.com/TF2Autobot/tf2autobot/pull/413); Whether the API should be turned on. |
 |      `HTTP_API_PORT`    | `number` | `3001` | Defaults to a non-conflicting |
 
 Each of the following paths can be appended to the HTTP API URL.
