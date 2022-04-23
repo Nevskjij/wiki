@@ -617,8 +617,8 @@ Parent property key: `details`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :----- | :---------- |
-| `.buy` | `string` | `"I am buying your %name% for %price%, I have %current_stock% / %max_stock%."` | This is the note that will be included with each buy order placed on backpack.tf |
-| `.sell` | `string` | `"I am selling my %name% for %price%, I am selling %amount_trade%."` | This is the note that will be included with each sell order placed on backpack.tf |
+| `.buy` | `string` | `"I am buying your %name% for %price%, I have %current_stock% / %max_stock%."` | This is the note that will be included with each buy order placed on backpack.tf. Maximum allowed characters: 180 |
+| `.sell` | `string` | `"I am selling my %name% for %price%, I am selling %amount_trade%."` | This is the note that will be included with each sell order placed on backpack.tf. Maximum allowed characters: 180 |
 
 **Parameters:**
 
