@@ -34,7 +34,7 @@ Lastly, compile the codes (to convert from TypeScript to JavaScript codes) by ty
 # Short section
 ```
 sudo apt install git
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install typescript@latest -g
 git clone https://github.com/TF2Autobot/tf2autobot.git
