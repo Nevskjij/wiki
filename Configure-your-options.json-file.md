@@ -1228,11 +1228,19 @@ Property: `.sendAlert`
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | If set to `false`, the bot will notify you through Steam chat if there is something wrong. Otherwise, the bot will notify you through Discord (`sendAlert` must be `true`). |
 | `.isMention` | `boolean` | `true` | If set to `false`, you will never be mentioned on any alert. |
-|   `.url`   | `string`  | `""` | The [Discord Webhook URL](#note-on-how-to-obtain-your-discord-webhook-url) you'd for the alert to be sent to. |
 
+#### • URL
+Object: `.url`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|   `.main`   | `string`  | `""` | The main [Discord Webhook URL](#note-on-how-to-obtain-your-discord-webhook-url) you'd for the alert to be sent to. |
+|   `.partialPriceUpdate`   | `string`  | `""` | Optional - Separate partial price update alerts from the main alerts. |
 ---
 
-<div align="center"><img src="https://user-images.githubusercontent.com/47635037/100345555-716bb100-301d-11eb-89ab-b9124eb4ed56.png" alt="only non-invalid-value2" style="display:block;margin-left:auto;margin-right:auto;"></div>
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/100345555-716bb100-301d-11eb-89ab-b9124eb4ed56.png" alt="url-main" style="display:block;margin-left:auto;margin-right:auto;"></div>
+
+<div align="center"><img src="https://user-images.githubusercontent.com/47635037/169166286-26820648-2ebc-4905-b995-dfed1b068b48.png" alt="url-ppu" style="display:block;margin-left:auto;margin-right:auto;"></div>
 
 ---
 
