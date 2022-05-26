@@ -35,6 +35,9 @@ To do that you should check out the updated environment files for [Windows](http
 Once you have the respective file open, it's usually recommended to copy-paste it into your existing environment file and fill everything out. 
 If you know the exact variables that were changed/added since the last time you updated the bot and your environment file, you can feel free to only copy-paste those into your existing environment file.
 
+If you run the bot with PM2 and using the `ecosystem.json` file, make sure to update it:
+https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux#restarting-the-bot-when-you-make-changes-to-your-ecosystemjson
+
 ## Updating the configuration file - options.json
 Some updates also introduce new variables to your options.json file located in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/`.
 You must update your configuration file with the newly added variables mentioned in the release notes. Sometimes it's also necessary to remove old variables.
