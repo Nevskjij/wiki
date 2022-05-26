@@ -334,7 +334,7 @@ The time settings listed here will be used in the `!time` command as well as in 
 | :----: | :--: | :-----: | :---------- |
 |   `DEBUG`    | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur into the console. |
 | `DEBUG_FILE` | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur to a file. This file can be later be used to create a GitHub [issue](https://github.com/idinium96/tf2autobot/issues/new/choose) to report any issues to the developers. |
-
+| `ENABLE_SAVE_LOG_FILE` | `boolean` | `true`  | Set to `false` if you don't want the bot to save log files, but before that, [read this](https://github.com/TF2Autobot/tf2autobot/pull/1119). |
 
 ## Custom Pricer Settings - only for advanced users
 
