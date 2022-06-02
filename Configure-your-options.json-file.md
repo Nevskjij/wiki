@@ -92,6 +92,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.checkUses`](#--full-uses-check-%EF%B8%8F-)
     -   [`.game`](#--bot-playing-game--)
     -   [`.alwaysRemoveItemAttributes`](#--always-remove-item-attributes--)
+    -   [`.deleteUntradableJunk`](#--delete-seasonal-junk--)
 *   [`sendAlert`](#-send-alert-to-owner--)
     -   [`.autokeys`](#--autokeys-alert--)
     -   [`.backpackFull`](#--backpack-fullalmost-full-alert--)
@@ -270,6 +271,12 @@ Sub-property: `.customTexture`
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | Set to `false` if you don't want your bot to remove any custom texture (or image) applied to the _decalable_ items (Conscientious Objector, Clan Pride, Photo Badge, Flair!). |
 
+### - Delete seasonal junk 🗑 [^](#optionsjson-structure)
+Property: `.deleteUntradableJunk`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `false`  | If set to `true`, your bot will automatically check if seasonal items exists in your bot inventory and delete them on start (Read: [#1049](https://github.com/TF2Autobot/tf2autobot/pull/1049). |
 ---
 
 ## 🔊 Send Alert to owner [^](#optionsjson-structure) [↓](#--send-alert-configuration--)
