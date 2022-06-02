@@ -156,6 +156,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.failedToCheckDuped`](#--on-offer-with-_dupe_check_failed-)
     -   [`.escrowCheckFailed`](#--_escrow_check_failed-)
     -   [`.bannedCheckFailed`](#--_banned_check_failed-)
+    -   [`.halted`](#--_halted-)
 *   [`manualReview`](#-manual-review-configuration-)
     -   `...`
 *   [`discordWebhook`](#%EF%B8%8F-discord-webhook-)
@@ -955,6 +956,13 @@ Property: `.bannedCheckFailed`
 | :----: | :--: | :-----: | :---------- |
 | `.ignoreFailed` | `boolean`  |   `false`   | By default, your bot will skip the trade and put to review if banned check failed (probably because Steamrep.com or backpack.tf is down). Set this to `true` if you want your bot to **ignore** trade with banned check failed (not recommended). |
 
+### - `⬜_HALTED` [^](#optionsjson-structure)
+Property: `.halted`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.ignoreHalted` | `boolean`  |   `false`   | When the [halt mode](https://github.com/TF2Autobot/tf2autobot/pull/1123) is enabled, by default, your bot will skip the trade and put to review if someone sent an offer (might happen when the classified listings are being removed). |
+
 ---
 
 ## 🔍 Manual Review Configuration [^](#optionsjson-structure)
@@ -1081,7 +1089,14 @@ Sub-Property: `.bannedCheckFailed`
 
 | Option | Type | Default | Default reply |
 | :----: | :--: | :-----: | :---------- |
-| `.note` | `string` | `""`  | `Backpack.tf or steamrep.com is down and I failed to check your backpack.tf/steamrep status, please wait for my owner to manually accept/decline your offer.` |
+| `.note` | `string` | `""`  | `I have failed to obtain data about your reputation status, please wait for my owner to manually accept/decline your offer.` |
+
+#### • ⬜_HALTED
+Sub-Property: `.halted`
+
+| Option | Type | Default | Default reply |
+| :----: | :--: | :-----: | :---------- |
+| `.note` | `string` | `""`  | `❌ The bot is not operational right now, but your offer has been put to review, please wait for my owner to manually accept/decline your offer.` |
 
 ===
 
