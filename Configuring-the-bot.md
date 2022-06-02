@@ -288,6 +288,21 @@ Answer:
 -   User Token: While logged into backpack.tf as your bot account go to https://backpack.tf/connections and click `Show Token` under "User Token".
 -   API Key: While still logged into backpack.tf as your bot account go to https://backpack.tf/developer/apikey/view - fill in the following for the "site URL" `http://localhost:4566/tasks` and the following for "comments" `Check if a user is banned on backpack.tf`.
 
+## Marketplace.tf API Key
+
+This is exclusively for **Marketplace.tf selected sellers**. The use of this API Key is to request a ban check (`https://marketplace.tf/api/Bans/GetUserBan/v2`) when the bot is receiving friend requests, and/or before accepting any trades.
+
+|      Variable       |   Type   | Description                       |
+| :-----------------: | :------: | --------------------------------- |
+|    `MPTF_API_KEY`   | `string` | Your marketplace.tf API Key       |
+
+**How to get your Marketplace.tf API Key?
+- Head to https://marketplace.tf/apisettings
+- You can input "TF2Autobot" on the URL or services box
+- Get the API Key
+
+Note: You can't get the API Key if you log in to the marketplace.tf as your bot account. Only get one from your own main account.
+
 ## Owners' Details and Other Required Variables
 
 | Variable | Type | Default | Description |
