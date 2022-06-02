@@ -86,7 +86,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.addFriends`](#--add-as-friend-%EF%B8%8F-)
     -   [`.sendGroupInvite`](#--send-group-invite-%EF%B8%8F-)
     -   [`.autobump`](#--autobump-auto-relist--)
-    -   [`.counterOffer`](#--counter-invalid-value-offer)
+    -   [`.counterOffer`](#--counter-invalid-value-offer--)
     -   [`.skipItemsInTrade`](#--skip-items-in-trade--)
     -   [`.weaponsAsCurrency`](#--weapons-as-currency--)
     -   [`.checkUses`](#--full-uses-check-%EF%B8%8F-)
