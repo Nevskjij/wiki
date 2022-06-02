@@ -277,7 +277,7 @@ Property: `.deleteUntradableJunk`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `false`  | If set to `true`, your bot will automatically check if seasonal items exists in your bot inventory and delete them on start (Read: [#1049](https://github.com/TF2Autobot/tf2autobot/pull/1049). |
+| `.enable` | `boolean` | `false`  | If set to `true`, your bot will automatically check if seasonal items exists in your bot inventory and delete them on start (Read: [#1049](https://github.com/TF2Autobot/tf2autobot/pull/1049)). |
 
 ### - Check trade partner's reputation status 🔍 [^](#optionsjson-structure)
 property: `.reputationCheck`
