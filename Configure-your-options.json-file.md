@@ -93,6 +93,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.game`](#--bot-playing-game--)
     -   [`.alwaysRemoveItemAttributes`](#--always-remove-item-attributes--)
     -   [`.deleteUntradableJunk`](#--delete-seasonal-junk--)
+    -   [`.reputationCheck`](#--check-trade-partners-reputation-status--)
 *   [`sendAlert`](#-send-alert-to-owner--)
     -   [`.autokeys`](#--autokeys-alert--)
     -   [`.backpackFull`](#--backpack-fullalmost-full-alert--)
@@ -116,7 +117,6 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.escrow`](#--allow-trade-with-escrow-trade-hold--)
     -   [`.overpay`](#--allow-overpay--)
     -   [`.giftWithoutMessage`](#--allow-receiving-free-items-without-message--)
-    -   [`.bannedPeople`](#--allow-trade-with-banned-account--)
 *   [`tradeSummary`](#-trade-summary-settings-)
     -   [`.declinedTrade`](##declined-trade-summary-)
     -   [`.customText`](#custom-text--)
@@ -277,6 +277,15 @@ Property: `.deleteUntradableJunk`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `false`  | If set to `true`, your bot will automatically check if seasonal items exists in your bot inventory and delete them on start (Read: [#1049](https://github.com/TF2Autobot/tf2autobot/pull/1049). |
+
+### - Check trade partner's reputation status 🔍 [^](#optionsjson-structure)
+property: `.reputationCheck`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|    `.checkMptfBanned`     | `boolean` | `false` | This is especially for Marketplace.tf whitelisted sellers, which stated in the Seller Terms & Conditions that "You will not trade with MarketplaceTF banned users, including any bots they may own". |
+|  `.reptfAsPrimarySource`  | `boolean` | `false` | Set this to `true` if you want your bot to get reputation data from [`rep.tf`](https://rep.tf/). Do note that rep.tf has been quite slow nowadays, so it's recommended to always set this to `false`. If you set the `.checkMptfBanned` to `true` and this to `false`, please make sure to fill in the [`MPTF_API_KEY`](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#marketplacetf-api-key) in your enviromental file. |
+
 ---
 
 ## 🔊 Send Alert to owner [^](#optionsjson-structure) [↓](#--send-alert-configuration--)
@@ -442,14 +451,6 @@ property: `.giftWithoutMessage`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.allow` | `boolean` | `false` | If set to `true` (Not recommended), your bot will accept any gift without the need for the trade partner to include a gift message in the offer message. For a list of all allowed gift messages, please click [here](https://github.com/TF2Autobot/tf2autobot/wiki/Library#gift-words-). |
-
-### - Allow trade with banned account ⛔✅ [^](#optionsjson-structure)
-property: `.bannedPeople`
-
-| Option | Type | Default | Description |
-| :----: | :--: | :-----: | :---------- |
-|    `.allow`     | `boolean` | `false` | Not recommended to set to `true` because it may get you banned should someone report you. If you set it to `true` your bot will trade with users that are banned on the backpack.tf, marked as a scammer on steamrep.com, or both. |
-|    `.checkMptfBanned`     | `boolean` | `true` | This is especially for Marketplace.tf whitelisted sellers, which stated in the Seller Terms & Conditions that "You will not trade with MarketplaceTF banned users, including any bots they may own".|
 
 ---
 
