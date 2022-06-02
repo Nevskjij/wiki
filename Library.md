@@ -273,6 +273,7 @@ Refer: https://github.com/TF2Autobot/tf2autobot/blob/master/.example/options.jso
 | `general` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined" |
 | `hasNonTF2Items` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because the offer you've sent contains Non-TF2 items." |
 | `giftNoNote` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because the offer you've sent is an empty offer on my side without any offer message. If you wish to give it as a gift, please include "gift" in the offer message. Thank you." |
+| `giftFailedCheckBanned` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because the offer you've sent is a gift, but I've failed to check your reputation status." |
 | `crimeAttempt` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because you're taking free items. No." |
 | `onlyMetal` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because you might forgot to add items into the trade." |
 | `duelingNot5Uses` | "/pre ❌ Ohh nooooes! The offer is no longer available. Reason: The offer has been declined because your offer contains Dueling Mini-Game(s) that does not have 5 uses." |
