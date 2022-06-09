@@ -559,10 +559,12 @@ property: `.painted`
 #### Exception skus [^](#optionsjson-structure)
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.exceptionSkus` | `string[]` | `[]`  | An array of full or partial sku that you want to make an exception for it to not considered as high-value. Example: `[";5;u"]` - this is a partial sku for all Unusual - useful if you want to ignore painted Unusual cosmetic. |
+| `.exceptionSkus` | `string[]` | `[]`  | An array of full or partial sku that you want to make an exception for it to not be considered as high-value. Example: `[";5;u"]` - this is a partial sku for all Unusual - useful if you want to ignore painted Unusual cosmetic. |
 
 
-**Note: All must be the exact match. Please refer to the valid names (not the partial sku listed in the references). If left empty (`[]`), then everything in the reference will be considered high-value**
+### Note:
+- All must be the exact match. Please refer to the valid names (not the partial sku listed in the references). If left empty (`[]`), then everything in the reference will be considered high-value.
+- If you want to ignore all [spells/sheens/killstreakers/strange parts/painted] as high-value, you can put anything that does not match the [Ditto] name, for example: `["none"]`
 
 ---
 
