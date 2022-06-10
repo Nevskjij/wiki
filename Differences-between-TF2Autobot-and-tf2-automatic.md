@@ -57,7 +57,7 @@ TF2Autobot adds advantageous features on top of the original features in the tf2
     -   Added the ability to donate to Backpack.tf with `!donatebptf` command!
 -   **Others:**
 -   emojis on almost all messages.
--   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", "!shuffle" and more!
+-   newly added commands: "!pure", "!time", "!delete", "!check", "!block", "!unblock", "!autokeys", "!refreshautokeys", "!refreshlist", "!find", "!inventory", and more!
 
 More info in the [Releases](https://github.com/TF2Autobot/tf2autobot/releases) note pages.
 
