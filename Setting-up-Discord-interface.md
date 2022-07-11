@@ -35,3 +35,27 @@ Okay, the last thing to do here is to add this Discord bot to your Discord serve
 ⚠ **WARNING** ⚠
 
 Bot will answer only to commands from admins, but this dialog might be visible to other people in your Discord server. Make sure to not chat with the bot in public channels. We recommend to restrict the list of readable channels for the bot (so it can't see any messages in public channels). Also you can use DM (right-click on the bot in the list of users, there you will see an option to start a DM chat).
+
+
+## How to find your own Discord ID
+
+Follow this [instruction](https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-).
+
+
+## How to integrate created Discord bot account with your bot
+
+In the previous parts you've already found your Discord ID and inserted Discord's token into your environment file. This part is about changes of `ADMINS` parameter.
+
+Previously, `ADMINS` parameter contained list of strings, where each string is your SteamID in the long form. Something like this: `ADMINS=["12345"]`.
+
+Since v5.0.0 that format is wrong. Now `ADMINS` is the list of objects. Each object is one or more key-value pairs, separated by commas. Under the key `"steam"` you have to put your SteamID in the long string form, like before. Under the key `"discord"` you can put ID of your Discord account in the same form. Do note, that `"steam"` key is required, and `"discord"` key is not (so you can continue using tf2autobot without setting up Discord UI for it).
+
+Let's take an example. Let your Steam ID is `12345`, and your Discord ID is `67890`. Previously you had to write `ADMINS=["12345"]`. Now you can't describe it like this, but you can use any of these three forms:
+
+* `ADMINS=[{"steam": "12345"}]`
+* `ADMINS=[{"steam": "12345", "discord": null}]`
+* `ADMINS=[{"steam": "12345", "discord": "67890"}]`
+
+First two forms won't let you use Discord UI (because the bot doesn't know your Discord ID so won't answer to you), and the last one will. Do note that `null` value must be used without quotation marks.
+
+And a few more words about multi-admin setup. Previously you had to list strings separated by commas (example: `ADMINS=["12345", "54321"]`). Now you have to separate objects (example: `ADMINS=[{"steam": "12345", "discord": "67890"}, {"steam": "54321", "discord": "09876"}]`. Any admin can still be limited to Steam chat, if his `"discord"` key is not set or set with `null` value).
