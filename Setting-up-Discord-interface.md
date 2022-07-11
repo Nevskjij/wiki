@@ -15,7 +15,7 @@ You will need to do several steps in order to set the thing up (detailed descrip
 
 ## How to create Discord bot account
 
-First of all, go to [Discord developer portal](https://discord.com/developers/applications). Authorize with _your_ account and create a new application. You will be asked with `NAME` when creating - type anything you want, it will then become the name of Discord bot account you'll be chatting with. When the application created, you will see something like this:
+First of all, go to [Discord developer portal](https://discord.com/developers/applications). Authorize with your account and create a new application. You will be asked with `NAME` when creating - type anything you want, it will then become the name of Discord bot account you'll be chatting with. When the application created, you will see something like this:
 
 ![Application information](https://i.imgur.com/yr4wqKo.png)
 
@@ -48,14 +48,14 @@ In the previous parts you've already found your Discord ID and inserted Discord'
 
 Previously, `ADMINS` parameter contained list of strings, where each string is your SteamID in the long form. Something like this: `ADMINS=["12345"]`.
 
-Since v5.0.0 that format is wrong. Now `ADMINS` is the list of objects. Each object is one or more key-value pairs, separated by commas. Under the key `"steam"` you have to put your SteamID in the long string form, like before. Under the key `"discord"` you can put ID of your Discord account in the same form. Do note, that `"steam"` key is required, and `"discord"` key is not (so you can continue using tf2autobot without setting up Discord UI for it).
+Since v5.0.0 that format is wrong. Now `ADMINS` is the list of objects. Each object is enclosed in curly brackets and contains one or more key-value pairs, which separated by commas. Under the key `"steam"` you have to put your SteamID in the long string form, like before. Under the key `"discord"` you can put ID of your Discord account in the same form. Do note that `"steam"` key is required, and `"discord"` key is not (so you can continue using tf2autobot without setting up Discord UI for it).
 
-Let's take an example. Let your Steam ID is `12345`, and your Discord ID is `67890`. Previously you had to write `ADMINS=["12345"]`. Now you can't describe it like this, but you can use any of these three forms:
+Let's take an example. Let your Steam ID be `12345`, and your Discord ID be `67890`. Previously you had to write `ADMINS=["12345"]`. Now you can't describe it like this, but you can use any of these three forms:
 
 * `ADMINS=[{"steam": "12345"}]`
 * `ADMINS=[{"steam": "12345", "discord": null}]`
 * `ADMINS=[{"steam": "12345", "discord": "67890"}]`
 
-First two forms won't let you use Discord UI (because the bot doesn't know your Discord ID so won't answer to you), and the last one will. Do note that `null` value must be used without quotation marks.
+First two forms won't let you use Discord UI (because the bot doesn't know your Discord ID, so it won't answer to you), and the last one will. Do note that `null` value must be used without quotation marks.
 
-And a few more words about multi-admin setup. Previously you had to list strings separated by commas (example: `ADMINS=["12345", "54321"]`). Now you have to separate objects (example: `ADMINS=[{"steam": "12345", "discord": "67890"}, {"steam": "54321", "discord": "09876"}]`. Any admin can still be limited to Steam chat, if his `"discord"` key is not set or set with `null` value).
+And a few more words about multi-admin setup. Previously you had to list strings separated by commas (example: `ADMINS=["12345", "54321"]`). Now you have to separate objects (example: `ADMINS=[{"steam": "12345", "discord": "67890"}, {"steam": "54321", "discord": "09876"}]`. Any admin can still be limited to Steam chat (if `"discord"` key in his object is not set or set with `null` value).
