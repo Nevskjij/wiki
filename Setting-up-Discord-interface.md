@@ -28,7 +28,7 @@ Here you have to do two important things.
 1. Disable **Public bot** setting on top. Scroll down to **Message content intent** and enable it. Press **Save Changes** button.
 ![Message content intent](https://i.imgur.com/3qwN5SN.png)
 2. Scroll back up and press **Reset Token** button. Then you will _once_ be shown with a token. Copy it and paste to your environment (or ecosystem) file as `DISCORD_BOT_TOKEN`. Below goes an example with some parts censored.
-![Discord bot token](https://i.imgur.com/XEGrn6G.png)
+![Discord bot token](https://i.imgur.com/GnxlYDN.png)
 
 Okay, the last thing to do here is to add this Discord bot to your Discord server (assuming you have one with your webhooks). Go to **OAuth2 -> URL Generator**. Here just click the `bot` checkbox, scroll down, copy the link and paste it to your browser. There choose your Discord server and click **Authorize**. Now Discord bot account is in your server.
 
