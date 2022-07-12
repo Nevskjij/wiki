@@ -36,6 +36,8 @@ Okay, the last thing to do here is to add this Discord bot to your Discord serve
 
 The bot will answer only to commands from admins, but this dialogue might be visible to other people on your Discord server. Make sure to not chat with the bot on public channels. **We recommend restricting the list of readable channels** for the bot (so it can't see any messages in public channels). Also, you can use DM (right-click on the bot in the list of users, there you will see an option to start a DM chat).
 
+![ezgif-3-17a67f58fe](https://user-images.githubusercontent.com/47635037/178523645-78ba4c7e-045c-41e6-a624-11916c51f53e.gif)
+
 ![ezgif-2-ec31d96538](https://user-images.githubusercontent.com/47635037/178480658-4363bc93-7be6-40f3-9298-3f613eff39b2.gif)
 
 ## How to find your own Discord ID
