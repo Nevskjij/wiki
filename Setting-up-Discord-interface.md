@@ -34,7 +34,7 @@ Okay, the last thing to do here is to add this Discord bot to your Discord serve
 
 ⚠ **WARNING** ⚠
 
-The bot will answer only to commands from admins, but this dialogue might be visible to other people on your Discord server. Make sure to not chat with the bot on public channels. We recommend restricting the list of readable channels for the bot (so it can't see any messages in public channels). Also, you can use DM (right-click on the bot in the list of users, there you will see an option to start a DM chat).
+The bot will answer only to commands from admins, but this dialogue might be visible to other people on your Discord server. Make sure to not chat with the bot on public channels. **We recommend restricting the list of readable channels** for the bot (so it can't see any messages in public channels). Also, you can use DM (right-click on the bot in the list of users, there you will see an option to start a DM chat).
 
 ![ezgif-2-ec31d96538](https://user-images.githubusercontent.com/47635037/178480658-4363bc93-7be6-40f3-9298-3f613eff39b2.gif)
 
