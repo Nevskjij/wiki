@@ -6,6 +6,7 @@ You have 3 choices of item identifying parameters on how you want to add your it
 2. `sku` **(recommended)** - The item "Stock Keeping Unit".
 3. `name` - Must be the item based name (without any quality/effect/Killstreak and etc)
 4. `defindex` - The item definition index. You can find it [here](https://wiki.alliedmods.net/Team_Fortress_2_Item_Definition_Indexes) or [here](https://docs.google.com/spreadsheets/d/11bv5J-l1UCNjvTF2FyiqivbQds8LxBCQj0QBpw6Ukec/edit#gid=0)
+5. `id` - The item Assetid.
 
 ## 3.2.1 - `item` parameter
 
@@ -88,6 +89,15 @@ _Table 3.2: Sub-parameters for `name` and `defindex`._
 | `outputQuality` | `string` | `null` | The same as `quality` parameter, but this one is for `Collector's Chemistry Set`, which should be always `Collector's` |
 | `crateseries` | `number` | `null` | Specify crate series, usually only use for Mann Co. Supply Crate and Mann Co. Salvaged Supply Crate |
 
+## 3.2.4 - `id`
 
+Use this parameter if you want to specifically sell a similar item, but with attachments on it.
+
+### How to find the item assetid?
+- Get with Backpack.tf Item History
+![ezgif-1-bfb5200875](https://user-images.githubusercontent.com/47635037/179406725-a5e4a1fa-0bef-4471-9eec-0c274db6c12f.gif)
+- Through Steam API (Hard Mode):
+   - `https://steamcommunity.com/profiles/<SteamID64 here>/inventory/json/440/2/`; or
+   - `https://api.steampowered.com/IEconItems_440/GetPlayerItems/v1/?key=<your bot or any Steam API key>&steamid=<SteamID64 here>`
 
 Continue: [Listing settings parameters](https://github.com/TF2Autobot/tf2autobot/wiki/Listing-settings-parameters)
