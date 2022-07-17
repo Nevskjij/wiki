@@ -66,7 +66,7 @@ More info in the [Releases](https://github.com/TF2Autobot/tf2autobot/releases) n
 ### Discord Webhook feature
 
 Instead of your bot sending trade summaries, trade offer reviews, and messages to you via Steam Chat, your bot is able to send it to different channels in your Discord server!
-If you want to interact with the trade offer reviews and messages sent by your Discord Webhook, you must install [tf2-autocord](https://github.com/TF2Autobot/tf2-autocord).
+If you want to interact with the trade offer reviews and messages sent by your Discord Webhook, you must setup Discord Interface. Read [here](https://github.com/TF2Autobot/tf2autobot/wiki/Setting-up-Discord-interface).
 
 Screenshots:
 
