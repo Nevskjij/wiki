@@ -346,7 +346,7 @@ Discord interface integration. Credit to [@RobotoLev](https://github.com/RobotoL
 
 |         Variable         |   Type   | Description                        |
 | :----------------------: | :------: | ---------------------------------- |
-|    `DISCORD_BOT_TOKEN`   | `string` | Your Discord bot/application token, refer: [Setting up Discord Interface](./Setting-up-Discord-interface.md). |
+|    `DISCORD_BOT_TOKEN`   | `string` | Your Discord bot/application token, refer: [Setting up Discord Interface](./Setting-up-Discord-interface). |
 
 ## Owners' Details and Other Required Variables
 
