@@ -1,5 +1,8 @@
 # Setting up options.json for the first time
+
 ## Using the config generator
+### ⚠️ Warning: The config generator is not up-to-date (last update: v3.7.0).
+
 You can use the config generator located [here](https://bonfire.github.io/tf2autobot-config/) (credit to [@Bonfire](https://github.com/Bonfire)) if it's your first time using the bot.\
 It will guide you through the configuration and give explanations. You can also read about the individual settings later on this page.
 
@@ -95,19 +98,10 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.deleteUntradableJunk`](#--delete-seasonal-junk--)
     -   [`.reputationCheck`](#--check-trade-partners-reputation-status--)
 *   [`sendAlert`](#-send-alert-to-owner--)
-    -   [`.autokeys`](#--autokeys-alert--)
-    -   [`.backpackFull`](#--backpack-fullalmost-full-alert--)
-    -   [`.highValue`](#--high-value-items-alert--)
-    -   [`.autoRemoveIntentSellFailed`](#--automatic-remove-intentsell-failed--)
-    -   [`.autoAddPaintedItems`](#--automatic-add-painted-items--)
-    -   [`.failedAccept`](#--failed-to-accept-offer--)
-    -   [`.unableToProcessOffer`](#--unable-to-process-offer--)
-    -   [`.partialPrice`](#--partial-price-update-alert--)
-    -   [`.receivedUnusualNotInPricelist`](#--received-unusual-not-in-pricelist--)
-    -   [`.failedToUpdateOldPrices`](#--failed-to-update-old-prices--)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
+    -   [`.autoResetToAutopriceOnceSold`](#--automatic-reset-manually-priced-item-to-autoprice-once-sold--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidUnusual`](#--automatic-add-invalid-unusual--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
@@ -326,7 +320,31 @@ Property: `.highValue`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.autoRemoveIntent SellFailed` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when an item is sold with intent sell, and `pricelist.autoRemoveIntentSell.enable` is `true` but the bot failed to remove it. |
+| `.autoRemoveIntentSellFailed` | `boolean` | `true`  | (Discord Webhook mentioned) Send an alert when an item is sold with intent sell, and `pricelist.autoRemoveIntentSell.enable` is `true` but the bot failed to remove it. |
+
+### - Automatic remove assetid (failed) 🚮❌ [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.autoRemoveAssetidFailed` | `boolean` | `true`  | Send an alert when the bot failed to remove assetid in pricelist when the item has been sold. |
+
+### - Automatic remove assetid (success) 🚮✅ [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.autoRemoveAssetidSuccess` | `boolean` | `true`  | Send an alert when the bot successfully remove assetid in pricelist when the item has been sold. |
+
+### - Automatic update assetid 🔄 [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.autoUpdateAssetid` | `boolean` | `true`  | Send an alert when the assetid in the pricelist has been updated (due to Steam error, etc). |
+
+### - Automatic reset to autoprice once sold 🔄 [^](#optionsjson-structure)
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.autoResetToAutopriceOnceSold` | `boolean` | `true`  | Send an alert when a manually priced items (bank) has been reset to autoprice once its been sold. |
 
 ### - Automatic add painted items 🎀 [^](#optionsjson-structure)
 
@@ -388,6 +406,13 @@ property: `.filterCantAfford`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `false`  | By default, your bot will list all items in the pricelist. Please read [#332](https://github.com/TF2Autobot/tf2autobot/pull/332) to know more about this feature. |
+
+### - Automatic reset manully priced item to autoprice once sold 🔄 [^](#optionsjson-structure)
+property: `.autoResetToAutopriceOnceSold`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `false`  | By default, any item with intent bank in the pricelist will **not** be automatically reset to autoprice once it's sold Set this to `true` to enable this feature. |
 
 ### - Automatic remove intent=sell 🚮 [^](#optionsjson-structure)
 property: `.autoRemoveIntentSell`
@@ -618,6 +643,18 @@ property: `.painted`
 <div align="center"><img src="https://cdn.discordapp.com/attachments/715362558256873492/800094187180916766/unknown.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/715362558256873492/800094304713441331/unknown.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+### - Craft number 🔨 [^](#optionsjson-structure)
+property: `.craftNumber`
+
+ℹ️ If set to `true`, your bot will recognize any item with low craft number (1 - 100) as normal item.
+
+> Set both to `false` if you want to bank specific low craft number.
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.our` | `boolean` | `false`  | Our side (Bot) |
+| `.their` | `boolean` | `false`  | Trade partner's side |
 
 ---
 

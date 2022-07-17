@@ -4,7 +4,9 @@ First, we will set up the environment file, which you will use to configure the 
 
 # Environment File and Environment Variables
 
+<!--
 **Optional:** You can use this [generator](https://ecosystem.autobot.tf/) - credit to [mabdu11ah](https://github.com/mabdu11ah)
+-->
 
 ## - Linux
 <details>
@@ -38,7 +40,14 @@ The content of `ecosystem.json` file:
                 "BPTF_ACCESS_TOKEN": "",
                 "BPTF_API_KEY": "",
 
-                "ADMINS": ["<your steamid 64>"],
+                "USERAGENT_HEADER_CUSTOM": "",
+
+                "MPTF_API_KEY": "",
+                "DISCORD_BOT_TOKEN": "",
+
+                "ADMINS": [
+                    { "steam": "<your steamid 64>", "discord": null }
+                ],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
                 "GROUPS": ["103582791469033930"],
@@ -48,15 +57,19 @@ The content of `ecosystem.json` file:
                 "CUSTOM_PRICER_URL": "",
                 "CUSTOM_PRICER_API_TOKEN": "",
 
+                "RUN_ON_ANDROID": false,
+
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
 
-                "TIMEZONE": "",
-                "CUSTOM_TIME_FORMAT": "",
+                "TIMEZONE": "Europe/London",
+                "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
                 "TIME_ADDITIONAL_NOTES": "",
 
                 "DEBUG": true,
                 "DEBUG_FILE": true,
+                "DEBUG_SCHEMA": false,
+                "ENABLE_SAVE_LOG_FILE": true,
 
                 "ENABLE_HTTP_API": false,
                 "HTTP_API_PORT": 3001
@@ -95,7 +108,14 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "BPTF_ACCESS_TOKEN": "",
                 "BPTF_API_KEY": "",
 
-                "ADMINS": ["<your steamid 64>"],
+                "USERAGENT_HEADER_CUSTOM": "",
+
+                "MPTF_API_KEY": "",
+                "DISCORD_BOT_TOKEN": "",
+
+                "ADMINS": [
+                    { "steam": "<your steamid 64>", "discord": null }
+                ],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
                 "GROUPS": ["103582791469033930"],
@@ -105,15 +125,19 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "CUSTOM_PRICER_URL": "",
                 "CUSTOM_PRICER_API_TOKEN": "",
 
+                "RUN_ON_ANDROID": false,
+
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
 
-                "TIMEZONE": "",
-                "CUSTOM_TIME_FORMAT": "",
+                "TIMEZONE": "Europe/London",
+                "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
                 "TIME_ADDITIONAL_NOTES": "",
 
                 "DEBUG": true,
                 "DEBUG_FILE": true,
+                "DEBUG_SCHEMA": false,
+                "ENABLE_SAVE_LOG_FILE": true,
 
                 "ENABLE_HTTP_API": false,
                 "HTTP_API_PORT": 3001
@@ -140,7 +164,14 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "BPTF_ACCESS_TOKEN": "",
                 "BPTF_API_KEY": "",
 
-                "ADMINS": ["<your steamid 64>"],
+                "USERAGENT_HEADER_CUSTOM": "",
+
+                "MPTF_API_KEY": "",
+                "DISCORD_BOT_TOKEN": "",
+
+                "ADMINS": [
+                    { "steam": "<your steamid 64>", "discord": null }
+                ],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
                 "GROUPS": ["103582791469033930"],
@@ -150,15 +181,19 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "CUSTOM_PRICER_URL": "",
                 "CUSTOM_PRICER_API_TOKEN": "",
 
+                "RUN_ON_ANDROID": false,
+
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
 
-                "TIMEZONE": "",
-                "CUSTOM_TIME_FORMAT": "",
+                "TIMEZONE": "Europe/London",
+                "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
                 "TIME_ADDITIONAL_NOTES": "",
 
                 "DEBUG": true,
                 "DEBUG_FILE": true,
+                "DEBUG_SCHEMA": false,
+                "ENABLE_SAVE_LOG_FILE": true,
 
                 "ENABLE_HTTP_API": false,
                 "HTTP_API_PORT": 3001
@@ -280,6 +315,8 @@ After obtaining your backpack.tf User Token and API Key, update the following va
 | :-----------------: | :------: | --------------------------------- |
 | `BPTF_ACCESS_TOKEN` | `string` | Your bot's backpack.tf User Token |
 |   `BPTF_API_KEY`    | `string` | Your bot's backpack.tf API Key    |
+| `USERAGENT_HEADER_CUSTOM` | `string` | Custom `client` header that will be shown on backpack.tf listings. Format: "TF2Autobot - \<custom here\>". |
+| `USERAGENT_HEADER_SHOW_VERSION` | `boolean` | Show bot version. Default is `false`. If set to `true`, it will be "TF2Autobot@v\<version\> - " |
 
 **Question: Where can I obtain the above token/key if I am obtaining them manually from the backpack.tf?**
 
@@ -303,20 +340,66 @@ This is exclusively for **Marketplace.tf selected sellers**. The use of this API
 
 Note: You can't get the API Key if you log in to the marketplace.tf as your bot account. Only get one from your own main account.
 
+## Discord interface
+
+Discord interface integration. Credit to [@RobotoLev](https://github.com/RobotoLev).
+
+|         Variable         |   Type   | Description                        |
+| :----------------------: | :------: | ---------------------------------- |
+|    `DISCORD_BOT_TOKEN`   | `string` | Your Discord bot/application token, refer: [Setting up Discord Interface](./Setting-up-Discord-interface.md). |
+
 ## Owners' Details and Other Required Variables
 
-| Variable | Type | Default | Description |
-| :------: | :--: | :-----: | ----------- |
-| `ADMINS` | `string[]` | `[""]` | The SteamID64 of your primary account (not your bot). Example: `["76561198013127982"]`. If you would like to have multiple admins, you can do the following: `["76561198013127982", "76561198077208792"]`. Any accounts in this list are designated as an admin/owner. |
-|  `KEEP`  | `string[]` | `[""]` | The **same list** as `ADMINS`, **you must fill in BOTH**. Any accounts in this will not be removed from the bot's friends list in the event that its friend's list is full. |
-|  `ITEM_STATS_ WHITELIST`  | `string[]` | `[]` | The SteamID64 of the people that you want to whitelist to use `!itemstats` command. By default, only IdiNium can use it on all bots (only `!itemstats` command, all other admin-only commands are not possible). Just leave it empty if you don't want to whitelist anyone, else, make sure the format is the same as in `ADMINS` or `KEEP`.|
-| `GROUPS` | `string[]` | `["103582791469033930"]` | Default group is [TF2Autobot](https://steamcommunity.com/groups/TF2Autobot). If you have a Steam group, [find your group ID](https://user-images.githubusercontent.com/47635037/97783524-53a05d00-1bd3-11eb-9778-e92545f2de1e.gif) and paste it here. The bot will automatically invite new trade partners to all groups in this list (by group ID). |
-| `ALERTS` | `string[]` |  `["trade", "version"]` | By default your bot will send a message/discord webhook every time a successful trade is made and send notification in Steam chat if new version has been released. To disable both, set to only `["none"]` |
+```ts
+interface Admins {
+    steam: string;
+    discord?: string;
+}
+```
+
+| Variable | Type | Description |
+| :------: | :--: | ----------- |
+| `ADMINS` | `Admins[]` | An Array of Admins Object containing the SteamID64 of your primary account (not your bot), and optionally your Discord ID. Any accounts in this list are designated as an admin/owner. |
+|  `KEEP`  | `string[]` | The **same list** as `ADMINS`, **you must fill in BOTH**. Any accounts in this will not be removed from the bot's friends list in the event that its friend's list is full. |
+|  `ITEM_STATS_ WHITELIST`  | `string[]`| The SteamID64 of the people that you want to whitelist to use `!itemstats` command. By default, only IdiNium can use it on all bots (only `!itemstats` command, all other admin-only commands are not possible). Just leave it empty if you don't want to whitelist anyone, else, make sure the format is the same as in `ADMINS` or `KEEP`.|
+| `GROUPS` | `string[]` | Default group is [TF2Autobot](https://steamcommunity.com/groups/TF2Autobot). If you have a Steam group, [find your group ID](https://user-images.githubusercontent.com/47635037/97783524-53a05d00-1bd3-11eb-9778-e92545f2de1e.gif) and paste it here. The bot will automatically invite new trade partners to all groups in this list (by group ID). |
+| `ALERTS` | `string[]` | By default your bot will send a message/discord webhook every time a successful trade is made and send notification in Steam chat if new version has been released. To disable both, set to only `["none"]` |
 
 ## Please ensure you fill in all of the above Environmental variables.
 
 ### Additional info
- In the templates, you can see the value for `ADMINS` and `KEEP` are `["<your steamid 64>"]` and `["<steamid of person to keep in friendslist>"]`, respectively. Ensure that `<your steamid 64>` contains **YOUR SteamID64**, and that `<steamid of person to keep in friendslist>` contains the SteamID64 of anyone you don't want to be removed from the bot's friendslist.
+ In the templates, you can see the value for `ADMINS` and `KEEP` are `"<your steamid 64>"` and `["<steamid of person to keep in friendslist>"]`, respectively. Ensure that `<your steamid 64>` contains **YOUR SteamID64**, and that `<steamid of person to keep in friendslist>` contains the SteamID64 of anyone you don't want to be removed from the bot's friendslist.
+
+#### `ADMINS` format
+- One admin without Discord:
+ ```json
+ "ADMINS": [
+    { "steam": "76561198013127982" }
+ ]
+ ```
+ or
+ ```json
+ "ADMINS": [
+    { "steam": "76561198013127982", "discord": null }
+ ]
+ ```
+
+- One admin with Discord:
+ ```json
+ "ADMINS": [
+    { "steam": "76561198013127982", "discord": "527868979600031765" }
+ ]
+ ```
+
+ - Multiple admins:
+ ```json
+ "ADMINS": [
+    { "steam": "76561198013127982", "discord": "527868979600031765" },
+    { "steam": "76561198077208792" }
+ ]
+ ```
+---
+
 
 **Question: Where can I obtain a player's SteamID64?**
 
@@ -325,6 +408,25 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 ![How to get SteamID64](https://user-images.githubusercontent.com/47635037/96715154-be80b580-13d5-11eb-9bd5-39613f600f6d.gif)
 
 # Optional Variables
+
+## Custom Pricer Settings - only for advanced users
+
+Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
+prices.tf. If you are using another price source refer to the alternative [price source's documentation](https://github.com/TF2Autobot/tf2autobot/blob/v3.2.0/src/classes/Pricer.ts#L10-L16).
+
+**Leave these variables untouched if you don't know what you are doing.**
+
+| Variable | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|      `ENABLE_SOCKET`      | `boolean`| `true`| Read: [#383](https://github.com/TF2Autobot/tf2autobot/pull/383) |
+|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
+| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
+
+## Run on Android
+
+| Variable | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|      `RUN_ON_ANDROID`      | `boolean`| `false`| Read: [#1211](https://github.com/TF2Autobot/tf2autobot/pull/1211) |
 
 ## Bot Profile Settings
 
@@ -350,19 +452,6 @@ The time settings listed here will be used in the `!time` command as well as in 
 |   `DEBUG`    | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur into the console. |
 | `DEBUG_FILE` | `boolean` | `true`  | If set to `true`, the bot will log any errors that occur to a file. This file can be later be used to create a GitHub [issue](https://github.com/idinium96/tf2autobot/issues/new/choose) to report any issues to the developers. |
 | `ENABLE_SAVE_LOG_FILE` | `boolean` | `true`  | Set to `false` if you don't want the bot to save log files, but before that, [read this](https://github.com/TF2Autobot/tf2autobot/pull/1119). |
-
-## Custom Pricer Settings - only for advanced users
-
-Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
-prices.tf. If you are using another price source refer to the alternative [price source's documentation](https://github.com/TF2Autobot/tf2autobot/blob/v3.2.0/src/classes/Pricer.ts#L10-L16).
-
-**Leave these variables untouched if you don't know what you are doing.**
-
-| Variable | Type | Default | Description |
-| :----: | :--: | :-----: | :---------- |
-|      `ENABLE_SOCKET`      | `boolean`| `true`| Read: [#383](https://github.com/TF2Autobot/tf2autobot/pull/383) |
-|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
-| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
 
 
 ## API
