@@ -62,3 +62,8 @@ Let's take an example. Let your Steam ID be `12345`, and your Discord ID be `678
 First two forms won't let you use Discord UI (because the bot doesn't know your Discord ID, so it won't answer to you), and the last one will. Do note that `null` value must be used without quotation marks.
 
 And a few more words about multi-admin setup. Previously you had to list strings separated by commas (example: `ADMINS=["12345", "54321"]`). Now you have to separate objects (example: `ADMINS=[{"steam": "12345", "discord": "67890"}, {"steam": "54321", "discord": "09876"}]`. Any admin can still be limited to Steam chat (if `"discord"` key in his object is not set or set with `null` value).
+
+## Add your Discord bot to the TF2Autobot Discord server
+
+Please make sure the "Public bot" is not disabled.
+Send your bot invite link to IdiNium#8965 on Discord. A dedicated channel will be created for each bot under the "TF2AUTOBOTS" category.
