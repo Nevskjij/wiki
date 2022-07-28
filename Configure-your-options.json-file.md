@@ -101,7 +101,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
     -   [`.filterCantAfford`](#--filter-cant-afford-to-buy--)
-    -   [`.autoResetToAutopriceOnceSold`](#--automatic-reset-manually-priced-item-to-autoprice-once-sold--)
+    -   [`.autoResetToAutopriceOnceSold`](#--automatic-reset-manully-priced-item-to-autoprice-once-sold--)
     -   [`.autoRemoveIntentSell`](#--automatic-remove-intentsell--)
     -   [`.autoAddInvalidUnusual`](#--automatic-add-invalid-unusual--)
     -   [`.autoAddInvalidItems`](#--automatic-add-_invalid_items--)
