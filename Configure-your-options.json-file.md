@@ -88,7 +88,6 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.createListings`](#--creating-listings-on-backpacktf-%EF%B8%8F-)
     -   [`.addFriends`](#--add-as-friend-%EF%B8%8F-)
     -   [`.sendGroupInvite`](#--send-group-invite-%EF%B8%8F-)
-    -   [`.autobump`](#--autobump-auto-relist--)
     -   [`.counterOffer`](#--counter-invalid-value-offer--)
     -   [`.skipItemsInTrade`](#--skip-items-in-trade--)
     -   [`.weaponsAsCurrency`](#--weapons-as-currency--)
@@ -208,14 +207,6 @@ Property: `.sendGroupInvite`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true`  | If set to `false`, your bot will not invite people to join Steam groups. |
-
-### - Autobump (auto-relist) 🔄 [^](#optionsjson-structure)
-Property: `.autobump`
-
-| Option | Type | Default | Description |
-| :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `true` | If set to `true`, your bot will re-list all listings every 30 minutes. **NOTE: DEPRECATED** - The bot will fail to re-list items if Backpack.tf website is down for maintenance or experiencing major outage. Please consider [donating to Backpack.tf](https://backpack.tf/donate) or [purchase Backpack.tf Premium](https://backpack.tf/premium/subscribe) to enable automatic listing bumping. |
-
 
 ### - Counter invalid value offer 🔂 [^](#optionsjson-structure)
 Property: `.counterOffer`
