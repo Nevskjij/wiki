@@ -96,6 +96,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.alwaysRemoveItemAttributes`](#--always-remove-item-attributes--)
     -   [`.deleteUntradableJunk`](#--delete-seasonal-junk--)
     -   [`.reputationCheck`](#--check-trade-partners-reputation-status--)
+    -   [`.pricecheckAfterTrade`](#--automatic-pricecheck-on-every-items-involved-in-a-successful-trade--)
 *   [`sendAlert`](#-send-alert-to-owner--)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
@@ -274,6 +275,13 @@ property: `.reputationCheck`
 | :----: | :--: | :-----: | :---------- |
 |    `.checkMptfBanned`     | `boolean` | `false` | This is especially for Marketplace.tf whitelisted sellers, which stated in the Seller Terms & Conditions that "You will not trade with MarketplaceTF banned users, including any bots they may own". |
 |  `.reptfAsPrimarySource`  | `boolean` | `false` | Set this to `true` if you want your bot to get reputation data from [`rep.tf`](https://rep.tf/). Do note that rep.tf has been quite slow nowadays, so it's recommended to always set this to `false`. If you set the `.checkMptfBanned` to `true` and this to `false`, please make sure to fill in the [`MPTF_API_KEY`](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#marketplacetf-api-key) in your enviromental file. |
+
+### - Automatic pricecheck on every items involved in a successful trade [^](#optionsjson-structure)
+property: `.pricecheckAfterTrade`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean` | `true` | Set to `true` if you want the bot to automatically request price checking (similar to the `!pricecheck` command) on every item involved in a successful trade. |
 
 ---
 
@@ -543,6 +551,8 @@ Parent property key: `highValue`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enableHold` | `boolean` | `true`  | By default, whenever your bot accepts items with high valued attachments, it will **temporarily be disabled** so you can decide whether to manually price it. Set this to `false` if you want to disable this feature. |
+| `.retainOldGroup` | `boolean` | `false`  | By default, the item `group` will be automatically updated to `highValue`. Set this to `true` if you want the bot to not change the item group. |
+| `.customGroup` | `string` | `highValue`  | If you don't like the default `highValue` group, you can change it here. |
 
 ### - Spells 👻 [^](#optionsjson-structure)
 property: `.spells`
@@ -675,6 +685,11 @@ Parent property key: `details`
 **Usage example:**
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/98710377-878f3580-23be-11eb-9ed5-e0f6ec4e26af.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
+
+### - Show [𝐀𝐮𝐭𝐨𝐤𝐞𝐲𝐬] [^](#optionsjson-structure)
+Sub-parent property key: `.showAutokeys`
+
+![image](https://user-images.githubusercontent.com/47635037/184545078-90615c38-9d2d-42c0-9349-4a777d049f9e.png)
 
 ### - Show bold text [^](#optionsjson-structure)
 Sub-parent property key: `.showBoldText`
