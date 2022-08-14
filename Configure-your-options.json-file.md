@@ -152,6 +152,9 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.halted`](#--_halted-)
 *   [`manualReview`](#-manual-review-configuration-)
     -   `...`
+*   [`discordChat`](#--discord-chat-)
+    - [`.online`](#--online-status-)
+    - [`.halt`](#--halt-status-)
 *   [`discordWebhook`](#%EF%B8%8F-discord-webhook-)
     -   `...`
     -   [`.tradeSummary`](#--trade-summary-configuration-)
@@ -1137,6 +1140,28 @@ Sub-Property: `.halted`
 | `.note` | `string` | `""`  | `Custom additional notes for offer that need to be reviewed.` |
 
 ---
+
+## 💬 Discord Chat [^](#optionsjson-structure)
+Parent Property: `discordChat`
+
+![image](https://user-images.githubusercontent.com/47635037/184526783-21a9b52d-2b27-4d0a-af64-f886e77b344a.png)
+
+### - Online Status
+Sub-parent property: `online`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.type` | `string` or `number` | `LISTENING` | Possible value: `PLAYING` (or `0`), `STREAMING` (or `1`), `LISTENING` (or `2`), `WATCHING` (or `3`), or `COMPETING` (or `5`). |
+| `.name` | `string` | `incoming offers` | Can be anything in your imagination. |
+| `.status` | `string` | `online` | Possible value: `online`, `idle`, `dnd`, `invisible` |
+
+### - Halt Status
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.type` | `string` or `number` | `PLAYING` | Possible value: `PLAYING` (or `0`), `STREAMING` (or `1`), `LISTENING` (or `2`), `WATCHING` (or `3`), or `COMPETING` (or `5`). |
+| `.name` | `string` | `? No, Halted ⛔` | Can be anything in your imagination. |
+| `.status` | `string` | `idle` | Possible value: `online`, `idle`, `dnd`, `invisible` |
 
 ## 🕸️ Discord Webhook [^](#optionsjson-structure)
 Parent property: `discordWebhook`
