@@ -152,9 +152,9 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.halted`](#--_halted-)
 *   [`manualReview`](#-manual-review-configuration-)
     -   `...`
-*   [`discordChat`](#--discord-chat-)
-    - [`.online`](#--online-status-)
-    - [`.halt`](#--halt-status-)
+*   [`discordChat`](#-discord-chat-)
+    - [`.online`](#--online-status)
+    - [`.halt`](#--halt-status)
 *   [`discordWebhook`](#%EF%B8%8F-discord-webhook-)
     -   `...`
     -   [`.tradeSummary`](#--trade-summary-configuration-)
