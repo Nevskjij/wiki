@@ -151,6 +151,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.escrowCheckFailed`](#--_escrow_check_failed-)
     -   [`.bannedCheckFailed`](#--_banned_check_failed-)
     -   [`.halted`](#--_halted-)
+    -   [`.reviewForced`](##--_review_forced-)
 *   [`manualReview`](#-manual-review-configuration-)
     -   `...`
 *   [`discordChat`](#-discord-chat-)
@@ -1011,6 +1012,13 @@ Property: `.halted`
 | :----: | :--: | :-----: | :---------- |
 | `.ignoreHalted` | `boolean`  |   `false`   | When the [halt mode](https://github.com/TF2Autobot/tf2autobot/pull/1123) is enabled, by default, your bot will skip the trade and put to review if someone sent an offer (might happen when the classified listings are being removed). |
 
+### - `⬜_REVIEW_FORCED` [^](#optionsjson-structure)
+Property: `.reviewForced`
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `.enable` | `boolean`  |   `true`   | This will allow the trade partner to send an offer for a refund or other purposes that will force the owner to review, and the offer message must contain at least one keyword for it to be triggered. Refer [Forced review keywords](https://github.com/TF2Autobot/tf2autobot/wiki/Library#forced-review-keywords-). |
+
 ---
 
 ## 🔍 Manual Review Configuration [^](#optionsjson-structure)
@@ -1145,6 +1153,13 @@ Sub-Property: `.halted`
 | Option | Type | Default | Default reply |
 | :----: | :--: | :-----: | :---------- |
 | `.note` | `string` | `""`  | `❌ The bot is not operational right now, but your offer has been put to review, please wait for my owner to manually accept/decline your offer.` |
+
+#### • ⬜_REVIEW_FORCED 
+Sub-Property: `.reviewForced`
+
+| Option | Type | Default | Default reply |
+| :----: | :--: | :-----: | :---------- |
+| `.note` | `string` | `""`  | `Your offer has been received and will be manually reviewed by the owner.` |
 
 ===
 
