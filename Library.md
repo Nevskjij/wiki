@@ -303,7 +303,7 @@ Refer: https://github.com/TF2Autobot/tf2autobot/blob/master/.example/options.jso
 | `smallOffer` | .\nMy owner has manually accepted your offer. The trade should be finalized shortly. If the trade does not finalize after 1-2 minutes has passed, please send your offer again, or add me and use the !sell/!sellcart or !buy/!buycart command. |
 
 
-# Gift words [^](#table-of-content)
+# Gift keywords [^](#table-of-content)
 
 ```js
 [
@@ -328,5 +328,15 @@ Refer: https://github.com/TF2Autobot/tf2autobot/blob/master/.example/options.jso
     'rep',
     'joy',
     'cute'
+]
+```
+
+# Forced review keywords [^](#table-of-content)
+```js
+[
+    'refund',
+    'review',
+    'check',
+    'manual'
 ]
 ```
