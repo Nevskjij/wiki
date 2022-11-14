@@ -151,7 +151,7 @@ Click [`here`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson
     -   [`.escrowCheckFailed`](#--_escrow_check_failed-)
     -   [`.bannedCheckFailed`](#--_banned_check_failed-)
     -   [`.halted`](#--_halted-)
-    -   [`.reviewForced`](##--_review_forced-)
+    -   [`.reviewForced`](#--_review_forced-)
 *   [`manualReview`](#-manual-review-configuration-)
     -   `...`
 *   [`discordChat`](#-discord-chat-)
