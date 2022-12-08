@@ -4,7 +4,7 @@
 If it's your first time using the bot, feel free to use either of these two config generators:
 
 1. [tf2autobot-config](https://bonfire.github.io/tf2autobot-config/) **(⚠️ Warning: The config generator is not up-to-date, last update: v3.7.0)** - Made by [@Bonfire](https://github.com/Bonfire)
-2. [EasyConfig](https://tf2autobot-easy-config.vercel.app/) (Source codes are not publicly available, latest) - Made by [dzaster](https://steamcommunity.com/profiles/76561198108448982)
+2. [EasyConfig](https://tf2autobot-easy-config.vercel.app/) - Made by [dzaster](https://steamcommunity.com/profiles/76561198108448982)
 
 It will guide you through the configuration and give explanations. You can also read about the individual settings later on this page.
 
