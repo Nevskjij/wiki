@@ -198,7 +198,17 @@ Refer: https://github.com/TF2Autobot/tf2autobot/blob/master/.example/options.jso
     "Winter 2019 War Paint Case #126": "5912;6;c126",
     "Summer 2020 Cosmetic Case #127": "5914;6;c127",
     "Wicked Windfall Case #128": "5915;6;c128",
-    "Scream Fortress XII War Paint Case #129": "5918;6;c129"
+    "Scream Fortress XII War Paint Case #129": "5918;6;c129",
+    "Winter 2020 Cosmetic Case #130": "5922;6;c130",
+    "Winter 2020 War Paint Case #131": "5925;6;c131",
+    "Summer 2021 Cosmetic Case #132": "5927;6;c132",
+    "Crimson Cache Case #133": "5928;6;c133",
+    "Scream Fortress XIII War Paint Case #134": "5931;6;c134",
+    "Winter 2021 Cosmetic Case #135": "5935;6;c135",
+    "Summer 2022 Cosmetic Case #136": "5938;6;c136",
+    "Ghoulish Gains Case #137": "5939;6;c137",
+    "Scream Fortress XIV War Paint Case #138": "5942;6;c138",
+    "Winter 2022 Cosmetic Case #139": "5947;6;c139"
 }
 ```
 
