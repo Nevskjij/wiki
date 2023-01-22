@@ -409,6 +409,15 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 
 # Optional Variables
 
+## Alternative Inventory API Keys
+
+Alternative inventory APIs are paid services that allow the bot to access inventories more reliably. For more details including how to set them up, see [Alternative Inventory APIs](https://github.com/TF2Autobot/tf2autobot/wiki/Alternative-Inventory-APIs).
+
+| Variable | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+|   `STEAMSUPPLY_API_KEY`   | `string`| `""`| SteamSupply API key. See [Alternative Inventory APIs](https://github.com/TF2Autobot/tf2autobot/wiki/Alternative-Inventory-APIs) |
+|    `STEAMAPIS_API_KEY`    | `string` | `""`  | SteamAPIs API key. See [Alternative Inventory APIs](https://github.com/TF2Autobot/tf2autobot/wiki/Alternative-Inventory-APIs) |
+
 ## Custom Pricer Settings - only for advanced users
 
 Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
