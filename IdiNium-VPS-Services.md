@@ -10,12 +10,22 @@ Want a VPS to run your bot? Your VAT is too high? You don't have a Credit/Debit 
 1. **CX11**:
 `[1 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 3 keys/month
 2. **CPX11**:
-`[2 vCPU¹, 2  GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3.5 keys/month
+`[2 vCPU¹, 2 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3.5 keys/month
+3. **CX21**:
+`[2 vCPU⁰, 4 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 4.25 keys/month
+4. **CPX21**:
+`[3 vCPU¹, 4 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 6 keys/month
+5. **CAX11**:
+`[2 vCPU², 4 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3 keys/month
+6. **CAX21**:
+`[4 vCPU², 8 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 5 keys/month
+7. **CAX31**:
+`[8 vCPU², 16 GB RAM, 160 GB NVMe SSD, 20 TB Traffic]` — 9.5 keys/month
 
 Note:
-**CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
-
-**CPX** — Optimized for CPU performance based on AMD EPYC 2nd Gen processors (`vCPU¹`).
+- **CX** — Balanced amount of CPU and RAM based on Intel® Gold processors (`vCPU⁰`).
+- **CPX** — Optimized for CPU performance based on AMD EPYC 2nd Gen processors (`vCPU¹`).
+- **CAX** — Ampere® Altra® processors (efficient Arm64-architecture) (`vCPU²`).
 
 _**Price might change based on the current EUR/USD rate**_
 
