@@ -65,7 +65,7 @@ And a few more words about multi-admin setup. Previously you had to list strings
 
 ## Add your Discord bot to the TF2Autobot Discord server
 
-Please make sure the "Public bot" is not disabled.
+Please make sure check the "Public bot" option.
 
 Send your bot invite link to IdiNium#8965 on Discord.
 
