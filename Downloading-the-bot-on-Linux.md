@@ -26,7 +26,7 @@ Next, navigate to the `tf2autobot` folder by typing
 `cd tf2autobot`
 
 Then, install the required NPM dependencies by typing
-`npm install`
+`npm install --no-audit`
 
 Lastly, compile the codes (to convert from TypeScript to JavaScript codes) by typing
 `npm run build`
@@ -39,6 +39,6 @@ sudo apt-get install -y nodejs
 sudo npm install typescript@latest -g
 git clone https://github.com/TF2Autobot/tf2autobot.git
 cd tf2autobot
-npm install
+npm install --no-audit
 npm run build
 ```
