@@ -68,7 +68,7 @@ Now type in the following commands:
 
 `npm install typescript@latest -g`
 
-`npm install`
+`npm install --no-audit`
 
 `npm run build`
 
