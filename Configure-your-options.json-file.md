@@ -634,12 +634,12 @@ property: `.painted`
 
 ℹ️ If set to `false`, your bot will assign painted partial sku on any painted items.
 
-> Meaning that you'll be able to create a separate listing (sell order only) for the painted items. Note that only paint(s) listed in [`highValue.painted`](#-high-value-items-settings-) will have painted partial sku assigned on that particular item (if you leave it as an empty array (`[]`), then all painted items will have painted partial sku assigned).
+> Meaning that you'll be able to create a separate listing for the painted items. Note that only paint(s) listed in [`highValue.painted`](#-high-value-items-settings-) will have painted partial sku assigned on that particular item (if you leave it as an empty array (`[]`), then all painted items will have painted partial sku assigned).
 
 **Important**
 
-- Creating listings for painted items on backpack.tf is currently **NOT SUPPORTED** for **BUY ORDERS** (unless you manually create it).
-- Also note that, if your `.our` is `false` and `.their` is `true`, if you created a buy order for an item (without partial painted sku of course, max set to 1), then someone sent an offer containing painted item and that paint is listed in [`highValue.painted`](#-high-value-items-settings-), the trade summary will show stock changes like this: `-1 → 0`. Meaning your buy order will not get removed because your bot has an item with partial painted sku on it (treated as a different item). It will be removed once your bot received a non-painted version (or painted that not in [`highValue.painted`](#-high-value-items-settings-)) of that particular item.
+- When creating buy order of the same item with different paints, Backpack.tf will only create one. Make sure to add the lowest price first, and describe the price for other paints. (Explanation: [Discord chat](https://discord.com/channels/664971400678998016/666909760666468377/1011310413054488638))
+- Also note that, if your `.our` is `false` and `.their` is `true`, if you created a buy order for an item (without partial painted sku of course, max set to 1), then someone sent an offer containing painted item and that paint is listed in [`highValue.painted`](#-high-value-items-settings-), the trade summary will show stock changes like this: `-1 → 0`. Meaning your buy order will not get removed because your bot has an item with partial painted sku on it (treated as a different item). It will be removed once your bot received a non-painted version (or painted that not in [`highValue.painted`](#-high-value-items-settings-)) of that particular item. To prevent this, set `.amountIncludeNonPainted` to `true`.
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
