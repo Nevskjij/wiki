@@ -644,7 +644,7 @@ property: `.painted`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.our` | `boolean` | `true`  | Our side (Bot) |
-| `.their` | `boolean` | `true`  | Trade partner's side (`false` is not recommended) |
+| `.their` | `boolean` | `true`  | Trade partner's side (`false` if you want to buy or bank) |
 | `.amountIncludeNonPainted` | `boolean` | `false` | Enabling this option will take the non-painted version of an item into account when creating buy/sell orders. See the [detailed explanation.](https://github.com/TF2Autobot/tf2autobot/pull/597) |
 
 <div align="center"><img src="https://cdn.discordapp.com/attachments/715362558256873492/800094187180916766/unknown.png" alt="listings" style="display: block; margin-left: auto; margin-right: auto;"></div>
