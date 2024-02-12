@@ -39,7 +39,7 @@ SSH, or Secure Shell, is a remote administration protocol that allows users to c
 
 If you're using:
 ## Windows
-1. Go to https://www.putty.org/ and download the installation file. Once it is downloaded, run the file and go through the installation process.
+1. Go to https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html and download the installation file. Once it is downloaded, run the file and go through the installation process.
 2. Search for `PuTTYgen` and open the app.
 3. Click on `Generate` and move your mouse over the blank area.
 4. Once the key has been generated, it's optional to change your "Key comment" and/or set your "Key passphrase" and confirm it.
