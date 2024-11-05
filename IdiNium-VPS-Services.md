@@ -7,12 +7,12 @@ Want a VPS to run your bot? Your VAT is too high? You don't have a Credit/Debit 
 **I am here to help you to get one for your TF2 pure!**
 
 ## Services
-1. **CX11**:
-`[1 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 3 keys/month
+1. **CX22**:
+`[2 vCPU⁰, 2 GB RAM, 20 GB NVMe SSD, 20 TB Traffic]` — 3 keys/month
 2. **CPX11**:
 `[2 vCPU¹, 2 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 3.5 keys/month
-3. **CX21**:
-`[2 vCPU⁰, 4 GB RAM, 40 GB NVMe SSD, 20 TB Traffic]` — 4.25 keys/month
+3. **CX32**:
+`[4 vCPU⁰, 8 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 5.5 keys/month
 4. **CPX21**:
 `[3 vCPU¹, 4 GB RAM, 80 GB NVMe SSD, 20 TB Traffic]` — 6 keys/month
 5. **CAX11**:
