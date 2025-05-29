@@ -122,23 +122,23 @@ Each Github Release for tf2autobot will automatically create tags for Docker ima
 ### >= 3.5.0
 
 The following `[node_version]` values are used to build images for 3.5.0 and beyond:
-- `18.17.0-alpine`
-- `18.17.0-buster`
-- `18.17.0-buster-slim`
-- `18.17.0-stretch`
-- `18.17.0-stretch-slim`
+- `22-alpine`
+- `22-bookworm`
+- `22-bookworm-slim`
+- `22-bullseye`
+- `22-bullseye-slim`
 
 ### Examples
 
 ```bash
-$ docker run tf2autobot/tf2autobot:5.11.0-18.17.0-alpine
+$ docker run tf2autobot/tf2autobot:5.13.3-22-alpine
 ```
 
 ```bash
-# using `5.11` instead of any `5.11.x` will install latest `5.11.x` version
-$ docker run tf2autobot/tf2autobot:5.11-18.17.0-alpine
+# using `5.13` instead of any `5.13.x` will install latest `5.13.x` version
+$ docker run tf2autobot/tf2autobot:5.13-22-alpine
 ```
 
 ### I'm new to this, which one to pick?
 
-If you do not know which one to pick, pick `18.17.0-alpine` which is the lightweight one: `tf2autobot/tf2autobot:5.11-18.17.0-alpine` (for example).
+If you do not know which one to pick, pick `18.17.0-alpine` which is the lightweight one: `tf2autobot/tf2autobot:5.13-22-alpine` (for example).
