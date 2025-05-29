@@ -30,7 +30,7 @@ For advanced users, you can orchestrate multiple bots dynamically, both network 
 Starting with tf2autobot v3.5.0, Docker images are available and you can run the latest, lightweight version of tf2autobot (we recommend using a specific version to avoid breaks):
 
 ```bash
-$ docker run tf2autobot/tf2autobot:latest-18.17.0-alpine
+$ docker run tf2autobot/tf2autobot:latest-22-alpine
 ```
 
 Congrats! You have created your first tf2autobot **container** that runs, **but is not configured and might throw errors**. Follow the instructions to know how to [persist the data](#persisting-the-data) and how to [configure the container](#configure-the-container).
@@ -48,7 +48,7 @@ We assume the following example, running the command while you're on Desktop and
 ```
 $ docker run \
     -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
-    tf2autobot/tf2autobot:latest-18.17.0-alpine
+    tf2autobot/tf2autobot:latest-22-alpine
 ```
 
 **Make sure to replace `123456` with your account name, [as explained in the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#using-the-config-generator).**
@@ -69,7 +69,7 @@ $ docker run \
     -e STEAM_ACCOUNT_NAME=some-account-name \
     -e STEAM_PASSWORD=mysecurepassword \
     -e STEAM_SHARED_SECRET="agdgwegdgawfagxafagfkagusbuigiuefh==" \
-    tf2autobot/tf2autobot:latest-18.17.0-alpine
+    tf2autobot/tf2autobot:latest-22-alpine
 ```
 
 The environment variables are identical to the ones specified [in the example .env file](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#bot-credentials).
@@ -82,7 +82,7 @@ The environment variables are identical to the ones specified [in the example .e
 $ docker run \
     -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
     -v $(pwd)/tf2autobot_data/ecosystem.json:/app/ecosystem.json \
-    tf2autobot/tf2autobot:latest-18.17.0-alpine
+    tf2autobot/tf2autobot:latest-22-alpine
 ```
 
 ### .env
@@ -93,7 +93,7 @@ Just like `ecosystem.json`, you can as well [configure](https://github.com/TF2Au
 $ docker run \
     -v $(pwd)/tf2autobot_data/123456:/app/files/123456 \
     -v $(pwd)/tf2autobot_data/.env:/app/.env \
-    tf2autobot/tf2autobot:latest-18.17.0-alpine
+    tf2autobot/tf2autobot:latest-22-alpine
 ```
 
 ## Running multiple bots
@@ -105,7 +105,7 @@ $ docker run \
     -v $(pwd)/tf2autobot_data/11111:/app/files/11111 \
     -v $(pwd)/tf2autobot_data/22222:/app/files/22222 \
     -v $(pwd)/tf2autobot_data/ecosystem.json:/app/ecosystem.json \
-    tf2autobot/tf2autobot:latest-18.17.0-alpine
+    tf2autobot/tf2autobot:latest-22-alpine
 ```
 
 # Versioning [^](#table-of-contents)
