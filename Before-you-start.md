@@ -59,9 +59,9 @@ After this, you will want to get and write down your **Backpack.tf API Key** (`a
 To get both values, follow the instructions:
 
 Login in with your future bot account on [backpack.tf](https://backpack.tf/).
-1. Go to https://backpack.tf/connections and click on `Show token` under “User Token”.
+1. Go to https://next.backpack.tf/account/api-access and click on `Reveal` under the “Access Token” heading.
 2. Write down your token in notepad so that you can use it for configuring your bot later on.
-3. Go to https://backpack.tf/developer/apikey/view and fill in site URL as `http://localhost:4566/tasks` and comment as `Check if a user is banned on backpack.tf`.
+3. Under the 'API Key' heading on https://next.backpack.tf/account/api-access, fill in site URL as `http://localhost:4566/tasks` and comment as `Check if a user is banned on backpack.tf`.
 4. Write down the API key in the same location and make sure you know which one is which.
 
 # To sum up
