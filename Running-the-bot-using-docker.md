@@ -51,7 +51,7 @@ $ docker run \
     tf2autobot/tf2autobot:latest-22-alpine
 ```
 
-**Make sure to replace `123456` with your account name, [as explained in the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#using-the-config-generator).**
+**Make sure to replace `123456` with your account name, [as explained in the configuration docs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file#using-the-config-generator).**
 
 **The `$(pwd)` at the start of the pathname tells Docker to look for the current context - the current folder we run the command from.**
 
@@ -72,11 +72,11 @@ $ docker run \
     tf2autobot/tf2autobot:latest-22-alpine
 ```
 
-The environment variables are identical to the ones specified [in the example .env file](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#bot-credentials).
+The environment variables are identical to the ones specified [in the example .env file](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configuring-the-bot#bot-credentials).
 
 ### ecosystem.json
 
-[According to the configuration docs](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot), you will need to persist an `ecosystem.json` file in `/app` to configure multiple bots. Like we learned how to persist the data with the `tf2autobot_data` folder, we can as well persist files:
+[According to the configuration docs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configuring-the-bot), you will need to persist an `ecosystem.json` file in `/app` to configure multiple bots. Like we learned how to persist the data with the `tf2autobot_data` folder, we can as well persist files:
 
 ```
 $ docker run \
@@ -87,7 +87,7 @@ $ docker run \
 
 ### .env
 
-Just like `ecosystem.json`, you can as well [configure](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#--windows) an `.env` file:
+Just like `ecosystem.json`, you can as well [configure](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configuring-the-bot#--windows) an `.env` file:
 
 ```
 $ docker run \

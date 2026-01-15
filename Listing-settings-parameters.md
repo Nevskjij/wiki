@@ -16,8 +16,8 @@ _Table 3.3: Listing settings parameters._
 | `sell.metal` |   `0`   | Manually set selling price in refined metal. |
 |  `enabled`   | `true`  | If you want to keep the item in the pricelist but don't want to trade, then set this to `false` |
 |   `group`    | `all`  | Items grouping. Example "craftHats" or "craftWeapons" so you can easily manage and update `intent`, `min`, `max`, `autoprice`, or `enabled` parameters only on the items in that particular group. Learn more in how to update pricelist section.          |
-|  `note.buy`   | `null`  | Custom buy order listing note on backpack.tf. All parameters found [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#-listing-note-settings-) can be used. |
+|  `note.buy`   | `null`  | Custom buy order listing note on backpack.tf. All parameters found [here](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file#-listing-note-settings-) can be used. |
 |  `note.sell`  | `null`  | Same as `note.buy`, but this for sell order listing note. |
 |  `promoted`  | `0` (`false`)  | Set to `true` (will set it to `1` in your pricelist entry) if you want to promote an item (only enabled if you have Backpack.tf Premium). |
 
-Continue: [Adding items to the pricelist](https://github.com/TF2Autobot/tf2autobot/wiki/Adding-items)
+Continue: [Adding items to the pricelist](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Adding-items)

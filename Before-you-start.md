@@ -70,4 +70,4 @@ You also set up Steam Desktop Authenticator and wrote down your `identity_secret
 You added your trade offer link to backpack.tf and wrote down both your Backpack.tf `apiKey` and `accessToken`.
 
 # Everything taken care of?
-Then decide if you need to follow the [Installation on Windows](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Windows) or the [Installation on Linux.](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux)
+Then decide if you need to follow the [Installation on Windows](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Downloading-the-bot-on-Windows) or the [Installation on Linux.](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Downloading-the-bot-on-Linux)

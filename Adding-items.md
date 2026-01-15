@@ -3,7 +3,7 @@
 In order to have your bot to start trading, you will need to tell your bot what items to buy/sell/bank by adding the items to the pricelist through Steam Chat.
 The command that you will use is **!add** command. 
 
-## 3.4.1 Using [item](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#321---item-parameter) parameter
+## 3.4.1 Using [item](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Item-Identifying-parameters#321---item-parameter) parameter
 
 You can just copy the item full name from Backpack.tf, and send to your bot.
 Example:
@@ -11,15 +11,15 @@ Example:
 - `!add item=Taunt: The Schadenfreude`
 - `!add item=Terror-Watt Stately Steel Toe`
 
-Just make sure to not put a space between the `item` and the equal sign (`=`). You can add other [listings settings parameter(s)](https://github.com/TF2Autobot/tf2autobot/wiki/Listing-settings-parameters) if needed.
+Just make sure to not put a space between the `item` and the equal sign (`=`). You can add other [listings settings parameter(s)](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Listing-settings-parameters) if needed.
 Example:
 - `!add item=Max's Severed Head&max=3`
 
 ===
 
-## 3.4.2 Using [sku](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#322---sku-parameter) parameter
+## 3.4.2 Using [sku](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Item-Identifying-parameters#322---sku-parameter) parameter
 
-There are two ways of obtaining the sku of an item. You can use [the marketplace.tf method](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-marketplacetf) or you can use [the !sku command](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#using-sku-command)
+There are two ways of obtaining the sku of an item. You can use [the marketplace.tf method](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Item-Identifying-parameters#using-marketplacetf) or you can use [the !sku command](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Item-Identifying-parameters#using-sku-command)
 
 -   Example 1:
 
@@ -36,7 +36,7 @@ There are two ways of obtaining the sku of an item. You can use [the marketplace
 
 ===
 
-## 3.4.3 Using item [`name` or `defindex`](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters#321---name-and-defindex-parameters) parameters
+## 3.4.3 Using item [`name` or `defindex`](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Item-Identifying-parameters#321---name-and-defindex-parameters) parameters
 
 Example:
 
@@ -149,4 +149,4 @@ As always, any listing setting parameters you don't specify are using default va
 
 ---
 
-Continue: [Updating an item or multiple items](https://github.com/TF2Autobot/tf2autobot/wiki/Updating-items)
+Continue: [Updating an item or multiple items](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Updating-items)

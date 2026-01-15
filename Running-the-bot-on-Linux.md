@@ -7,7 +7,7 @@ PM2 needs to be globally installed on your system, to do that type and run these
 sudo npm install -g pm2
 ```
 
-You will also want to have your PM2 boot-up whenever you restart your server (assuming you've followed the instructions on the initial setup of your new VPS [here](https://github.com/idinium96/tf2autobot/wiki/Getting-a-VPS#initial-setup-of-your-vps)).
+You will also want to have your PM2 boot-up whenever you restart your server (assuming you've followed the instructions on the initial setup of your new VPS [here](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Getting-a-VPS#initial-setup-of-your-vps)).
 ```
 sudo env PATH=$PATH:/usr/bin PM2_HOME=/home/ubuntu/.pm2 pm2 startup ubuntu -u ubuntu
 sudo chown ubuntu:ubuntu -R /home/ubuntu/
@@ -57,4 +57,4 @@ pm2 restart ecosystem.json --update-env && pm2 save
 
 No matter if you are running one or multiple bots, it is recommended to do `pm2 restart ecosystem.json --update-env && pm2 save && pm2 logs` to see if there are any problems after you change something in your environment file.
 
-The next thing you should do is set up your pricelist so that your bot can start trading items. Learn how to do it [here.](https://github.com/TF2Autobot/tf2autobot/wiki/What-is-the-pricelist)
+The next thing you should do is set up your pricelist so that your bot can start trading items. Learn how to do it [here.](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/What-is-the-pricelist)

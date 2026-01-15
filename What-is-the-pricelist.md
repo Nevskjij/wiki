@@ -6,4 +6,4 @@ It contains all the items you added via the `!add` command and stores the parame
 
 It is highly recommended that you take regular backups of this file in case you will ever lose access to your machine or your file gets corrupted. 
 
-Continue: [Item identifying parameters](https://github.com/TF2Autobot/tf2autobot/wiki/Item-Identifying-parameters)
+Continue: [Item identifying parameters](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Item-Identifying-parameters)

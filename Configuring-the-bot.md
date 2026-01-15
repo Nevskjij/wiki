@@ -279,7 +279,7 @@ You can follow these instructions:
 
 `npm run build`
 
-Now all that is left to do is to configure your [`.env`](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#--windows) and [`options.json`](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file) file.
+Now all that is left to do is to configure your [`.env`](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configuring-the-bot#--windows) and [`options.json`](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file) file.
 </details>
 
 </details>
@@ -288,7 +288,7 @@ Now all that is left to do is to configure your [`.env`](https://github.com/TF2A
 
 To be able to start the bot, you need to set a few compulsory variables. **All of the variables in this section must be set or your bot will not run!**
 
-If you have followed the [Before You Start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) section of the guide, you should already have your `STEAM_SHARED_SECRET` and `STEAM_IDENTITY_SECRET` on-hand.
+If you have followed the [Before You Start](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Before-you-start) section of the guide, you should already have your `STEAM_SHARED_SECRET` and `STEAM_IDENTITY_SECRET` on-hand.
 
 ## Bot Credentials
 
@@ -305,7 +305,7 @@ Answer: You need to activate Steam Guard for your bot account using [Steam Deskt
 
 ## Backpack.tf User Token and API Key
 
-If you have followed the [Before You Start](https://github.com/idinium96/tf2autobot/wiki/Before-you-start) section of the guide, you should already have your `BPTF_ACCESS_TOKEN` and `BPTF_API_KEY` on-hand.
+If you have followed the [Before You Start](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Before-you-start) section of the guide, you should already have your `BPTF_ACCESS_TOKEN` and `BPTF_API_KEY` on-hand.
 
 You are able to run your bot without the User Token and API Key initially. On the first run, your bot will print out your backpack.tf User Token and API Key. You'll need to copy and paste these into your `ecosystem.json` (on Linux) or `.env` file (on Windows). Please [see this image](https://cdn.discordapp.com/attachments/697415702637838366/697820077248086126/bptf-api-token.png) for more information.
 
@@ -411,12 +411,12 @@ Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [S
 
 ## Alternative Inventory API Keys
 
-Alternative inventory APIs are paid services that allow the bot to access inventories more reliably. For more details including how to set them up, see [Alternative Inventory APIs](https://github.com/TF2Autobot/tf2autobot/wiki/Alternative-Inventory-APIs).
+Alternative inventory APIs are paid services that allow the bot to access inventories more reliably. For more details including how to set them up, see [Alternative Inventory APIs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Alternative-Inventory-APIs).
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-|   `STEAMSUPPLY_API_KEY`   | `string`| `""`| SteamSupply API key. See [Alternative Inventory APIs](https://github.com/TF2Autobot/tf2autobot/wiki/Alternative-Inventory-APIs) |
-|    `STEAMAPIS_API_KEY`    | `string` | `""`  | SteamAPIs API key. See [Alternative Inventory APIs](https://github.com/TF2Autobot/tf2autobot/wiki/Alternative-Inventory-APIs) |
+|   `STEAMSUPPLY_API_KEY`   | `string`| `""`| SteamSupply API key. See [Alternative Inventory APIs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Alternative-Inventory-APIs) |
+|    `STEAMAPIS_API_KEY`    | `string` | `""`  | SteamAPIs API key. See [Alternative Inventory APIs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Alternative-Inventory-APIs) |
 
 ## Custom Pricer Settings - only for advanced users
 
@@ -467,7 +467,7 @@ The time settings listed here will be used in the `!time` command as well as in 
 
 The bot can expose an HTTP server to check for availability/health or uptime.
 
-By default is disabled, and you might turn it on in case you are [running the bot with Docker](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-using-docker) and check periodically if the bot is up and running.
+By default is disabled, and you might turn it on in case you are [running the bot with Docker](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-using-docker) and check periodically if the bot is up and running.
 
 Keep in mind that if you run multiple instances and enable the HTTP API, you should use different `HTTP_API_PORT` values for each bot since no two bots can open the same port in the same network.
 
@@ -488,4 +488,4 @@ Each of the following paths can be appended to the HTTP API URL.
 
 # Done?
 
-Then the next step will be to run the bot for the first time ([Windows](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Windows) | [Linux](https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux)) to get your [`options.json`](https://github.com/TF2Autobot/tf2autobot/wiki/Library#optionsjson-content-) generated, and then you can proceed to [configure your options.json file](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file)
+Then the next step will be to run the bot for the first time ([Windows](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Windows) | [Linux](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Linux)) to get your [`options.json`](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Library#optionsjson-content-) generated, and then you can proceed to [configure your options.json file](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file)

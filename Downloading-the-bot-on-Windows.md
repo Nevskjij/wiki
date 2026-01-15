@@ -45,7 +45,7 @@ When the bot has been downloaded you need to install the modules. Do this by nav
 
 # Compiling source
 
-If you already have installed TypeScript, then `npm run build` will compile the code. If you haven't then see [Installing TypeScript](https://github.com/TF2Autobot/tf2autobot/wiki/Downloading-the-bot-on-Windows#installing-typescript).
+If you already have installed TypeScript, then `npm run build` will compile the code. If you haven't then see [Installing TypeScript](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Downloading-the-bot-on-Windows#installing-typescript).
 
 Compile the source using `npm run build`
 
@@ -74,4 +74,4 @@ Now type in the following commands:
 
 # All done?
 
-Then the next step will be [to configure your bot.](https://github.com/TF2Autobot/tf2autobot/wiki/Introduction---Configuring-the-bot)
+Then the next step will be [to configure your bot.](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Introduction---Configuring-the-bot)

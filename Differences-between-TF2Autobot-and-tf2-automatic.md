@@ -66,7 +66,7 @@ More info in the [Releases](https://github.com/TF2Autobot/tf2autobot/releases) n
 ### Discord Webhook feature
 
 Instead of your bot sending trade summaries, trade offer reviews, and messages to you via Steam Chat, your bot is able to send it to different channels in your Discord server!
-If you want to interact with the trade offer reviews and messages sent by your Discord Webhook, you must setup Discord Interface. Read [here](https://github.com/TF2Autobot/tf2autobot/wiki/Setting-up-Discord-interface).
+If you want to interact with the trade offer reviews and messages sent by your Discord Webhook, you must setup Discord Interface. Read [here](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Setting-up-Discord-interface).
 
 Screenshots:
 
@@ -94,7 +94,7 @@ If you want to use this feature, you must use the [ecosystem.template.json](http
 
 ### Autokeys (auto-buy or sell keys) feature
 
-When this feature is enabled, your bot will automatically buy or sell keys depending on the amount of pure your bot currently has. You'll need to set your minimum/maximum keys and minimum/maximum refined metals in your options.json file. Additional explanation can be found [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#-autokeys-settings-).
+When this feature is enabled, your bot will automatically buy or sell keys depending on the amount of pure your bot currently has. You'll need to set your minimum/maximum keys and minimum/maximum refined metals in your options.json file. Additional explanation can be found [here](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file#-autokeys-settings-).
 
 ```
 .____________________________________________________________.  ._______________________________.
@@ -146,7 +146,7 @@ You can see the code of this feature [here](https://github.com/TF2Autobot/tf2aut
 
 ### INVALID_VALUE exception
 
-If you're having your bot trade  Unusuals or Australiums (which the value, as we know, is more than 5 keys), and someone sends a trade offer with 0.11 ref underpay, your bot will skip this offer and send you a notification to review this offer. With this exception, your bot will accept the trade as long as the underpay is less than the exceptional value that you've set. To use this feature, you'll need to set the exception value on both `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. See [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings).
+If you're having your bot trade  Unusuals or Australiums (which the value, as we know, is more than 5 keys), and someone sends a trade offer with 0.11 ref underpay, your bot will skip this offer and send you a notification to review this offer. With this exception, your bot will accept the trade as long as the underpay is less than the exceptional value that you've set. To use this feature, you'll need to set the exception value on both `INVALID_VALUE_EXCEPTION_SKUS` and `INVALID_VALUE_EXCEPTION_VALUE_IN_REF`. See [here](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configuring-the-bot-using-the-environment-file#manual-review-settings).
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/84966884-38adde80-b145-11ea-9aac-d28daf9a74e6.PNG" alt="Invalid_value_exception2" style="display:block;margin-left:auto;margin-right:auto;width:540px;height:450px;"></div>
 

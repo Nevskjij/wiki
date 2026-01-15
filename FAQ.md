@@ -57,7 +57,7 @@ If someone sent an offer with wrong values, any items that are not in the pricel
 Some descriptions of each reason:
 <details><summary>🟥_INVALID_VALUE</summary>
 <p>
-The value of your side (Asked) and the trade partner side (Offered) and not equal or more. If you want to automatically decline any offer that <b>ONLY</b> has this reason, you need to set <code>offerReceived.invalidValue.autoDecline.enable</code> to <code>true</code>. You can also set an exceptional value for an offer with this reason to be accepted by filling the item sku(s) in the <code>offerReceived.invalidValue.exceptionValue.skus</code> array and set the <code>offerReceived.invalidValue.exceptionValue.valueInRef</code> value. Find more about it <a href="https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#--on-offer-with-_invalid_value-">here</a>.
+The value of your side (Asked) and the trade partner side (Offered) and not equal or more. If you want to automatically decline any offer that <b>ONLY</b> has this reason, you need to set <code>offerReceived.invalidValue.autoDecline.enable</code> to <code>true</code>. You can also set an exceptional value for an offer with this reason to be accepted by filling the item sku(s) in the <code>offerReceived.invalidValue.exceptionValue.skus</code> array and set the <code>offerReceived.invalidValue.exceptionValue.valueInRef</code> value. Find more about it <a href="https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file#--on-offer-with-_invalid_value-">here</a>.
 </p>
 </details>
 
@@ -83,7 +83,7 @@ Don't worry, if your bot has accepted any <code>🟨_INVALID_ITEMS</code>, your 
 
 <details><summary>🟫_DUPED_ITEMS</summary>
 <p>
-The setting for this can be found <a href="https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#--on-offer-with-_duped_items-">here</a>. <code>offerReceived.duped.enableCheck</code> is set to <code>true</code> by default. If some items the trade partner is/are offering more than <code>offerReceived.duped.minKeys</code> value, then your bot will run a duped check on that particular item. If it's found that it's duped, then you should expect your bot to send this to you. If you want to decline duped items that are more than the <code>manualReview.duped.minKeys</code> value, simply set the <code>offerReceived.duped.autoDecline.enable</code> to <code>true</code>.
+The setting for this can be found <a href="https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file#--on-offer-with-_duped_items-">here</a>. <code>offerReceived.duped.enableCheck</code> is set to <code>true</code> by default. If some items the trade partner is/are offering more than <code>offerReceived.duped.minKeys</code> value, then your bot will run a duped check on that particular item. If it's found that it's duped, then you should expect your bot to send this to you. If you want to decline duped items that are more than the <code>manualReview.duped.minKeys</code> value, simply set the <code>offerReceived.duped.autoDecline.enable</code> to <code>true</code>.
 </p>
 </details>
 
@@ -113,7 +113,7 @@ Please make sure to stop your bot when you're replacing your `pricelist.json` fr
 # Custom settings
 
 ## How to set custom welcome/success messages?
-All settings for custom messages can be found [here](https://github.com/TF2Autobot/tf2autobot/wiki/Configure-your-options.json-file#-custom-messagereply-).
+All settings for custom messages can be found [here](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Configure-your-options.json-file#-custom-messagereply-).
 
 When you're applying your custom messages, make sure to always obey the JSON format. You can not add a new line with `ENTER`, but instead you'll need to add `\n` for the new line. The `\` symbol is called escape characters. Another important escape characters are:
 

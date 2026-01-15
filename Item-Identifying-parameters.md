@@ -55,7 +55,7 @@ So how can I find the sku of a specific item?
     - `strange`: For any Strange as second quality, i.e. **Strange Unusual**, **Strange Haunted**, **Strange Genuine** and etc.
     - `kt-#`: Parameter `killstreak` level, replace `#` with either 1, 2, or 3.
     - `u#`: Parameter `effect`, replace `#` with a valid Unusual Effect ID.
-    - `p#`: Parameter `paint`, replace `#` with a valid [Paint Decimal number or Paint partial sku](https://github.com/TF2Autobot/tf2autobot/wiki/Library#paints-).
+    - `p#`: Parameter `paint`, replace `#` with a valid [Paint Decimal number or Paint partial sku](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Library#paints-).
     - `pk#`: Parameter `paintkit`, replace `#` a valid Paint Kit ID.
     - `w#`: Parameter `wear`, replace `#` with a number, 1 (Factory New) - 5 (Battle Scarred).
     - `td-#`: Parameter `target`, replace `#` with targeted item defindex.
@@ -100,4 +100,4 @@ Use this parameter if you want to specifically sell a similar item, but with att
    - `https://steamcommunity.com/profiles/<SteamID64 here>/inventory/json/440/2/`; or
    - `https://api.steampowered.com/IEconItems_440/GetPlayerItems/v1/?key=<your bot or any Steam API key>&steamid=<SteamID64 here>`
 
-Continue: [Listing settings parameters](https://github.com/TF2Autobot/tf2autobot/wiki/Listing-settings-parameters)
+Continue: [Listing settings parameters](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Listing-settings-parameters)

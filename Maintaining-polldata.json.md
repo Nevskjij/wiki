@@ -6,7 +6,7 @@ Over time this file will grow bigger and slow down your bot. You will want to ma
 You are faced with two options. If you care about your `!stats` command being correct you will want to follow option 2, else you can follow option 1.
 
 ## Option 1: Deleting polldata.json
-The easiest method to keep your bot being fast is to simply shut down your bot. If you don’t remember how, check [Running your bot on Windows](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Windows) or [Running your bot on Linux.](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux)
+The easiest method to keep your bot being fast is to simply shut down your bot. If you don’t remember how, check [Running your bot on Windows](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Windows) or [Running your bot on Linux.](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Linux)
 
 Once your bot is offline you can navigate to `~/tf2autobot/files/steam_login_name/` and delete your `polldata.json`. 
 
@@ -26,4 +26,4 @@ If you would like a visual explanation you can check out [this gif image.](https
 
 Now that you have changed both `statistics.lastTotalTrades`  and `statistics.startingTimeInUnix` and you have taken a backup of your `polldata.json` you can delete the `polldata.json` located at `~/tf2autobot/files/steam_login_name/`.
 
-Last thing you need to do is restart your bot (check [Running your bot on Windows](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Windows) or [Running your bot on Linux.](https://github.com/idinium96/tf2autobot/wiki/Running-the-bot-on-Linux) if you don’t remember how) and enjoy it being lightning fast again.
+Last thing you need to do is restart your bot (check [Running your bot on Windows](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Windows) or [Running your bot on Linux.](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Linux) if you don’t remember how) and enjoy it being lightning fast again.

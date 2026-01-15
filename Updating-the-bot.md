@@ -9,7 +9,7 @@ Updating the bot is the same for both Windows and Linux.
 
 Open up a command prompt or terminal/ssh window and navigate to your `tf2autobot` folder
 
-`cd path/to/tf2autobot` OR just `cd tf2autobot` if you follow the instructions in [Downloading the bot on Linux](https://github.com/idinium96/tf2autobot/wiki/Downloading-the-bot-on-Linux).
+`cd path/to/tf2autobot` OR just `cd tf2autobot` if you follow the instructions in [Downloading the bot on Linux](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Downloading-the-bot-on-Linux).
 
 If your bot is installed on the Desktop you will use
 
@@ -36,7 +36,7 @@ Once you have the respective file open, it's usually recommended to copy-paste i
 If you know the exact variables that were changed/added since the last time you updated the bot and your environment file, you can feel free to only copy-paste those into your existing environment file.
 
 If you run the bot with PM2, make sure to update it with:
-https://github.com/TF2Autobot/tf2autobot/wiki/Running-the-bot-on-Linux#restarting-the-bot-when-you-make-changes-to-your-ecosystemjson
+https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Running-the-bot-on-Linux#restarting-the-bot-when-you-make-changes-to-your-ecosystemjson
 
 ## Updating the configuration file - options.json
 Some updates also introduce new variables to your options.json file located in `~/tf2autobot/files/<STEAM_ACCOUNT_NAME>/`.
