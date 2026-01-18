@@ -30,11 +30,9 @@ Before trying to fix this error, you should [enable viewing file extensions](htt
 **MAKE SURE THE FILE IS NOT CALLED** `config.env` OR `bot.env` OR ANYTHING. JUST `.env` (a dot and "env").  
 If your computer does not allow you to name it `.env`, simply call it `.env.` (with the extra `.`).
 
-![image](https://cdn.discordapp.com/attachments/666909760666468377/872319195814178846/unknown.png)
-
 ## Unknown SteamID input format
 In your `.env` or `ecosystem.json`, the `ADMINS` and `KEEP` options need to have valid SteamID64's in them. For example: `76561198144346135` is a valid SteamID64.  
-You can find this on [SteamRep](https://steamrep.com/) or on your [Backpack.tf profile](https://backpack.tf/my)
+You can find this on [Rep.tf](https://rep.tf/) or on your [Backpack.tf profile](https://backpack.tf/my)
 
 ## Access denied
 Your Steam account(s) needs to be [unlimited](https://support.steampowered.com/kb_article.php?ref=3330-IAGK-7663). To make your Steam account(s) unlimited you need to add $5 or more to the Steam account(s) [here](https://store.steampowered.com/steamaccount/addfunds) (remember to be logged into the bot(s)' account). If you're using another currency than USD, you might need to add more than $5 due to conversion rates.
@@ -60,22 +58,26 @@ You can also leave it empty if you are the only person who should use that comma
 These errors are usually caused by either your `polldata.json` or your `pricelist.json` being corrupted. You should examine the error in your log and see if it matches the one of the [polldata.json corruption](#polldatajson-corruption) or the [pricelist.json corruption](#pricelistjson-corruption).
 
 ### polldata.json corruption
-There are multiple cases where this may happen. If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png](https://cdn.discordapp.com/attachments/666909760666468377/844357949723246612/unknown.png "error")  
-Then something went wrong with your `polldata.json` file. This is located in the `tf2autobot/files/{your steamid}/` folder. Simply deleting it will fix the issue.
+There are multiple cases where this may happen. It will usually look like you have multiple polldata.json files:
+polldata.json
+polldata.json.1231231
+polldata.json.1231232
+
+Then something went wrong with your `polldata.json` file. This is located in the `tf2autobot/files/{your_bot_steam_login}/` folder. Simply deleting it will fix the issue.
 
 ### pricelist.json corruption
-If your error looks somewhat like this: ![https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png](https://cdn.discordapp.com/attachments/699642379266686997/846110244782473286/hf3f2tK.png "error")
+If your error looks somewhat like this: 
+pricelist.json.1231231
+pricelist.json.1231232
 
 Then your `pricelist.json` is corrupted which is very bad because it holds all of the items you added to your pricelist. You **should not** delete this file and instead ask in the discord server for help.
 
 **Making a regular backup of your `pricelist.json` file is always recommended.**
+You can do that by using the !backup command with your bot.
 
 ### Error in options.json
-If your error looks somewhat like this:
 
-![https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png](https://cdn.discordapp.com/attachments/745410459212972173/785284924650553344/unknown.png "error")
-
-You should check out the mentioned line (here: line 27) in your options.json file to see if there are any syntax errors (here: missing quotes around Team Shine).
+You should check out the mentioned line in your options.json file to see if there are any syntax errors.
 
 ### Unexpected token in JSON error
 If you get an error somewhat like this:
@@ -109,4 +111,4 @@ then
 ```bash
 node -v
 ```
-and make sure output starts with `v14`
+and make sure output starts with `v22` or higher.
