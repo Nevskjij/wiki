@@ -37,7 +37,7 @@ sudo apt install git
 curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install typescript@latest -g
-git clone [https://github.com/TF2Autobot/tf2autobot.git](https://github.com/TF2-Price-DB/tf2autobot-pricedb.git)
+git clone https://github.com/TF2-Price-DB/tf2autobot-pricedb.git
 cd tf2autobot-pricedb
 npm install --no-audit
 npm run build
