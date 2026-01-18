@@ -1,5 +1,5 @@
 # Join Discord server to get notified
-Make sure you've joined the [TF2Autobot Discord server](https://discord.gg/ZrVT7mc) and head over to [`#🆚roles`](https://discordapp.com/channels/664971400678998016/719391430669500447/721533052890644511) channel and react to the first message to get notified whenever an update has been released!
+Make sure you've joined the [TF2Autobot Discord server](https://discord.gg/ZrVT7mc) and head over to [`#🆚roles`](https://discordapp.com/channels/664971400678998016/719391430669500447/721533052890644511) channel and react to the first message to get notified whenever an update has been released! Make sure to also join the [PriceDB discord server](https://discord.com/invite/7H2bceTgQK) as well!
 
 <div align="center"><img src="https://user-images.githubusercontent.com/47635037/88795539-c8c65580-d1d2-11ea-993e-4161083b3e36.PNG" alt="update-noti" style="display:block;margin-left:auto;margin-right:auto;width:400px;height:250px;"></div>
 
@@ -30,7 +30,7 @@ After that, you will need to pull the latest changes and install the newest vers
 Some updates introduce new variables to your environment file which add new and improved features to your bot.
 You must update your environment file with the newly added variables for everything to function properly. 
 
-To do that you should check out the updated environment files for [Windows](https://github.com/idinium96/tf2autobot/blob/master/template.env) or [Linux](https://github.com/idinium96/tf2autobot/blob/master/template.ecosystem.json) depending on which OS you use to run your bot.
+To do that you should check out the updated environment files for [.env](https://github.com/TF2-Price-DB/tf2autobot-pricedb/blob/master/template.env) or [ecosystem.json](https://github.com/TF2-Price-DB/tf2autobot-pricedb/blob/master/template.ecosystem.json) depending on what you are using to run your bot.
 
 Once you have the respective file open, it's usually recommended to copy-paste it into your existing environment file and fill everything out. 
 If you know the exact variables that were changed/added since the last time you updated the bot and your environment file, you can feel free to only copy-paste those into your existing environment file.
