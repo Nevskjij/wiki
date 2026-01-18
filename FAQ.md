@@ -8,7 +8,6 @@
      - [Why are my bot buy/sell orders just suddenly disappearing over time?](#trading)
      - [How much does bot count a Craftable weapon as? 0.05 or 0.11 ref?](#trading)
      - [Why my bot don't accept/decline the trade automatically?](#why-my-bot-dont-acceptdecline-the-trade-automatically)
-     - [Why my bot doesn't list some of the items that I have recently added?](#why-my-bot-doesnt-list-some-of-the-items-that-i-have-recently-added)
 - [Custom settings](#custom-settings)
      - [How to set custom welcome/success messages?](#how-to-set-custom-welcomesuccess-messages)
 
@@ -105,11 +104,6 @@ This can occur when Steamrep.com or backpack.tf is down. This is temporary and w
 </p>
 </details>
 
-## Why my bot doesn't list some of the items that I have recently added?
-If you add your items using [tf2-automatic-gui](https://github.com/ZeusJunior/tf2-automatic-gui/) while your bot is running, then this might be the cause of the problem. Adding items while your bot is still running will cause the items added will not be priced correctly (see [this](https://cdn.discordapp.com/attachments/666909760666468377/769802385526226974/unknown.png)) and will not list it on backpack.tf. One way of fixing this issue is to send `!update all=true&autoprice=false` and then send `!update all=true&autoprice=true` to your bot and it will fix the prices.
-
-Please make sure to stop your bot when you're replacing your `pricelist.json` from the tf2-automatic-gui config folder to your bot files folder, or if you change the path of the tf2-automatic-gui, make sure your bot is not running when you're using it.
-
 # Custom settings
 
 ## How to set custom welcome/success messages?
@@ -130,7 +124,7 @@ When you're applying your custom messages, make sure to always obey the JSON for
 What it looks like in your options.json file:
 
 <b>options.json</b>
-<code>"customMessage.success": "/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/idinium96/tf2autobot and join our Discord Server: https://discord.gg/ZrVT7mc\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!",</code>
+<code>"customMessage.success": "/quote ✅Success! The offer went through successfully. Want a bot like this? Visit: https://github.com/TF2-Price-DB/tf2autobot-pricedb.git and join our Discord Server: https://discord.com/invite/7H2bceTgQK\n\nFeel free to leave +rep!\nSteam: https://steamcommunity.com/id/IdiNium-Fumino/\nThanks!",</code>
 
 </p>
 </details>
