@@ -98,6 +98,7 @@ Click [`here`](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Library#o
     -   [`.deleteUntradableJunk`](#--delete-seasonal-junk--)
     -   [`.reputationCheck`](#--check-trade-partners-reputation-status--)
     -   [`.pricecheckAfterTrade`](#--automatic-pricecheck-on-every-items-involved-in-a-successful-trade--)
+    -   [`ECP`](#ECP)
 *   [`sendAlert`](#-send-alert-to-owner--)
 *   [`pricelist`](#-pricelist-manager-)
     -   [`.partialPriceUpdate`](#--partial-price-update--)
