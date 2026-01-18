@@ -26,7 +26,7 @@ Okay, the application was created. Now go to **Bot** and there press the **Add B
 Here you have to do two important things.
 
 1. Disable the **Public bot** setting on top. Scroll down to **Message content intent** and enable it. Press the **Save Changes** button.
-![Message content intent](https://i.imgur.com/3qwN5SN.png)
+![Message content intent](https://i.imgur.com/ON2QNFT)
 2. Scroll back up and press the **Reset Token** button. Then you will _once_ be shown a token. Copy it and paste it to your environment (or ecosystem) file as `DISCORD_BOT_TOKEN`. Below goes an example with some parts censored.
 ![Discord bot token](https://i.imgur.com/GnxlYDN.png)
 
