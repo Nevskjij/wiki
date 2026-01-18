@@ -1,10 +1,9 @@
 # Setting up options.json for the first time
 
 ## Using the config generator
-If it's your first time using the bot, feel free to use either of these two config generators:
+If it's your first time using the bot, feel free to use this config generator:
 
-1. [EasyConfig](https://tf2autobot-easy-config.vercel.app/) - Made by [dzaster](https://steamcommunity.com/profiles/76561198108448982)
-2. [tf2autobot-config](https://bonfire.github.io/tf2autobot-config/) **(⚠️ Warning: The config generator is not up-to-date, last update: v3.7.0)** - Made by [@Bonfire](https://github.com/Bonfire)
+1. [EasyConfig](https://tf2autobot-easy-config.vercel.app/generate?bot=PriceDB) - Made by [dzaster](https://steamcommunity.com/profiles/76561198108448982)
 
 It will guide you through the configuration and give explanations. You can also read about the individual settings later on this page.
 
@@ -117,6 +116,7 @@ Click [`here`](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Library#o
     -   [`.declinedTrade`](##declined-trade-summary-)
     -   [`.customText`](#custom-text--)
 *   [`steamChat`](#steam-chat-settings-)
+    -   [`.globalDisable`](#global-disable)
     -   [`.customInitializer`](#custom-initializer)
     -   [`.notifyTradePartner`](#toggle-send-notification-to-the-trade-partner--)
 *   [`highValue`](#-high-value-items-settings-)
@@ -285,6 +285,24 @@ property: `.pricecheckAfterTrade`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 | `.enable` | `boolean` | `true` | Set to `true` if you want the bot to automatically request price checking (similar to the `!pricecheck` command) on every item involved in a successful trade. |
+
+### ECP
+
+![ECP]([img/ecp_listings.png](https://raw.githubusercontent.com/TF2-Price-DB/tf2autobot-pricedb/refs/heads/master/img/ecp_listings.png))
+
+To set your ECP text to bold you would change the below in your `options.json`:
+
+```json
+"ecp": {
+    "useBoldChars": true,
+    "useWordSwap": true
+}
+```
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
+| `ecp.useBoldChars` | `boolean` | `true` | Set to `true` if you want to have the ECP characters to be bold on the listing. |
+| `ecp.useWordSwap` | `boolean` | `true` | Set to `true` if you want to switch from specialised_killstreak_name to specks_name |
 
 ---
 
@@ -519,6 +537,28 @@ Property: `customText`
 ---
 
 ## Steam chat settings [^](#optionsjson-structure)
+### Global disable
+Property: `.globalDisable`
+
+After Valve started banning bots for sending messages it has been the recommendation that your bot doesnt send chat messages. To solve this a global block has been added which can be seen below. It is suggested to set your values to the below as a minimum however disabling commands is also suggested.
+
+Configure in `options.json`:
+
+```json
+"globalDisable": {
+    "messages": true,
+    "greeting": true,
+    "commands": false,
+    "adminCommands": false
+}
+```
+| `globalDisable.messages` | `boolean` | `true`  | If set to `true`. This will disable the steam chat messages. |
+| `globalDisable.greeting` | `boolean` | `true`  | If set to `true`. This will disable the greetings message when a customer adds the bot. |
+| `globalDisable.commands` | `boolean` | `true` | If set to `true`. This will disable the response on chat commands for users. |
+| `globalDisable.adminCommands` | `boolean` | `true`  | If set to `true`. This will disable the respons on chat commands for admin users. |
+
+Note that this only affects steam chat commands. Discord will still be fully functional with responses. 
+
 Parent property key: `steamChat`
 
 ### Custom initializer
@@ -679,10 +719,13 @@ Parent property key: `details`
 
 -   `%name%` - An item's name.
 -   `%price%` - An item's buying/selling price.
+-   `%ecp_item%` - displays the trading command (e.g., 𝘀𝗲𝗹𝗹_𝗠𝗮𝗻𝗻_𝗖𝗼_𝗦𝘂𝗽𝗽𝗹𝘆_𝗖𝗿𝗮𝘁𝗲_𝗞𝗲𝘆).
 -   `%current_stock%` - An item's current stock.
 -   `%max_stock%` - An item's maximum stock.
 -   `%amount_trade%` - How much of an item can be traded.
 -   `%keyPrice%` - The current key rate (selling price). If the item's selling price is above one key, this parameter will be displayed as `Key rate: x ref/key`. Otherwise, this parameter will not be shown on listings
+-   `%pricedb_store%` - displays the URL of the bot's PriceDB store.
+-   `%pricedb_item%` - displays the URL of the item. 
 -   `%uses%` - Display `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟱x 𝗨𝗦𝗘𝗦)` on Dueling Mini-Game listings if [`miscSettings.checkUses.duel`](#--full-uses-check-%EF%B8%8F-) is set to `true`, and `(𝗢𝗡𝗟𝗬 𝗪𝗜𝗧𝗛 𝟐𝟱x 𝗨𝗦𝗘𝗦)` on Noise Maker listings if [`miscSettings.checkUses.noiseMaker`](#--full-uses-check-%EF%B8%8F-) is set to `true`. It is recommended to only place this on buy listings (`details.buy`). On other items, this parameter output will be an empty string (show nothing).
 
 **Usage example:**
@@ -843,6 +886,7 @@ Property: `.metals`
 Parent property key: `offerReceived`
 
 ### - Send pre-accept message 💬 [^](#optionsjson-structure)
+If golobalDisabled.messages is set to True the following under will not work eiter.
 Property: `.sendPreAcceptMessage`
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
