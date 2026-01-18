@@ -552,6 +552,9 @@ Configure in `options.json`:
     "adminCommands": false
 }
 ```
+
+| Option | Type | Default | Description |
+| :----: | :--: | :-----: | :---------- |
 | `globalDisable.messages` | `boolean` | `true`  | If set to `true`. This will disable the steam chat messages. |
 | `globalDisable.greeting` | `boolean` | `true`  | If set to `true`. This will disable the greetings message when a customer adds the bot. |
 | `globalDisable.commands` | `boolean` | `true` | If set to `true`. This will disable the response on chat commands for users. |
