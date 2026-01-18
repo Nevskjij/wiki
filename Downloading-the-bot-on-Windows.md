@@ -16,6 +16,7 @@ NodeJS is required to run the bot.
 
 Download the LTS version from https://nodejs.org/.
 
+Make sure its v22 or newer!
 
 # Downloading the bot
 Now that you have all the required programs installed we can start with downloading the bot itself.
@@ -27,11 +28,11 @@ Now you will type some commands into your command prompt.
 
 `cd Desktop` to navigate to the Desktop.
 
-`git clone https://github.com/TF2Autobot/tf2autobot.git --branch master` to clone the repository and choose the master branch. The master branch contains released code and is considered to be stable.
+`git clone https://github.com/TF2-Price-DB/tf2autobot-pricedb.git --branch master` to clone the repository and choose the master branch. The master branch contains released code and is considered to be stable.
 
-Once it has been cloned a new folder will be made called `tf2autobot`.
+Once it has been cloned a new folder will be made called `tf2autobot-pricedb`.
 
-`cd tf2autobot`
+`cd tf2autobot-pricedb`
 
 # Installing TypeScript
 
@@ -62,9 +63,9 @@ Now type in the following commands:
 
 `cd Desktop`
 
-`git clone https://github.com/TF2Autobot/tf2autobot.git`
+`git clone https://github.com/TF2-Price-DB/tf2autobot-pricedb.git`
 
-`cd tf2autobot`
+`cd tf2autobot-pricedb`
 
 `npm install typescript@latest -g`
 
