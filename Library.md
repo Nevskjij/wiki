@@ -17,7 +17,7 @@
 
 # Options.json content [^](#table-of-content)
 
-Refer: https://github.com/TF2Autobot/tf2autobot/blob/master/.example/options.json
+Refer: https://github.com/TF2-Price-DB/tf2autobot-pricedb/blob/master/.example/options.json
 
 # Strange Parts (Excluding built-in parts) [^](#table-of-content)
 
