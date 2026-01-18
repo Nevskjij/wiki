@@ -1,3 +1,5 @@
+##This page is outdated, but kept as history ❤️
+
 ## Difference between TF2Autobot and tf2-automatic
 
 TF2Autobot adds advantageous features on top of the original features in the tf2-automatic repository. Let me list some notable features in the original tf2-automatic and some that have been added in TF2Autobot:
