@@ -36,21 +36,24 @@ The content of `ecosystem.json` file:
                 "STEAM_PASSWORD": "",
                 "STEAM_SHARED_SECRET": "",
                 "STEAM_IDENTITY_SECRET": "",
+                "STEAM_API_KEY": "",
 
                 "BPTF_ACCESS_TOKEN": "",
                 "BPTF_API_KEY": "",
-
+                "PRICEDB_STORE_API_KEY": "",
                 "USERAGENT_HEADER_CUSTOM": "",
+                "USERAGENT_HEADER_SHOW_VERSION": false,
 
                 "MPTF_API_KEY": "",
                 "DISCORD_BOT_TOKEN": "",
+                "STEAMSUPPLY_API_KEY": "",
+                "STEAMAPIS_API_KEY": "",
+                "EXPRESSLOAD_API_KEY": "",
 
-                "ADMINS": [
-                    { "steam": "<your steamid 64>", "discord": null }
-                ],
+                "ADMINS": [{ "steam": "<your steamid 64>", "discord": null }],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
-                "GROUPS": ["103582791469033930"],
+                "GROUPS": ["103582791475394761"],
                 "ALERTS": ["trade", "version"],
 
                 "ENABLE_SOCKET": true,
@@ -62,6 +65,7 @@ The content of `ecosystem.json` file:
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
 
+                "TF2_LANGUAGE": "english",
                 "TIMEZONE": "Europe/London",
                 "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
                 "TIME_ADDITIONAL_NOTES": "",
@@ -72,7 +76,12 @@ The content of `ecosystem.json` file:
                 "ENABLE_SAVE_LOG_FILE": true,
 
                 "ENABLE_HTTP_API": false,
-                "HTTP_API_PORT": 3001
+                "HTTP_API_PORT": 3001,
+
+                "IPC": false,
+                "TLS": false,
+                "TLS_HOST": "localhost",
+                "TLS_PORT": 8000
             }
         }
     ]
@@ -104,21 +113,24 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "STEAM_PASSWORD": "",
                 "STEAM_SHARED_SECRET": "",
                 "STEAM_IDENTITY_SECRET": "",
+                "STEAM_API_KEY": "",
 
                 "BPTF_ACCESS_TOKEN": "",
                 "BPTF_API_KEY": "",
-
+                "PRICEDB_STORE_API_KEY": "",
                 "USERAGENT_HEADER_CUSTOM": "",
+                "USERAGENT_HEADER_SHOW_VERSION": false,
 
                 "MPTF_API_KEY": "",
                 "DISCORD_BOT_TOKEN": "",
+                "STEAMSUPPLY_API_KEY": "",
+                "STEAMAPIS_API_KEY": "",
+                "EXPRESSLOAD_API_KEY": "",
 
-                "ADMINS": [
-                    { "steam": "<your steamid 64>", "discord": null }
-                ],
+                "ADMINS": [{ "steam": "<your steamid 64>", "discord": null }],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
-                "GROUPS": ["103582791469033930"],
+                "GROUPS": ["103582791475394761"],
                 "ALERTS": ["trade", "version"],
 
                 "ENABLE_SOCKET": true,
@@ -130,6 +142,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
 
+                "TF2_LANGUAGE": "english",
                 "TIMEZONE": "Europe/London",
                 "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
                 "TIME_ADDITIONAL_NOTES": "",
@@ -140,7 +153,12 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "ENABLE_SAVE_LOG_FILE": true,
 
                 "ENABLE_HTTP_API": false,
-                "HTTP_API_PORT": 3001
+                "HTTP_API_PORT": 3001,
+
+                "IPC": false,
+                "TLS": false,
+                "TLS_HOST": "localhost",
+                "TLS_PORT": 8000
             }
         },
         {
@@ -160,21 +178,24 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "STEAM_PASSWORD": "",
                 "STEAM_SHARED_SECRET": "",
                 "STEAM_IDENTITY_SECRET": "",
+                "STEAM_API_KEY": "",
 
                 "BPTF_ACCESS_TOKEN": "",
                 "BPTF_API_KEY": "",
-
+                "PRICEDB_STORE_API_KEY": "",
                 "USERAGENT_HEADER_CUSTOM": "",
+                "USERAGENT_HEADER_SHOW_VERSION": false,
 
                 "MPTF_API_KEY": "",
                 "DISCORD_BOT_TOKEN": "",
+                "STEAMSUPPLY_API_KEY": "",
+                "STEAMAPIS_API_KEY": "",
+                "EXPRESSLOAD_API_KEY": "",
 
-                "ADMINS": [
-                    { "steam": "<your steamid 64>", "discord": null }
-                ],
+                "ADMINS": [{ "steam": "<your steamid 64>", "discord": null }],
                 "KEEP": ["<steamid of person to keep in friendslist>"],
                 "ITEM_STATS_WHITELIST": [],
-                "GROUPS": ["103582791469033930"],
+                "GROUPS": ["103582791475394761"],
                 "ALERTS": ["trade", "version"],
 
                 "ENABLE_SOCKET": true,
@@ -186,6 +207,7 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "SKIP_BPTF_TRADEOFFERURL": true,
                 "SKIP_UPDATE_PROFILE_SETTINGS": true,
 
+                "TF2_LANGUAGE": "english",
                 "TIMEZONE": "Europe/London",
                 "CUSTOM_TIME_FORMAT": "MMMM Do YYYY, HH:mm:ss ZZ",
                 "TIME_ADDITIONAL_NOTES": "",
@@ -196,7 +218,12 @@ Modify the [template.ecosystem.json](https://github.com/idinium96/tf2autobot/blo
                 "ENABLE_SAVE_LOG_FILE": true,
 
                 "ENABLE_HTTP_API": false,
-                "HTTP_API_PORT": 3001
+                "HTTP_API_PORT": 3002,
+
+                "IPC": false,
+                "TLS": false,
+                "TLS_HOST": "localhost",
+                "TLS_PORT": 8001
             }
         }
     ]
@@ -230,9 +257,20 @@ STEAM_ACCOUNT_NAME=""
 STEAM_PASSWORD=""
 STEAM_SHARED_SECRET=""
 STEAM_IDENTITY_SECRET=""
+STEAM_API_KEY=""
 
 BPTF_ACCESS_TOKEN=""
 BPTF_API_KEY=""
+PRICEDB_STORE_API_KEY=""
+USERAGENT_HEADER_CUSTOM=""
+USERAGENT_HEADER_SHOW_VERSION=false
+
+MPTF_API_KEY=""
+DISCORD_BOT_TOKEN=""
+STEAMSUPPLY_API_KEY=""
+STEAMAPIS_API_KEY=""
+EXPRESSLOAD_API_KEY=""
+
 
 ADMINS=["<your steamid 64>"]
 KEEP=["<steamid of person to keep in friendslist>"]
@@ -247,12 +285,15 @@ CUSTOM_PRICER_API_TOKEN=""
 SKIP_BPTF_TRADEOFFERURL=true
 SKIP_UPDATE_PROFILE_SETTINGS=true
 
+TF2_LANGUAGE="english"
 TIMEZONE=""
 CUSTOM_TIME_FORMAT=""
 TIME_ADDITIONAL_NOTES=""
 
 DEBUG=true
 DEBUG_FILE=true
+DEBUG_SCHEMA=false
+ENABLE_SAVE_LOG_FILE=true
 
 ENABLE_HTTP_API=false
 HTTP_API_PORT=3001
@@ -260,7 +301,7 @@ HTTP_API_PORT=3001
 
 ### Please ensure that you have file extension viewing enabled in your Windows settings prior to continuing (click [here](https://www.howtogeek.com/205086/beginner-how-to-make-windows-show-file-extensions/) for more information).
 
-Modify the [template.env](https://github.com/idinium96/tf2autobot/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`). This file will be the file you edit when you want to configure your bot, using the below variables.
+Modify the [template.env](https://github.com/TF2-Price-DB/tf2autobot-pricedb/blob/master/template.env) file found in your `tf2autobot/` folder, renaming it to `.env` (yes, only a dot (`.`) and a word `env`). This file will be the file you edit when you want to configure your bot, using the below variables.
 
 <details>
 <summary>CLICK HERE IF YOU WANT TO RUN MULTIPLE BOTS ON WINDOWS</summary>
@@ -269,7 +310,7 @@ Running multiple bots on Windows is very simple. You just need to clone and buil
 
 You can follow these instructions:
 
-`git clone https://github.com/TF2Autobot/tf2autobot.git <folderName>`
+`git clone https://github.com/TF2-Price-DB/tf2autobot-pricedb.git <folderName>`
 
 **Make sure to replace `<folderName>` with whatever you would like to call the folder, for example `tf2autobot2`**
 
@@ -307,7 +348,7 @@ Answer: You need to activate Steam Guard for your bot account using [Steam Deskt
 
 If you have followed the [Before You Start](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Before-you-start) section of the guide, you should already have your `BPTF_ACCESS_TOKEN` and `BPTF_API_KEY` on-hand.
 
-You are able to run your bot without the User Token and API Key initially. On the first run, your bot will print out your backpack.tf User Token and API Key. You'll need to copy and paste these into your `ecosystem.json` (on Linux) or `.env` file (on Windows). Please [see this image](https://cdn.discordapp.com/attachments/697415702637838366/697820077248086126/bptf-api-token.png) for more information.
+You are able to run your bot without the User Token and API Key initially. On the first run, your bot will print out your backpack.tf User Token and API Key. You'll need to copy and paste these into your `ecosystem.json` (on Linux) or `.env` file (on Windows).
 
 After obtaining your backpack.tf User Token and API Key, update the following variables in your configuration file:
 
@@ -403,9 +444,7 @@ interface Admins {
 
 **Question: Where can I obtain a player's SteamID64?**
 
-Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [SteamRep.com](https://steamrep.com/). Please view the gif below for more information.
-
-![How to get SteamID64](https://user-images.githubusercontent.com/47635037/96715154-be80b580-13d5-11eb-9bd5-39613f600f6d.gif)
+Answer: You can find your SteamID64 by pasting your Steam Profile URL link to [Rep.tf](https://rep.tf/).
 
 # Optional Variables
 
@@ -417,19 +456,20 @@ Alternative inventory APIs are paid services that allow the bot to access invent
 | :----: | :--: | :-----: | :---------- |
 |   `STEAMSUPPLY_API_KEY`   | `string`| `""`| SteamSupply API key. See [Alternative Inventory APIs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Alternative-Inventory-APIs) |
 |    `STEAMAPIS_API_KEY`    | `string` | `""`  | SteamAPIs API key. See [Alternative Inventory APIs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Alternative-Inventory-APIs) |
+|    `EXPRESSLOAD_API_KEY`    | `string` | `""`  | Express load API key. See [Alternative Inventory APIs](https://github.com/TF2-Price-DB/tf2autobot-pricedb/wiki/Alternative-Inventory-APIs) |
 
 ## Custom Pricer Settings - only for advanced users
 
-Custom Pricer Settings are for directing the bot at a price source other than prices.tf. Nothing needs to be set to use
-prices.tf. If you are using another price source refer to the alternative [price source's documentation](https://github.com/TF2Autobot/tf2autobot/blob/v3.2.0/src/classes/Pricer.ts#L10-L16).
+Custom Pricer Settings are for directing the bot at a price source other than pricedb.io. Nothing needs to be set to use
+pricedb.io. If you are using another price source refer to the alternative [price source's documentation](https://github.com/TF2Autobot/tf2autobot/blob/v3.2.0/src/classes/Pricer.ts#L10-L16).
 
 **Leave these variables untouched if you don't know what you are doing.**
 
 | Variable | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
 |      `ENABLE_SOCKET`      | `boolean`| `true`| Read: [#383](https://github.com/TF2Autobot/tf2autobot/pull/383) |
-|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
-| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for prices.tf (the default price source). |
+|    `CUSTOM_PRICER_URL`    | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for pricedb.io (the default price source). |
+| `CUSTOM_PRICER_API_TOKEN` | `string` | `""`  | Unless you have a reason to edit this property, you should keep it at default. This is unnecessary for pricedb.io (the default price source). |
 
 ## Run on Android
 
