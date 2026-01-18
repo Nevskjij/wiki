@@ -459,7 +459,7 @@ property: `.autoAddInvalidUnusual`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.enable` | `boolean` | `false`  | If set to `true`, any accepted Unusual bought from Generic Unusual Buy Order will automatically be added to the pricelist (if the prices from prices.tf are available). Read: [#412](https://github.com/TF2Autobot/tf2autobot/pull/412) |
+| `.enable` | `boolean` | `false`  | If set to `true`, any accepted Unusual bought from Generic Unusual Buy Order will automatically be added to the pricelist (if the prices from pricesdb.io are available). Read: [#412](https://github.com/TF2Autobot/tf2autobot/pull/412) |
 
 
 ### - Automatic add painted items 🎀➕ [^](#optionsjson-structure) [↓](#-custom-painted-text-on-listing-note)
@@ -474,7 +474,7 @@ property: `.priceAge`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.maxInSeconds` | `integer` | `28800`  | (8 hrs) If an item in the pricelist's last price update exceeds this value, the bot will automatically request a price check for the item from prices.tf (only apply on boot). |
+| `.maxInSeconds` | `integer` | `28800`  | (8 hrs) If an item in the pricelist's last price update exceeds this value, the bot will automatically request a price check for the item from pricedb.io (only apply on boot). |
 
 ---
 
@@ -932,7 +932,7 @@ Property: `.invalidItems`
 
 | Option | Type | Default | Description |
 | :----: | :--: | :-----: | :---------- |
-| `.givePrice` | `boolean`  |   `false`   | If set to `true`, your bot will assign price for `🟨_INVALID_ITEMS` (items that are not in your price list) using prices from prices.tf. |
+| `.givePrice` | `boolean`  |   `false`   | If set to `true`, your bot will assign price for `🟨_INVALID_ITEMS` (items that are not in your price list) using prices from pricedb.io. |
 | `.autoAcceptOverpay` | `boolean`  |   `true`   | If set to `false`, your bot will not accept trades with `🟨_INVALID_ITEMS` where the value of their side **is greater than or equal to** the value of your bot's side. |
 
 - Example if `.givePrice` and `.autoAcceptOverpay` are both set to `true`:
