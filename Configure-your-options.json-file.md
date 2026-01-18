@@ -288,7 +288,7 @@ property: `.pricecheckAfterTrade`
 
 ### ECP
 
-![ECP]([img/ecp_listings.png](https://raw.githubusercontent.com/TF2-Price-DB/tf2autobot-pricedb/refs/heads/master/img/ecp_listings.png))
+![ECP](https://raw.githubusercontent.com/TF2-Price-DB/tf2autobot-pricedb/refs/heads/master/img/ecp_listings.png)
 
 To set your ECP text to bold you would change the below in your `options.json`:
 
