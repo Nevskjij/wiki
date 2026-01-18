@@ -66,3 +66,5 @@ And a few more words about multi-admin setup. Previously you had to list strings
 ## Add your Discord bot to the [PriceDB Discord server](https://discord.gg/XMeHyaCkfj)
 
 Contact .dasimple on Discord to get the webhook to share your trades in the trades channel.
+
+[Example](https://i.imgur.com/WuE9aLU.png)
