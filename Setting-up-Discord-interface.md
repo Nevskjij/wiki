@@ -67,4 +67,4 @@ And a few more words about multi-admin setup. Previously you had to list strings
 
 Contact .dasimple on Discord to get the webhook to share your trades in the trades channel.
 
-[Example](https://i.imgur.com/WuE9aLU.png)
+![Example](https://i.imgur.com/WuE9aLU.png)
