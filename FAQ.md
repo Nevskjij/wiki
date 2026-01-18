@@ -74,9 +74,9 @@ Some of our items will be less than the minimum stock if you accept the trade (i
 
 <details><summary>🟨_INVALID_ITEMS</summary>
 <p>
-Some of the items are not in your bot price list. If you have used <code>tf2-automatic</code> before, any <code>🟨_INVALID_ITEMS</code> items will not be priced (0 keys, 0 ref value), but <code>TF2Autobot</code> will get the price of that particular item from prices.tf and price it by default. You can disable this feature by changing the <code>offerReceived.invalidItems.givePrice</code> default value to <code>false</code>. Your bot will also accept invalid items offers by default if the trade partner is overpaying (set <code>offerReceived.invalidItems.autoAcceptOverpay</code> to <code>false</code> if you want to disable it).
+Some of the items are not in your bot price list. If you have used <code>tf2-automatic</code> before, any <code>🟨_INVALID_ITEMS</code> items will not be priced (0 keys, 0 ref value), but <code>TF2Autobot</code> will get the price of that particular item from pricedb.io and price it by default. You can disable this feature by changing the <code>offerReceived.invalidItems.givePrice</code> default value to <code>false</code>. Your bot will also accept invalid items offers by default if the trade partner is overpaying (set <code>offerReceived.invalidItems.autoAcceptOverpay</code> to <code>false</code> if you want to disable it).
 
-Don't worry, if your bot has accepted any <code>🟨_INVALID_ITEMS</code>, your bot will mention you (if you enable Discord Webhook for trade summary), AND your bot will automatically add that particular item(s) to the pricelist with <code>intent=sell</code> (if and only if the items are priced with prices.tf).
+Don't worry, if your bot has accepted any <code>🟨_INVALID_ITEMS</code>, your bot will mention you (if you enable Discord Webhook for trade summary), AND your bot will automatically add that particular item(s) to the pricelist with <code>intent=sell</code> (if and only if the items are priced with pricedb.io).
 </p>
 </details>
 
