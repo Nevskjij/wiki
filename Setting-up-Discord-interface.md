@@ -63,10 +63,6 @@ First two forms won't let you use Discord UI (because the bot doesn't know your 
 
 And a few more words about multi-admin setup. Previously you had to list strings separated by commas (example: `ADMINS=["12345", "54321"]`). Now you have to separate objects (example: `ADMINS=[{"steam": "12345", "discord": "67890"}, {"steam": "54321", "discord": "09876"}]`. Any admin can still be limited to Steam chat (if `"discord"` key in his object is not set or set with `null` value).
 
-## Add your Discord bot to the [PriceDB Discord server](https://discord.com/invite/7H2bceTgQK)
+## Add your Discord bot to the [PriceDB Discord server](https://discord.gg/XMeHyaCkfj)
 
-Please make sure check the "Public bot" option.
-
-Send your bot invite link to .dasimple on Discord.
-
-And he will add it to the server and give you the webhook.
+Contact .dasimple on Discord to get the webhook to share your trades in the trades channel.
