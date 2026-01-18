@@ -20,10 +20,10 @@ Install TypeScript by typing `sudo npm install typescript@latest -g` into your t
 
 # Downloading the bot
 To download the bot from the GitHub repository type
-`git clone https://github.com/TF2Autobot/tf2autobot.git`
+`git clone https://github.com/TF2-Price-DB/tf2autobot-pricedb.git`
 
 Next, navigate to the `tf2autobot` folder by typing
-`cd tf2autobot`
+`cd tf2autobot-pricedb`
 
 Then, install the required NPM dependencies by typing
 `npm install --no-audit`
@@ -34,11 +34,11 @@ Lastly, compile the codes (to convert from TypeScript to JavaScript codes) by ty
 # Short section
 ```
 sudo apt install git
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm install typescript@latest -g
-git clone https://github.com/TF2Autobot/tf2autobot.git
-cd tf2autobot
+git clone [https://github.com/TF2Autobot/tf2autobot.git](https://github.com/TF2-Price-DB/tf2autobot-pricedb.git)
+cd tf2autobot-pricedb
 npm install --no-audit
 npm run build
 ```
